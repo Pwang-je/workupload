@@ -8,7 +8,6 @@ console.log("supabase 모듈 정상 로드", supabase);
 
 <template>
   <FileUpload />
-   <h1>업로드 테스트</h1>
 </template>
 
 <style scoped>
