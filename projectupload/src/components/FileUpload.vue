@@ -29,7 +29,7 @@ const uploadFile = async () => {
 
   // Supabase Storage 업로드
   const { data, error } = await supabase.storage
-    .from("assignment") // 🟢 버킷 이름 확인!
+    .from("minibox") // 🟢 버킷 이름 확인!
     .upload(safeFileName, file.value);
 
   if (error) {
@@ -40,7 +40,7 @@ const uploadFile = async () => {
 
   // 🟢 업로드한 파일의 "Public URL" 가져오기
   const { data: urlData } = supabase.storage
-    .from("assignment") // 🟢 여기서도 버킷 이름 확인!
+    .from("minibox") // 🟢 여기서도 버킷 이름 확인!
     .getPublicUrl(safeFileName);
 
   downloadURL.value = urlData.publicUrl; // ✅ 올바른 파일 URL 저장
