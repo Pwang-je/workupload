@@ -1,31 +1,59 @@
 <script setup>
 import { ref } from "vue";
-import { supabase } from "../supabase"; // Supabase 설정 import
-import { v4 as uuidv4 } from "uuid"; // UUID 패키지 import
-import VueDatePicker from "@vuepic/vue-datepicker"; // vue date picker
-import "@vuepic/vue-datepicker/dist/main.css"; // vue date picker css
+import { useRouter } from "vue-router"; 
+import { supabase } from "../supabase";
+import { v4 as uuidv4 } from "uuid";
+import VueDatePicker from "@vuepic/vue-datepicker";
+import "@vuepic/vue-datepicker/dist/main.css";
+
+// Vue Router 사용
+const router = useRouter();
+
+// 고정된 관리자 비밀번호
+const ADMIN_PASSWORD = "2580"; // 원하는 비밀번호로 변경
+
+// Admin 페이지 이동 함수 (비밀번호 확인)
+const goToAdminPage = (event) => {
+  const userInput = prompt("🔑 관리자 비밀번호를 입력하세요:");
+
+  if (userInput === ADMIN_PASSWORD) {
+    router.push("/adminpage"); // 비밀번호가 맞으면 이동
+  } else {
+    alert("❌ 비밀번호가 틀렸습니다!");
+    event.preventDefault(); // 비밀번호 틀리면 이동 차단
+    router.push("/"); // 비밀번호 틀리면 홈으로 이동
+  }
+};
+
 
 // 오늘 날짜를 YYYY-MM-DD 형식으로 반환하는 함수
 const getTodayDate = () => {
   const today = new Date();
-  return today.toISOString().split("T")[0]; // "YYYY-MM-DD" 형식 변환
+  return today.toISOString().split("T")[0];
 };
 
 // 상태 변수들
 const file = ref(null);
-const fileName = ref(""); // 학생 이름
-const fileDate = ref(getTodayDate()); // 오늘 날짜를 기본값으로 설정
-const question = ref(""); // 질문 추가
-const selectedFileName = ref("No file selected"); // 파일 선택 버튼의 텍스트
-const downloadURL = ref(""); // 업로드 후 다운로드 URL
+const fileName = ref(""); 
+const fileDate = ref(getTodayDate());
+const question = ref("");
+const selectedFileName = ref("No file selected"); 
+const downloadURL = ref("");
+
+// UUID 기반 안전한 파일명 생성
+const generateSafeFileName = (originalName) => {
+  const extension = originalName.split(".").pop();
+  return `${uuidv4()}.${extension}`;
+};
 
 // 파일 선택 시 실행
 const onFileChange = (event) => {
   if (event.target.files.length > 0) {
-    file.value = event.target.files[0]; // 선택한 파일 저장
-    selectedFileName.value = file.value.name; // 버튼 텍스트를 선택한 파일명으로 변경
+    file.value = event.target.files[0]; 
+    selectedFileName.value = file.value.name;
   }
 };
+
 
 // 파일 업로드 실행
 const uploadFile = async () => {
@@ -34,12 +62,12 @@ const uploadFile = async () => {
     return;
   }
 
-  const safeFileName = generateSafeFileName(file.value.name); // 안전한 파일명
-  const originalName = file.value.name; // 사용자가 업로드한 원본 파일명
+  const safeFileName = generateSafeFileName(file.value.name);
+  const originalName = file.value.name;
 
   // 1. Supabase Storage 업로드
   const { data, error } = await supabase.storage
-    .from("minibox") // Storage 버킷 이름
+    .from("minibox")
     .upload(safeFileName, file.value);
 
   if (error) {
@@ -53,46 +81,61 @@ const uploadFile = async () => {
     .from("minibox")
     .getPublicUrl(safeFileName);
 
-  downloadURL.value = urlData.publicUrl; // URL 저장
-
-  // console.log("✅ 업로드된 파일 URL:", downloadURL.value);
+  downloadURL.value = urlData.publicUrl;
 
   // 3. Supabase DB에 파일 정보 + 질문 저장
   const { data: insertData, error: insertError } = await supabase
-    .from("fileupload") // 테이블 이름
+    .from("fileupload")
     .insert([
       {
-        name: fileName.value,  // 학생 이름
-        date: fileDate.value,  // 제출 날짜
-        question: question.value, // 질문 추가
-        url: downloadURL.value,  // 업로드된 파일의 URL
-        original_name: originalName, // DB에 원본 파일명 저장
+        name: fileName.value,
+        date: fileDate.value,
+        question: question.value,
+        url: downloadURL.value,
+        original_name: originalName,
       }
     ])
-    .select(); // select() 추가해서 데이터가 잘 저장되는지 확인
+    .select();
 
   if (insertError) {
-    console.error("파일 정보 저장 실패", insertError);
-    alert("파일 정보 저장에 실패하였습니다.");
+    // console.error("파일 정보 저장 실패", insertError);
+    alert("Failed to save files.");
     return;
   }
 
-  console.log("✅ DB 저장 성공", insertData);
-  alert("파일 업로드 및 정보 저장 성공!");
+  // console.log("✅ DB 저장 성공", insertData);
+  alert("The file has been uploaded normally.");
 
-  // 📌 업로드 완료 후 모든 입력값 초기화
-  file.value = null; // 파일 초기화
+  // 입력값 초기화
+  file.value = null;
   fileName.value = "";
-  fileDate.value = getTodayDate(); // 오늘 날짜로 초기화
-  question.value = ""; // 질문 초기화
-  selectedFileName.value = "No file selected"; // 파일 선택 버튼 초기화
+  fileDate.value = getTodayDate();
+  question.value = "";
+  selectedFileName.value = "No file selected";
 };
 </script>
 
 <template>
   <div class="flex items-center justify-center min-h-screen bg-[#1A1B26]">
-    <div class="w-full max-w-md p-8 bg-[#16161E] rounded-xl shadow-lg">
-      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4">Submission status</h2>
+    <div class="w-full max-w-md p-8 bg-[#16161E] rounded-xl shadow-lg relative">
+      
+      <!-- Mac 스타일 창 버튼 -->
+      <div class="absolute flex space-x-2 top-3 left-4">
+        <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+        <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+      </div>
+
+      <!-- 숨겨진 Admin 페이지 이동 버튼 (router-link 사용) -->
+      <router-link 
+        to="/adminpage"
+        @click="goToAdminPage"
+        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
+      >
+        ⚙️
+      </router-link>
+
+      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">Submission status</h2>
 
       <div class="space-y-4">
         <!-- 이름 입력 필드 -->
@@ -120,7 +163,7 @@ const uploadFile = async () => {
         />
 
         <!-- 파일 선택 버튼 (커스텀) -->
-        <label class="flex items-center justify-between w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#C792EA] text-white cursor-pointer hover:bg-[#AB69C6] transition duration-200">
+        <label class="flex items-center justify-center w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#C792EA] text-white cursor-pointer hover:bg-[#AB69C6] transition duration-200">
           <span>{{ selectedFileName }}</span>
           <input type="file" class="hidden" @change="onFileChange" />
         </label>
