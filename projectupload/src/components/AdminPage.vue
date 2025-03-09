@@ -2,16 +2,16 @@
 import { ref, onMounted } from "vue";
 import { supabase } from "../supabase";
 
-// 상태 관리 변수
+// 상태 변수
 const students = ref([]); // 학생 목록
 const selectedStudent = ref(""); // 선택된 학생
 const studentFiles = ref([]); // 선택한 학생의 파일 목록
 
-// 📌 1️⃣ Supabase `fileupload` 테이블에서 학생 목록 가져오기
+// 📌 1️⃣ `fileupload` 테이블에서 학생 목록 가져오기
 const getStudents = async () => {
   const { data, error } = await supabase
-    .from("fileupload") // ✅ `fileupload` 테이블에서 가져옴
-    .select("name"); // ✅ `name` 컬럼만 선택
+    .from("fileupload")
+    .select("name");
 
   if (error) {
     console.error("학생 목록 가져오기 실패", error);
@@ -28,10 +28,10 @@ const getStudentFiles = async () => {
   if (!selectedStudent.value) return;
 
   const { data, error } = await supabase
-    .from("fileupload") // ✅ `fileupload` 테이블에서 데이터 조회
-    .select("date, url") // ✅ `date`, `url` 컬럼만 선택
-    .eq("name", selectedStudent.value) // ✅ 선택한 학생만 필터링
-    .order("date", { ascending: true }); // ✅ 날짜순 정렬
+    .from("fileupload")
+    .select("date, url, original_name") // ✅ `original_name` 추가 조회
+    .eq("name", selectedStudent.value)
+    .order("date", { ascending: true });
 
   if (error) {
     console.error("파일 목록 가져오기 실패", error);
@@ -65,13 +65,18 @@ onMounted(() => {
       <thead>
         <tr>
           <th>📅 날짜</th>
-          <th>📁 파일</th>
+          <th>📁 파일명</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="file in studentFiles" :key="file.url">
           <td>{{ file.date }}</td>
-          <td><a :href="file.url" target="_blank">📥 다운로드</a></td>
+          <!-- ✅ original_name을 클릭하면 해당 파일 다운로드 -->
+          <td>
+            <a :href="file.url" :download="file.original_name" target="_blank">
+              📥 {{ file.original_name }}
+            </a>
+          </td>
         </tr>
       </tbody>
     </table>
