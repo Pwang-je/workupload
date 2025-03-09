@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import FileUpload from "@/components/FileUpload.vue"; // ✅ 업로드 페이지
-import AdminPage from "@/components/AdminPage.vue"; // ✅ 관리자 페이지
+import FileUpload from "@/components/FileUpload.vue"; // 업로드 페이지
+import AdminPage from "@/components/AdminPage.vue"; // 관리자 페이지
 
 const routes = [
   { path: "/", component: FileUpload },
