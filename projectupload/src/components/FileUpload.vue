@@ -14,12 +14,12 @@ const ADMIN_PASSWORD = "2580"; // 원하는 비밀번호로 변경
 
 // Admin 페이지 이동 함수 (비밀번호 확인)
 const goToAdminPage = (event) => {
-  const userInput = prompt("🔑 관리자 비밀번호를 입력하세요:");
+  const userInput = prompt("🔑: ");
 
   if (userInput === ADMIN_PASSWORD) {
     router.push("/adminpage"); // 비밀번호가 맞으면 이동
   } else {
-    alert("❌ 비밀번호가 틀렸습니다!");
+    alert("❌");
     event.preventDefault(); // 비밀번호 틀리면 이동 차단
     router.push("/"); // 비밀번호 틀리면 홈으로 이동
   }
@@ -29,7 +29,7 @@ const goToAdminPage = (event) => {
 // 오늘 날짜를 YYYY-MM-DD 형식으로 반환하는 함수
 const getTodayDate = () => {
   const today = new Date();
-  return today.toISOString().split("T")[0];
+  return today.toLocaleDateString("ko-KR", { year: "numeric", month: "2-digit", day: "2-digit" }).replace(/\. /g, "-").replace(".", "");
 };
 
 // 상태 변수들
@@ -57,8 +57,8 @@ const onFileChange = (event) => {
 
 // 파일 업로드 실행
 const uploadFile = async () => {
-  if (!file.value || !fileName.value || !fileDate.value || !question.value) {
-    alert("이름, 날짜, 질문, 파일을 모두 입력해주세요.");
+  if (!file.value || !fileName.value || !fileDate.value) {
+    alert("이름, 날짜, 파일을 모두 입력해주세요.");
     return;
   }
 
@@ -99,12 +99,12 @@ const uploadFile = async () => {
 
   if (insertError) {
     // console.error("파일 정보 저장 실패", insertError);
-    alert("Failed to save files.");
+    alert("💦 업로드 실패");
     return;
   }
 
-  // console.log("✅ DB 저장 성공", insertData);
-  alert("The file has been uploaded normally.");
+  // console.log("DB 저장 성공", insertData);
+  alert("✔️ 저장 성공");
 
   // 입력값 초기화
   file.value = null;
@@ -135,7 +135,7 @@ const uploadFile = async () => {
         ⚙️
       </router-link>
 
-      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">Submission status</h2>
+      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">파일 제출용</h2>
 
       <div class="space-y-4">
         <!-- 이름 입력 필드 -->
@@ -143,14 +143,14 @@ const uploadFile = async () => {
           type="text" 
           class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none" 
           v-model="fileName" 
-          placeholder="Your name" 
+          placeholder="이름을 입력해주세요." 
         />
 
         <!-- 질문 입력 필드 -->
         <textarea 
           class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none resize-none" 
           v-model="question"
-          placeholder="Enter your question"
+          placeholder="질문이나 하고싶은 말을 적어주세요."
           rows="3"
         ></textarea>
 
@@ -172,7 +172,7 @@ const uploadFile = async () => {
         <button 
           @click="uploadFile" 
           class="w-full py-3 bg-[#C792EA] text-white font-semibold rounded-full hover:bg-[#AB69C6] transition duration-200">
-          Upload
+          🍺업로드
         </button>
       </div>
     </div>
