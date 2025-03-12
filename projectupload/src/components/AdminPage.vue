@@ -1,33 +1,36 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { supabase } from "../supabase";
+import { useRouter } from "vue-router"; // ✅ Vue Router 추가
+
+const router = useRouter(); // ✅ Vue Router 사용
 
 // 상태 변수
-const students = ref([]); // 학생 목록
-const selectedStudent = ref(""); // 선택된 학생
-const studentFiles = ref([]); // 선택한 학생의 파일 목록
+const students = ref([]);
+const selectedStudent = ref("");
+const studentFiles = ref([]);
 
-// 1. `fileupload` 테이블에서 학생 목록 가져오기
+// ✅ FileUpload 페이지(`/`)로 이동하는 함수
+const goToFileUpload = () => {
+  router.push("/"); // `/` 경로로 이동
+};
+
+// 1. 학생 목록 가져오기
 const getStudents = async () => {
   const { data, error } = await supabase.from("fileupload").select("name");
-
   if (error) {
     console.error("학생 목록 가져오기 실패", error);
     return;
   }
-
-  // 중복 제거 후 students 리스트 업데이트
-  const uniqueNames = [...new Set(data.map((item) => item.name))];
-  students.value = uniqueNames;
+  students.value = [...new Set(data.map((item) => item.name))];
 };
 
-// 2. `fileupload` 테이블에서 특정 학생의 파일 가져오기 (질문 추가)
+// 2. 특정 학생의 파일 가져오기
 const getStudentFiles = async () => {
   if (!selectedStudent.value) return;
-
   const { data, error } = await supabase
     .from("fileupload")
-    .select("date, url, original_name, question") // `question` 추가 조회
+    .select("date, url, original_name, question")
     .eq("name", selectedStudent.value)
     .order("date", { ascending: true });
 
@@ -35,8 +38,7 @@ const getStudentFiles = async () => {
     console.error("파일 목록 가져오기 실패", error);
     return;
   }
-
-  studentFiles.value = data; // 파일 목록 업데이트
+  studentFiles.value = data;
 };
 
 // 3. 페이지 로드 시 학생 목록 불러오기
@@ -56,7 +58,13 @@ onMounted(() => {
         <span class="w-3 h-3 bg-green-500 rounded-full"></span>
       </div>
 
-      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">Admin Page</h2>
+      <!-- ✅ 클릭 시 FileUpload 페이지(`/`)로 이동 -->
+      <h2 
+        class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6 cursor-pointer hover:text-[#AB69C6] transition duration-200"
+        @click="goToFileUpload"
+      >
+        Admin Page
+      </h2>
 
       <div class="space-y-4">
         <!-- 학생 선택 -->
@@ -93,7 +101,7 @@ onMounted(() => {
               </a>
             </div>
 
-            <!-- 질문 목록 (파일 아래에 표시) -->
+            <!-- 질문 목록 -->
             <div v-if="file.question" class="mt-2 px-4 py-3 bg-[#2C2E40] text-[#A6ACCD] rounded-xl">
               <p class="font-semibold text-[#C792EA]">Qstn:</p>
               <p>{{ file.question }}</p>
