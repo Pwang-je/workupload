@@ -25,6 +25,19 @@ const goToAdminPage = (event) => {
   }
 };
 
+// mathquest 페이지 이동 함수 (비밀번호 확인)
+const goToMathPage = (event) => {
+  const userInput = prompt("🔑: ");
+
+  if (userInput === ADMIN_PASSWORD) {
+    router.push("/mathquest"); // 비밀번호가 맞으면 이동
+  } else {
+    alert("❌");
+    event.preventDefault(); // 비밀번호 틀리면 이동 차단
+    router.push("/"); // 비밀번호 틀리면 홈으로 이동
+  }
+};
+
 
 // 오늘 날짜를 YYYY-MM-DD 형식으로 반환하는 함수
 const getTodayDate = () => {
@@ -134,6 +147,18 @@ const uploadFile = async () => {
       >
         ⚙️
       </router-link>
+
+      <!-- 숨겨진 Mathquest 페이지 이동 버튼 (router-link 사용) -->
+      <router-link 
+        to="/mathquest"
+        @click="goToMathPage"
+        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
+      >
+        ⚙️a
+      </router-link>
+
+
+
 
       <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">파일 제출용</h2>
 
