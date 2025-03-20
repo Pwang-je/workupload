@@ -1,6 +1,9 @@
 <script setup>
 import { RouterView } from "vue-router"; 
 import { supabase } from "./supabase";
+import { loadMathJax } from './utils/mathjax'
+
+loadMathJax();
 
 // 정상적으로 로드되는지 확인
 // console.log("supabase 모듈 정상 로드", supabase);
@@ -9,3 +12,12 @@ import { supabase } from "./supabase";
 <template>
   <router-view /> 
 </template>
+<style>
+/* ✅ MathJax 블록 수식을 강제로 인라인으로 변경 */
+mjx-container[jax="CHTML"][display="true"] {
+  display: inline !important;
+  text-align: inherit !important;
+  margin: 0 !important;
+}
+
+</style>

@@ -1,4 +1,4 @@
-{
+export const clcls1 = {
   "subject": "calculus1",
   "questions": {
     "5": [
