@@ -1,120 +1,102 @@
-<template>
-  <div>
-    <h2>{{ selectedMath }} <span v-if="selectedCount">({{ selectedCount }}개 문제)</span></h2>
-
-    <div class="buttons">
-      <button v-for="subject in subjects" :key="subject" @click="selectMath(subject)">
-        {{ subject }}
-      </button>
-    </div>
-
-    <div class="checkbox-group">
-      <label v-for="num in counts" :key="num">
-        <input type="radio" :value="num" v-model="selectedCount" @change="updateMathJax" />
-        {{ num }}
-      </label>
-    </div>
-
-    <button class="download-btn" @click="generatePDF" :disabled="!selectedCount">📄 PDF 다운로드</button>
-
-    <div id="question-list" v-if="selectedCount">
-      <div v-for="(item, index) in displayedQuestions" :key="index" class="math-question">
-        <span v-html="renderMathJax(`${item.page}페이지 - ${index + 1}번. ${item.question}`)"></span>
-
-        <div class="choices">
-          <div v-for="(choice, cIndex) in item.choices" :key="cIndex" class="choice-item">
-            <span class="choice-number">{{ cIndex + 1 }}.</span>
-            <span v-html="renderMathJax(choice)"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
-
-
 <script setup>
-import { ref, computed, onMounted, nextTick } from "vue";
-import axios from "axios";
-import _ from "lodash";
-import jsPDF from "jspdf";
-import { loadMathJax, updateMathJax, renderMathJax } from "@/utils/mathjax";
-import NanumGothic from "@/assets/fonts/NanumGothicBase64.js"; // ✅ 한글 폰트 추가
+import { ref, onMounted, nextTick, watch } from "vue";
+import { clcls1 } from "@/data/clcls1.js";
 
-// ✅ 과목 선택 버튼
-const subjects = ["미적분1", "미적분2", "미적분3"];
-const selectedMath = ref("미적분1");
-const questionData = ref([]);
-const counts = [50, 80, 100, 150, 180, 200, 250, 300];
-const selectedCount = ref(null);
+const numQuestions = ref(100); // 기본값 100개
+const selectedQuestions = ref([]);
 
-// ✅ 랜덤 문제 선택
-const displayedQuestions = computed(() => {
-  if (!selectedCount.value || !Array.isArray(questionData.value) || questionData.value.length === 0) {
-    return [];
+function getRandomQuestions(num) {
+  const allQuestions = [];
+
+  // 📌 문제와 해당 페이지 번호 가져오기
+  Object.entries(clcls1.questions).forEach(([page, questions]) => {
+    questions.forEach((q) => {
+      allQuestions.push({
+        page: page, // 실제 페이지 번호
+        question: q.question,
+        choices: q.choices || [] // 보기가 없으면 빈 배열로 처리
+      });
+    });
+  });
+
+  if (num > allQuestions.length) {
+    alert("요청한 문제 수가 전체 문제보다 많습니다!");
+    return;
   }
-  return _.sampleSize(questionData.value, selectedCount.value);
-});
 
-// ✅ JSON 데이터 불러오기
-const loadQuestions = async () => {
-  try {
-    const response = await axios.get("https://raw.githubusercontent.com/Pwang-je/workupload/refs/heads/main/projectupload/src/data/clcls1.json");
-    if (response.data.questions) {
-      questionData.value = Object.entries(response.data.questions).flatMap(([page, questions]) =>
-        questions.map((q) => ({ ...q, page }))
-      );
-      updateMathJax();
+  // 문제를 랜덤하게 섞음
+  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
+  
+  // 선택한 문제를 1번부터 번호를 매겨 저장
+  selectedQuestions.value = shuffled.slice(0, num).map((q, index) => ({
+    number: index + 1, // 1번부터 연속된 번호
+    page: q.page,
+    question: q.question,
+    choices: q.choices // 보기를 포함
+  }));
+}
+
+// 📌 MathJax로 수식 다시 렌더링
+function renderMath() {
+  nextTick(() => {
+    if (window.MathJax) {
+      window.MathJax.typesetPromise();
     }
-  } catch (error) {
-    console.error("📌 JSON 파일 불러오기 오류:", error);
-  }
-};
+  });
+}
 
+// 문제 변경 감지 → 수식 렌더링
+watch(selectedQuestions, renderMath);
 
-// ✅ 과목 선택 시 JSON 로드
-const selectMath = (subject) => {
-  selectedMath.value = subject;
-  loadQuestions();
-};
-
-// ✅ MathJax 로드 및 데이터 불러오기
+// 컴포넌트가 처음 로드될 때 실행
 onMounted(() => {
-  loadMathJax();
-  loadQuestions();
+  getRandomQuestions(numQuestions.value);
+  renderMath();
 });
 </script>
 
+<template>
+  <div>
+    <h2>랜덤 미적분 문제</h2>
+    <label for="questionCount">문제 개수 선택:</label>
+    <select v-model="numQuestions" @change="getRandomQuestions(numQuestions)">
+      <option v-for="n in [50, 80, 100, 150, 200, 250]" :key="n" :value="n">
+        {{ n }}
+      </option>
+    </select>
+
+    <ul>
+      <li v-for="(question, index) in selectedQuestions" :key="index">
+        <strong>{{ question.page }}페이지 - {{ question.number }}번</strong>
+        <p v-html="question.question"></p>
+        
+        <!-- 📌 보기가 있는 경우만 출력 -->
+        <ul v-if="question.choices.length > 0">
+          <li v-for="(choice, choiceIndex) in question.choices" :key="choiceIndex">
+            <p v-html="choice"></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</template>
+
 <style scoped>
-.buttons button {
-  margin: 5px;
+h2 {
+  color: #2c3e50;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
   padding: 10px;
-  border: none;
-  background: #007bff;
-  color: white;
-  cursor: pointer;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
-/* ✅ 보기(선지) 가로 정렬 */
-.choices {
-  display: flex;
-  justify-content: space-around; /* 보기 사이에 일정한 간격 유지 */
-  align-items: center; /* 수식을 보기와 수직 정렬 */
-  margin-top: 10px;
+strong {
+  font-size: 1.1em;
+  color: #333;
 }
-
-/* ✅ 보기 아이템 스타일 */
-.choice-item {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-}
-
-/* ✅ 보기 번호 스타일 (①, ②, ③, ④) */
-.choice-number {
-  font-weight: bold;
-  margin-right: 5px; /* 보기 번호와 수식 간격 */
-}
-
 </style>

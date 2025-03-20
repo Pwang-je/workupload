@@ -1035,7 +1035,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$\\sin \\alpha = -\\frac{4}{5}$$ \\quad $$\\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때, $$\\tan \\frac{\\alpha}{2}$$의 값을 구하면?",
+        "question": "$$\\sin \\alpha = -\\frac{4}{5}$$ \\quad$$\\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때, $$\\tan \\frac{\\alpha}{2}$$의 값을 구하면?",
         "choices": [
           "$$-2$$",
           "$$-\\frac{4}{3}$$",
@@ -2019,7 +2019,7 @@ export const clcls1 = {
     ],
     "94": [
       {
-        "question": " $$x(t) = 3\\sin t - 4, \\quad y(t) = 5 + 2\\cos t$$ 에 대해 점 $$\\left( x\\left(\frac{\\pi}{4}\right), y\\left(\frac{\\pi}{4}\right) \right)$$ 에서 법선의 기울기를 구하면?",
+        "question": " $$x(t) = 3\\sin t - 4, \\quad y(t) = 5 + 2\\cos t$$ 에 대해 점 $$\\left( x\\left(\\frac{\\pi}{4}\\right), y\\left(\\frac{\\pi}{4}\\right) \\right)$$ 에서 법선의 기울기를 구하면?",
         "choices": [
           "$$\\frac{2}{3}$$",
           "$$1$$",
@@ -2168,7 +2168,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수 $$f(x) = \\frac{\\pi}{3} x +\\arcsin x$$ 에 대하여 $$\\left(f^{-1}\right)'\\left(\\frac{\\pi}{3}\\right)$$를 구하면?",
+        "question": "함수 $$f(x) = \\frac{\\pi}{3} x +\\arcsin x$$ 에 대하여 $$\\left(f^{-1}\\right)'\\left(\\frac{\\pi}{3}\\right)$$를 구하면?",
         "choices": [
           "$$\\frac{3}{\\pi + 2\\sqrt{3}}$$",
           "$$\\frac{3}{2\\pi - 2\\sqrt{3}}$$",

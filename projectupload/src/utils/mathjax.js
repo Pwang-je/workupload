@@ -30,7 +30,6 @@ export const updateMathJax = () => {
   });
 };
 
-// ✅ JSON의 `$$`를 MathJax가 인식할 수 있도록 변환하는 함수
 export const renderMathJax = (latex) => {
   if (!latex) return "";
 
@@ -40,8 +39,13 @@ export const renderMathJax = (latex) => {
   // ✅ 줄 바꿈 제거 (수식이 깨지는 현상 방지)
   latex = latex.trim().replace(/\n/g, " ");
 
-  // ✅ `\left`와 `\right`가 올바르게 변환되도록 처리
-  latex = latex.replace(/\\left/g, "\\left ").replace(/\\right/g, "\\right ");
+  // ✅ `\left`, `\right` 강제 변환 (잘못된 변환 방지)
+  latex = latex.replace(/\\left/g, "").replace(/\\right/g, "");
+
+  // ✅ `\frac`, `\theta`, `\quad` 등의 수식 문제 해결
+  latex = latex.replace(/\\frac/g, "\\frac ")
+               .replace(/\\theta/g, "\\theta ")
+               .replace(/\\quad/g, " \\quad ");
 
   // ✅ 블록 수식(`$$ ... $$`)을 `\[ ... \]`로 변환
   if (latex.startsWith("$$") && latex.endsWith("$$")) {
@@ -51,4 +55,5 @@ export const renderMathJax = (latex) => {
   // ✅ 인라인 수식(`$ ... $`)을 `\(...\)`로 변환
   return latex.replace(/\$\$(.*?)\$\$/g, "\\[$1\\]").replace(/\$(.*?)\$/g, "\\($1\\)");
 };
+
 
