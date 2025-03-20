@@ -142,7 +142,7 @@ function printPage() {
             <ul v-if="question.choices.length > 0" class="mt-3 space-y-2">
               <li v-for="(choice, choiceIndex) in question.choices" :key="choiceIndex"
                 class="p-3 rounded-md border border-gray-300 bg-gray-50 flex items-start space-x-2">
-                <span class="font-semibold text-gray-800">{{ ['①', '②', '③', '④'][choiceIndex] }}</span>
+                <span class="font-semibold text-gray-800">{{ ['①', '②', '③', '④', '⑤'][choiceIndex] }}</span>
                 <span v-html="choice"></span>
               </li>
             </ul>
