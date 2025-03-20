@@ -13,11 +13,10 @@ loadMathJax();
   <router-view /> 
 </template>
 <style>
-/* ✅ MathJax 블록 수식을 강제로 인라인으로 변경 */
+/* MathJax 블록 수식을 강제로 인라인으로 변경 */
 mjx-container[jax="CHTML"][display="true"] {
   display: inline !important;
   text-align: inherit !important;
   margin: 0 !important;
 }
-
 </style>

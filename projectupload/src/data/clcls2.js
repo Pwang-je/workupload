@@ -1,4 +1,4 @@
-export const clcls1 = {
+export const clcls2 = {
   "subject": "calculus1",
   "questions": {
     "5": [
@@ -993,7 +993,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$\sech^{-1} \\frac{1}{\\sqrt{3}}$$의 값은?",
+        "question": "$$\\{sech}^{-1} \\frac{1}{\\sqrt{3}}$$의 값은?",
         "choices": [
           "$$\\ln \\sqrt{2}$$",
           "$$\\ln (\\sqrt{2} + \\sqrt{3})$$",
