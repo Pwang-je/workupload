@@ -59,31 +59,40 @@ const displayedQuestions = computed(() => {
   return randomQuestions;
 });
 
-// ✅ JSON 데이터 불러오기
+// ✅ JSON 데이터 불러오기 (과목별 동적 로드)
 const loadQuestions = async () => {
   try {
+    const subjectMap = {
+      "미적분1": "clcls1.json",
+      "미적분2": "clcls2.json",
+      "미적분3": "clcls3.json",
+    };
+
+    const fileName = subjectMap[selectedMath.value] || "clcls1.json";
+
     const response = await axios.get(
-      "https://raw.githubusercontent.com/Pwang-je/workupload/refs/heads/main/projectupload/src/data/clcls1.json"
+      `https://raw.githubusercontent.com/Pwang-je/workupload/refs/heads/main/projectupload/src/data/${fileName}`
     );
 
-    console.log("📌 불러온 JSON 데이터 전체:", response.data);
+    console.log(`📌 ${selectedMath.value} JSON 데이터 로드:`, response.data);
 
-    // ✅ JSON 데이터에서 "calculus1"을 가져와 배열로 저장
     if (response.data.calculus1 && Array.isArray(response.data.calculus1)) {
       questionData.value = response.data.calculus1;
-      console.log("📌 저장된 문제 데이터:", questionData.value);
     } else {
-      console.error("❌ 오류: JSON 데이터 구조가 예상과 다릅니다!");
+      console.error("❌ JSON 데이터 구조가 예상과 다름!");
       questionData.value = [];
     }
   } catch (error) {
-    console.error("📌 JSON 파일을 불러오는 중 오류 발생:", error);
+    console.error("📌 JSON 파일 불러오기 오류:", error);
   }
 };
 
-// ✅ 수식 변환 (KaTeX 사용)
+// ✅ 수식 변환 (KaTeX 사용, 줄바꿈 처리 추가)
 const renderMath = (latex) => {
-  return katex.renderToString(latex.replace(/\$\$/g, ""), { throwOnError: false });
+  return katex.renderToString(
+    latex.replace(/\$\$/g, "").replace(/\n/g, "<br>"),
+    { throwOnError: false }
+  );
 };
 
 // ✅ 과목 선택 시 JSON 로드
@@ -92,30 +101,29 @@ const selectMath = (subject) => {
   loadQuestions();
 };
 
-// ✅ PDF 생성
+// ✅ PDF 생성 (한글 깨짐 방지)
 const generatePDF = async () => {
   try {
     await nextTick();
 
     console.log("📌 PDF 생성 시작 - 현재 랜덤 문제 데이터:", displayedQuestions.value);
 
-    if (!Array.isArray(displayedQuestions.value) || displayedQuestions.value.length === 0) {
-      console.error("❌ 오류: 랜덤 문제 데이터가 없습니다! JSON 로딩을 확인하세요.");
+    if (!displayedQuestions.value.length) {
+      console.error("❌ 오류: 문제가 없습니다!");
       return;
     }
 
     const doc = new jsPDF();
 
-    // ✅ Base64 한글 폰트 추가
+    // ✅ Base64 한글 폰트 적용 확인
     doc.addFileToVFS("NanumGothic.ttf", NanumGothic);
     doc.addFont("NanumGothic.ttf", "NanumGothic", "normal");
-    doc.setFont("NanumGothic");
+    doc.setFont("NanumGothic", "normal");
 
     doc.setFontSize(16);
     doc.text(`${selectedMath.value} 문제 (${selectedCount.value}개)`, 10, 10);
 
     let y = 20;
-
     displayedQuestions.value.forEach((item, index) => {
       if (!item.question) return;
 
@@ -123,7 +131,7 @@ const generatePDF = async () => {
       doc.text(`${index + 1}. ${item.question}`, 10, y);
       y += 7;
 
-      if (item.choices && Array.isArray(item.choices) && item.choices.length) {
+      if (item.choices) {
         item.choices.forEach((choice, cIndex) => {
           doc.text(`  ${String.fromCharCode(65 + cIndex)}. ${choice}`, 15, y);
           y += 7;
@@ -140,11 +148,11 @@ const generatePDF = async () => {
 
     doc.save(`${selectedMath.value}-${selectedCount.value}.pdf`);
   } catch (error) {
-    console.error("📌 PDF 생성 중 오류 발생:", error);
+    console.error("📌 PDF 생성 오류:", error);
   }
 };
 
-// ✅ 처음 실행 시 미적분1 JSON 로드
+// ✅ 처음 실행 시 기본 JSON 로드
 onMounted(() => {
   loadQuestions();
 });
