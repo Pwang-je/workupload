@@ -1,3495 +1,2266 @@
 export const clcls2 = {
-  "subject": "calculus1",
+  "subject": "calculus2",
   "questions": {
-    "5": [
+    "6": [
       {
-        "question": "다음 계산을 하시오: $$-\\frac{1}{3} + \\frac{1}{2} - \\frac{3}{4}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\sin \\frac{1}{x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 계산을 하시오: $$-\\frac{4}{3} + \\frac{3}{2}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0^+}} \\tan^{-1} \\frac{1}{x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 계산을 하시오: $$-\\frac{1}{2} \\times \\frac{3}{7} \\times -\\frac{4}{3}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} x e^{-x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 계산을 하시오: $$-\\frac{3}{4} - \\frac{5}{3} \\times -20$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0^+}} \\frac{x}{\\ln x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 식을 간단히 정리하시오: $$\\frac{1}{2} + \\frac{1}{3}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\cosh x}{x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 식을 간단히 정리하시오: $$\\frac{1}{x^2} + \\frac{1}{x}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\left( 1 + \\frac{\\cos(\\cos x)}{x} \\right)",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 식을 간단히 정리하시오: $$\\frac{1}{x} + \\frac{1}{x^2 + 1}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} x^4 \\cos \\frac{2}{x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "다음 식을 간단히 정리하시오: $$\\frac{2}{x} \\times \\frac{x^2}{4}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} \\frac{\\cos(n\\pi)}{n}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "변분수 계산을 이용하여 간단히 정리하시오: $$\\frac{1}{4} \\div \\frac{2}{3}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\sin^{-1} x + \\cos^{-1} x}{x}",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "변분수 계산을 이용하여 간단히 정리하시오: $$\\frac{3}{1} \\div \\frac{1}{2}$$",
+        "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 3}} \\frac{2x+1}{x^2 - x - 6}",
         "choices": [],
         "answer": ""
-      },
-      {
-        "question": "변분수 계산을 이용하여 간단히 정리하시오: $$\\frac{2}{3} \\div \\frac{4}{9}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "변분수 계산을 이용하여 간단히 정리하시오: $$\\frac{4}{5} \\div \\frac{8}{15}$$",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "7": [
-      {
-        "question": "다음 방정식을 풀어라: $$3x + 2 = 2x + 9$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 방정식을 풀어라: $$\\frac{3}{2}x + 4 = \\frac{1}{4}x$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 방정식을 풀어라: $$2x - \\frac{x - 4}{3} = 4$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 방정식을 풀어라: $$5 - 0.2x = 0.5x + 3$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음은 연립일차방정식이다. $$y$$의 값을 구하여라.\n$$\\begin{cases} 0.2x + 0.3y = 0.7 \\\\ \\frac{5}{2}x + 3y = 5 \\end{cases}$$",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "11": [
-      {
-        "question": "다음 식을 전개하여라: $$(3x - 2y)^2$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 전개하여라: $$(2 + \\sqrt{3})(2 - \\sqrt{3})$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$m(x - y) + n(x - y)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$x(2y - 1) - 2y + 1$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$3x^2y + 6xy^2$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$x^2 - 10x + 16$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$2x^2 - 5x - 3$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 인수분해 하여라: $$3x^2 + 5x - 2$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음의 값을 구하여라: \n$$(2x + 1)^2 - (x - 2)^2 = (3x + a)(x + b)$$ 일 때, $$a + 3b$$ 의 값은?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "12": [
-      {
-        "question": "다음 이차방정식의 근을 구하시오: $$x^2 + 3x + 2 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 구하시오: $$x^2 - 5x + 8 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 구하시오: $$x^2 + x + 3 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 구하시오: $$x^2 + 2x - 1 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 판별하시오: $$x^2 + x + 1 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 판별하시오: $$2x^2 + 4x + 1 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 판별하시오: $$x^2 - x + 3 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차방정식의 근을 판별하시오: $$x^2 - 2x + 4 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "이차함수 $$x^2 - 3x + 1 = 0$$ 두 근의 합과 곱을 구하면?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "13": [
-      {
-        "question": "삼차방정식 $$x^3 - 5x^2 - x + 5 = 0$$ 의 세 실근을 바르게 구한 것은?",
-        "choices": [
-          "$$x = -1, 1, \\sqrt{3}$$",
-          "$$x = -1, 1, 3$$",
-          "$$x = -1, 1, \\sqrt{5}$$",
-          "$$x = -1, 1, 5$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "삼차방정식 $$x^3 - 5x^2 + 2 = 0$$ 의 세 실근을 각각 $$\\alpha, \\beta, \\gamma$$ ($$\\alpha < \\beta < \\gamma$$)라 할 때, $$\\gamma - (\\alpha + \\beta)$$의 값을 구하면?",
-        "choices": [
-          "$$3$$",
-          "$$4$$",
-          "$$5$$",
-          "$$6$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "연립방정식 $$\\begin{cases} x + y + z = 5 \\\\ x - z = 3 \\\\ x + z = 5 \\end{cases}$$ 의 근을 $$x = \\alpha, y = \\beta, z = \\gamma$$라 할 때, $$\\alpha^2 + \\beta^2 + \\gamma^2$$의 값은?",
-        "choices": [
-          "$$11$$",
-          "$$13$$",
-          "$$15$$",
-          "$$17$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "20": [
-      {
-        "question": "다음 등식이 $$x$$에 관한 항등식이 되도록 상수 $$A, B, C$$의 값을 정하여라.\n$$\\frac{5}{x^2 - x - 6} = \\frac{5}{(x - 3)(x + 2)} = \\frac{A}{x - 3} + \\frac{B}{x + 2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 등식이 $$x$$에 관한 항등식이 되도록 상수 $$A, B, C$$의 값을 정하여라.\n$$\\frac{3x}{x^2 - 3x + 2} = \\frac{A}{x - 1} + \\frac{B}{x - 2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 등식이 $$x$$에 관한 항등식이 되도록 상수 $$A, B$$의 값을 정하여라.\n$$\\frac{8}{x^2 - 4} = \\frac{A}{x - 2} + \\frac{B}{x + 2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 등식이 $$x$$에 관한 항등식이 되도록 상수 $$A, B, C$$의 값을 정하여라.\n$$\\frac{1}{(x - 1)(x - 2)(x - 3)} = \\frac{A}{x - 1} + \\frac{B}{x - 2} + \\frac{C}{x - 3}$$",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "21": [
-      {
-        "question": "다음 식을 분모 유리화 시키시오: $$\\frac{1}{\\sqrt{3}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 분모 유리화 시키시오: $$\\frac{1}{\\sqrt{12}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 분모 유리화 시키시오: $$\\frac{1}{2\\sqrt{2} - \\sqrt{7}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 식을 분모 유리화 시키시오: $$\\frac{1}{\\sqrt{x+1} - \\sqrt{x}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 간단히 하시오: $$\\sqrt{12} - \\frac{1}{\\sqrt{48}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 간단히 하시오: $$\\sqrt{8} + 7\\sqrt{2} - \\sqrt{18}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 간단히 하시오: $$\\frac{\\sqrt{6} - \\sqrt{8}}{\\sqrt{2}}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 간단히 하시오: $$\\frac{\\sqrt{2}}{3 - \\sqrt{2}} - \\frac{\\sqrt{2}}{3 + \\sqrt{2}}$$",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "24": [
-      {
-        "question": "다음 일차함수의 그래프를 그려보자: $$2x + y = 2$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 일차함수의 그래프를 그려보자: $$-x + 2y + 1 = 0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차함수의 그래프를 그려보자: $$y = x^2 + 4x + 1$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차함수의 그래프를 그려보자: $$y = x^2 - 6x + 8$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차함수의 그래프를 그려보자: $$y = x^2 - 5x + 5$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 이차함수의 그래프를 그려보자: $$y = x^2 + 4x + 9$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "점 $$(4, -1)$$을 지나고 기울기가 $$2$$인 직선의 방정식은?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "26": [
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$x \\cdot x \\cdot x$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$2^0$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$100^4$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$2^{-3}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$\\sqrt[3]{x^2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$ (x^{-3})^2 $$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$ (\\sqrt{x})^3 $$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$ \\frac{x^7}{x^5} $$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$ (x^{-2} y)^2 $$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = -2x^2, \\quad (x = 4)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = 3x^{-3}, \\quad (x = -1)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = 2x^2, \\quad (x = -1)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = 2x^{\\frac{1}{2}}, \\quad (x = 9)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = 2 \\sqrt[3]{x}, \\quad (x = 8)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "괄호에 주어진 $$x$$의 값에 대하여 식의 값을 구하여라: $$y = 3 \\sqrt[3]{x}, \\quad (x = 16)$$",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "27": [
-      {
-        "question": "다음 지수방정식을 풀어라: $$\\left( \\frac{2}{3} \\right)^{x^2 - 7} = \\left( \\frac{3}{2} \\right)^{1 - x}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 지수방정식을 풀어라: $$9^{x+1} = 3^{x^2 + x}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "방정식 $$4^x - 3 \\cdot 2^{x+1} - 16 = 0$$ 의 해를 구하면?",
-        "choices": [
-          "$$-1$$",
-          "$$\\frac{3}{2}$$",
-          "$$3$$",
-          "$$8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "지수방정식 $$8^x = \\left( \\frac{1}{2} \\right)^{x^2 - 4}$$ 의 두 근을 $$\\alpha, \\beta$$라 할 때, $$\\alpha - \\beta$$의 값은? (단, $$\\alpha > \\beta$$)",
-        "choices": [
-          "$$2$$",
-          "$$3$$",
-          "$$4$$",
-          "$$5$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "29": [
-      {
-        "question": "다음 값을 구하여라: $$\\log_2 \\sqrt[3]{16}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 값을 구하여라: $$9^{\\log_9 2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 값을 구하여라: $$3^{\\log_3 15}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 값을 구하여라: $$\\log_2 \\sqrt[3]{4}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "방정식 $$\\log_2 (3x + 1) + \\log_2 (x + 2) = 3$$ 의 실근을 $$\\alpha$$라 할 때, $$30 \\alpha$$의 값을 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$2^{2017}$$과 가장 비슷한 값을 고르시오. (단, $$\\log_{10} 2 = 0.301 \\cdots$$)",
-        "choices": [
-          "$$10^{27}$$",
-          "$$10^{201}$$",
-          "$$10^{301}$$",
-          "$$10^{607}$$",
-          "$$10^{903}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "31": [
-      {
-        "question": "다음 두 점 사이의 거리를 구하시오.",
-        "choices": [
-          "$$(0,0), (1,1)$$",
-          "$$(2,3), (5,1)$$",
-          "$$(1,2), (4,5)$$",
-          "$$(3,3), (5,5)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "점 $$(1,2)$$와 일차함수 $$y = x - 1$$의 거리는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "32": [
-      {
-        "question": "점 $$(-1,1)$$을 중심으로 하고 반지름의 길이가 $$2$$인 원의 방정식은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 반지름이 가장 큰 원은?",
-        "choices": [
-          "$$x^2 + y^2 = 8$$",
-          "$$(x - 1)^2 + (y - 2)^2 = 3^2$$",
-          "$$x^2 + y^2 + 4x + 8y = 0$$",
-          "$$x^2 + y^2 - 2x + 6y - 6 = 0$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "원 $$x^2 + y^2 - 6x - 8y - 3 = 0$$ 위의 점 $$A$$와 원점 $$O$$에 대하여 선분 $$OA$$ 길이의 최댓값과 최솟값을 각각 $$M, m$$이라 할 때, $$M + m$$의 값은?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "41": [
-      {
-        "question": "다음을 계산하시오: $$\\sin \\left( \\frac{2\\pi}{3} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos \\left( \\frac{4\\pi}{3} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sec \\left( \\frac{3\\pi}{4} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\csc \\left( \\frac{5\\pi}{6} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin \\left( \\frac{\\pi}{2} - \\theta \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos (\\pi + \\theta)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음 주어진 삼각방정식 $$\\sqrt{3} \\sin x + \\cos x = \\sqrt{2}$$ 의 해를 구하시오. (단, $$0 \\leq x \\leq \\frac{\\pi}{2}$$)",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$y = 3 \\sin x - 2 \\cos \\left( x - \\frac{\\pi}{6} \\right) + 1$$의 최댓값을 $$M$$, 최솟값을 $$m$$이라 할 때, $$M - m$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\tan \\alpha = -\\frac{3}{4}$$일 때, $$\\sin 2\\alpha, \\cos 2\\alpha, \\tan 2\\alpha$$의 값은? (단, $$\\frac{3\\pi}{2} < \\alpha < 2\\pi$$)",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin \\alpha = \\frac{4}{5} \\quad \\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때, $$\\tan \\frac{\\alpha}{2}$$의 값을 구하시오.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "42": [
-      {
-        "question": "다음을 계산하시오: $$\\sin^{-1} \\left( \\frac{1}{2} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos^{-1} \\left( -\\frac{1}{2} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\tan^{-1} \\left( -\\frac{1}{\\sqrt{3}} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin^{-1} (0)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos^{-1} (0)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sec^{-1} (2)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\csc^{-1} (\\sqrt{2})$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos \\left( \\tan^{-1} \\frac{2}{3} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\tan \\left( \\sin^{-1} \\frac{2}{5} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin^{-1} \\left( \\sin \\frac{2\\pi}{3} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos^{-1} \\left( \\cos \\left( -\\frac{\\pi}{2} \\right) \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin \\left( 2\\cos^{-1} \\frac{1}{3} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\cos \\left( 2\\sin^{-1} \\frac{5}{13} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin \\left( \\cos^{-1} \\frac{1}{5} \\right) + \\tan \\left( \\cos^{-1} \\frac{1}{5} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\sin^{-1} \\left( \\frac{4}{5} \\right) + \\cos^{-1} \\left( \\frac{4}{5} \\right)$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "다음을 계산하시오: $$\\tan^{-1} \\frac{1}{2} + \\cot^{-1} \\frac{1}{2}$$",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\sin^{-1} (x^2 - 1)$$ 의 정의역을 구하여라.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "46": [
-      {
-        "question": "다음을 계산하시오: $$\\tanh(1)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$e^{2x} = 3$$일 때, $$\\sinh 4x$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$e^x \\sinh x = 2$$일 때, $$\\operatorname{sech} 2x$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\ln (\\sinh x + \\cosh x) + \\ln (\\cosh x - \\sinh x)$$을 간단히 하면?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\ln (e \\cosh x + e \\sinh x) + \\ln (e \\cosh x - e \\sinh x)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$(\\cosh x + \\sinh x)^2 + (\\cosh x - \\sinh x)^2$$을 간단히 하면?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sinh^{-1} \\left( \\frac{1}{2} \\right)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "실수 전체의 집합에서 정의된 함수 $$f(x) = \\frac{e^x + e^{-x}}{2}$$의 역함수를 구하면?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "47": [
-      {
-        "question": "$$\\tan x = \\frac{12}{5}$$ 일 때, $$\\sin x + \\cos x$$의 값은? (단, $$x$$는 예각)",
-        "choices": [
-          "$$\\frac{13}{5}$$",
-          "$$\\frac{17}{13}$$",
-          "$$\\frac{1}{5}$$",
-          "$$5$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\frac{\\sin \\theta}{1 - \\cos \\theta} + \\frac{1 - \\cos \\theta}{\\sin \\theta}$$를 간단히 하면?",
-        "choices": [
-          "$$-2 \\csc \\theta$$",
-          "$$2 \\csc \\theta$$",
-          "$$2 \\sec \\theta$$",
-          "$$2 \\sin \\theta$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\tan \\alpha = \\frac{1}{2}, \\quad \\tan \\beta = \\frac{1}{3}$$ 일 때, $$\\tan (\\alpha + \\beta)$$의 값은?",
-        "choices": [
-          "$$-\\frac{5}{6}$$",
-          "$$\\frac{5}{7}$$",
-          "$$1$$",
-          "$$\\frac{13}{6}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = a \\sec \\theta, \\quad y = b \\tan \\theta$$ 로 표현되는 평면곡선을 대수적 함수로 표현하면?",
-        "choices": [
-          "$$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$$",
-          "$$\\frac{2x^2}{a^2} + \\frac{2y^2}{b^2} = 1$$",
-          "$$\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$$",
-          "$$\\frac{2x^2}{a^2} - \\frac{2y^2}{b^2} = 1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "48": [
-      {
-        "question": "$$\\tan \\frac{\\alpha}{2} = t$$일 때, $$\\sin \\alpha$$를 $$t$$의 함수로 나타내시오.",
-        "choices": [
-          "$$\\frac{2}{1 - t^2}$$",
-          "$$\\frac{2t}{1 - t^2}$$",
-          "$$\\frac{2}{1 + t^2}$$",
-          "$$\\frac{2t}{1 + t^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin 2\\alpha = t$$라고 할 때, $$\\sin 4\\alpha$$의 값은?",
-        "choices": [
-          "$$2t \\sqrt{1 - t^2}$$",
-          "$$t \\sqrt{1 + t^2}$$",
-          "$$\\frac{2t}{\\sqrt{1 - t^2}}$$",
-          "$$\\frac{4t}{\\sqrt{1 - t^2}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 $$\\sin x$$와 값이 일치하는 함수는?",
-        "choices": [
-          "$$\\sin (-x)$$",
-          "$$\\sin \\left( x + \\frac{\\pi}{2} \\right)$$",
-          "$$\\sin (\\pi + x)$$",
-          "$$\\sin (\\pi - x)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 틀린 것은? (단, $$0 < \\theta < \\frac{\\pi}{2}$$)",
-        "choices": [
-          "$$\\sin (\\pi + \\theta) = -\\sin \\theta$$",
-          "$$\\sin (3\\pi - \\theta) = \\sin \\theta$$",
-          "$$\\cos \\left( \\frac{\\pi + \\theta}{2} \\right) = -\\sin \\theta$$",
-          "$$\\cos \\left( \\frac{3\\pi - \\theta}{2} \\right) = -\\sin \\frac{\\theta}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "49": [
-      {
-        "question": "다음 중 $$\\cos \\left( \\frac{x}{2} \\right)$$와 다른 것은?",
-        "choices": [
-          "$$\\cos \\left( -\\frac{x}{2} \\right)$$",
-          "$$\\sin \\left( \\frac{\\pi - x}{2} \\right)$$",
-          "$$\\sin \\left( \\frac{\\pi + x}{2} \\right)$$",
-          "$$\\sin \\left( -\\pi + \\frac{x}{2} \\right)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\theta = \\sin^{-1} \\left( \\frac{3}{5} \\right)$$일 때, $$\\tan \\theta$$의 값은?",
-        "choices": [
-          "$$\\frac{3}{4}$$",
-          "$$1$$",
-          "$$\\frac{5}{4}$$",
-          "$$\\frac{5}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = 3 \\sin x + a \\cos x$$의 최댓값이 $$5$$일 때 $$a$$의 값은? (단, $$a \\geq 0$$)",
-        "choices": [
-          "$$1$$",
-          "$$\\sqrt{2}$$",
-          "$$2$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\sqrt{3} \\sin x + \\cos x$$는 $$x = \\alpha$$일 때 최댓값이다. 이때, $$\\cos \\alpha$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{\\sqrt{2}}{2}$$",
-          "$$\\frac{\\sqrt{3}}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "51": [
-      {
-        "question": "$$\\cos \\left( \\sin^{-1} \\left( -\\frac{1}{4} \\right) \\right)$$의 값은?",
-        "choices": [
-          "$$-\\frac{\\sqrt{15}}{4}$$",
-          "$$\\frac{\\sqrt{15}}{4}$$",
-          "$$-\\frac{\\sqrt{3}}{4}$$",
-          "$$\\frac{\\sqrt{3}}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin \\left( \\cos^{-1} \\left( -\\frac{3}{5} \\right) \\right)$$의 값은?",
-        "choices": [
-          "$$-\\frac{4}{5}$$",
-          "$$-\\frac{3}{5}$$",
-          "$$\\frac{3}{5}$$",
-          "$$\\frac{4}{5}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\tan \\left( \\tan^{-1} 11 - \\tan^{-1} 9 \\right)$$의 값은?",
-        "choices": [
-          "$$\\frac{7}{100}$$",
-          "$$-\\frac{7}{9}$$",
-          "$$\\frac{2}{3}$$",
-          "$$\\frac{1}{50}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\theta = \\cos^{-1} \\left( \\frac{3}{5} \\right) + \\cos^{-1} \\left( -\\frac{12}{13} \\right)$$일 때, $$\\sin \\theta$$의 값은?",
-        "choices": [
-          "$$-\\frac{16}{65}$$",
-          "$$\\frac{16}{65}$$",
-          "$$-\\frac{33}{65}$$",
-          "$$\\frac{33}{65}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "52": [
-      {
-        "question": "$$\\tan^{-1} \\left( -\\frac{1}{2} \\right) + \\tan^{-1} (\\alpha) = \\frac{\\pi}{4}$$를 만족하는 $$\\alpha$$를 구하면?",
-        "choices": [
-          "$$\\frac{4}{5}$$",
-          "$$\\frac{1}{3}$$",
-          "$$\\frac{2}{3}$$",
-          "$$-\\frac{1}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "방정식 $$x + 1 = 2 \\sin \\left( 2 \\tan^{-1} x \\right)$$의 모든 해를 모두 곱한 값은?",
-        "choices": [
-          "$$-1 - \\sqrt{2}$$",
-          "$$-1$$",
-          "$$1$$",
-          "$$1 + \\sqrt{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$-1 \\leq x \\leq 1$$일 때, $$y = \\sin (\\cos^{-1} x)$$를 대수함수로 나타내면?",
-        "choices": [
-          "$$\\sqrt{1 + x}$$",
-          "$$1 - x$$",
-          "$$\\sqrt{1 + x^2}$$",
-          "$$\\sqrt{1 - x^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$0 \\leq x \\leq 1$$ 인 범위에서 $$\\cos \\left( \\sin^{-1} (-\\sqrt{1 - x}) \\right)$$를 간단히 하면?",
-        "choices": [
-          "$$\\sqrt{x}$$",
-          "$$-\\sqrt{x}$$",
-          "$$\\sqrt{1 - x}$$",
-          "$$-\\frac{\\sqrt{x}}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "53": [
-      {
-        "question": "모든 실수 $$x$$에서 정의된 함수 $$f(x) = \\arccos (\\cos x)$$에 대하여 $$f(x + \\pi)$$를 구하면? (단, $$\\arccos 1 = 0$$)",
-        "choices": [
-          "$$\\pi - f(x)$$",
-          "$$\\pi - x$$",
-          "$$\\pi + f(x)$$",
-          "$$-x$$",
-          "$$\\pi + x$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 $$\\cos \\left[ 2 \\cos^{-1} \\left( \\frac{4}{5} \\right) \\right] - \\sin \\left( \\cos^{-1} \\frac{4}{5} \\right)$$ 와 같은 값은?",
-        "choices": [
-          "$$\\frac{2}{5}$$",
-          "$$\\frac{4}{25}$$",
-          "$$-\\frac{2}{5}$$",
-          "$$-\\frac{8}{25}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin (\\sin^{-1} x) = x$$가 성립하는 $$x$$의 범위는?",
-        "choices": [
-          "모든 실수",
-          "모든 양의 실수",
-          "모든 음의 실수",
-          "$$-1 < x < 1$$",
-          "$$-1 \\leq x \\leq 1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "54": [
-      {
-        "question": "함수 $$f(x) = \\sinh 2x$$의 함수값 $$f(\\ln 2)$$은?",
-        "choices": [
-          "$$\\frac{3}{4}$$",
-          "$$\\frac{5}{4}$$",
-          "$$\\frac{15}{8}$$",
-          "$$\\frac{17}{8}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\cosh (\\ln 2)$$의 값을 구하면?",
-        "choices": [
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{3}{4}$$",
-          "$$1$$",
-          "$$\\frac{5}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\tanh x = \\frac{1}{3}$$일 때, $$8 \\cosh 4x$$의 값은?",
-        "choices": [
-          "$$\\frac{8}{\\sqrt{10}}$$",
-          "$$\\frac{24}{\\sqrt{10}}$$",
-          "$$15$$",
-          "$$17$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sinh x = \\frac{1}{\\sqrt{3}}$$을 만족하는 $$x$$의 값은?",
-        "choices": [
-          "$$\\ln \\sqrt{2}$$",
-          "$$\\ln 2$$",
-          "$$\\ln \\sqrt{3}$$",
-          "$$\\ln 3$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "55": [
-      {
-        "question": "$$e^{2x} = 2$$일 때, $$\\frac{e^{3x} + e^{-3x}}{e^{2x} - e^{-3x}}$$의 값을 구하면?",
-        "choices": [
-          "$$\\frac{27}{17}$$",
-          "$$\\frac{9}{2}$$",
-          "$$\\frac{18}{31}$$",
-          "$$\\frac{32}{9}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 $$\\tanh (\\sinh^{-1} x)$$와 같은 함수는?",
-        "choices": [
-          "$$\\sqrt{1 + x^2}$$",
-          "$$\\frac{1}{\\sqrt{1 + x^2}}$$",
-          "$$\\frac{x}{\\sqrt{1 + x^2}}$$",
-          "$$\\frac{x}{1 + x^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\{sech}^{-1} \\frac{1}{\\sqrt{3}}$$의 값은?",
-        "choices": [
-          "$$\\ln \\sqrt{2}$$",
-          "$$\\ln (\\sqrt{2} + \\sqrt{3})$$",
-          "$$\\ln \\sqrt{3}$$",
-          "$$\\ln \\sqrt{6}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음은 쌍곡선함수의 성질이다. 다음 중 옳은 것은?",
-        "choices": [
-          "$$\\ln (\\sinh x + \\cosh x) + \\ln (\\cosh x - \\sinh x) = 4x$$",
-          "$$\\sinh 2x = 2 \\sinh x \\cosh x$$",
-          "$$\\cosh (x + y) = \\cosh x \\cosh y - \\sinh x \\sinh y$$",
-          "$$\\cosh^2 x + \\sinh^2 x = 1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "56": [
-      {
-        "question": "다음 중 $$\\sin x$$와 같은 것은 모두 몇 개인가?\n\n(가) $$\\sin (\\pi - x)$$\n\n(나) $$\\cos \\left( \\frac{3\\pi}{2} + x \\right)$$\n\n(다) $$\\sin (2\\pi - x)$$\n\n(라) $$\\cos \\left( \\frac{\\pi}{2} + x \\right)$$",
-        "choices": [
-          "1개",
-          "2개",
-          "3개",
-          "4개"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 보기 안의 등식 가운데 항상 성립하는 것을 모두 고른 것은?\n\n(가) $$\\sin \\left( x - \\frac{3\\pi}{2} \\right) = \\cos x$$\n\n(나) $$\\sin (\\pi - x) = -\\sin x$$\n\n(다) $$\\cos (x - \\pi) = \\sin \\left( \\frac{\\pi}{2} + x \\right)$$",
-        "choices": [
-          "(가)",
-          "(나)",
-          "(나), (다)",
-          "(가), (다)"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin \\alpha = -\\frac{4}{5}$$ \\quad$$\\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때, $$\\tan \\frac{\\alpha}{2}$$의 값을 구하면?",
-        "choices": [
-          "$$-2$$",
-          "$$-\\frac{4}{3}$$",
-          "$$-\\frac{3}{4}$$",
-          "$$-\\frac{1}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "57": [
-      {
-        "question": "방정식 $$\\sin \\theta = \\cos^2 \\theta$$를 만족시키는 $$\\theta$$에 대하여 함수 $$f(\\theta) = \\frac{2 - \\sin \\theta}{\\sin \\theta + 1} - \\frac{\\sin \\theta + 2}{1 - \\sin \\theta}$$의 값을 구하면?",
-        "choices": [
-          "$$-9$$",
-          "$$-6$$",
-          "$$0$$",
-          "$$2$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = (x - \\sqrt{1 - x^2}) \\arccos x$$에 대하여 $$f \\left( \\cos \\frac{4}{3} \\pi \\right)$$를 구하면?",
-        "choices": [
-          "$$\\frac{(-1 + \\sqrt{3}) \\pi}{3}$$",
-          "$$-\\frac{(1 + \\sqrt{3}) \\pi}{3}$$",
-          "$$\\frac{2(-1 + \\sqrt{3}) \\pi}{3}$$",
-          "$$-\\frac{2(1 + \\sqrt{3}) \\pi}{3}$$",
-          "$$\\frac{2(1 + \\sqrt{3}) \\pi}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중, 옳지 않은 것은?",
-        "choices": [
-          "$$\\sin^{-1} \\left( -\\frac{1}{2} \\right) = -\\sin^{-1} \\left( \\frac{1}{2} \\right)$$",
-          "$$\\tan^{-1} (-2) = -\\tan^{-1} (2)$$",
-          "$$\\cos^{-1} \\left( -\\frac{1}{2} \\right) = \\pi + \\cos^{-1} \\left( \\frac{1}{2} \\right)$$",
-          "$$\\cos^{-1} \\left( \\frac{1}{2} \\right) = \\frac{\\pi}{2} - \\sin^{-1} \\left( \\frac{1}{2} \\right)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 보기의 등식 중 항상 성립하는 것을 모두 고른 것은?\n\n(가) $$\\sin^{-1} (\\cos x) = \\frac{\\pi}{2} - x$$ \\quad (단, $$0 \\leq x \\leq \\frac{\\pi}{2}$$)\n\n(나) $$\\tan^{-1} x + \\tan^{-1} \\frac{1}{x} = \\frac{\\pi}{2}$$ \\quad (단, $$x > 0$$)\n\n(다) $$\\sin^{-1} (\\sin 1) = 1$$\n\n(라) $$\\tan^{-1} \\left( \\tan \\frac{2\\pi}{3} \\right) = \\frac{2\\pi}{3}$$",
-        "choices": [
-          "(가), (다)",
-          "(나), (라)",
-          "(가), (나), (다)",
-          "(가), (나), (다), (라)"
-        ],
-        "answer": ""
-      }
-    ],
-    "58": [
-      {
-        "question": "아래 값을 구하라.\n\n$$\\sin \\left( \\cos^{-1} \\left( -\\frac{1}{3} \\right) \\right)$$",
-        "choices": [
-          "$$-\\frac{2\\sqrt{2}}{3}$$",
-          "$$-\\frac{\\sqrt{2}}{3}$$",
-          "$$-\\frac{1}{3}$$",
-          "$$\\frac{\\sqrt{2}}{3}$$",
-          "$$\\frac{2\\sqrt{2}}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\cos (-2 \\sec^{-1} 3)$$의 값은?",
-        "choices": [
-          "$$-\\frac{1}{9}$$",
-          "$$-\\frac{1}{3}$$",
-          "$$-\\frac{7}{9}$$",
-          "$$\\frac{1}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x)$$가 실수 $$0 < x < \\pi$$에 대하여 $$f(\\cot x) = x$$를 만족할 때, $$f \\left( \\frac{1}{3} \\right) + f(1) + f(3)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{2} \\pi$$",
-          "$$\\frac{2}{3} \\pi$$",
-          "$$\\frac{3}{4} \\pi$$",
-          "$$\\frac{4}{5} \\pi$$",
-          "$$\\frac{5}{6} \\pi$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f: \\left( -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right) \\to \\mathbb{R}$$, $$f(x) = \\tan x$$의 역함수를 $$g(x)$$라고 할 때, $$g \\left( \\frac{1}{2} \\right) + g \\left( \\frac{1}{3} \\right)$$의 값을 구하면?\n\n(단, $$\\mathbb{R}$$는 실수 전체의 집합이다.)",
-        "choices": [
-          "$$-\\frac{\\pi}{2}$$",
-          "$$-\\frac{\\pi}{4}$$",
-          "$$0$$",
-          "$$\\frac{\\pi}{4}$$",
-          "$$\\frac{\\pi}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "59": [
-      {
-        "question": "$$\\cot^{-1} (\\tan 1)$$의 값은?",
-        "choices": [
-          "$$\\frac{\\pi}{2} - 1$$",
-          "$$\\frac{\\pi}{2}$$",
-          "$$1$$",
-          "$$\\frac{\\pi}{4} + 1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\sin^{-1} \\left( \\frac{x - 1}{x + 1} \\right) \\quad (x \\geq 0)$$ 와 함수 $$g(x) = 2 \\tan^{-1} \\sqrt{x} \\quad (x \\geq 0)$$에 대하여 $$g(x) - f(x)$$와 같은 것은?",
-        "choices": [
-          "$$-\\frac{\\pi (x - 1)}{2 (x + 1)}$$",
-          "$$-\\frac{\\pi (x + 1)}{2 (x - 1)}$$",
-          "$$\\frac{\\pi}{2}$$",
-          "$$-\\frac{\\pi (x - 1)^2}{2 (x + 1)^2}$$",
-          "$$-\\frac{\\pi (x + 1)^2}{2 (x - 1)^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "음이 아닌 모든 실수 $$x$$에 대하여 다음의 수식 $$\\sin^{-1} \\left( \\frac{x - 1}{x + 1} \\right) = a \\tan^{-1} (x^b) + c$$를 만족시키는 상수 $$a, b, c$$를 구하고 $$2b - ac$$의 값을 구하시오.\n\n(단, $$\\sin^{-1}: [-1, 1] \\to \\left[ -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right]$$, $$\\tan^{-1}: (-\\infty, \\infty) \\to (-1, 1)$$ 이다.)",
-        "choices": [
-          "$$-1 + \\frac{\\pi}{2}$$",
-          "$$-2 + \\frac{\\pi}{2}$$",
-          "$$\\pi$$",
-          "$$1 + \\pi$$",
-          "$$2 + \\pi$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "60": [
-      {
-        "question": "다음 중 옳지 않은 것을 고르시오.",
-        "choices": [
-          "$$-1 \\leq x \\leq 0$$이면 $$\\sin (\\cos^{-1} x) \\leq 0$$이다.",
-          "$$0 \\leq x \\leq 1$$이면 $$\\sin (\\cos^{-1} x) \\geq 0$$이다.",
-          "$$\\tan^{-1} x$$는 모든 실수 $$x$$에 대하여 잘 정의된다.",
-          "$$\\sin^{-1} \\left( \\sin \\frac{\\pi}{11} \\right) = \\frac{\\pi}{11}$$가 성립한다.",
-          "모든 실수 $$x$$에 대하여 $$\\sin (\\sin^{-1} (\\sin x)) = \\sin x$$가 성립한다."
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\ln (2 \\cosh x + 2 \\sinh x) + \\ln (2 \\cosh x - 2 \\sinh x)$$와 같은 값은?",
-        "choices": [
-          "$$0$$",
-          "$$2x$$",
-          "$$-4x$$",
-          "$$2 \\ln 2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수 전체의 집합에서 정의된 함수 $$f(x) = \\operatorname{sech} x$$의 역함수는?",
-        "choices": [
-          "$$\\ln (x + \\sqrt{x^2 + 1})$$",
-          "$$\\ln (x + \\sqrt{x^2 - 1})$$",
-          "$$\\frac{1}{2} \\ln \\frac{1 + x}{1 - x}$$",
-          "$$\\ln \\frac{1 + \\sqrt{1 - x^2}}{x}$$",
-          "$$\\frac{e^x + e^{-x}}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "61": [
-      {
-        "question": "$$f(x) = \\cosh (\\ln (\\sec x + \\tan x))$$일 때, $$f \\left( \\frac{\\pi}{3} \\right)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{\\sqrt{3}}{2}$$",
-          "$$\\frac{2 \\sqrt{3}}{3}$$",
-          "$$\\sqrt{2}$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = \\ln (\\sec \\theta + \\tan \\theta)$$일 때, $$\\sec \\theta$$를 바르게 구한 것은?",
-        "choices": [
-          "$$\\sinh x$$",
-          "$$\\cosh x$$",
-          "$$\\tanh x$$",
-          "$$\\operatorname{sech} x$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = \\ln (\\sec y + \\tan y)$$일 때, $$\\cosh x$$의 값은?",
-        "choices": [
-          "$$\\sin y$$",
-          "$$\\tan y$$",
-          "$$\\cot y$$",
-          "$$\\sec y$$",
-          "$$\\csc y$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\cosh (\\sinh^{-1} (1))$$의 값을 구하면?",
-        "choices": [
-          "$$\\sqrt{2}$$",
-          "$$1$$",
-          "$$e$$",
-          "$$\\sqrt{e}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "62": [
-      {
-        "question": "다음 중 옳은 것을 모두 고르면?",
-        "choices": [
-          "(ㄱ), (ㄴ), (ㄷ)",
-          "(ㄷ), (ㄹ)",
-          "(ㄱ), (ㄹ), (ㄷ)",
-          "(ㄹ), (ㄷ), (ㄹ)"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 잘못된 명제는 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 옳은 것은 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 옳은 것은 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      }
-    ],
-    "68": [
-      {
-        "question": "다음 미분 공식을 구하시오.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "69": [
-      {
-        "question": "다음 미분 공식을 구하시오.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "70": [
-      {
-        "question": "다음 미분 공식을 구하시오.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "71": [
-      {
-        "question": "다음 함수 $$f(x) = 8x^2 + 7e^x - 3 \\tan x + \\ln x$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = x^2 + \\sin^{-1} x$$일 때 $$f'(x)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\ln \\left( \\frac{\\sin x \\tan 3x}{\\sqrt{x}} \\right)$$에 대해 $$f' \\left( \\frac{\\pi}{4} \\right)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = e^{x \\cos x}$$일 때, $$x = \\frac{\\pi}{2}$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "72": [
-      {
-        "question": "$$f(x) = \\frac{x}{\\tan^{-1} x}$$일 때, $$x = 1$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\frac{\\sqrt{x}}{1 + x^2}$$일 때, $$x = 1$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\cos (2x + 4)$$일 때, $$x = 0$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\sec (x^2)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = e^{x \\tan x}$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\log_a (x^2 + 2)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\ln (\\ln x)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\sin (x^2)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "73": [
-      {
-        "question": "$$y = (x^3 - 1)^{100}$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\ln (x \\sqrt{x^2 + 1})$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\sqrt{\\sinh 3x}$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\ln (\\sec x + \\tan x)$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = (x^2 + x + 1)(x^2 - x + 1)$$일 때, $$x = 1$$에서 미분계수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(1) = 2, f'(1) = 3, g(1) = 4, g'(1) = 5$$이고 $$h(x) = g(x) \\times f(x)$$일 때 $$h'(1)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(2) = -1, f'(2) = 4, g(2) = 1$$ 그리고 $$g'(2) = -5$$이다. $$P(x) = \\frac{f(x)}{g(x)}$$일 때, $$F'(2)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(0) = 0, f'(0) = 2$$일 때, $$y = (f \\circ f \\circ f)(x)$$의 $$x = 0$$에서의 미분계수는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "78": [
-      {
-        "question": "$$y = x^x$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^{\\ln x}$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\frac{(x+2)^3}{x^4 (x-1)^2}$$의 $$x = 2$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = 2x + \\ln x$$일 때, $$\\left(f^{-1}(2)\\right)'$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y^2 = 4x$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x^2 + y^2 = 2xy$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x = 3 \\cos \\theta, \\quad y = 3 \\sin \\theta$$의 도함수는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "79": [
-      {
-        "question": "$$y = (\\ln x)^{2x}$$의 $$(e,1)$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^{\\frac{1}{x}}$$의 (1,1)에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x^2 + y^2 = 4$$의 (1,√3)에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x^3 - \\sin y - x^2 y - 1 = 0$$의 (1,0)에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x^5 = 1 + e^y - x e^{y^2}$$의 (1,0)에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\begin{cases} x = \\theta - \\sin \\theta \\\\ y = 1 - \\cos \\theta \\end{cases}$$의 $$\\theta = \\frac{\\pi}{3}$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\begin{cases} x = \\theta + \\cos \\theta \\\\ y = \\theta - \\sin \\theta \\end{cases}$$의 $$\\theta = \\frac{\\pi}{4}$$에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\begin{cases} x = t^2 + 2 \\\\ y = t^2 + 2t \\end{cases}$$의 (3,3)에서 도함수는?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "80": [
-      {
-        "question": "함수 $$y = \\sin (\\ln x)$$에 대해 $$x = 1$$일 때, $$y'$$의 값은?",
-        "choices": [
-          "1",
-          "0",
-          "2",
-          "sine"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$g(x) = \\cos (\\sin^{-1} x)$$일 때, $$g' \\left( \\frac{\\sqrt{3}}{2} \\right)$$의 값은?",
-        "choices": [
-          "$$-\\sqrt{3}$$",
-          "$$\\frac{\\sqrt{3}}{2}$$",
-          "$$\\frac{2\\pi}{3}$$",
-          "$$-\\frac{\\pi}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\tan^{-1} (x^2 \\ln x)$$일 때, $$f'(e)$$의 값은?",
-        "choices": [
-          "$$-1$$",
-          "$$0$$",
-          "$$\\frac{3e}{1 + e^4}$$",
-          "$$\\frac{e}{1 + e^4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^x \\ln (\\cos x)$$일 때, $$x = \\frac{\\pi}{4}$$에서 $$y'$$의 값은?",
-        "choices": [
-          "$$-\\frac{\\pi}{2} (\\ln 2 + \\frac{\\pi}{2})$$",
-          "$$-\\frac{\\pi}{4} (\\ln 2 + \\frac{\\pi}{4})$$",
-          "$$\\frac{\\pi}{4} (\\ln 2 - \\frac{\\pi}{4})$$",
-          "$$\\frac{\\pi}{2} (\\ln 2 + \\frac{\\pi}{2})$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "81": [
-      {
-        "question": "함수 $$f(x) = \\frac{1}{x} \\tan^{-1} \\frac{1}{x}$$의 미분계수 $$\\frac{d}{dx} f(-1)$$ 은?",
-        "choices": [
-          "$$-\\frac{\\pi}{4} - 1$$",
-          "$$-\\frac{\\pi}{4} - \\frac{1}{2}$$",
-          "$$\\frac{\\pi}{4} + \\frac{1}{2}$$",
-          "$$\\frac{\\pi}{4} + 1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = (x + \\alpha) \\tan^{-1} x$$이 $$f'(1) = f(1)$$을 만족할 때, 상수 $$\\alpha$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$\\frac{2}{\\pi - 2}$$",
-          "$$\\frac{4}{x + 4}$$",
-          "$$\\frac{4}{\\pi - 4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\cos^2 x e^{\\sec x}$$에 대해 $$x = \\frac{\\pi}{4}$$에서 $$\\frac{dy}{dx}$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$e^{\\sqrt{2}} \\left( \\frac{\\sqrt{2}}{2} - 1 \\right)$$",
-          "$$e^{\\sqrt{2}} \\left( \\frac{\\sqrt{2}}{2} - \\frac{1}{2} \\right)$$",
-          "$$\\frac{\\sqrt{2}}{2} e^{\\sqrt{2}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f'(x) = \\frac{1}{(\\ln x)^2}$$이고, $$f(e) = 1$$, $$g(x) = e^{f(x)}$$일 때, $$g'(e)$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$e$$",
-          "$$e^2$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "82": [
-      {
-        "question": "$$f(x) = \\frac{x \\cos x}{1 + e^x}$$ 에 대해 $$f'(0)$$ 의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$-1$$",
-          "$$\\frac{1}{2}$$",
-          "$$-\\frac{1}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\frac{\\sqrt{x}}{1 + x^2}$$ 위의 점 $$(1, \\frac{1}{2})$$ 에서의 접선의 기울기는?",
-        "choices": [
-          "$$-\\frac{3}{5}$$",
-          "$$-\\frac{1}{4}$$",
-          "$$\\frac{1}{2}$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\frac{\\sec x}{1 + \\tan x}$$ 의 그래프에서 $$x$$ 축과 평행인 접선을 가지는 $$x$$의 값은?",
-        "choices": [
-          "$$\\frac{\\pi}{2}$$",
-          "$$\\frac{\\pi}{6}$$",
-          "$$\\frac{2\\pi}{3}$$",
-          "$$\\frac{5\\pi}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\sqrt{x} (\\ln x)^3$$에서 $$f'(e^2)$$의 값은?",
-        "choices": [
-          "$$4e$$",
-          "$$14e$$",
-          "$$\\frac{8}{e}$$",
-          "$$\\frac{16}{e}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "84": [
-      {
-        "question": "함수 $$y = \\sqrt{x} \\cos^{-1} \\sqrt{x}$$ 에 대하여 $$x = \\frac{1}{4}$$ 에서 $$\\frac{dy}{dx}$$ 의 값은? (단, $$0 \\leq x \\leq 1$$)",
-        "choices": [
-          "$$\\frac{\\pi}{3} - \\frac{1}{\\sqrt{3}}$$",
-          "$$\\frac{\\pi}{6} - \\frac{1}{\\sqrt{3}}$$",
-          "$$\\frac{\\pi}{3} + \\frac{1}{\\sqrt{3}}$$",
-          "$$\\frac{\\pi}{6} + \\frac{1}{\\sqrt{3}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = (\\ln x)^3 x$$일 때, $$\\frac{1}{3} f'(e)$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$2$$",
-          "$$3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = (x^2 + 1)^5$$에서 $$f'(2)$$의 값은?",
-        "choices": [
-          "$$25 \\ln 5 + 8$$",
-          "$$25 \\ln 5 + 40$$",
-          "$$50 \\ln 5 + 40$$",
-          "$$50 \\ln 5 + 80$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = x^{\\sin x}$$, $$x > 0$$일 때, $$x = \\frac{\\pi}{2}$$에서 $$f' \\left( \\frac{\\pi}{2} \\right)$$를 구하면?",
-        "choices": [
-          "$$1$$",
-          "$$\\frac{\\pi}{2}$$",
-          "$$\\frac{2}{\\pi}$$",
-          "$$\\frac{\\pi^2}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "85": [
-      {
-        "question": "함수 $$f(x) = \\frac{\\tan^4 x}{\\sin^3 x \\cos 3x}$$ 일 때, $$f' \\left( \\frac{\\pi}{4} \\right)$$의 값은?",
-        "choices": [
-          "$$-64$$",
-          "$$-32$$",
-          "$$-8$$",
-          "$$8 \\sqrt{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\frac{(x+2)^3}{x^4 (x-1)^2}$$ 으로 정의된 함수 $$f(x)$$의 $$x=2$$에서 도함수 값은?",
-        "choices": [
-          "$$-13$$",
-          "$$-11$$",
-          "$$11$$",
-          "$$13$$",
-          "$$15$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수 전체에서 정의된 함수 $$f(x) = 2e^{x+1} - 2x - x^2$$ 의 역함수를 $$g$$라 할 때, $$g'(3)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{1}{3}$$",
-          "$$\\frac{1}{6}$$",
-          "$$\\frac{1}{7}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "86": [
-      {
-        "question": "함수 $$f(x) = \\sqrt{x^3 + 2x + 4} \\quad (x \\geq 0)$$ 는 역함수 $$g(x)$$를 갖는다. 이때, $$g'(4)$$의 값은?",
-        "choices": [
-          "$$\\frac{2}{7}$$",
-          "$$\\frac{4}{7}$$",
-          "$$\\frac{6}{7}$$",
-          "$$\\frac{8}{7}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = e^{\\cos x + 2x}$$ 의 역함수를 $$g$$라고 놓자. $$g'(e^{-1})$$의 값은?",
-        "choices": [
-          "$$-1$$",
-          "$$1$$",
-          "$$\\frac{1}{e^{-1}}$$",
-          "$$e^{-1}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f$$는 미분가능하고 역함수 $$f^{-1}$$를 갖는다. $$G(x) = \\frac{1}{f^{-1}(x)}$$ 이고 $$f(3) = 2, f'(3) = \\frac{1}{9}$$ 일 때, $$G(2)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$\\frac{9}{2}$$",
-          "$$-\\frac{9}{2}$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "87": [
-      {
-        "question": "$$x^2 + 5xy + y^2 = 4$$ 의 $$(0,2)$$에서 $$\\frac{dy}{dx}$$ 는?",
-        "choices": [
-          "$$\\frac{1}{2}$$",
-          "$$2$$",
-          "$$\\frac{3}{2}$$",
-          "$$-4$$",
-          "$$-\\frac{5}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$4x^3 - 3xy - 4y^2 = 10$$ 위의 점 $$(2,1)$$에서 그은 접선의 기울기는?",
-        "choices": [
-          "$$-\\frac{1}{2}$$",
-          "$$-2$$",
-          "$$\\frac{3}{2}$$",
-          "$$-4$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin(x^2 + y^3) + 3y^2 + x + y = 0$$ 으로 주어진 곡선 위의 점 $$(0,0)$$에서 접선의 기울기는?",
-        "choices": [
-          "$$1$$",
-          "$$-1$$",
-          "$$3$$",
-          "$$-3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^y + x - y = 2$$ 위의 점 중에서 접선의 기울기가 $$-1$$ 인 점이 $$(a, b)$$라 할 때, $$ab$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$2$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x = y^3 - y + 3$$ 위의 점 $$(3,2)$$에서 접선의 기울기는?",
-        "choices": [
-          "$$\\frac{6}{11}$$",
-          "$$\\frac{3}{11}$$",
-          "$$\\frac{1}{2}$$",
-          "$$-\\frac{1}{2}$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "88": [
-      {
-        "question": "매개변수 방정식 $$x = t^3 - t^2, y = t^2 - 1$$ 로 주어지는 곡선의 원점에서의 기울기 $$\\frac{dy}{dx}$$ 는?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$-1$$",
-          "$$2$$",
-          "$$-2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "싸이클로이드(cycloid)가 $$x = \\theta - \\sin\\theta, y = 1 - \\cos\\theta$$ 로 주어져 있다. 이 때, $$\\theta = \\frac{\\pi}{3}$$ 에서 $$\\frac{dy}{dx}$$ 의 값은?",
-        "choices": [
-          "$$\\sqrt{3}$$",
-          "$$\\frac{1}{\\sqrt{3}}$$",
-          "$$-\\sqrt{2}$$",
-          "$$-2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = \\cosh\\theta, y = \\sinh\\theta, 0 < \\theta < \\infty$$ 일 때, $$\\frac{dy}{dx}$$ 를 구하면?",
-        "choices": [
-          "$$x^2 - 1$$",
-          "$$\\sqrt{x^2 - 1}$$",
-          "$$\\frac{x}{\\sqrt{x^2 - 1}}$$",
-          "$$\\frac{1}{\\sqrt{x^2 - 1}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$C: x = \\sin 2t, y = 2\\cos t$$ 위의 점 $$(\\sqrt{3}/2, \\sqrt{3})$$에서 접선의 기울기는?",
-        "choices": [
-          "$$-1$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\sqrt{3}$$",
-          "$$-\\frac{1}{\\sqrt{3}}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "89": [
-      {
-        "question": "다음 서술 중 옳은 것을 모두 고른 것은?",
-        "choices": [
-          "ㄱ",
-          "ㄴ",
-          "ㄷ",
-          "ㄴ, ㄷ",
-          "ㄱ, ㄴ, ㄷ"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = \\ln\\left(\\frac{x^2 - 1}{(3x - 1)^2}\\right)$$일 때, $$f'(2)$$의 값을 구한 것은?",
-        "choices": [
-          "$$\\frac{2}{15}$$",
-          "$$\\frac{3}{5}$$",
-          "$$\\ln 2$$",
-          "$$\\frac{2}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\frac{x}{1 + x^2}$$ 에 대해 $$f'(2)$$의 값을 구하면?",
-        "choices": [
-          "$$\\frac{2}{9}$$",
-          "$$-\\frac{8}{25}$$",
-          "$$-\\frac{3}{25}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "90": [
-      {
-        "question": "방정식 $$y = \\sin^{-1}(\\cos x)$$의 $$\\frac{dy}{dx}$$를 간단히 한 것은? (단, $$0 < x < \\frac{\\pi}{2}$$)",
-        "choices": [
-          "$$-1$$",
-          "$$1$$",
-          "$$\\sin x$$",
-          "$$\\cos x$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\frac{1}{\\sqrt{\\sin x}}$$에 대해 $$f\\left(\\frac{\\pi}{6}\\right)$$의 값을 구한 것은?",
-        "choices": [
-          "$$-1$$",
-          "$$-\\frac{\\sqrt{6}}{4}$$",
-          "$$\\frac{\\sqrt{3}}{2}$$",
-          "$$-\\frac{\\sqrt{3}}{2}$$",
-          "$$-\\frac{\\sqrt{6}}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f$$는 실수 전체에서 정의된 미분가능한 함수이다. 함수 $$f$$에 대한 다음 표의 값을 이용하여  $$ (f \\circ f \\circ f)'(0) $$의 값을 구하면?",
-        "choices": [
-          "$$-8$$",
-          "$$-6$$",
-          "$$-4$$",
-          "$$2$$",
-          "$$8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$y = \\ln(x^2 - 2x + 1)$$에 대하여 $$x = 2$$에서 미분계수를 구하면?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "91": [
-      {
-        "question": "곡선 $$y = \\cosh x$$ 위의 점들 중 접선의 기울기가 1인 점을 구하시오.",
-        "choices": [
-          "$$(\\ln(\\sqrt{2}), 1)$$",
-          "$$(\\ln(1 + \\sqrt{2}), \\sqrt{2})$$",
-          "$$(\\ln(1 + \\sqrt{3}), \\sqrt{3})$$",
-          "$$(\\ln 3, 2)$$",
-          "$$(\\ln(1 + \\sqrt{5}), \\sqrt{5})$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "좌표평면에서 매개곡선 $$x = \\frac{t^2}{4}, \\quad y = t^3 + 2$$ 위의 점 $$(1,10)$$ 에서 접선의 기울기는?",
-        "choices": [
-          "$$6$$",
-          "$$10$$",
-          "$$12$$",
-          "$$14$$",
-          "$$16$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\cosh 2x$$에 대하여 $$f'(\\ln 2)$$의 값을 구하면?",
-        "choices": [
-          "$$-\\frac{3}{4}$$",
-          "$$-\\frac{1}{4}$$",
-          "$$0$$",
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{3}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 매개곡선에 대하여 $$t = \\ln 2$$일 때 $$\\frac{dy}{dx}$$의 값을 구하면?  $$x = t - e^t, \\quad y = t + e^{-t}$$",
-        "choices": [
-          "$$-2$$",
-          "$$-1$$",
-          "$$-\\frac{3}{2}$$",
-          "$$-\\frac{1}{3}$$",
-          "$$-\\frac{1}{4}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "92": [
-      {
-        "question": "함수 $$f(x) = x^3 + x + 3 + \\tan\\left(\\frac{\\pi x}{2}\\right), (-1 < x < 1)$$에 대하여 $$ (f^{-1})'(3)$$의 값은?",
-        "choices": [
-          "$$\\frac{2}{2 + \\pi}$$",
-          "$$-\\frac{2}{2 + \\pi}$$",
-          "$$\\frac{4}{4 + \\pi}$$",
-          "$$-\\frac{4}{4 + \\pi}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = x^{\\sin(\\pi x / 3)} \\quad (x > 0)$$에 대하여, $$f'(1)$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{\\sqrt{3}}{4}$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{\\sqrt{3}}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y^2 = x^3 + x + 2$$ 위의 점 $$(1,2)$$에서의 접선의 기울기는?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$2$$",
-          "$$4$$",
-          "$$8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\frac{(x + 1)(x + 2)^2}{(x + 3)(x + 4)^2}$$에 대하여 $$y$$의 도함수는 $$y' = \\left(\\frac{A}{x + 1} + \\frac{B}{x + 2} + \\frac{C}{x + 3} + \\frac{D}{x + 4} \\right)y$$이다. 이때, $$A + B + C + D$$의 값은?",
-        "choices": [
-          "$$-10$$",
-          "$$-8$$",
-          "$$-4$$",
-          "$$2$$",
-          "$$10$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "93": [
-      {
-        "question": "곡선 $$\\cos x + \\sin y = 1$$ 위의 점 $$\\left(\\frac{\\pi}{3}, \\frac{\\pi}{6}\\right)$$에서의 접선의 기울기는?",
-        "choices": [
-          "$$-1$$",
-          "$$0$$",
-          "$$\\frac{\\sqrt{3}}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = x^{\\sin x}$$ 에 대하여 $$f'\\left(\\frac{3\\pi}{2}\\right)$$를 구하시오.",
-        "choices": [
-          "$$\\frac{4}{9\\pi^2}$$",
-          "$$\\frac{5}{9\\pi^2}$$",
-          "$$-\\frac{5}{9\\pi^2}$$",
-          "$$-\\frac{4}{9\\pi^2}$$",
-          "$$-\\frac{2}{9\\pi^2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "94": [
-      {
-        "question": " $$x(t) = 3\\sin t - 4, \\quad y(t) = 5 + 2\\cos t$$ 에 대해 점 $$\\left( x\\left(\\frac{\\pi}{4}\\right), y\\left(\\frac{\\pi}{4}\\right) \\right)$$ 에서 법선의 기울기를 구하면?",
-        "choices": [
-          "$$\\frac{2}{3}$$",
-          "$$1$$",
-          "$$\\frac{3}{2}$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\sin x + 4x + 1$$ 의 역함수 $$g(x)$$를 하자. 이 때, $$h(x) = g(2x+1)$$ 를 정의할 때, $$h(0)$$ 의 값은?",
-        "choices": [
-          "$$\\frac{1}{5}$$",
-          "$$\\frac{2}{5}$$",
-          "$$\\frac{3}{5}$$",
-          "$$\\frac{4}{5}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = 3e^x + 2x^3 - 2$$ 의 역함수를 $$g(x)$$라 할 때, $$g'(1)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{3}$$",
-          "$$\\frac{1}{2}$$",
-          "$$1$$",
-          "$$2$$",
-          "$$3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y + 2\\cosh(xy) - 2x\\cos(x - 1) = 0$$ 위의 점 $$(1,0)$$에서의 접선의 기울기는?",
-        "choices": [
-          "$$-4$$",
-          "$$-2$$",
-          "$$0$$",
-          "$$2$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "95": [
-      {
-        "question": "$$f(x) = \\frac{(2x + 3)^3 \\sec^2 x}{(x^2 + 4)}$$ 일 때, $$f'(0)$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$\\frac{16}{27}$$",
-          "$$\\frac{4}{3}$$",
-          "$$3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = 5 + 9x + e^{-x+1}$$ 일 때, $$ (f^{-1})'(15)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{8}$$",
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{1}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\frac{\\tan^{-1} x}{1 + x^2}$$이고 $$\\frac{dx}{dt} = 4$$일 때, $$x = 1$$에서 $$\\frac{dy}{dt}$$ 는?",
-        "choices": [
-          "$$-\\frac{\\pi}{2}$$",
-          "$$\\frac{\\pi}{2}$$",
-          "$$1 - \\frac{\\pi}{2}$$",
-          "$$\\frac{\\pi + 1}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x > 0$$에서 정의된 함수 $$y = f(x)$$가 항상 식 $$f(x)e^{f(x)} = x$$를 만족할 때, $$f'(e)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$e$$",
-          "$$\\frac{1}{e}$$",
-          "$$\\frac{1}{2e}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "96": [
-      {
-        "question": "이차곡선 $$x^2 - xy + y^2 = 12$$ 위의 점 중에서 접선의 기울기가 0인 점의 좌표를 모두 고르면?",
-        "choices": [
-          "$$(-4, -2), (2, -4)$$",
-          "$$(-4, -2), (4, 2)$$",
-          "$$(-2, -4), (-4, -2)$$",
-          "$$(-2, -4), (2, 4)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "방정식 $$x^2 y + xy = 2$$에 대하여 $$x = a, y = b$$일 때, $$y' = -2$$이다. 이때, $$2a^2 + b^2$$의 값은?",
-        "choices": [
-          "$$3$$",
-          "$$4$$",
-          "$$5$$",
-          "$$6$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$y = f(x)$$가 매개방정식 $$\\begin{cases} x = 2\\cos t \\newline y = 3\\sin t \\end{cases} (0 < t < \\frac{\\pi}{2})$$로 주어질 때, 두 점 $$(1, f(1))$$과 $$(\\sqrt{3}, f(\\sqrt{3}))$$을 지나는 직선의 기울기와 $$y = f(x)$$의 점 $$(a, f(a))$$에서 접선의 기울기가 같게 되는 $$a$$의 값은?",
-        "choices": [
-          "$$\\sqrt{2}$$",
-          "$$\\frac{1}{\\sqrt{2}}$$",
-          "$$1$$",
-          "$$\\sqrt{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\sqrt[3]{2x - 1}$$에 대하여 다음 중 $$\\frac{dy}{dx}$$와 같은 것은?",
-        "choices": [
-          "$$\\frac{2}{3y^3}$$",
-          "$$\\frac{2}{3y^2}$$",
-          "$$\\frac{2}{3y}$$",
-          "$$\\frac{2}{3\\sqrt{y}}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "97": [
-      {
-        "question": "함수 $$y = \\sinh^{-1} x$$의 도함수와 같은 것은?",
-        "choices": [
-          "$$\\sin(\\tan^{-1} x)$$",
-          "$$\\cos(\\tan^{-1} x)$$",
-          "$$\\frac{1}{\\sqrt{1 - x^2}}$$",
-          "$$\\frac{1}{\\sqrt{x^2 - 1}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = 25\\arctan(\\sqrt{9 + x^2 - 2})$$에 대하여 $$f'(4)$$를 구하면?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$",
-          "$$5$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\frac{\\pi}{3} x +\\arcsin x$$ 에 대하여 $$\\left(f^{-1}\\right)'\\left(\\frac{\\pi}{3}\\right)$$를 구하면?",
-        "choices": [
-          "$$\\frac{3}{\\pi + 2\\sqrt{3}}$$",
-          "$$\\frac{3}{2\\pi - 2\\sqrt{3}}$$",
-          "$$\\frac{3}{-\\pi + 2\\sqrt{3}}$$",
-          "$$\\frac{3}{\\pi - \\sqrt{3}}$$",
-          "$$\\frac{3}{\\pi + \\sqrt{3}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수 전체에서 정의된 미분가능 함수 $$f$$에 대하여 $$g(x) = \\sqrt{3e^x + (f(x))^2}$$ 라 하자. 이때, $$f'(0) = 1$$, $$f(0) = -5$$이면, $$g'(0)$$의 값은?",
-        "choices": [
-          "$$-\\frac{9}{4}$$",
-          "$$-\\frac{7}{4}$$",
-          "$$1$$",
-          "$$\\frac{7}{4}$$",
-          "$$\\frac{9}{4}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "98": [
-      {
-        "question": "$$y$$가 다음 방정식으로 정의된 $$x$$의 음함수일 때, $$\\frac{dy}{dx}$$ 는? (단, $$|x| > |y|$$)",
-        "choices": [
-          "$$\\frac{-x + 2y}{2x + y}$$",
-          "$$\\frac{x + 2y}{2x + y}$$",
-          "$$\\frac{-2x + y}{x + 2y}$$",
-          "$$\\frac{2x + y}{x + 2y}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = x + \\arctan y$$ 위의 점 $$\\left(1 - \\frac{\\pi}{4}, 1\\right)$$ 에서 접선의 기울기는?",
-        "choices": [
-          "$$-2$$",
-          "$$-1$$",
-          "$$1$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = x\\sqrt{3 + x^2}$$ 에 대하여 역함수의 미분계수 $$\\left(f^{-1}\\right)'(-2)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{5}$$",
-          "$$\\frac{2}{5}$$",
-          "$$\\frac{3}{5}$$",
-          "$$\\frac{4}{5}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\frac{1}{\\sqrt{x^2 + x + 1}}$$ 에 대하여 $$f'(-1)$$의 값은?",
-        "choices": [
-          "$$-\\frac{1}{3}$$",
-          "$$-\\frac{1}{2}$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{1}{3}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "99": [
-      {
-        "question": "$$\\frac{d}{dx} \\left( \\frac{1}{2} \tan^{-1} x + \\frac{1}{4} \\ln \\frac{(x+1)^2}{x^2 + 1} \\right) = \\frac{c}{(a + x)(b + x^2)}$$ 를 만족하는 상수 $$a, b, c$$에 대하여 $$abc$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{2}$$",
-          "$$1$$",
-          "$$3$$",
-          "$$8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) + x^2[f(x)]^3 = 10$$, $$f(1) = 2$$일 때 $$f'(1)$$의 값은?",
-        "choices": [
-          "$$-28$$",
-          "$$-\\frac{16}{13}$$",
-          "$$-\\frac{11}{13}$$",
-          "$$-14$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x[f(x)]^2 + 2f(x) = 8$$, ($$f(x) > 0$$)일 때, $$f'(1)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$-\\frac{1}{2}$$",
-          "$$-\\frac{1}{4}$$",
-          "$$-\\frac{2}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "좌표평면에서 매개방정식 $$x = t^2 - 1$$, $$y = t^3 - t$$ 로 주어지는 곡선 위의 점 $$(a, b)$$에서의 접선이 $$x$$축에 평행할 때, $$a^2 + b^2$$의 값은?",
-        "choices": [
-          "$$\\frac{4}{9}$$",
-          "$$\\frac{13}{27}$$",
-          "$$\\frac{14}{27}$$",
-          "$$\\frac{5}{9}$$",
-          "$$\\frac{16}{27}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "100": [
-      {
-        "question": "미분가능한 함수 $$f$$가 $$-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$$일 때, $$f(\\tan x) = \\sin x$$를 만족한다. $$f'(1)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{\\sqrt{2}}{4}$$",
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{\\sqrt{2}}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\arctan (\\arcsin \\sqrt{x})$$ 에 대하여 $$f' \\left( \\frac{1}{4} \\right) = \\frac{a}{b + \\pi^2} \\cdot \\frac{1}{\\sqrt{3}}$$ 일 때, $$a + b$$의 값은? (단, $$a, b$$는 정수이다.)",
-        "choices": [
-          "$$84$$",
-          "$$96$$",
-          "$$108$$",
-          "$$120$$",
-          "$$136$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "영역 $$(-\\infty, -\\frac{3}{4})$$에서 정의된 함수 $$f(x) = x^4 - x^3 + 1$$에 대하여 $$g(x) = f(f^{-1}(x))$$라 할 때, $$g'(3)$$을 구하시오.",
-        "choices": [
-          "$$-1519$$",
-          "$$-217$$",
-          "$$217$$",
-          "$$1519$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "108": [
-      {
-        "question": "곡선 $$y = x^2 - x + 2$$ 위의 $$x$$ 좌표가 $$1$$인 점에서 그은 접선의 방정식은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\frac{1}{1 + x^2}$$ 위의 점 $$\\left(1, \\frac{1}{2}\\right)$$에서의 접선의 방정식은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "점 $$(3,3)$$에서 함수 $$x^2 + 2y^2 - 3xy = 0$$의 접선의 방정식은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x(t) = 3\\sin t - 4$$, $$y(t) = 5 + 3\\cos t$$일 때, 점 $$\\left( x\\left( \\frac{\\pi}{4} \\right), y\\left( \\frac{\\pi}{4} \\right) \\right)$$에서 법선의 방정식을 구하면?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "두 곡선 $$y = x^2$$과 $$y = x^2 - x + 1$$의 교각을 $$\\Phi$$라 할 때, $$\\tan \\Phi$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{3}$$",
-          "$$\\frac{1}{\\sqrt{3}}$$",
-          "$$1$$",
-          "$$\\sqrt{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "초깃값 $$x_1 = 3$$일 때, 뉴턴 방법으로 방정식 $$x^2 - 2x - 2 = 0$$의 근을 구할 때 두 번째 근삿값 $$x_2$$는?",
-        "choices": [
-          "$$2.71$$",
-          "$$2.72$$",
-          "$$2.73$$",
-          "$$2.74$$",
-          "$$2.75$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "109": [
-      {
-        "question": "곡선 $$y = \\sqrt{1 + 4\\sin x}$$에 대하여 곡선 위의 점 (0,1)에서의 접선의 방정식을 구하면?",
-        "choices": [
-          "$$y = x - 1$$",
-          "$$y = x + 1$$",
-          "$$y = 2x - 1$$",
-          "$$y = 2x + 1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음과 같이 정의된 함수 $$f(x) = x + \\frac{1}{x}, \\quad x \\neq 0$$의 그래프 위의 점 $$\\left( 2, \\frac{5}{2} \\right)$$에서 접선의 방정식을 구하면?",
-        "choices": [
-          "$$y = \\frac{1}{4}x + 1$$",
-          "$$y = \\frac{5}{4}x + 1$$",
-          "$$y = \\frac{3}{4}x + 1$$",
-          "$$y = \\frac{3}{2}x - \\frac{1}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = x^{x^{\\csc x}}$$ 위의 점 $$\\left( \\frac{\\pi}{2}, \\frac{\\pi}{2} \\right)$$에서의 접선의 방정식을 $$y = f(x)$$라 할 때, $$f(1)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = x^{e^x} \\quad (x > 0)$$ 위의 점 (1,1)에서의 접선을 $$y = ax + b$$ 라고 하자. $$b - \\ln a$$의 값은?",
-        "choices": [
-          "$$-e$$",
-          "$$-1$$",
-          "$$0$$",
-          "$$1$$",
-          "$$e$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "110": [
-      {
-        "question": "곡선 $$x^2 + y^2 = (2x^2 + 2y^2 - x)^2$$ 상의 점 $$\\left( 0, \\frac{1}{2} \\right)$$에서 접선의 방정식은?",
-        "choices": [
-          "$$y = -x + \\frac{1}{2}$$",
-          "$$y = x + \\frac{1}{2}$$",
-          "$$y = -\\frac{9}{13}x + \\frac{1}{2}$$",
-          "$$y = \\frac{9}{13}x + \\frac{1}{2}$$",
-          "$$y = \\frac{1}{2}x + \\frac{1}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$y = \\ln(x^2 - 2x + 1)$$ 위의 점 (2,0)에서 접선의 방정식이 $$y = ax + b$$일 때, $$a - b$$의 값은?",
-        "choices": [
-          "$$5$$",
-          "$$6$$",
-          "$$7$$",
-          "$$8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\tan\\left(\\frac{\\pi x^2}{4}\\right)$$ 위의 점 (1,1)에서의 접선의 $$y$$ 절편은?",
-        "choices": [
-          "$$-\\pi - 1$$",
-          "$$-\\pi$$",
-          "$$-\\pi + 1$$",
-          "$$-\\pi + 2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^2 + 2xy + 5y^2 = 13$$ 에서 점 (2,1)에서 접하는 직선의 $$x$$ 절편은?",
-        "choices": [
-          "$$\\frac{13}{3}$$",
-          "$$\\frac{11}{3}$$",
-          "$$\\frac{13}{7}$$",
-          "$$\\frac{11}{7}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "111": [
-      {
-        "question": "곡선 $$y = \\tan^{-1}(3x)$$ 위의 $$x$$ 좌표가 $$\\frac{\\sqrt{3}}{3}$$인 점에서의 법선의 방정식은? (단, $$|y| < \\frac{\\pi}{2}$$ 이다.)",
-        "choices": [
-          "$$4x + y - \\frac{\\pi}{3} + \\frac{4\\sqrt{3}}{9} = 0$$",
-          "$$-4x + y - \\frac{\\pi}{3} + \\frac{4\\sqrt{3}}{9} = 0$$",
-          "$$3x + y - \\frac{\\pi}{3} - \\frac{\\sqrt{3}}{4} = 0$$",
-          "$$-3x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$",
-          "$$3x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = 3x^2 - 4x + 6$$에 접하고 직선 $$y = -\\frac{1}{2}x + \\frac{9}{2}$$와 수직인 직선의 방정식을 $$y = ax + b$$라 할 때, $$a + b$$는?",
-        "choices": [
-          "$$1$$",
-          "$$4$$",
-          "$$5$$",
-          "$$\\frac{11}{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "매개변수방정식 $$x = \\frac{t}{t^2 + 1}, y = (t - 2)e^t$$로 주어진 곡선과 $$x$$ 축과 만나는 점에서 이 곡선에 그은 접선의 방정식은?",
-        "choices": [
-          "$$y = \\frac{5}{2}e^x - e^2$$",
-          "$$y = -\\frac{25}{8}e^x + \\frac{5}{4}e^2$$",
-          "$$y = \\frac{25}{3}e^x - \\frac{10}{3}e^2$$",
-          "$$y = -\\frac{25}{3}e^x + \\frac{10}{3}e^2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "평면곡선 $$\\mathbf{r}(t) = \\langle \\cosh(t), \\sinh(t) \\rangle$$ 위의 점 $$(\\sqrt{2}, 1)$$에서 접선의 기울기는?",
-        "choices": [
-          "$$-\\sqrt{2}$$",
-          "$$-\\frac{\\sqrt{2}}{2}$$",
-          "$$\\frac{\\sqrt{2}}{2}$$",
-          "$$\\sqrt{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "112": [
-      {
-        "question": "직선 $$y = ax + 3$$이 곡선 $$y = 2\\sqrt{x} + 10$$에 접할 때, $$a$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{4}$$",
-          "$$\\frac{1}{3}$$",
-          "$$\\frac{1}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "직선 $$y = ax$$ ($$a$$는 상수)와 곡선 $$y = \\sqrt{x^3} + 1$$이 접할 때, $$a^6$$의 값은?",
-        "choices": [
-          "$$27$$",
-          "$$\\frac{27}{16}$$",
-          "$$\\frac{3}{4}$$",
-          "$$\\frac{27}{4}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = 2x - 3$$이 곡선 $$g(x) = \\frac{k}{x^2}$$에 접하도록 하는 $$k$$의 값을 구하면?",
-        "choices": [
-          "$$-4$$",
-          "$$-1$$",
-          "$$\\frac{1}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\ln x$$와 $$y = \\alpha x^2 - 1$$이 접하도록 하는 양수 $$\\alpha$$의 값을 정하면?",
-        "choices": [
-          "$$\\frac{1}{\\sqrt{e}}$$",
-          "$$\\frac{e}{2}$$",
-          "$$\\ln 2$$",
-          "$$\\frac{1}{2} \\ln 2$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "113": [
-      {
-        "question": "곡선 $$y^3 + x^2 - 2y = 4$$와 직선 $$ax + by = 4$$이 점 $$(2,0)$$에서 접한다. 이때, $$ab$$의 값은?",
-        "choices": [
-          "$$-4$$",
-          "$$-2$$",
-          "$$1$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "두 곡선 $$y = \\ln(x + 1)$$과 $$y = \\ln(3 - x)$$의 교각을 $$\theta$$라 할 때, $$\theta$$의 값은?",
-        "choices": [
-          "$$\\frac{\\pi}{3}$$",
-          "$$\\frac{\\pi}{4}$$",
-          "$$\\sin^{-1} \\frac{4}{5}$$",
-          "$$\\tan^{-1} \\frac{1}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = e^x$$ 위의 점 $$P$$에서 그은 접선이 원점 $$O$$를 지날 때 선분 $$\\overline{OP}$$의 길이는?",
-        "choices": [
-          "$$1$$",
-          "$$e$$",
-          "$$\\sqrt{e} + 1$$",
-          "$$\\sqrt{e^2 + 1}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\frac{2}{x}$$ 위의 점 $$P(3, a)$$에서 이 곡선에 그은 접선이 $$x$$축과 만나는 점을 $$A$$라 할 때, 삼각형 $$OAP$$의 넓이는? (단, $$O$$는 원점)",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "114": [
-      {
-        "question": "미분가능한 함수 $$f$$가 $$-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$$일 때, $$f(\\sin x) = x^2 + 1$$을 만족한다. $$x = \\frac{1}{2}$$에서 접선의 기울기는?",
-        "choices": [
-          "$$\\frac{2 \\sqrt{3} \\pi}{9}$$",
-          "$$-\\frac{\\sqrt{3} \\pi}{9}$$",
-          "$$0$$",
-          "$$\\frac{\\sqrt{3} \\pi}{9}$$",
-          "$$\\frac{2 \\sqrt{3} \\pi}{9}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\sqrt{x^2 + ax} + b$$ 위에 $$x$$ 좌표가 $$1$$인 점에서의 접선의 방정식이 $$2x - 4y + 5 = 0$$일 때, $$a + 4b$$의 값은?",
-        "choices": [
-          "$$-5$$",
-          "$$-1$$",
-          "$$7$$",
-          "$$9$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x = 3 \\sin \theta - 4, y = 5 + 2 \\cos \theta, 0 \\leq \theta \\leq 2\\pi$$ 위에 있는 $$\theta = \\frac{5\\pi}{4}$$일 때의 점에서의 접선의 방정식을 구하시오.",
-        "choices": [
-          "$$y = -\\frac{2}{3} x - 2 \\sqrt{2} + \\frac{7}{3}$$",
-          "$$y = -\\frac{2}{3} x - \\sqrt{2} + \\frac{5}{3}$$",
-          "$$y = -\\frac{2}{3} x - 2 \\sqrt{2} + \\frac{3}{3}$$",
-          "$$y = -\\frac{1}{3} x - 2 \\sqrt{2} + \\frac{4}{3}$$",
-          "$$y = -\\frac{2}{3} x - 2 \\sqrt{2} + \\frac{1}{3}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "115": [
-      {
-        "question": "매개변수방정식 $$x = t^2 + 1, y = 4\\sqrt{t}$$ 로 나타나는 곡선 위의 점 (2,4)에서 접선의 방정식은?",
-        "choices": [
-          "$$\\begin{cases} x(t) = 2 - t \\\\ y(t) = 4 + 2t \\end{cases}$$",
-          "$$\\begin{cases} x(t) = 2 + 2t \\\\ y(t) = 4 + 2t \\end{cases}$$",
-          "$$\\begin{cases} x(t) = 2 + 2t \\\\ y(t) = 2 - t \\end{cases}$$",
-          "$$\\begin{cases} x(t) = 1 + t \\\\ y(t) = 4 + 2t \\end{cases}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = 2\\sin 2t, y = 2\\sin t$$ 위의 한 점 $$(\\sqrt{3},1)$$에서 그은 접선과 $$x$$축, $$y$$축이 이루는 도형의 면적은?",
-        "choices": [
-          "$$\\frac{\\sqrt{3}}{4}$$",
-          "$$\\frac{1}{2 \\sqrt{3}}$$",
-          "$$\\frac{1}{4 \\sqrt{3}}$$",
-          "$$\\frac{2}{\\sqrt{3}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "평면 위의 한 점 $$P(4,3)$$에서 중심이 원점이고 반지름이 1인 원에 그은 두 접선과 원과의 접점을 각각 $$A$$와 $$B$$라고 하자. 이 때, $$PA \\cdot PB$$의 값은?",
-        "choices": [
-          "$$24$$",
-          "$$25$$",
-          "$$26$$",
-          "$$27$$",
-          "$$28$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "116": [
-      {
-        "question": "평면곡선 $$x^2 + xy + y^2 + x - 3 = 0$$ 위에서 $$y$$축에 평행한 접선을 갖는 점들은?",
-        "choices": [
-          "$$\\left( \\frac{-1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right), \\left( \\frac{-1 - \\sqrt{37}}{6}, \\frac{2 + 2\\sqrt{37}}{6} \\right)$$",
-          "$$\\left( \\frac{-2 - 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right), \\left( \\frac{-2 + 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$$",
-          "$$\\left( \\frac{1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right), \\left( \\frac{1 - \\sqrt{37}}{6}, \\frac{-2 + 2\\sqrt{37}}{6} \\right)$$",
-          "$$\\left( \\frac{2 + 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right), \\left( \\frac{2 - 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "117": [
-      {
-        "question": "$$y = x^3 - 2x + 1$$과 $$y = \\frac{a}{x - 1}$$이 직교하는 $$a$$의 값의 합을 구하면?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$-1$$",
-          "$$\\sqrt{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = f(x)$$ 위의 점 $$(1,1)$$에서의 접선의 방정식이 $$y = 2x - 1$$일 때, 곡선 $$y = \\sqrt{f(x)}$$ 위의 $$x = 1$$인 점에서의 법선의 방정식은?",
-        "choices": [
-          "$$y = -x + 1$$",
-          "$$y = -x + 2$$",
-          "$$y = x - 1$$",
-          "$$y = x$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "타원 $$x^2 + 4y^2 = 5$$ 위의 점 $$(a,b)$$에서의 접선이 두 점 $$(3,2)$$과 $$(c,0)$$을 통과할 때, $$a + b + c$$의 값은? (단, $$b > 0$$ 이다.)",
-        "choices": [
-          "$$-5$$",
-          "$$-8$$",
-          "$$-10$$",
-          "$$-12$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "118": [
-      {
-        "question": "두 곡선 $$y^3 = x^3$$ 과 $$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$$ 의 1 사분면 위 교점을 $$(x_0, y_0)$$ 라 하자. 점 $$(x_0, y_0)$$에서의 두 곡선에 대한 접선이 서로 수직일 때 $$a$$와 $$b$$의 관계식을 옳은 것은?",
-        "choices": [
-          "$$3a^2 = 2b^2$$",
-          "$$2a^2 = 3b^2$$",
-          "$$a^2 = b^3$$",
-          "$$2a^2 = 3b^3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = x + \\arctan y$$ 위의 점 $$\\left(1 - \\frac{\\pi}{4}, 1 \\right)$$에서 접선의 기울기는?",
-        "choices": [
-          "$$-2$$",
-          "$$-1$$",
-          "$$1$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\arctan x$$ 에 접하고 기울기가 $$\\frac{1}{2}$$ 인 두 직선의 $$y$$절편 사이의 거리가 $$d$$일 때, $$d$$가 속하는 범위는?",
-        "choices": [
-          "$$0 < d \\leq \\frac{1}{2}$$",
-          "$$\\frac{1}{2} < d \\leq 1$$",
-          "$$1 < d \\leq \\frac{3}{2}$$",
-          "$$d > \\frac{3}{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "119": [
-      {
-        "question": "곡선 $$2x^3 + 2y^3 = 9xy$$ 의 그래프 위의 점 (1,2)에서의 법선의 방정식을 구하면?",
-        "choices": [
-          "$$4x - 5y + 6 = 0$$",
-          "$$5x + 4y - 13 = 0$$",
-          "$$4x + 5y - 14 = 0$$",
-          "$$5x - 4y + 3 = 0$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$y = \\tanh^{-1} (2x)$$ 의 $$x = 0$$ 에서의 접선의 방정식을 구하면?",
-        "choices": [
-          "$$y = -2x$$",
-          "$$y = \\frac{1}{2}x$$",
-          "$$y = x$$",
-          "$$y = 2x$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$e^y = x - y$$ 위의 점 $$(0, a)$$에서 접선이 직선 $$y = x + 3$$과 점 $$(b, c)$$에서 만날 때, $$a + b + c$$ 의 값은?",
-        "choices": [
-          "$$5$$",
-          "$$10$$",
-          "$$20$$",
-          "$$40$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "120": [
-      {
-        "question": "함수 $$f(x) = 2e^x + e^{-2x} - 10$$ 에 대하여 $$f(x) = 0$$의 해를 근사적으로 구하기 위해 뉴턴의 방법을 적용하려고 한다. 첫 번째 근사값이 $$0$$일 때, 두 번째 근사값은 얼마인가?",
-        "choices": [
-          "$$-\\frac{7}{4}$$",
-          "$$-\\frac{4}{7}$$",
-          "$$\\frac{4}{7}$$",
-          "$$\\frac{7}{4}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "121": [
-      {
-        "question": "초기값 $$x_1 = 3$$일 때, 뉴턴방법으로 방정식 $$x^2 - 2x - 2 = 0$$의 근을 구할 때 두 번째 근사값 $$x_2$$는?",
-        "choices": [
-          "$$2.71$$",
-          "$$2.72$$",
-          "$$2.73$$",
-          "$$2.74$$",
-          "$$2.75$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "뉴턴 방법을 사용하여 $$x^3 + x + a = 0$$ 의 해를 구하려고 한다. 초기 근사값 $$x_1 = 1$$ 이고, 두 번째 근사값 $$x_2 = \\frac{3}{4}$$ 일 때, $$a$$의 값은? (단, $$a$$는 상수)",
-        "choices": [
-          "$$-2$$",
-          "$$-1$$",
-          "$$0$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "뉴턴의 방법을 이용하여 $$x^3 + 3x^2 - 3 = 0$$의 근사해를 구하고자 한다. 첫 번째 근사해 $$x_1 = 1$$을 선택하였을 때, 두 번째 근사해는 $$x_2 = \\frac{a}{b}$$ 이다. 이 때 $$a + b$$의 값은? (단, $$a$$와 $$b$$는 서로소이다.)",
-        "choices": [
-          "$$15$$",
-          "$$16$$",
-          "$$17$$",
-          "$$18$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "122": [
-      {
-        "question": "함수 $$f(x) = e^x + x + a$$ 에 대하여 $$f(x) = 0$$의 해를 뉴턴의 방법을 적용하여 구하려고 한다. 첫 번째 근사값이 $$0$$일 때, 두 번째 근사값이 $$0.5$$라면 $$a$$의 값은?",
-        "choices": [
-          "$$-5$$",
-          "$$-4$$",
-          "$$-3$$",
-          "$$-2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "방정식 $$x = 2\\cos x$$ 은 구간 $$[0, \\pi]$$ 에서 유일한 해를 가진다. 근사해를 찾는 고정점 반복법 중 뉴턴방법은?",
-        "choices": [
-          "$$x_{n+1} = 2\\cos x_n$$",
-          "$$x_{n+1} = \\frac{1}{2} (x_n + \\cos x_n)$$",
-          "$$x_{n+1} = x_n + \\frac{\\cos x_n}{\\sin x_n}$$",
-          "$$x_{n+1} = x_n - \\frac{x_n - 2\\cos x_n}{1 - 2\\sin x_n}$$",
-          "$$x_{n+1} = x_n + \\frac{2\\cos x_n - x_n}{2\\sin x_n + 1}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "뉴턴의 방법을 이용하여 $$\\sqrt[3]{3}$$의 근사값을 구할 때 $$x_1 = 10$$이면 $$x_3$$의 값은?",
-        "choices": [
-          "$$\\frac{5}{3}$$",
-          "$$\\frac{13}{9}$$",
-          "$$\\frac{331}{225}$$",
-          "$$\\frac{487}{325}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "128": [
-      {
-        "question": "$$y = \\sec x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^2 \\ln x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^4 + 3x^2 - 5x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = (3x + 1)^2$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = x^3 e^x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = e^{2x} \\sin 3x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$y = \\frac{1}{\\ln x}$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$x^2 + y^2 = 4$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "매개변수 곡선 $$\\begin{cases} x = \\theta - \\sin \\theta \\\\ y = 1 - \\cos \\theta \\end{cases}$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "매개변수 곡선 $$\\begin{cases} x = t^2 \\\\ y = t^3 - 2t \\end{cases}$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = 3x^8 + 2x^5 - 12x^2 + 6$$일 때, $$f^{(5)}(0)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin^{(2020)} \\left( \\frac{\\pi}{2} \\right)$$의 값은?",
-        "choices": [],
-        "answer": ""
-      }
-    ],
-    "129": [
-      {
-        "question": "함수 $$y = \\tan^{-1} x$$의 2 차도함수는?",
-        "choices": [
-          "$$-4x^2(1 + x^2)$$",
-          "$$-2x(1 + x^2)^2$$",
-          "$$-\\frac{2x}{1 + x^2}$$",
-          "$$-\\frac{2x}{(1 + x^2)^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\ln \\left( x^3 \\sqrt{\\frac{x - 1}{x + 1}} \\right)$$ 에 대해 $$f'(2)$$을 구하면?",
-        "choices": [
-          "$$\\frac{7}{4}$$",
-          "$$\\frac{11}{7}$$",
-          "$$-\\frac{43}{36}$$",
-          "$$-\\frac{40}{41}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = \\ln (x + \\sqrt{x^2 + 1})$$ 에 대해 $$f'(\\frac{1}{2})$$을 구하면?",
-        "choices": [
-          "$$-\\frac{2 \\sqrt{5}}{25}$$",
-          "$$-\\frac{4 \\sqrt{5}}{25}$$",
-          "$$-\\frac{8 \\sqrt{5}}{25}$$",
-          "$$-\\frac{12 \\sqrt{5}}{25}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "130": [
-      {
-        "question": "함수 $$f(x) = x^{\\ln x}$$일 때, $$f'(1)$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{2}$$",
-          "$$\\frac{1}{e}$$",
-          "$$2$$",
-          "$$e$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = (\\sin^{-1} x)^2$$일 때, $$f''(0)$$의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$",
-          "$$5$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "변수 $$x, y$$가 매개변수 $$t$$로 표현되어 있다. 함수 $$f(t) = \\frac{dy}{dx}$$일 때, $$\\frac{d f}{dt}$$를 바르게 구한 것은?",
-        "choices": [
-          "$$\\frac{d^2 y}{dx^2}$$",
-          "$$\\frac{d^2 y}{dx^2} \\frac{dx}{dt}$$",
-          "$$\\frac{d^2 x}{dt^2} \\frac{dy}{dx}$$",
-          "$$\\frac{d^2 y}{dx^2} / \\frac{d^2 x}{dt^2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "131": [
-      {
-        "question": "함수 $$f$$가 일대일 대응이고 두 번 미분 가능한 함수라 하자. $$f$$의 역함수를 $$g$$라 할 때, $$g'(x) = \\alpha \\frac{f'(g(x))}{[f(g(x))]^\\beta}$$ 가 성립한다. 이 때 $$\\alpha + \\beta$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = 3x + 2\\cos x$$의 역함수를 $$g$$라 할 때, $$g'(2)$$의 값을 구하면?",
-        "choices": [
-          "$$\\frac{1}{27}$$",
-          "$$\\frac{2}{27}$$",
-          "$$\\frac{1}{9}$$",
-          "$$\\frac{2}{9}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$f(x) = 2x + \\ln x$$일 때, $$(f^{-1})'(2)$$의 값은?",
-        "choices": [
-          "$$-1$$",
-          "$$-\\frac{1}{9}$$",
-          "$$\\frac{1}{9}$$",
-          "$$\\frac{1}{27}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$y = f(x), x = g(z)$$이고 $$f$$와 $$g$$는 모두 2계도함수가 존재한다고 할 때 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$f'(x) g'(z) + f'(x) g'(z)$$",
-          "$$f'(x) (g'(z))^2 + f'(x) g''(z)$$",
-          "$$f'(x) g'(z) + (f(x))' g''(z)$$",
-          "$$2 f'(x) g'(z) + 2 f'(x) g'(z)$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "132": [
-      {
-        "question": "매개방정식 $$x = t^2, y = t^3$$에서 $$t = 6$$일 때, $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$\\frac{1}{16}$$",
-          "$$\\frac{1}{8}$$",
-          "$$1$$",
-          "$$2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$x = \\tanh \\theta, y = \\text{sech} \\theta$$라 할 때, 2계도함수 $$\\frac{d^2 y}{dx^2}$$는?",
-        "choices": [
-          "$$\\frac{1}{(1-x^2)x}$$",
-          "$$-\\frac{\\sqrt{1-x^2}}{x}$$",
-          "$$-\\frac{\\sqrt{1-y^2}}{y}$$",
-          "$$-\\frac{1}{y^3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = t + t^2, y = t - \\frac{4}{3} t^3$$일 때, $$t = 1$$에서 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$-1$$",
-          "$$-\\frac{2}{3}$$",
-          "$$0$$",
-          "$$\\frac{4}{3}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "매개곡선 $$x = t^2 + 1, y = t^2 + t$$ 위의 점 (5,6)에서 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$-\\frac{1}{16}$$",
-          "$$-\\frac{1}{32}$$",
-          "$$0$$",
-          "$$\\frac{1}{32}$$",
-          "$$\\frac{1}{16}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "133": [
-      {
-        "question": "실수 $$t$$의 함수 $$x = \\sin t, y = 5 - 4\\cos t$$에 대하여 $$t = \\frac{\\pi}{3}$$에서 $$\\frac{d^2 y}{dx^2}$$의 값을 구하면?",
-        "choices": [
-          "$$\\frac{8\\sqrt{3}}{3}$$",
-          "$$8\\sqrt{3}$$",
-          "$$16$$",
-          "$$32$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = 2t, y = t^2 - 3$$일 때, $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$-\\frac{1}{2}$$",
-          "$$-1$$",
-          "$$\\frac{1}{2}$$",
-          "$$1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$t$$에서 어떤 점의 위치가 $$ (2t+1, 2t^2+2t+1) $$일 때, $$\\frac{d^2 y}{dx^2}$$는?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = \\cos \\theta, y = \\sin \\theta \\quad (0 < \\theta < \\frac{\\pi}{2})$$일 때, $$\\frac{d^2 y}{dx^2}$$는?",
-        "choices": [
-          "$$\\frac{1}{(1-x^2)x}$$",
-          "$$\\frac{1}{x^2(\\sqrt{1-x^2})}$$",
-          "$$\\frac{-1}{(1-x^2)\\sqrt{1-x^2}}$$",
-          "$$\\frac{-\\sqrt{1-x^2}}{x}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "134": [
-      {
-        "question": "$$t = \\frac{7\\pi}{4}$$ 일 때, 다음 매개 방정식에 대해 $$\\frac{dy}{dx}$$, $$\\frac{d^2 y}{dx^2}$$ 의 값은?",
-        "choices": [
-          "$$-\\frac{20}{c^2}$$",
-          "$$\\frac{10}{\\sqrt{2}}$$",
-          "$$\\frac{a^2}{19}$$",
-          "$$\\frac{19}{10}$$",
-          "$$-\\frac{19}{2\\sqrt{2}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "매개방정식 $$x = e^{-2t} \\sin t, y = e^{-2t} \\cos t$$ 위의 점 $$(0,1)$$에서 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$-5$$",
-          "$$-\\frac{3}{2}$$",
-          "$$1$$",
-          "$$3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "음함수 $$xy + 2x^2 - y^2 = 0$$에 대해 점 $$(1,-1)$$에서 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$0$$",
-          "$$-3$$",
-          "$$\\frac{1}{3}$$",
-          "$$-9$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x^4 + y^4 = 16$$일 때, 이계도함수 $$y''$$를 구하면?",
-        "choices": [
-          "$$\\frac{3x^3 y^3 - 3x^2 y^3}{y^6}$$",
-          "$$\\frac{24x^2}{y^7}$$",
-          "$$\\frac{-48x^2}{y^7}$$",
-          "$$\\frac{48x^2}{y^7}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "135": [
-      {
-        "question": "$$\\frac{1}{2} x^2 - \\frac{1}{3} y^3 = \\frac{1}{4}$$일 때, $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$\\frac{x}{y^3}$$",
-          "$$\\frac{y - 2x}{y^3}$$",
-          "$$\\frac{y^3 - 2x^2}{y^5}$$",
-          "$$\\frac{y^3 + 2x^2}{y}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^4 + y^3 = 4$$ 위의 점 $$(-1, \\sqrt{3})$$에서 $$\\frac{d^2 y}{dx^2}$$를 구하라.",
-        "choices": [
-          "$$-\\frac{22}{3\\sqrt{3}}$$",
-          "$$-22\\sqrt{3}$$",
-          "$$0$$",
-          "$$22\\sqrt{3}$$",
-          "$$\\frac{22}{3\\sqrt{3}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x^2 + xy - y^2 = 1$$ 위의 점 $$(1,1)$$에서 $$\\frac{d^2 y}{dx^2}$$는?",
-        "choices": [
-          "$$-5$$",
-          "$$-\\frac{23}{5}$$",
-          "$$0$$",
-          "$$10$$",
-          "$$-10$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^4 + y^4 = 16$$ 위의 점 $$(\\sqrt{8}, -\\sqrt{8})$$에서 $$y'$$의 값은?",
-        "choices": [
-          "$$\\sqrt{2}$$",
-          "$$2\\sqrt{2}$$",
-          "$$3\\sqrt{2}$$",
-          "$$4\\sqrt{2}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "136": [
-      {
-        "question": "관계식 $$x^3 + y^3 - xy = 1$$ 에 의해 점 $$(1,1)$$ 근처에서 정의된 함수 $$y = f(x)$$를 생각한다. 이 때 $$f'(1) + f''(1)$$의 값을 구하면?",
-        "choices": [
-          "$$-5$$",
-          "$$-6$$",
-          "$$-7$$",
-          "$$-8$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\sin(x+y) = y^3 \\cos x$$ 를 만족 할 때, $$(x,y) = (0,0)$$에서 $$\\frac{d^2 y}{dx^2}$$을 구하면?",
-        "choices": [
-          "$$1$$",
-          "$$2$$",
-          "$$-1$$",
-          "$$-2$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^4 + y^4 = 16$$ 위의 점 $$(\\sqrt{8}, -\\sqrt{8})$$에서 $$y'$$의 값은?",
-        "choices": [
-          "$$\\sqrt{2}$$",
-          "$$2\\sqrt{2}$$",
-          "$$3\\sqrt{2}$$",
-          "$$4\\sqrt{2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "곡선 $$x^4 + y^3 = 4$$ 위의 점 $$(-1, \\sqrt{3})$$에서 $$\\frac{d^2 y}{dx^2}$$를 구하라.",
-        "choices": [
-          "$$-\\frac{22}{3\\sqrt{3}}$$",
-          "$$-22\\sqrt{3}$$",
-          "$$0$$",
-          "$$22\\sqrt{3}$$",
-          "$$\\frac{22}{3\\sqrt{3}}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 매개곡선 $$\\begin{cases} x = t - 3\\sin t \\\\ y = 3 - 2\\cos t \\end{cases}$$ 에 대하여 $$t = \\frac{\\pi}{3}$$에서 $$\\frac{d^2 y}{dx^2}$$의 값은?",
-        "choices": [
-          "$$-15\\sqrt{3} - 26$$",
-          "$$-40$$",
-          "$$0$$",
-          "$$40$$",
-          "$$15\\sqrt{3} - 26$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "137": [
-      {
-        "question": "방정식 $$x^4 + y^4 = 2$$가 변수 $$y$$를 $$x$$의 음함수로 정의할 때, $$0$$이 아닌 $$y$$에서 $$y'$$의 이계도함수는 $$y'' = ax^b y^c$$이다. 이때 $$a + b + c$$의 값은? (단, $$a,b,c$$는 실수)",
-        "choices": [
-          "$$-15$$",
-          "$$-11$$",
-          "$$1$$",
-          "$$3$$",
-          "$$15$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "매개곡선 $$x = t^4 - 1, y = t^3 - 17t + 1$$ 에 대하여 $$t = 1$$ 일 때, $$\\frac{d^2 y}{dx^2}$$ 의 값을 구하면?",
-        "choices": [
-          "$$0$$",
-          "$$1$$",
-          "$$2$$",
-          "$$3$$",
-          "$$4$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "두 번 미분가능한 함수 $$f(x)$$가 $$x > 0$$에서 $$\\frac{d^2}{dx^2} f(2x) = \\sin x f(2x)$$, $$f(\\frac{\\pi}{2}) = 1$$, $$f'(\\frac{\\pi}{2}) = 0$$ 을 만족한다. $$x = \\frac{\\pi}{4}$$일 때, $$\\frac{d^2}{dx^2} f(\\sqrt{x})$$의 값은?",
-        "choices": [
-          "$$\\frac{1}{16 \\pi^2}$$",
-          "$$\\frac{1}{8 \\pi^2}$$",
-          "$$\\frac{1}{4 \\pi^2}$$",
-          "$$\\frac{1}{2 \\pi^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "두 번 미분가능한 함수 $$f(x)$$가 $$x > 0$$에서 $$\\frac{d^2}{dx^2} f(2x) = x \\tan^{-1} x f(2x)$$, $$f(2) = 1$$, $$f'(2) = -1$$ 을 만족한다. $$x = \\frac{1}{2}$$일 때, $$\\frac{d^2}{dx^2} f(\\frac{1}{x})$$의 값은?",
-        "choices": [
-          "$$\\frac{\\pi}{2}$$",
-          "$$\\frac{\\pi}{12} - 4$$",
-          "$$\\frac{\\pi}{2} - 16$$",
-          "$$\\pi - 16$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "138": [
-      {
-        "question": "함수 $$y = x^{10}$$의 $$10$$계 도함수는?",
-        "choices": [
-          "$$10$$",
-          "$$10!$$",
-          "$$11$$",
-          "$$0$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$\\frac{d^9}{dx^9} (x^9 \\ln x)$$는?",
-        "choices": [
-          "$$\\frac{9!}{x}$$",
-          "$$\\frac{8!}{x}$$",
-          "$$\\frac{9!}{x^2}$$",
-          "$$\\frac{8!}{x^2}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "$$x = \\pi$$에서 미분값 $$\\frac{d^{2019}}{dx^{2019}}(\\sin x)$$을 구하면?",
-        "choices": [
-          "$$-1$$",
-          "$$0$$",
-          "$$1$$",
-          "$$\\infty$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "139": [
-      {
-        "question": "함수 $$y = \\frac{1}{1 - 3x}$$일 때, $$\\frac{d^n y}{dx^n}$$를 구하면?",
-        "choices": [
-          "$$n!3^{n+1}(1 - 3x)^{-n}$$",
-          "$$n!3^n(1 - 3x)^{-(n+1)}$$",
-          "$$(-1)^n n! 3^n (1 - 3x)^{-(n+1)}$$",
-          "$$(-1)^n (n-1)! 3^n (1 - 3x)^{-(n+1)}$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$y = \\sin \\alpha x$$의 $$n$$계 도함수는?",
-        "choices": [
-          "$$\\alpha^n \\sin \\left( \\frac{n\\pi}{2} + \\alpha x \\right)$$",
-          "$$\\alpha^n \\sin \\left( \\frac{n\\pi}{4} - \\alpha x \\right)$$",
-          "$$\\alpha^n + \\cos \\left( \\frac{n\\pi}{2} + \\alpha x \\right)$$",
-          "$$\\alpha^n \\cos \\left( \\frac{n\\pi}{4} + \\alpha x \\right)$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = (x+1)\\ln(x+1)$$ 에 대해 $$f$$의 $$n$$ 계도함수 $$\\frac{d^n f(x)}{dx^n}$$ ($$n \\geq 2$$)를 구하면?",
-        "choices": [
-          "$$(-1)^n(n-1)! (x+1)^{-n}$$",
-          "$$(-1)^{n+1} (n-1)! (x+1)^{-n-1}$$",
-          "$$(-1)^n (n-2)! (x+1)^{-n+1}$$",
-          "$$(-1)^{n+1} (n-2)! (x+1)^{-n}$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "140": [
-      {
-        "question": "$$f(x) = \\frac{d^{35}}{dx^{35}} (x \\sin x)$$라 할 때, $$f(\\pi)$$의 값은?",
-        "choices": [
-          "$$-\\pi$$",
-          "$$\\pi$$",
-          "$$35$$",
-          "$$35\\pi$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = x e^x$$에 대해 미분값 $$f^{(2013)}(1)$$을 구하면?",
-        "choices": [
-          "$$2012e$$",
-          "$$2014e$$",
-          "$$2013$$",
-          "$$2013e$$",
-          "$$2015$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "함수 $$f(x) = x^x e^x$$ 일 때 $$f^{(100)}(1)$$의 값을 구하면?",
-        "choices": [
-          "$$e$$",
-          "$$100e$$",
-          "$$101e$$",
-          "$$10001e$$",
-          "$$10101e$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "141": [
-      {
-        "question": "임의의 자연수 $$n$$에 대하여 두 함수 $$f(x)$$와 $$g(x)$$는 $$n$$번 미분가능하다. 두 함수의 곱 $$fg$$의 4계 도함수가 다음과 같을 때 $$\\sum_{r=0}^{4} \\alpha_r$$의 값을 구하면?",
-        "choices": [
-          "$$15$$",
-          "$$16$$",
-          "$$17$$",
-          "$$18$$",
-          "$$19$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "7번 미분가능한 임의의 두 함수 $$f, g : \\mathbb{R} \\to \\mathbb{R}$$에 대하여 $$(fg)^{(7)} = f^{(7)} g + \\alpha_1 f^{(6)} g^{(1)} + \\alpha_2 f^{(5)} g^{(2)} + ... + \\alpha_6 f g^{(7)}$$ 으로 나타낼 때, 상수 $$\\alpha_1, \\alpha_2, ..., \\alpha_6$$의 평균은?",
-        "choices": [
-          "$$20$$",
-          "$$21$$",
-          "$$24$$",
-          "$$28$$",
-          "$$35$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "구간 $$I$$에서 무한 번 미분 가능한 두 함수 $$f$$와 $$g$$의 곱 $$fg$$의 10계 도함수를 다음과 같이 쓸 때, $$\\alpha_0 + \\alpha_2 + \\alpha_4 + \\alpha_6 + \\alpha_8 + \\alpha_{10}$$의 값은?",
-        "choices": [
-          "$$512$$",
-          "$$513$$",
-          "$$1024$$",
-          "$$1025$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "임의의 자연수 $$n$$에 대하여 두 함수 $$f(x)$$와 $$g(x)$$는 $$n$$번 미분가능하다. 두 함수의 곱 $$fg$$의 4계 도함수가 다음과 같을 때 $$\\sum_{r=0}^{4} \\alpha_r$$의 값을 구하면?",
-        "choices": [
-          "$$15$$",
-          "$$16$$",
-          "$$17$$",
-          "$$18$$",
-          "$$19$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "7번 미분가능한 임의의 두 함수 $$f, g : \\mathbb{R} \\to \\mathbb{R}$$에 대하여 다음과 같이 주어진다. 상수 $$\\alpha_1, \\alpha_2, ..., \\alpha_6$$의 평균은?",
-        "choices": [
-          "$$20$$",
-          "$$21$$",
-          "$$24$$",
-          "$$28$$",
-          "$$35$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "구간 $$I$$에서 무한 번 미분 가능한 두 함수 $$f$$와 $$g$$의 곱 $$fg$$의 10계 도함수를 다음과 같이 쓸 때, $$\\alpha_0 + \\alpha_2 + \\alpha_4 + \\alpha_6 + \\alpha_8 + \\alpha_{10}$$의 값은?",
-        "choices": [
-          "$$512$$",
-          "$$513$$",
-          "$$1024$$",
-          "$$1025$$"
-        ],
-        "answer": ""
       }
     ],
-    "142": [
-      {
-        "question": "집합 $$I$$에서 두 함수 $$f$$와 $$g$$의 $$n$$계 도함수가 존재할 때 다음 식의 값을 구하면?",
-        "choices": [
-          "$$0$$",
-          "$$f^{(n)}(x) g(x)$$",
-          "$$f(x) g^{(n)}(x)$$",
-          "$$1$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "급수 $$\\sum_{k=2}^{2021} \\binom{2021}{k} k^{k-1} (-1)^{2021-k}$$의 값을 구하시오. (단, $$\\binom{2021}{k}$$은 조합식이다.)",
-        "choices": [
-          "$$-4040$$",
-          "$$-2021$$",
-          "$$2020$$",
-          "$$2021$$",
-          "$$4040$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수전체집합에서 무한히 미분가능한 두 함수 $$f(x), g(x)$$의 $$x=1$$에서 $$n$$ 차 도함수의 값이 각각 $$(-2)^n$$, $$(-3)^n$$이라 할 때, $$x=1$$에서 $$f(x)g(x)$$의 8 차 도함수의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$2^8$$",
-          "$$3^8$$",
-          "$$5^3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "집합 $$I$$에서 두 함수 $$f$$와 $$g$$의 $$n$$계 도함수가 존재할 때 다음 식의 값을 구하면?",
-        "choices": [
-          "$$0$$",
-          "$$f^{(n)}(x) g(x)$$",
-          "$$f(x) g^{(n)}(x)$$",
-          "$$1$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "급수 $$\\sum_{k=2}^{2021} \\binom{2021}{k} k^{k-1} (-1)^{2021-k}$$의 값을 구하시오. (단, $$\\binom{2021}{k}$$은 조합식이다.)",
-        "choices": [
-          "$$-4040$$",
-          "$$-2021$$",
-          "$$2020$$",
-          "$$2021$$",
-          "$$4040$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수전체집합에서 무한히 미분가능한 두 함수 $$f(x), g(x)$$의 $$x=1$$에서 $$n$$ 차 도함수의 값이 각각 $$(-2)^n$$, $$(-3)^n$$이라 할 때, $$x=1$$에서 $$f(x)g(x)$$의 8 차 도함수의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$2^8$$",
-          "$$3^8$$",
-          "$$5^3$$"
-        ],
-        "answer": ""
-      }
-    ]
+
+"9": [
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{x+1}{x+2}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{x+1}{x^2 + x + 1}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{x^2 + 1}{x - 4}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{4x^2 + x + 1}{x^2 - 3x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\sin x}{x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\sin x - \\tan x}{x^3}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\sin^{-1} x}{x^2}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{e^x - \\cos x - x}{x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{e^x}{x^{2020}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} \\frac{\\ln^5 n}{n}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{e^x + 2x^5 + 3x + 4}{x^{2020} + 2021}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\frac{2\\sin x + \\ln x^3 + x^4 + 5}{3e^x + 4x}",
+    "choices": [],
+    "answer": ""
   }
-}
+],
+
+"11": [
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 1}} \\frac{\\sin(x-1)}{\\sqrt{x-1}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\frac{\\sin x}{\\sqrt{1+x} - \\sqrt{1-x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 1}} \\frac{e^x - 1 - 1}{\\ln x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\frac{\\pi}{2}}} \\frac{\\ln \\sin x}{1 - \\sin x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 1}} \\log_2 \\left( \\frac{1 - \\sqrt{x}}{1 - x} \\right)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\sqrt{2}}} \\frac{(x^2 + x) \\sin(x - \\sqrt{2})}{x^2 - 2}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 1}} \\frac{x^{2019} + 2x - 3}{x - 1}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\frac{1}{2}}} \\frac{4x^2 - 1}{2x - 1}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\sin x \\cot 3x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\frac{\\pi}{2}}} (\\sec x - \\tan x)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 1^+}} \\left( \\frac{x}{x - 1} - \\frac{1}{\\ln x} \\right)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to -2}} \\left( \\frac{1}{x^2 + x - 2} - \\frac{1}{2x^2 + 5x + 2} \\right)",
+    "choices": [],
+    "answer": ""
+  }
+],
+"12": [
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0^+}} \\frac{e^{-\\frac{1}{x}}}{x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( x e^{1/x} - x \\right)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( \\sqrt{x^2 + x} - x \\right)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( \\sqrt{4x^2 + x - 2x} \\right)",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} x \\ln x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} x^x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} x^x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0^+}} x^{\\frac{1}{x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} x^{\\frac{1}{x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( \\cos \\frac{1}{x} \\right)^x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} \\left( \\sin \\frac{1}{x} \\right)^x",
+    "choices": [],
+    "answer": ""
+  }
+],
+"13": [
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} \\left( 1 - \\frac{3}{2n - 5} \\right)^n",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} \\left( \\frac{n - 1}{n} \\right)^{2n + 2020}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{p \\to \\infty}} \\frac{p^{p+1}}{(p+1)^{p+1}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( \\frac{x + \\ln 3}{x - \\ln 3} \\right)^x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} (1 + \\sin x)^{\\frac{1}{x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} (e^x + \\sin 2x)^{\\frac{1}{x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} (1 + \\sin 4x)^{\\cot x}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to 0}} (\\cos x + 3x)^{\\frac{2}{x}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{x \\to \\infty}} \\left( \\sin \\frac{2}{x} + \\cos \\frac{3}{x} \\right)^x",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} (2^n + 3^n + 4^n)^{\\frac{1}{n}}",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 계산하시오. \\lim_{{n \\to \\infty}} \\frac{n 2^n}{3^n}",
+    "choices": [],
+    "answer": ""
+  }
+],
+"16": [
+  {
+    "question": "\\lim_{{x \\to 2}} \\frac{x^2 - ax - 2}{x - 2} 가 극한값이 존재한다면 그 극한값은 얼마인가?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 1}} \\frac{x^2 + ax + b}{x - 1} = 3일 때 2a + b의 값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 0}} \\frac{1}{3 + \\frac{1}{x}} 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 2}} 3^{x-2} 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 1}} \\frac{x^2 - 1}{x - 1} 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 5}} \\left\\lfloor \\frac{x}{5} \\right\\rfloor 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 3}} \\left( \\left\\lfloor \\frac{x}{2} \\right\\rfloor - \\left\\lfloor \\frac{x}{2} \\right\\rfloor \\right) 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to \\infty}} \\frac{\\lfloor x^2 \\rfloor - x^2}{\\sqrt{x}} 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "\\lim_{{x \\to 0^+}} \\frac{x}{2} \\left\\lfloor \\frac{3}{x} \\right\\rfloor 의 극한값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to -2^+}} f(x) 이 존재하고 \\frac{x^2 + x - 1}{x + 3} \\leq \\frac{f(x)}{x^2} \\leq \\frac{x^2 + 2x + 1}{x + 3} 이 성립할 때 \\lim_{{x \\to -2^+}} f(x)의 값은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": ""
+  }
+],
+"17": [
+  {
+    "question": "f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} 일 때, x = 0에서 연속성과 미분가능성은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "f(x) = \\begin{cases} \\sqrt{x} \\tan^{-1} \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} 일 때, x = 0에서 연속성과 미분가능성은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "f(x) = |x|^{\\alpha} 일 때, f(x)가 원점에서 미분가능하게 되는 \\alpha의 범위는?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "함수 f(x)에 대하여 f(x+y) = f(x) + f(y) + xy가 성립하고, f'(0) = 5 일 때, f'(3)을 구하시오.",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "f(x)가 모든 x, y에 대해 f(x+y) = 4f(x)f(y) 가 성립하고, f(2) = \\frac{1}{2}, f'(0) = 1 일 때, f'(2)를 구하면?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "-\\infty < a < b < \\infty 일 때, 폐구간 [a, b]에서 정의된 함수 y = f(x)에 대하여 다음 중 옳은 것은?",
+    "choices": [
+      "연속이면 미분가능하다",
+      "적분가능하면 연속이다",
+      "적분가능하면 미분가능하다",
+      "연속이면 평등연속이다"
+    ],
+    "answer": ""
+  }
+],
+"20": [
+  {
+    "question": "음이 아닌 두 수의 곱이 25일 때, 두 수의 합의 최소값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "x > 0일 때, x + \\frac{1}{x} 의 최소값을 구하여라.",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "실수 x, y, z가 4x + y + 3z = 12를 만족할 때, 4x^2 + y^2 + 9z^2 의 최소값을 구하면?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "구 x^2 + y^2 + z^2 = 19 위에서 함수 f(x, y, z) = 2x + 3y + 5z 의 최댓값은?",
+    "choices": [
+      "19\\sqrt{3}",
+      "19\\sqrt{2}",
+      "38\\sqrt{3}",
+      "38\\sqrt{2}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "방정식 2x^7 + 7x^3 + 4x - 15 = 0 의 실근이 속하는 구간은?",
+    "choices": [
+      "[-2, -1]",
+      "[-1, 0]",
+      "[0, 1]",
+      "[1, 2]"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "f(0) = -30이고 모든 x값에 대해 f'(x) \\leq 5라고 가정하자. f(2)의 최댓값은?",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "함수 f(x) = \\sqrt{1 - x} 가 [0,1] 구간에 대하여 평균값 정리를 만족하는 점을 구하시오.",
+    "choices": [
+      "\\frac{3}{4}",
+      "\\frac{4}{3}",
+      "\\frac{3}{2}",
+      "\\frac{2}{3}"
+    ],
+    "answer": ""
+  }
+],
+"21": [
+  {
+    "question": "극한 \\lim_{{\\theta \\to 0}} \\frac{\\sin\\theta}{\\theta + \\tan\\theta} 의 값은?",
+    "choices": [
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{\\sin x}{\\ln(x+1)} 의 값은?",
+    "choices": [
+      "1",
+      "e",
+      "e^2",
+      "e^3"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{1}{x} \\ln(2x^3 - x^2 - 2x + 1) 의 값은?",
+    "choices": [
+      "-2",
+      "-1",
+      "1",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\left( \\frac{1}{x^2} - \\frac{\\tan x}{x^3} \\right) 의 값은?",
+    "choices": [
+      "-\\frac{1}{3}",
+      "-\\frac{2}{3}",
+      "\\frac{1}{3}",
+      "\\frac{2}{3}"
+    ],
+    "answer": ""
+  }
+],
+"22": [
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{x \\sin(x^2)}{\\tan^3 x} 을 계산하면?",
+    "choices": [
+      "0",
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{6}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "구간 \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)에서 정의된 연속함수 f(x)가 모든 x에 대하여 (\\sin 2x) f(x) = e^{3x} - 1을 만족시킬 때 f(0)의 값은?",
+    "choices": [
+      "\\frac{3}{2}",
+      "\\frac{1}{2}",
+      "-\\frac{1}{2}",
+      "-\\frac{3}{2}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 f(x)가 구간 \\left[ -\\frac{1}{2}, \\frac{1}{2} \\right] 에서 연속이고 \\arcsin x = 2x f(x)를 만족할 때, f(0)을 구하시오.",
+    "choices": [
+      "-\\frac{1}{2}",
+      "0",
+      "\\frac{1}{2}",
+      "1"
+    ],
+    "answer": ""
+  }
+],
+"23": [
+  {
+    "question": "극한 \\lim_{{x \\to 0}} (\\cosh x)^\\frac{1}{x} 의 값은?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "e"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\frac{1}{x^3 + \\ln x} 의 값은?",
+    "choices": [
+      "e^{-2}",
+      "e^{-1}",
+      "1",
+      "e",
+      "e^2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{n \\to \\infty}} n (\\sqrt[3]{3} - 1) 의 값은?",
+    "choices": [
+      "1",
+      "\\sqrt{3}",
+      "3",
+      "\\ln 3"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\left( \\frac{1}{x e^x - x} \\right) 의 값은?",
+    "choices": [
+      "-\\infty",
+      "0",
+      "1",
+      "e",
+      "\\infty"
+    ],
+    "answer": ""
+  }
+],
+"24": [
+  {
+    "question": "극한 \\lim_{{x \\to 0^+}} x(2 - 3 \\ln x) 의 값은?",
+    "choices": [
+      "-\\infty",
+      "-3",
+      "0",
+      "2",
+      "+\\infty"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} x^2 \\left( 1 + \\sin^2 \\frac{2\\pi}{x} \\right) 의 값은?",
+    "choices": [
+      "2\\pi",
+      "1",
+      "0",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to e^e}} \\frac{\\ln(\\ln x)}{e(x - e^e)} 의 값은?",
+    "choices": [
+      "e^{-e+2}",
+      "e^{-e+1}",
+      "e^{-e-1}",
+      "e^{-e-2}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\frac{\\tan^{-1} x - \\frac{\\pi}{2}}{\\frac{1}{x}} 의 값은?",
+    "choices": [
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "answer": ""
+  }
+],
+"25": [
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\left( \\tanh x + \\frac{\\cosh x}{1 + \\sinh^2 x} \\right) 의 값은?",
+    "choices": [
+      "0",
+      "\\frac{1}{2}",
+      "1",
+      "\\frac{3}{2}",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} (1 - \\sin x)^{\\frac{1}{x}} 을 구하시오.",
+    "choices": [
+      "0",
+      "1",
+      "e",
+      "\\frac{1}{e}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} (1 - \\tan x)^{1/x} 의 값을 구하시오.",
+    "choices": [
+      "-e",
+      "-\\frac{1}{e}",
+      "1",
+      "e",
+      "\\frac{1}{e}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} (x+1)^{x^2} 의 값을 구하면?",
+    "choices": [
+      "1",
+      "e",
+      "e^2",
+      "e^{-2}"
+    ],
+    "answer": ""
+  }
+],
+"26": [
+  {
+    "question": "f(x) > 0이며 \\lim_{{x \\to \\infty}} f(x) = 0일 때, \\lim_{{x \\to -\\infty}} \\left[1 + 2f(x)\\right]^\\frac{1}{3f(x)} 의 값은?",
+    "choices": [
+      "e^2",
+      "\\frac{2}{e^3}",
+      "e^3",
+      "1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{n \\to \\infty}} \\sqrt[3]{2^n + 3^n} 의 값은?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "상수 a, b에 대하여 극한 \\lim_{{n \\to \\infty}} \\left(1 + \\frac{a}{n} + \\frac{b}{n^2}\\right)^n 의 값은?",
+    "choices": [
+      "e^a",
+      "e^b",
+      "e^{a+b}",
+      "1"
+    ],
+    "answer": ""
+  }
+],
+"27": [
+  {
+    "question": "극한 \\lim_{{x \\to -2}} \\frac{1 - \\sqrt{x + a}}{x + 2} = b 를 만족시키는 상수 a, b에 대하여 ab의 값은?",
+    "choices": [
+      "-\\frac{3}{2}",
+      "-1",
+      "-\\frac{1}{2}",
+      "1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\left( \\frac{\\sin 2x}{x^3} + a + \\frac{b}{x^2} \\right) = 0 일 때, a + b의 값을 구하면?",
+    "choices": [
+      "-\\frac{4}{3}",
+      "-\\frac{2}{3}",
+      "\\frac{4}{3}",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\left( \\frac{\\tan x}{x^2} + \\alpha + \\frac{\\beta}{x} \\right) = 3 을 만족시키는 \\alpha, \\beta에 대하여 \\alpha + \\beta의 값은?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": ""
+  }
+],
+"28": [
+  {
+    "question": "함수 \\ f(x) = \\begin{cases} e^{-x}, & (x < 0) \\\\ \\frac{1}{x+1}, & (0 \\leq x < 1) \\\\ \\sqrt{x-1}, & (x = 1) \\\\ x^2 -1, & (x \\geq 1) \\end{cases} 가 불연속인 점을 모두 구하면?",
+    "choices": [
+      "없다",
+      "x = 0",
+      "x = 1",
+      "x = 0, x = 1",
+      "x = -1, x = 0, x = 1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\ f(x) = \\begin{cases} \\sin (1/x), & (x < 0일 때) \\\\ x^2, & (0 \\leq x < 1일 때) \\\\ \\cos(x-1), & (x \\geq 1일 때) \\end{cases} 가 불연속인 점은?",
+    "choices": [
+      "x = 0",
+      "x = 1",
+      "x = 0과 x = 1",
+      "x = -1",
+      "없다"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\ f(x) = \\begin{cases} \\frac{x^2 - x - 12}{x^2 - 10x + 24}, & x \\neq 4 \\\\ \\frac{7}{2}, & x = 4 \\end{cases} 의 불연속점을 모두 찾으면?",
+    "choices": [
+      "4",
+      "6",
+      "-6, 4",
+      "4, 6",
+      "불연속점 없음"
+    ],
+    "answer": ""
+  }
+],
+"29": [
+  {
+    "question": "다음 함수 f(x)가 x = 0에서 연속이라고 한다. a의 값은?\\\\ f(x) = \\begin{cases} 1 - x \\sin \\frac{1}{e^{4x}}, & x \\neq 0 \\\\ a, & x = 0 \\end{cases}",
+    "choices": [
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음과 같이 정의된 함수 f가 연속이기 위한 실수 a의 값은?\\\\ f(x) = \\begin{cases} (e^x + x)^{\\frac{1}{\\sin^{-1} x}}, & x \\neq 0 \\\\ a, & x = 0 \\end{cases}",
+    "choices": [
+      "1",
+      "e",
+      "e^{-1}",
+      "e^2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\ f(x) = \\begin{cases} \\frac{a \\sqrt{x+1} - b}{x-1}, & (x > 1) \\\\ 2x-1, & (x \\leq 1) \\end{cases} 가 x = 1에서 연속이기 위한 상수 a, b 에 대해 ab의 값을 구하면?",
+    "choices": [
+      "4",
+      "4\\sqrt{2}",
+      "8",
+      "8\\sqrt{2}"
+    ],
+    "answer": ""
+  }
+],
+"30": [
+  {
+    "question": "a \\neq 0이고 함수 \\ f(x) = \\begin{cases} \\frac{|x|}{x}, & |x| \\geq 1 \\\\ ax^2 + bx + c, & |x| < 1 \\end{cases} 가 실수 전체에서 연속일 때 항상 참인 것은?",
+    "choices": [
+      "a + b > 0",
+      "a + b < 0",
+      "ab < 0",
+      "abc < 0"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "f(x) = \\begin{cases} \\frac{\\tan x}{x}, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases} 일 때, f'(0) 의 값은?",
+    "choices": [
+      "0",
+      "\\frac{1}{2}",
+      "1",
+      "존재하지 않는다."
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\ B(x) = \\begin{cases} \\frac{x}{e^x -1}, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases} 의 미분계수 B'(0) 의 값은?",
+    "choices": [
+      "-\\frac{1}{2}",
+      "-\\frac{1}{6}",
+      "\\frac{1}{6}",
+      "\\frac{1}{2}"
+    ],
+    "answer": ""
+  }
+],
+"31": [
+  {
+    "question": "다음에서 x = 0 에서 미분 가능한 함수를 모두 고르면?",
+    "example": "(a) f(x) = \\begin{cases} \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} \\\\ (b) f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} \\\\ (c) f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}",
+    "choices": [
+      "(a)",
+      "(b)",
+      "(c)",
+      "(a), (b)",
+      "(b), (c)"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 f에 대하여 x = 0에서의 연속성과 미분가능성을 옳게 기술한 것을 고르면?\\\\ f(x) = \\begin{cases} x^2, & (x \\geq 0) \\\\ \\sinh(x^2), & (x < 0) \\end{cases}",
+    "choices": [
+      "연속이고 미분가능하다.",
+      "연속이지만 미분가능하지 않다.",
+      "연속은 아니지만 미분가능하다.",
+      "연속도 아니고 미분가능하지도 않다."
+    ],
+    "answer": ""
+  },
+  {
+    "question": "f(x) = \\begin{cases} -x^2, & x < 0 \\\\ x^2, & 0 \\leq x < 1 \\\\ 2x-1, & 1 \\leq x \\end{cases} 에 대하여, 다음 옳은 것을 모두 고르면?",
+    "choices": [
+      "x = 0에서 연속이다.",
+      "x = 0에서 미분가능하다.",
+      "x = 1에서 연속이다.",
+      "x = 1에서 미분가능하다."
+    ],
+    "answer": ""
+  }
+],
+"32": [
+  {
+    "question": "다음 보기의 함수 중 f'(0) 가 존재하는 것의 개수는?",
+    "example": "(가) f(x) = (x^2 - 1) \\sin |x| \\\\ (나) f(x) = \\begin{cases} 3\\sin x + x^3 \\cos \\frac{1}{x^2}, & (x \\neq 0) \\\\ 0, & (x = 0) \\end{cases} \\\\ (다) f(x) = \\begin{cases} x \\tan^{-1} \\frac{1}{x}, & (x \\neq 0) \\\\ 0, & (x = 0) \\end{cases}",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 함수 중 x = 0에서 미분 불가능한 것은?",
+    "choices": [
+      "f(x) = |x| \\sin x",
+      "f(x) = |x| \\cos x",
+      "f(x) = |x| \\tan x",
+      "f(x) = x|x|",
+      "f(x) = |x|^3"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 보기 중 x = 0 에서 미분 가능한 함수를 모두 고른 것은?",
+    "example": "(가) f(x) = |x| \\sin x \\\\ (나) g(x) = |x| \\cos x \\\\ (다) h(x) = |x| \\tan x \\\\ (라) i(x) = |x| e^x",
+    "choices": [
+      "(가), (나)",
+      "(가), (다)",
+      "(나), (라)",
+      "(가), (다), (라)"
+    ],
+    "answer": ""
+  }
+],
+"33": [
+  {
+    "question": "f 는 모든 실수 x, y 에 대하여 다음을 만족하는 연속함수일 때, f'(2) 의 값은?",
+    "example": "(i) f(x+y) = \\frac{1}{5} f(x) f(y) \\\\ (ii) f(0) = 5 \\\\ (iii) f'(0) = 10",
+    "choices": [
+      "f(2)",
+      "2f(2)",
+      "5f(2)",
+      "50f(2)"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 f가 x = 1에서 미분가능하며, 다음 식 f(x+y) = f(x) + f(y) + 5xy와 \\lim_{{h \\to 0}} \\frac{f(h)}{h} = 3을 만족한다. 이 때 f'(x)를 구하면?",
+    "choices": [
+      "5x + 3",
+      "5x - 3",
+      "3x + 5",
+      "3x - 5"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "[x]가 실수 x를 넘지 않는 최대 정수이고 f(x) = [x]^2 - x^2일 때, f'(0.4)의 값은?",
+    "choices": [
+      "0",
+      "-0.8",
+      "0.8",
+      "\\infty"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "방정식 x^5 - 2x^4 - x - 3 = 0 의 근이 존재하는 구간은?",
+    "choices": [
+      "(-1, 0)",
+      "(0, 1)",
+      "(1, 2)",
+      "(2, 3)"
+    ],
+    "answer": ""
+  }
+],
+"34": [
+  {
+    "question": "f : \\mathbb{R} \\to \\mathbb{R} 이 미분가능하고, 구간 (2,5)에서 부등식 1 \\leq f'(x) \\leq 4를 만족할 때 a = f(5) - f(2)의 범위는?",
+    "choices": [
+      "3 \\leq f(5) - f(2) \\leq 12",
+      "5 \\leq f(5) - f(2) \\leq 15",
+      "7 \\leq f(5) - f(2) \\leq 14",
+      "10 \\leq f(5) - f(2) \\leq 21"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "구간 (1,4)에서 미분가능인 함수 f가 f(1) = 20이고, 모든 x에 대하여 2 \\leq f'(x) \\leq 3의 조건을 만족한다고 할 때, f(4) 가 취할 수 있는 값의 범위는?",
+    "choices": [
+      "2 \\leq f(4) \\leq 3",
+      "6 \\leq f(4) \\leq 8",
+      "8 \\leq f(4) \\leq 11",
+      "9 \\leq f(4) \\leq 12"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "구간 (2,5)에서 미분가능인 함수 f가 f(5) = 3 이고, 모든 x에 대하여 1 \\leq f'(x) \\leq 4의 조건을 만족한다고 할 때, f(2) 가 취할 수 있는 값의 범위는?",
+    "choices": [
+      "-12 \\leq f(2) \\leq -3",
+      "-9 \\leq f(2) \\leq 0",
+      "-8 \\leq f(2) \\leq -1",
+      "-3 \\leq f(2) \\leq 2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "미분 가능한 함수 f : \\mathbb{R} \\to \\mathbb{R}가 \\lim_{{a \\to \\infty}} f'(a) = 5를 만족시킬 때 \\lim_{{a \\to \\infty}} \\{ f(2+a) - f(a) \\} 의 값을 구하면?",
+    "choices": [
+      "-10",
+      "-5",
+      "0",
+      "5",
+      "10"
+    ],
+    "answer": ""
+  }
+],
+"36": [
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\frac{e^x -1}{\\cosh x} 의 값은?",
+    "choices": [
+      "0",
+      "\\frac{1}{2}",
+      "1",
+      "2",
+      "\\infty"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한 \\lim_{{x \\to \\infty}} \\sin \\left( \\frac{1}{x} \\right)^{\\frac{-5}{4}} 의 값은?",
+    "choices": [
+      "-\\frac{5}{4}",
+      "-1",
+      "\\frac{5}{4}",
+      "1",
+      "0"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{1 - \\cos(1 - \\cos x)}{x^n} = \\frac{1}{8} 을 만족하는 자연수 n의 값은?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "answer": ""
+  }
+],
+"37": [
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\left( \\sqrt{2x^2 + 2x + 1} - \\sqrt{2x^2 - 2x + 1} \\right) 의 값은?",
+    "choices": [
+      "1",
+      "\\sqrt{2}",
+      "2\\sqrt{2}",
+      "4"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{m \\to \\infty}} \\left( \\sqrt{5m^2 - 2tm} - \\sqrt{5m^2 - 3} \\right) = 1 을 만족하는 실수 t 의 값을 구하면?",
+    "choices": [
+      "-\\sqrt{10}",
+      "-\\sqrt{5}",
+      "1",
+      "\\sqrt{5}",
+      "\\sqrt{10}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{n \\to \\infty}} \\frac{1}{\\sqrt{3n} + \\sqrt{2n} - \\sqrt{3n}} 의 값은?",
+    "choices": [
+      "\\sqrt{6}",
+      "1",
+      "\\sqrt{3}",
+      "\\sqrt{2}"
+    ],
+    "answer": ""
+  }
+],
+"38": [
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{1 - \\cos^3 x}{x^2} 의 값은?",
+    "choices": [
+      "0",
+      "\\frac{1}{2}",
+      "1",
+      "\\frac{3}{2}",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한값 \\lim_{{x \\to 1}} \\left( \\frac{x}{x-1} + (1 - x) \\tan \\frac{\\pi x}{2} - \\frac{1}{\\ln x} \\right) 을 구하면?",
+    "choices": [
+      "\\frac{\\pi + 1}{2\\pi}",
+      "\\frac{\\pi + 2}{2\\pi}",
+      "\\frac{\\pi + 4}{2\\pi}",
+      "\\frac{\\pi + 6}{2\\pi}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{4x^2 - \\sin^2 (2x)}{x^4} 의 값은?",
+    "choices": [
+      "2",
+      "\\frac{2}{3}",
+      "\\frac{4}{3}",
+      "\\frac{16}{3}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{6x^2 \\sin x^3 - 6x^5 + x^{11}}{x^{17}} 의 값은?",
+    "choices": [
+      "\\frac{1}{10}",
+      "\\frac{1}{15}",
+      "\\frac{1}{20}",
+      "\\frac{1}{60}"
+    ],
+    "answer": ""
+  }
+],
+"39": [
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{4e^x + 3\\ln x + x^2}{e^x + 2\\ln x + 3x^2} 의 값은?",
+    "choices": [
+      "4",
+      "\\frac{3}{2}",
+      "\\frac{1}{3}",
+      "\\frac{4}{3}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{h \\to 0}} \\frac{\\sin x (\\cosh - 1) + (\\cos x)(\\sinh)}{h} 의 값은?",
+    "choices": [
+      "0",
+      "\\sin x",
+      "\\cos x",
+      "1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} 2x \\cot 3x + \\lim_{{x \\to 5}} \\frac{4 \\sin (x-5)}{3x^2 - 18x + 15} 의 값은?",
+    "choices": [
+      "\\frac{2}{3}",
+      "1",
+      "\\frac{4}{3}",
+      "\\frac{5}{3}",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\left( \\frac{\\tan x}{x} \\right)^{\\frac{1}{x^2}} + \\lim_{{x \\to \\infty}} \\left( \\frac{\\ln x}{x} \\right)^{\\frac{1}{x}} 의 값은?",
+    "choices": [
+      "1",
+      "\\frac{4}{3}",
+      "\\sqrt[3]{e}",
+      "\\sqrt[3]{e} + 1"
+    ],
+    "answer": ""
+  }
+],
+"40": [
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\frac{(\\ln (x+1))^3}{x \\ln x} 의 값은?",
+    "choices": [
+      "0",
+      "e",
+      "1",
+      "\\frac{1}{2}",
+      "\\frac{1}{e}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to 0}} \\frac{(1 + x^2)^{2/x} - 1}{\\sin x} 을 구하면?",
+    "choices": [
+      "\\frac{1}{2}",
+      "1",
+      "\\frac{3}{2}",
+      "2",
+      "\\frac{5}{2}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\left[ \\frac{1}{e} \\left(1 + \\frac{1}{x} \\right)^x \\right]^x 의 값은?",
+    "choices": [
+      "\\frac{1}{e}",
+      "\\frac{1}{\\sqrt{e}}",
+      "\\sqrt{e}",
+      "1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "a가 양수일 때, 다음 극한값은?\\\\ \\lim_{{x \\to a}} \\frac{\\sqrt{2a^3 x - x^4} - a \\sqrt[3]{a^2 x}}{a - \\sqrt[4]{ax^3}}",
+    "choices": [
+      "1",
+      "a",
+      "\\frac{16}{9}",
+      "\\frac{16a}{9}"
+    ],
+    "answer": ""
+  }
+],
+"41": [
+  {
+    "question": "다음 극한의 값은?\\\\ \\lim_{{x \\to \\infty}} \\left[ x - x^2 \\ln \\left( \\frac{1 + x}{x} \\right) \\right]",
+    "choices": [
+      "0",
+      "\\frac{1}{2}",
+      "1",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\lim_{{x \\to \\infty}} \\left[ \\frac{x}{2} - x^2 + x \\ln \\left( \\frac{1 + x}{x} \\right) \\right] 의 값은?",
+    "choices": [
+      "1",
+      "\\frac{2}{3}",
+      "\\frac{1}{2}",
+      "\\frac{1}{3}",
+      "\\frac{1}{4}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 극한값을 K라 할 때, \\ln K의 값을 구하면?",
+    "example": "\\lim_{{n \\to \\infty}} \\left\\{ \\frac{1}{2} \\left( 1 + \\frac{1}{n^2} \\right) \\left( 1 + \\frac{1}{n^2 + 1} \\right) \\cdots \\left( 1 + \\frac{1}{2n^2} \\right) \\right\\}^{n^2}",
+    "choices": [
+      "\\frac{1}{2}",
+      "1",
+      "\\frac{3}{2}",
+      "2"
+    ],
+    "answer": ""
+  }
+],
+"42": [
+  {
+    "question": "다음 중 옳지 않은 것을 고르라.",
+    "choices": [
+      "실수 전체에서 연속인 함수 f에 대하여 f(1) = 1 이면 \\lim_{{x \\to 1}} \\ln(f(x)) = 0 이다.",
+      "\\lim_{{x \\to \\infty}} \\tan^{-1} (x) = \\frac{\\pi}{2}",
+      "\\lim_{{x \\to 1}} (\\sin(x))^{-1} = \\frac{\\pi}{2}",
+      "모든 실수 x에 대하여 \\tan(\\tan^{-1} x) = x",
+      "0 < x < \\frac{\\pi}{2} 이면, \\sin x > \\sin^2 x 이 성립한다."
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음과 같이 정의된 함수 h(x)가 실수 전체에서 연속일 때, a의 값은?",
+    "example": "h(x) = \\begin{cases} \\tan \\left( \\frac{\\pi x}{2} \\right), & x < -\\frac{1}{3} \\text{ or } x > \\frac{2}{3} \\\\ ax + b, & -\\frac{1}{3} \\leq x \\leq \\frac{2}{3} \\end{cases}",
+    "choices": [
+      "\\frac{1}{\\sqrt{3}}",
+      "\\frac{2}{\\sqrt{3}}",
+      "\\frac{3}{\\sqrt{3}}",
+      "\\frac{4}{\\sqrt{3}}",
+      "\\frac{5}{\\sqrt{3}}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "f(x)가 연속함수일 때, \\alpha의 값은?",
+    "example": "f(x) = \\begin{cases} \\alpha, & x = 0 \\\\ \\frac{\\sqrt{x^2 + 16} - 4}{x^2} + \\frac{\\sin x}{3x}, & x \\neq 0 \\end{cases}",
+    "choices": [
+      "\\frac{11}{24}",
+      "\\frac{13}{24}",
+      "\\frac{17}{24}",
+      "\\frac{19}{24}"
+    ],
+    "answer": ""
+  }
+],
+"43": [
+  {
+    "question": "다음과 같이 정의된 함수 f(x)가 모든 실수 x에 대하여 미분 가능할 때, a - b의 값은?",
+    "example": "f(x) = \\begin{cases} ax, & x < 1 \\\\ ax^2 + bx + 4, & x \\geq 1 \\end{cases}",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 함수 f(x)가 실수 전체의 집합에서 미분가능 할 때, a + b의 값은? (단, a와 b는 상수이다.)",
+    "example": "f(x) = \\begin{cases} \\frac{\\ln (x+1)}{x}, & (x > 0) \\\\ ax + b, & (x \\leq 0) \\end{cases}",
+    "choices": [
+      "-1",
+      "-\\frac{1}{2}",
+      "0",
+      "\\frac{1}{2}",
+      "1"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "구간 (0, 2\\pi)에서 함수 f(x) = \\arcsin(\\sin x) 가 미분가능하지 않은 점의 개수를 구하면?",
+    "choices": [
+      "4",
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 f(x) = \\begin{cases} x \\sin \\left( \\frac{4}{x} \\right), & x \\neq 0 \\\\ 0, & x = 0 \\end{cases} 가 x = 0에서 미분가능한지 결정하고, 미분가능하다면 f'(0)의 값은?",
+    "choices": [
+      "미분불가능",
+      "0",
+      "1",
+      "5",
+      "\\sin 4"
+    ],
+    "answer": ""
+  }
+],
+"44": [
+  {
+    "question": "다음 중 x = 0 에서 미분가능 하지 않은 함수를 고르면?",
+    "choices": [
+      "\\begin{cases} \\frac{\\sin x}{x}, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases}",
+      "\\begin{cases} x^2 \\cos \\left( \\frac{1}{x^5} \\right), & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}",
+      "\\begin{cases} e^{-1/x^2}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}",
+      "\\begin{cases} x \\tan \\left( \\frac{1}{x} \\right), & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음은 함수 f가 a에서 미분가능하면 f가 a에서 연속임을 증명하는 과정이다. 이때, A - B + C의 값은?",
+    "example": "(증명) 함수 f가 a에서 미분 가능하므로 \\lim_{{h \\to 0}} A 의 극한이 존재한다. \\\\ 그러므로 항등식 f(a+h) = f(a+h) - f(a) + f(a)를 이용해서 다음을 얻는다. \\\\ \\lim_{{x \\to a}} f(x) = \\lim_{{h \\to 0}} B h + f(a) = C \\lim_{{h \\to 0}} h + f(a) = f(a) \\\\ 따라서 함수 f는 a에서 연속이다.",
+    "choices": [
+      "-1",
+      "0",
+      "1",
+      "f(a)",
+      "f'(a)"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 f_{m,n}(x) 에 대한 설명으로 옳은 것은?",
+    "example": "f_{m,n}(x) = \\begin{cases} x^m \\sin \\frac{1}{x^n}, & x > 0 \\\\ 0, & x \\leq 0 \\end{cases}",
+    "choices": [
+      "y = f_{0,1}(x) 는 x = 0 에서 연속이다.",
+      "y = f_{1,1}(x) 는 최소값이 존재하지 않는다.",
+      "y = f_{2,1}(x) 는 x = 0 에서 미분가능하다.",
+      "극한값 \\lim_{{x \\to \\infty}} f_{1,2}(x) = 1 이다."
+    ],
+    "answer": ""
+  }
+],
+"45": [
+  {
+    "question": "다음 함수 중에서 점 x = 0 에서 미분 가능한 것은? (단, Q는 유리수의 집합)",
+    "example": "① \\quad f(x) = \\sqrt[3]{x} \\\\\n② \\quad g(x) = x|x| \\\\\n③ \\quad h(x) = \\begin{cases} x & (x \\in \\mathbb{Q}) \\\\ 0 & (x \\notin \\mathbb{Q}) \\end{cases} \\\\\n④ \\quad k(x) = \\begin{cases} x \\cos \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}",
+    "choices": [
+      "① ③",
+      "② ⑤",
+      "③ ④",
+      "③, ④",
+      "⑤, ④"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "상수 a, b, c 에 대하여 극한 \\lim_{{x \\to 0}} \\frac{ax^2 + \\sin bx + \\sin cx}{3x^2 + 5x^4 + 7x^6} = 8 일 때, a + b + c의 값은?",
+    "choices": [
+      "2",
+      "4",
+      "8",
+      "16",
+      "24"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 중 방정식 \\quad x^3 + x - 1 = 0 의 실근이 존재하는 구간이 아닌 것은?",
+    "choices": [
+      "(0,1)",
+      "\\left(-\\frac{1}{2}, \\frac{1}{2} \\right)",
+      "\\left( \\frac{1}{2}, 1 \\right)",
+      "\\left( \\frac{2}{3}, \\frac{3}{4} \\right)"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "5차 방정식 \\quad 3x^5 + 2x^3 + 2x + 1 = 0 은 꼭 하나의 실근을 갖는다. 다음 중 이 실근이 포함된 개구간은?",
+    "choices": [
+      "(-5, -4)",
+      "(-4, -3)",
+      "(-3, -2)",
+      "(-2, -1)",
+      "(-1,0)"
+    ],
+    "answer": ""
+  }
+],
+"46": [
+  {
+    "question": "함수 \\quad f(x) = x - \\cos x + 1 \\quad 의 역함수를 \\quad g(x) \\quad 라고 할 때, \\quad 극한 \\quad \\lim_{{x \\to 0}} \\frac{{\\{ g(x) \\}^2}}{x - g(x)} \\quad 의 값은?",
+    "choices": [
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\quad f(x) = x - \\sin x \\quad 의 역함수를 \\quad g(x) \\quad 라고 할 때, \\quad 극한 \\quad \\lim_{{x \\to 0}} \\frac{{\\{ g(x) \\}^3}}{3x} \\quad 의 값은?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "6",
+      "\\infty"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다항식 \\quad P(x) \\quad 로 정의된 함수 \\quad f(x) = \\frac{P(x)}{x^2 + x - 2} \\quad 가 \\quad \\lim_{{x \\to 1}} f(x) = 1 \\quad , \\quad \\lim_{{x \\to \\infty}} f(x) = 2 \\quad 를 만족할 때, \\quad f(0) \\quad 의 값은?",
+    "choices": [
+      "-2",
+      "-\\frac{1}{2}",
+      "0",
+      "\\frac{1}{2}",
+      "2"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "극한 \\quad \\lim_{{x \\to 0}} \\frac{\\cos \\left( \\frac{\\pi}{2} (1+x) \\right)}{\\tan(\\sin x)} \\quad 의 값은?",
+    "choices": [
+      "-\\frac{\\pi}{2}",
+      "-\\frac{\\pi}{4}",
+      "0",
+      "\\frac{\\pi}{4}",
+      "\\frac{\\pi}{2}"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "미분 가능한 함수 \\quad f(x) \\quad 가 다음을 만족시킬 때, \\quad f'(0) \\quad 의 값은? \\\\ \\quad \\lim_{{x \\to 0}} \\frac{f(2x) \\ln (1+x)}{x^2} = 10",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": ""
+  }
+],
+"47": [
+  {
+    "question": "함수 \\quad f(x) \\quad 가 \\quad f(1) = 20 \\quad 이고, 임의의 실수 \\quad x \\quad 에 대해 \\quad f'(x) \\geq 1 \\quad 일 때, \\quad f(4) \\geq a \\quad 이다. \\quad a \\quad 의 최소값은?",
+    "choices": [
+      "3",
+      "\\frac{7}{2}",
+      "4",
+      "\\frac{9}{2}",
+      "5"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "구간 \\quad 0 \\leq x \\leq 10 \\quad 에서 함수 \\quad f(x) = x + \\sin \\pi x \\quad 의 평균변화율과 \\quad f'(c) \\quad (0 < c < 10) \\quad 가 같아지는 점 \\quad c \\quad 의 개수는?",
+    "choices": [
+      "0",
+      "5",
+      "10",
+      "20"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "정의역과 공역이 실수 전체인 함수 \\quad f(x) \\quad 가 미분가능하고 \\quad \\lim_{{x \\to \\infty}} f'(x) = 3 \\quad 일 때, \\quad \\lim_{{x \\to \\infty}} [f(x+2) - f(x-2)] \\quad 를 구하면?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "12",
+      "18"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "x를 동물의 눈동자에 비치는 빛의 세기라고 할 때 눈동자의 지름을 \\quad f(x) \\quad 밀리미터라고 하자. \\\\ \\quad f(x) = \\frac{160x^{-0.4} + 90}{4x^{-0.4} + 15} \\quad 이라고 하고 최소의 빛이 \\quad (a) \\quad , 최대의 빛이 \\quad (b) \\quad 만큼 비칠 때 눈동자의 지름을 각각 구하여 \\quad (a) - (b) \\quad 의 값을 구하면?",
+    "choices": [
+      "-34",
+      "0",
+      "34",
+      "46"
+    ],
+    "answer": ""
+  }
+],
+"48": [
+  {
+    "question": "다음 중 참인 것을 모두 고르라?",
+    "example": [
+      "(가) \\quad 폐구간 \\quad [a, b] \\quad 에서 정의된 함수 \\quad f(x) \\quad 가 연속이고 역함수 \\quad f^{-1}(x) \\quad 가 존재하면, \\quad f(x) \\quad 는 \\quad (a, b) \\quad 에서 증가함수 또는 감소함수이다.",
+      "(나) \\quad 폐구간 \\quad [a, b] \\quad 에서 연속인 함수 \\quad f(x) \\quad 는 \\quad [a, b] \\quad 에서 최댓값과 최솟값을 가진다.",
+      "(다) \\quad 폐구간 \\quad [a, b] \\quad 에서 정의된 함수 \\quad f(x) \\quad 가 개구간 \\quad (a, b) \\quad 에서 미분가능하면, \\quad f(x) \\quad 는 \\quad [a, b] \\quad 에서 최댓값을 가진다.",
+      "(라) \\quad 미분 가능한 두 함수 \\quad f(x) \\quad 와 \\quad g(x) \\quad 가 개구간 \\quad (a, b) \\quad 에서 \\quad f(x) > g(x) \\quad 이면, 동일한 구간에서 \\quad f'(x) > g'(x) \\quad 이다."
+    ],
+    "choices": [
+      "(가), (나)",
+      "(가), (다)",
+      "(나), (라)",
+      "(다), (라)"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "실수 전체의 집합에서 미분 가능한 두 함수 \\quad f(x), g(x) \\quad 와 두 실수 \\quad a, b \\quad (0 < a < b) \\quad 에 대하여 \\quad \\langle 보기 \\rangle \\quad 에서 옳은 것을 있는 대로 고른 것은?",
+    "example": [
+      "ㄱ. \\quad f(x) = \\cos x \\quad 이면 \\quad |f(b) - f(a)| \\leq b - a \\quad 이다.",
+      "ㄴ. \\quad f(a) = g(a) \\quad 이고 \\quad a < x < b \\quad 인 모든 \\quad x \\quad 에 대하여 \\quad f'(x) < g'(x) \\quad 이면 \\quad f(b) < g(b) \\quad 이다.",
+      "ㄷ. \\quad 모든 실수 \\quad x \\quad 에 대하여 \\quad f(-x) = -f(x) \\quad 이면 \\quad f'(c) = \\frac{f(b)}{b} \\quad 를 만족시키는 실수 \\quad c \\quad 가 열린 구간 \\quad (-b, b) \\quad 에 적어도 하나 존재한다."
+    ],
+    "choices": [
+      "ㄱ",
+      "ㄱ, ㄴ",
+      "ㄱ, ㄷ",
+      "ㄴ, ㄷ",
+      "ㄱ, ㄴ, ㄷ"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "함수 \\quad f(x) = 2x^3 - 3x^2 + 2x + 1 \\quad 와 그 역함수 \\quad g(x) \\quad 에 대하여 \\quad \\langle 보기 \\rangle \\quad 에서 옳은 것만을 있는 대로 고른 것은?",
+    "example": [
+      "ㄱ. \\quad 모든 실수 \\quad x \\quad 에 대하여 \\quad f'(x) \\geq \\frac{1}{2} \\quad 이다.",
+      "ㄴ. \\quad 모든 실수 \\quad x \\quad 에 대하여 \\quad 0 < g'(x) \\leq 2 \\quad 이다.",
+      "ㄷ. \\quad x < y \\quad 인 모든 실수 \\quad x, y \\quad 에 대하여 \\quad 0 < g(y) - g(x) \\leq 2(y - x) \\quad 이다."
+    ],
+    "choices": [
+      "ㄱ",
+      "ㄱ, ㄴ",
+      "ㄱ, ㄷ",
+      "ㄴ, ㄷ",
+      "ㄱ, ㄴ, ㄷ"
+    ],
+    "answer": ""
+  }
+],
+"49": [
+  {
+    "question": "다음 서술 중 맞는 것을 모두 고른 것은?",
+    "example": [
+      "ㄱ. \\quad 함수 \\quad f : \\mathbb{R} \\to \\mathbb{R} \\quad 가 일대일대응 함수이고 미분가능하면, 그것의 역함수 \\quad f^{-1} \\quad 도 미분가능하다.",
+      "ㄴ. \\quad 함수 \\quad \\sin x \\quad 의 역함수 \\quad \\sin^{-1}x \\quad 의 정의역을 \\quad [0, \\pi] \\quad 로 잡을 수 있다.",
+      "ㄷ. \\quad 함수 \\quad \\sinh x \\quad 의 역함수 \\quad \\sinh^{-1}x \\quad 의 정의역은 실수의 집합 \\quad \\mathbb{R} \\quad 이다."
+    ],
+    "choices": [
+      "ㄱ, ㄴ",
+      "ㄱ, ㄷ",
+      "ㄴ, ㄷ",
+      "ㄷ",
+      "ㄴ"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "연속함수에 대한 다음 설명 중 옳은 것을 모두 고르라?",
+    "example": [
+      "ㄱ. \\quad 함수 \\quad f(x) = \\frac{\\ln x + e^x}{x^2 - 1} \\quad 는 구간 \\quad (-\\infty, -1) \\quad 과 \\quad (1, \\infty) \\quad 에서 연속이다.",
+      "ㄴ. \\quad 방정식 \\quad 4x^3 - 6x^2 + 3x - 2 = 0 \\quad 의 해는 1과 2사이에 존재한다.",
+      "ㄷ. \\quad 함수 \\quad f(x) = \\ln(1+\\cos x) \\quad 는 \\quad x = (2n-1)\\pi \\quad 에서 불연속이다. \\quad (단, \\quad n \\quad 은 정수이다.)",
+      "ㄹ. \\quad 합성함수 \\quad f \\circ g \\quad 가 \\quad x = a \\quad 에서 연속이기 위해서는 반드시 \\quad g \\quad 가 \\quad x = a \\quad 에서 연속이고 \\quad f \\quad 가 \\quad g(a) \\quad 에서 연속이어야 한다."
+    ],
+    "choices": [
+      "ㄱ, ㄴ",
+      "ㄷ",
+      "ㄴ, ㄷ",
+      "ㄷ, ㄹ"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 명제 중 참인 명제의 개수는?",
+    "example": [
+      "가. \\quad 함수 \\quad f \\quad 가 구간 \\quad [-1,1] \\quad 에서 연속이고, 구간 \\quad (-1,1) \\quad 에서 미분가능하며 \\quad f(-1) = f(1) \\quad 이면, \\quad |c| < 1 \\quad 인 \\quad f'(c) = 0 \\quad 을 만족하는 \\quad c \\quad 가 존재한다.",
+      "나. \\quad 모든 실수 \\quad x, y \\quad 에 대하여 \\quad |\\sinh x - \\sinh y| \\geq |x - y| \\quad 가 성립한다.",
+      "다. \\quad 개구간 \\quad (a, b) \\quad 에서 정의된 함수 \\quad f \\quad 가 있다. 임의의 \\quad x \\in (a, b) \\quad 에 대하여 \\quad f'(x) = 0 \\quad 이라면 \\quad f \\quad 는 반드시 상수함수이다.",
+      "라. \\quad x = 0 \\quad 에서 미분 가능한 함수 \\quad f(x) \\quad 와 미분가능하지 않은 함수 \\quad g(x) \\quad 를 더한 함수 \\quad f(x) + g(x) \\quad 는 \\quad x = 0 \\quad 에서 미분 가능하지 않으나, 곱한 함수 \\quad f(x) \\cdot g(x) \\quad 는 \\quad x = 0 \\quad 에서 미분 가능할 수 있다."
+    ],
+    "choices": [
+      "1개",
+      "2개",
+      "3개",
+      "4개"
+    ],
+    "answer": ""
+  }
+],
+"56": [
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int x^n \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int \\ln x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int x^n \\ln x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int \\frac{1}{x} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int \\frac{1}{x^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int e^x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int a^x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int \\frac{f'(x)}{f(x)} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분 공식을 구하시오. $$\\int \\{ f(x) \\}^n f'(x) \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sin x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\cos x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\tan x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\cot x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sec x \\tan x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\csc x \\cot x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sec x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\csc x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sec^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\csc^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sec^3 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\csc^3 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\sin^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int \\cos^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int e^{ax} \\sin bx \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "삼각함수. $$\\int e^{ax} \\cos bx \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"57": [
+  {
+    "question": "쌍곡선함수. $$\\int \\sinh x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\cosh x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\operatorname{sech}^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\operatorname{csch}^2 x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\tanh x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\coth x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\operatorname{sech} x \\tanh x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "쌍곡선함수. $$\\int \\operatorname{csch} x \\coth x \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{\\sqrt{1 - x^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{-1}{\\sqrt{1 - x^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{1 + x^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{-1}{1 + x^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{x \\sqrt{x^2 - 1}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{-1}{x \\sqrt{x^2 - 1}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{\\sqrt{a^2 - x^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{x^2 + a^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역삼각함수. $$\\int \\frac{1}{a^2 x^2 + b^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역쌍곡선함수. $$\\int \\frac{1}{\\sqrt{1 + x^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역쌍곡선함수. $$\\int \\frac{1}{\\sqrt{x^2 - 1}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역쌍곡선함수. $$\\int \\frac{1}{1 - x^2} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역쌍곡선함수. $$\\int \\frac{1}{\\sqrt{x^2 + a^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "역쌍곡선함수. $$\\int \\frac{1}{\\sqrt{x^2 - a^2}} \\, dx =$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"59": [
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{\\ln x}{x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{(1 + x^2) \\tan^{-1} x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{x^2}{x^3 + 5} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int x (2x^2 + 1)^{10} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\cos x (\\sin x + 3)^3 \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\sin^4 x \\cos x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{\\cos x}{\\sin x + 2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{\\sec^2 x}{\\tan x + 1} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int x \\sqrt{1 - x^2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{x}{\\sqrt{1 - x^2}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\sin \\frac{x}{2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\cos \\frac{x}{4} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int e^{3x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"60": [
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{1}{2}} \\sqrt{1 - x^2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{dx}{\\sqrt{x^2 - 16}}$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{dx}{\\sqrt{9 - x^2}}$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{x^2 + 49} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\frac{2x}{\\sqrt{1 + x^4}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int (1 + x) \\sqrt{1 - x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{\\sqrt[4]{x}}{1 + \\sqrt{x}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{\\sqrt{x^2 + 4x + 5}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{\\sqrt{x^2 - 2x - 10}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"62": [
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{9x}{(x-1)(x+2)^2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\frac{1}{(x+2)(x+3)^2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{2x^2 + 1}{x(x-1)^2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\frac{x^2 + 3x}{(x+1)^2(x+2)} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\frac{1}{(x+1)(x^2+1)} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{5}{(x-1)(x^2+4)} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{(x^2+1)(x^2+9)} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{(x^2+2)(x^2+6)} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\ln 2} \\frac{2}{e^x + 2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{e^x - e^{-x}}{2} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\ln \\sqrt{3}} \\operatorname{sech} x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{-\\infty}^{0} \\frac{e^{3x}}{1 + e^{2x}} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"64": [
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\ln x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{1}^{e} x^2 \\ln x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{1}{2}} \\sin^{-1} x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} \\cos^{-1} x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} (\\sin^{-1} x)^2 \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{1}^{e} (\\ln x)^2 \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} 2x \\tan^{-1} x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{4}} x \\sec^2 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} x^2 e^x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{1} (2x-1)e^x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\pi} (x+1) \\sin x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int 2x \\cos x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\sin (\\ln x) \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{1}{2}} \\left( \\sin^{-1} x + \\frac{x}{\\sqrt{1 - x^2}} \\right) \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int e^x (\\tan x + \\sec^2 x) \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{1}^{2} e^{-x} \\left( \\frac{1}{x} + \\frac{1}{x^2} \\right) \\, dx$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"67": [
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{2}} \\sin^5 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{3\\pi} \\cos^5 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{-\\pi}^{\\frac{\\pi}{2}} \\sin^4 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{-\\frac{3\\pi}{2}}^{\\frac{3\\pi}{2}} \\cos^6 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\pi} \\sin^2 x \\cos^2 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{2}} \\sin^2 x \\cos^4 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{4}} \\sin^3 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{4}} \\sec^4 x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{1 - \\sin x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{1}{4 + 5 \\cos x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\frac{2}{1 + \\tan x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\frac{\\pi}{4}} \\frac{1}{2 + \\tan x} \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\sin 7x \\cos 5x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int \\sin 5\\theta \\sin 3\\theta \\, d\\theta$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\pi} e^x \\cos 2x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  },
+  {
+    "question": "다음 적분을 계산하시오. $$\\int_{0}^{\\pi} e^{-3x} \\sin 4x \\, dx$$",
+    "choices": [],
+    "answer": ""
+  }
+],
+"68": [
+  {
+    "question": "적분 $$\\int_{-10}^{10} \\frac{2e^x}{\\sinh x + \\cosh x} \\, dx$$ 의 값을 구하면?",
+    "choices": ["10", "20", "30", "40"],
+    "answer": ""
+  },
+  {
+    "question": "$$\\int_{0}^{\\frac{1}{2}} (\\sin^{-1} x + \\cos^{-1} x) \\, dx$$ 의 값은?",
+    "choices": ["0", "\\frac{\\pi}{4}", "1", "\\frac{\\pi}{2}"],
+    "answer": ""
+  },
+  {
+    "question": "$$\\int \\left( 2 \\cos^2 x + \\frac{1}{x(x-1)} \\right) \\, dx$$ 의 부정적분은?",
+    "choices": [
+      "$$x + \\frac{\\sin 2x}{2} - \\ln |x| + \\ln |x-1| + C$$",
+      "$$-x + \\frac{\\cos 2x}{2} - \\ln |x| + \\ln |x-1| + C$$",
+      "$$x + \\frac{\\cos x}{2} - \\ln |x| + \\ln |x-1| + C$$",
+      "$$x - \\frac{\\sin 2x}{2} - \\ln |x| + \\ln |x-1| + C$$",
+      "$$x - \\frac{\\cos x}{3} - \\ln |x| + \\ln |x-1| + C$$"
+    ],
+    "answer": ""
+  }
+],
+"69": [
+  {
+    "question": "다음 부정적분 $$\\int \\cos x \\sqrt{\\sin x + 5} \\, dx$$ 을 구하면?",
+    "choices": [
+      "$$\\frac{2}{3} \\sqrt{(\\sin x + 5)^3} + C$$",
+      "$$\\frac{1}{3} \\sqrt{(\\sin x + 5)^3} + C$$",
+      "$$\\frac{2}{3} \\sqrt{\\sin x + 5} + C$$",
+      "$$\\frac{1}{3} \\sqrt{\\sin x + 5} + C$$"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "$$\\int_{0}^{\\frac{\\pi}{3}} \\sec x \\tan x (1 + \\sec x) \\, dx$$ 의 값은?",
+    "choices": ["$$\\frac{1}{2}$$", "$$1$$", "$$\\frac{3}{2}$$", "$$\\frac{5}{2}$$", "$$2$$"],
+    "answer": ""
+  },
+  {
+    "question": "적분 $$\\int_{1}^{\\infty} \\frac{32 \\arctan x}{1 + x^2} \\, dx$$ 의 값은?",
+    "choices": ["$$3\\pi^2$$", "$$4\\pi^2$$", "$$5\\pi^2$$", "존재하지 않는다"],
+    "answer": ""
+  },
+  {
+    "question": "정적분 $$\\int_{0}^{\\frac{\\pi}{2}} \\cos^3 x \\sin 2x \\, dx$$ 의 값을 구하면?",
+    "choices": [
+      "$$\\frac{\\sqrt{2}}{2}$$",
+      "$$\\frac{1}{3}$$",
+      "$$\\frac{2}{5}$$",
+      "$$\\frac{\\sqrt{3}}{4}$$"
+    ],
+    "answer": ""
+  }
+],
+"70": [
+  {
+    "question": "부정적분 $$\\int \\frac{x+2}{x+1} \\, dx$$ 을 구하면?",
+    "choices": [
+      "$$x - \\ln (x+1)$$",
+      "$$x + \\ln (x+1)$$",
+      "$$x + \\ln x$$",
+      "$$1 + \\ln (x+1)$$"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "적분 $$\\int_{0}^{\\frac{\\sqrt{3}}{2}} x (1 - x^2)^2 \\, dx$$ 의 값은?",
+    "choices": [
+      "$$\\frac{1}{5}$$",
+      "$$\\frac{31}{32}$$",
+      "$$\\frac{\\sqrt{3}}{5}$$",
+      "$$\\frac{31 \\sqrt{3}}{32}$$",
+      "$$\\frac{31}{160}$$"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "다음 정적분 $$\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\sin 2x}{2(1 + \\cos x)} \\, dx$$ 의 값은?",
+    "choices": [
+      "$$1 - \\ln 3$$",
+      "$$1 - \\ln 2$$",
+      "$$1 + \\ln 2$$",
+      "$$1 + \\ln 3$$"
+    ],
+    "answer": ""
+  },
+  {
+    "question": "정적분 $$\\int_{0}^{\\ln 3} \\ln (\\cosh x)^{\\sinh x} \\, dx$$ 의 값을 구하면?",
+    "choices": [
+      "$$\\frac{2}{3} \\left( \\ln \\frac{5}{3} - 1 \\right)$$",
+      "$$2 \\ln \\frac{5}{3} - \\frac{1}{2}$$",
+      "$$\\frac{1}{3} \\left( 5 \\ln \\frac{5}{3} - 2 \\right)$$",
+      "$$5 \\ln \\frac{5}{3} - 3$$"
+    ],
+    "answer": ""
+  }
+],
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
+};
