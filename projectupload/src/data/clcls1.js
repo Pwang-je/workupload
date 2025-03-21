@@ -993,7 +993,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$\sech^{-1} \\frac{1}{\\sqrt{3}}$$의 값은?",
+        "question": "$$\\operatorname{sech}^{-1} \\frac{1}{\\sqrt{3}}$$의 값은?",
         "choices": [
           "$$\\ln \\sqrt{2}$$",
           "$$\\ln (\\sqrt{2} + \\sqrt{3})$$",

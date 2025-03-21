@@ -6,7 +6,7 @@ import { clcls3 } from "@/data/clcls3.js";
 
 const numQuestions = ref(100);
 const selectedQuestions = ref([]);
-const selectedSubject = ref("");
+const selectedSubjects = ref([]); // 다중 선택 가능하게 변경
 
 const subjects = {
   calculus1: { name: "미적분1", data: clcls1 },
@@ -14,12 +14,25 @@ const subjects = {
   calculus3: { name: "미적분3", data: clcls3 },
 };
 
+// 선택된 과목들에서 문제 가져오기
 const currentQuestions = computed(() => {
-  return selectedSubject.value ? subjects[selectedSubject.value]?.data.questions : null;
-});
-
-const subjectName = computed(() => {
-  return selectedSubject.value ? subjects[selectedSubject.value]?.name : "";
+  let allQuestions = [];
+  selectedSubjects.value.forEach((subjectKey) => {
+    if (subjects[subjectKey]) {
+      const subjectQuestions = subjects[subjectKey].data.questions;
+      Object.entries(subjectQuestions).forEach(([page, questions]) => {
+        questions.forEach((q) => {
+          allQuestions.push({
+            subject: subjects[subjectKey].name, // 문제별 과목명 추가
+            page: page,
+            question: q.question,
+            choices: q.choices || [],
+          });
+        });
+      });
+    }
+  });
+  return allQuestions;
 });
 
 // 문제를 3개씩 그룹화하여 A4 한 장에 3문제씩 배치
@@ -32,31 +45,13 @@ const paginatedQuestions = computed(() => {
 });
 
 function getRandomQuestions(num) {
-  if (!selectedSubject.value) return;
+  if (selectedSubjects.value.length === 0) return;
 
-  const allQuestions = [];
-
-  if (currentQuestions.value) {
-    Object.entries(currentQuestions.value).forEach(([page, questions]) => {
-      questions.forEach((q) => {
-        allQuestions.push({
-          page: page,
-          question: q.question,
-          choices: q.choices || [],
-        });
-      });
-    });
-  }
-
-  if (num > allQuestions.length) {
-    alert("요청한 문제 수가 전체 문제보다 많습니다!");
-    return;
-  }
-
-  const shuffled = [...allQuestions].sort(() => Math.random() - 0.5);
+  const shuffled = [...currentQuestions.value].sort(() => Math.random() - 0.5);
 
   selectedQuestions.value = shuffled.slice(0, num).map((q, index) => ({
     number: index + 1,
+    subject: q.subject, // 문제별 과목 정보 유지
     page: q.page,
     question: q.question,
     choices: q.choices,
@@ -71,8 +66,8 @@ function renderMath() {
   });
 }
 
-watch(selectedSubject, () => {
-  if (selectedSubject.value) {
+watch(selectedSubjects, () => {
+  if (selectedSubjects.value.length > 0) {
     getRandomQuestions(numQuestions.value);
     renderMath();
   } else {
@@ -101,20 +96,19 @@ function printPage() {
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6 print:hidden">
-        <!-- 과목 선택 -->
+        <!-- 과목 다중 선택 -->
         <div class="flex flex-col">
           <label class="text-base md:text-lg font-medium text-gray-700 mb-2">과목 선택</label>
-          <select v-model="selectedSubject"
-            class="w-full p-2 md:p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500">
-            <option value="">과목을 선택하세요</option>
-            <option value="calculus1">미적분 1</option>
-            <option value="calculus2">미적분 2</option>
-            <option value="calculus3">미적분 3</option>
-          </select>
+          <div class="flex flex-wrap gap-2">
+            <label v-for="(subject, key) in subjects" :key="key" class="flex items-center space-x-2">
+              <input type="checkbox" :value="key" v-model="selectedSubjects" class="rounded border-gray-300">
+              <span class="text-gray-800">{{ subject.name }}</span>
+            </label>
+          </div>
         </div>
 
         <!-- 문제 개수 선택 -->
-        <div v-if="selectedSubject" class="flex flex-col">
+        <div v-if="selectedSubjects.length > 0" class="flex flex-col">
           <label class="text-base md:text-lg font-medium text-gray-700 mb-2">문제 개수</label>
           <select v-model="numQuestions" @change="getRandomQuestions(numQuestions)"
             class="w-full p-2 md:p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500">
@@ -125,23 +119,26 @@ function printPage() {
         </div>
       </div>
 
-      <p v-if="!selectedSubject" class="text-red-500 text-base md:text-lg font-semibold text-center mt-3 md:mt-4">
+      <p v-if="selectedSubjects.length === 0" class="text-red-500 text-base md:text-lg font-semibold text-center mt-3 md:mt-4">
         과목을 선택하면 문제가 표시됩니다.
       </p>
 
       <div v-for="(page, pageIndex) in paginatedQuestions" :key="pageIndex" class="print-page">
         <ul class="space-y-3 md:space-y-4">
           <li v-for="(question, index) in page" :key="index"
-            class="p-5 bg-white rounded-md border border-gray-200 shadow-sm">
+            class="p-5 bg-white rounded-md border border-gray-200 m-8 shadow-sm">
+            
+            <!-- 문제마다 개별적으로 과목 표시 -->
             <strong class="text-lg font-semibold text-gray-800">
-              [{{ subjectName }}] {{ question.page }}페이지 - {{ question.number }}번
+              [{{ question.subject }}] {{ question.page }}p. - {{ question.number }}번
             </strong>
+            
             <p v-html="question.question" class="mt-2 text-gray-700 text-sm md:text-base"></p>
 
-            <!-- 보기가 있는 경우 -->
-            <ul v-if="question.choices.length > 0" class="mt-3 space-y-2">
+            <!-- 선지 가로 정렬 -->
+            <ul v-if="question.choices.length > 0" class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2">
               <li v-for="(choice, choiceIndex) in question.choices" :key="choiceIndex"
-                class="p-3 rounded-md border border-gray-300 bg-gray-50 flex items-start space-x-2">
+                class="p-3 rounded-md border border-gray-300 bg-gray-50 flex items-center space-x-2">
                 <span class="font-semibold text-gray-800">{{ ['①', '②', '③', '④', '⑤'][choiceIndex] }}</span>
                 <span v-html="choice"></span>
               </li>
@@ -152,30 +149,3 @@ function printPage() {
     </div>
   </div>
 </template>
-
-
-<style>
-/* ✅ A4용지 사이즈에 맞게 프린트 스타일 적용 */
-@media print {
-  body {
-    background: white;
-  }
-
-  .print-page {
-    page-break-before: always; /* 한 페이지마다 자동으로 줄 바꿈 */
-    padding: 20px;
-  }
-
-  .print-hidden {
-    display: none !important; /* 버튼 등 불필요한 요소 숨김 */
-  }
-
-  .print-visible {
-    display: block !important;
-  }
-
-  .print p, .print strong {
-    font-size: 14px; /* 프린트 시 글씨 크기 조정 */
-  }
-}
-</style>

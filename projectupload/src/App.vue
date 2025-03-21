@@ -19,4 +19,8 @@ mjx-container[jax="CHTML"][display="true"] {
   text-align: inherit !important;
   margin: 0 !important;
 }
+.MJX-TEX {
+  margin: 0.6rem !important;
+  font-size: 100% !important;
+}
 </style>
