@@ -1,7 +1,7 @@
 export const clcls1 = {
   "subject": "calculus1",
   "questions": {
-    "5": [
+    "6": [
       {
         "question": "다음 계산을 하시오: $$-\\frac{1}{3} + \\frac{1}{2} - \\frac{3}{4}$$",
         "choices": [],
@@ -63,7 +63,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "7": [
+    "8": [
       {
         "question": "다음 방정식을 풀어라: $$3x + 2 = 2x + 9$$",
         "choices": [],
@@ -85,12 +85,13 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "다음은 연립일차방정식이다. $$y$$의 값을 구하여라.\n$$\\begin{cases} 0.2x + 0.3y = 0.7 \\\\ \\frac{5}{2}x + 3y = 5 \\end{cases}$$",
+        "question": "다음은 연립일차방정식이다. $$y$$의 값을 구하여라.",
+        "example": "$$\\begin{cases} 0.2x + 0.3y = 0.7 \\\\ \\frac{5}{2}x + 3y = 5 \\end{cases}$$",
         "choices": [],
         "answer": ""
       }
     ],
-    "11": [
+    "12": [
       {
         "question": "다음 식을 전개하여라: $$(3x - 2y)^2$$",
         "choices": [],
@@ -137,7 +138,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "12": [
+    "13": [
       {
         "question": "다음 이차방정식의 근을 구하시오: $$x^2 + 3x + 2 = 0$$",
         "choices": [],
@@ -184,7 +185,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "13": [
+    "14": [
       {
         "question": "삼차방정식 $$x^3 - 5x^2 - x + 5 = 0$$ 의 세 실근을 바르게 구한 것은?",
         "choices": [
@@ -216,7 +217,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "20": [
+    "21": [
       {
         "question": "다음 등식이 $$x$$에 관한 항등식이 되도록 상수 $$A, B, C$$의 값을 정하여라.\n$$\\frac{5}{x^2 - x - 6} = \\frac{5}{(x - 3)(x + 2)} = \\frac{A}{x - 3} + \\frac{B}{x + 2}$$",
         "choices": [],
@@ -238,7 +239,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "21": [
+    "22": [
       {
         "question": "다음 식을 분모 유리화 시키시오: $$\\frac{1}{\\sqrt{3}}$$",
         "choices": [],
@@ -280,7 +281,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "24": [
+    "25": [
       {
         "question": "다음 일차함수의 그래프를 그려보자: $$2x + y = 2$$",
         "choices": [],
@@ -317,7 +318,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "26": [
+    "27": [
       {
         "question": "다음 지수성질을 이용하여 간단히 정리하여라: $$x \\cdot x \\cdot x$$",
         "choices": [],
@@ -394,7 +395,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "27": [
+    "28": [
       {
         "question": "다음 지수방정식을 풀어라: $$\\left( \\frac{2}{3} \\right)^{x^2 - 7} = \\left( \\frac{3}{2} \\right)^{1 - x}$$",
         "choices": [],
@@ -426,7 +427,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "29": [
+    "30": [
       {
         "question": "다음 값을 구하여라: $$\\log_2 \\sqrt[3]{16}$$",
         "choices": [],
@@ -464,7 +465,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "31": [
+    "32": [
       {
         "question": "다음 두 점 사이의 거리를 구하시오.",
         "choices": [
@@ -481,7 +482,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "32": [
+    "33": [
       {
         "question": "점 $$(-1,1)$$을 중심으로 하고 반지름의 길이가 $$2$$인 원의 방정식은?",
         "choices": [],
@@ -503,7 +504,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "41": [
+    "42": [
       {
         "question": "다음을 계산하시오: $$\\sin \\left( \\frac{2\\pi}{3} \\right)$$",
         "choices": [],
@@ -555,7 +556,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "42": [
+    "43": [
       {
         "question": "다음을 계산하시오: $$\\sin^{-1} \\left( \\frac{1}{2} \\right)$$",
         "choices": [],
@@ -642,7 +643,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "46": [
+    "47": [
       {
         "question": "다음을 계산하시오: $$\\tanh(1)$$의 값은?",
         "choices": [],
@@ -684,7 +685,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "47": [
+    "48": [
       {
         "question": "$$\\tan x = \\frac{12}{5}$$ 일 때, $$\\sin x + \\cos x$$의 값은? (단, $$x$$는 예각)",
         "choices": [
@@ -726,7 +727,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "48": [
+    "49": [
       {
         "question": "$$\\tan \\frac{\\alpha}{2} = t$$일 때, $$\\sin \\alpha$$를 $$t$$의 함수로 나타내시오.",
         "choices": [
@@ -768,7 +769,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "49": [
+    "50": [
       {
         "question": "다음 중 $$\\cos \\left( \\frac{x}{2} \\right)$$와 다른 것은?",
         "choices": [
@@ -810,7 +811,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "51": [
+    "52": [
       {
         "question": "$$\\cos \\left( \\sin^{-1} \\left( -\\frac{1}{4} \\right) \\right)$$의 값은?",
         "choices": [
@@ -852,7 +853,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "52": [
+    "53": [
       {
         "question": "$$\\tan^{-1} \\left( -\\frac{1}{2} \\right) + \\tan^{-1} (\\alpha) = \\frac{\\pi}{4}$$를 만족하는 $$\\alpha$$를 구하면?",
         "choices": [
@@ -894,7 +895,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "53": [
+    "54": [
       {
         "question": "모든 실수 $$x$$에서 정의된 함수 $$f(x) = \\arccos (\\cos x)$$에 대하여 $$f(x + \\pi)$$를 구하면? (단, $$\\arccos 1 = 0$$)",
         "choices": [
@@ -928,7 +929,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "54": [
+    "55": [
       {
         "question": "함수 $$f(x) = \\sinh 2x$$의 함수값 $$f(\\ln 2)$$은?",
         "choices": [
@@ -971,7 +972,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "55": [
+    "56": [
       {
         "question": "$$e^{2x} = 2$$일 때, $$\\frac{e^{3x} + e^{-3x}}{e^{2x} - e^{-3x}}$$의 값을 구하면?",
         "choices": [
@@ -1013,9 +1014,10 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "56": [
+    "57": [
       {
-        "question": "다음 중 $$\\sin x$$와 같은 것은 모두 몇 개인가?\n\n(가) $$\\sin (\\pi - x)$$\n\n(나) $$\\cos \\left( \\frac{3\\pi}{2} + x \\right)$$\n\n(다) $$\\sin (2\\pi - x)$$\n\n(라) $$\\cos \\left( \\frac{\\pi}{2} + x \\right)$$",
+        "question": "다음 중 $$\\sin x$$와 같은 것은 모두 몇 개인가?",
+        "example": "(가) $$\\sin (\\pi - x)$$\n\n(나) $$\\cos \\left( \\frac{3\\pi}{2} + x \\right)$$\n\n(다) $$\\sin (2\\pi - x)$$\n\n(라) $$\\cos \\left( \\frac{\\pi}{2} + x \\right)$$",
         "choices": [
           "1개",
           "2개",
@@ -1025,7 +1027,8 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "다음 보기 안의 등식 가운데 항상 성립하는 것을 모두 고른 것은?\n\n(가) $$\\sin \\left( x - \\frac{3\\pi}{2} \\right) = \\cos x$$\n\n(나) $$\\sin (\\pi - x) = -\\sin x$$\n\n(다) $$\\cos (x - \\pi) = \\sin \\left( \\frac{\\pi}{2} + x \\right)$$",
+        "question": "다음 보기 안의 등식 가운데 항상 성립하는 것을 모두 고른 것은?",
+        "example": "(가) $$\\sin \\left( x - \\frac{3\\pi}{2} \\right) = \\cos x$$\n\n(나) $$\\sin (\\pi - x) = -\\sin x$$\n\n(다) $$\\cos (x - \\pi) = \\sin \\left( \\frac{\\pi}{2} + x \\right)$$",
         "choices": [
           "(가)",
           "(나)",
@@ -1045,7 +1048,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "57": [
+    "58": [
       {
         "question": "방정식 $$\\sin \\theta = \\cos^2 \\theta$$를 만족시키는 $$\\theta$$에 대하여 함수 $$f(\\theta) = \\frac{2 - \\sin \\theta}{\\sin \\theta + 1} - \\frac{\\sin \\theta + 2}{1 - \\sin \\theta}$$의 값을 구하면?",
         "choices": [
@@ -1079,7 +1082,8 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "다음 보기의 등식 중 항상 성립하는 것을 모두 고른 것은?\n\n(가) $$\\sin^{-1} (\\cos x) = \\frac{\\pi}{2} - x$$ \\quad (단, $$0 \\leq x \\leq \\frac{\\pi}{2}$$)\n\n(나) $$\\tan^{-1} x + \\tan^{-1} \\frac{1}{x} = \\frac{\\pi}{2}$$ \\quad (단, $$x > 0$$)\n\n(다) $$\\sin^{-1} (\\sin 1) = 1$$\n\n(라) $$\\tan^{-1} \\left( \\tan \\frac{2\\pi}{3} \\right) = \\frac{2\\pi}{3}$$",
+        "question": "다음 보기의 등식 중 항상 성립하는 것을 모두 고른 것은?",
+        "example": "(가) $$\\sin^{-1} (\\cos x) = \\frac{\\pi}{2} - x$$ \\quad (단, $$0 \\leq x \\leq \\frac{\\pi}{2}$$)\n\n(나) $$\\tan^{-1} x + \\tan^{-1} \\frac{1}{x} = \\frac{\\pi}{2}$$ \\quad (단, $$x > 0$$)\n\n(다) $$\\sin^{-1} (\\sin 1) = 1$$\n\n(라) $$\\tan^{-1} \\left( \\tan \\frac{2\\pi}{3} \\right) = \\frac{2\\pi}{3}$$",
         "choices": [
           "(가), (다)",
           "(나), (라)",
@@ -1089,7 +1093,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "58": [
+    "59": [
       {
         "question": "아래 값을 구하라.\n\n$$\\sin \\left( \\cos^{-1} \\left( -\\frac{1}{3} \\right) \\right)$$",
         "choices": [
@@ -1134,7 +1138,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "59": [
+    "60": [
       {
         "question": "$$\\cot^{-1} (\\tan 1)$$의 값은?",
         "choices": [
@@ -1168,7 +1172,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "60": [
+    "61": [
       {
         "question": "다음 중 옳지 않은 것을 고르시오.",
         "choices": [
@@ -1202,7 +1206,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "61": [
+    "62": [
       {
         "question": "$$f(x) = \\cosh (\\ln (\\sec x + \\tan x))$$일 때, $$f \\left( \\frac{\\pi}{3} \\right)$$의 값은?",
         "choices": [
@@ -1246,55 +1250,52 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "62": [
-      {
-        "question": "다음 중 옳은 것을 모두 고르면?",
-        "choices": [
-          "(ㄱ), (ㄴ), (ㄷ)",
-          "(ㄷ), (ㄹ)",
-          "(ㄱ), (ㄹ), (ㄷ)",
-          "(ㄹ), (ㄷ), (ㄹ)"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 잘못된 명제는 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 옳은 것은 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "다음 중 옳은 것은 모두 몇 개인가?",
-        "choices": [
-          "없음",
-          "1",
-          "2",
-          "3"
-        ],
-        "answer": ""
-      }
-    ],
-    "68": [
-      {
-        "question": "다음 미분 공식을 구하시오.",
-        "choices": [],
-        "answer": ""
-      }
-    ],
+    "63": [
+    {
+      "question": "$$\\text{다음 중 옳은 것을 모두 고르면?}$$",
+      "example": "$$\\begin{aligned} \n\\text{ㄱ. 모든 실수 } x \\text{에 대하여, } & \\tan^{-1}x + \\cot^{-1}x = \\frac{\\pi}{2} \\\\\n\\text{ㄴ. } 0 < x < 1 \\text{인 양의 실수 } x \\text{에 대하여, } & 2\\sin^{-1}x = \\cos^{-1}(1 - 2x^2) \\\\\n\\text{ㄷ. } x > 1 \\text{인 양의 실수 } x \\text{에 대하여 } & \\cosh^{-1}x = \\ln(x + \\sqrt{x^2 - 1}) \\\\\n\\text{ㄹ. } |x| < 1 \\text{인 임의의 실수 } x \\text{에 대하여 } & \\tanh^{-1}x = \\frac{1}{2}\\ln\\left(\\frac{1+x}{1-x}\\right)\n\\end{aligned}$$",
+      "choices": [
+        "$$\\text{ㄱ, ㄴ}$$",
+        "$$\\text{ㄷ, ㄹ}$$",
+        "$$\\text{ㄱ, ㄷ, ㄹ}$$",
+        "$$\\text{ㄴ, ㄷ, ㄹ}$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$\\text{다음 중 잘못된 명제는 모두 몇 개인가?}$$",
+      "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh^{-1}x = \\ln(x + \\sqrt{x^2 + 1}) \\\\\n\\text{나. } & \\cosh^2x - \\sinh^2x = 1 \\\\\n\\text{다. } & \\cosh(2\\ln x) = \\frac{x^4 + 1}{2x^2} \\\\\n\\text{라. } & \\cosh 3x - \\sinh 3x = e^{-3x} \\\\\n\\text{마. } & (\\cosh x + \\sinh x)^2 = e^x\n\\end{aligned}$$",
+      "choices": [
+        "$$\\text{없음}$$",
+        "$$1$$",
+        "$$2$$",
+        "$$3$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
+      "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh(-x) = -\\sinh x \\\\\n\\text{나. } & \\cosh(-x) = \\cosh x \\\\\n\\text{다. } & \\sinh(x + y) = \\sinh x \\cosh y + \\cosh x \\sinh y \\\\\n\\text{라. } & \\cosh(x + y) = \\cosh x \\cosh y - \\sinh x \\sinh y\n\\end{aligned}$$",
+      "choices": [
+        "$$\\text{없음}$$",
+        "$$1$$",
+        "$$2$$",
+        "$$3$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
+      "example": "$$\\begin{aligned}\n\\text{ㄱ. } & \\cosh x + \\sinh x = e^x \\\\\n\\text{ㄴ. } & y = \\tanh x \\text{의 정의역은 모든 실수이고, 치역은 } \\left( -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right) \\text{이다.} \\\\\n\\text{ㄷ. } & 0 < x \\leq 1 \\text{일 때, } \\cosh^{-1}\\left(\\frac{1}{x}\\right) = \\text{sech}^{-1}x \\text{이다.}\n\\end{aligned}$$",
+      "choices": [
+        "$$\\text{없음}$$",
+        "$$1$$",
+        "$$2$$",
+        "$$3$$"
+      ],
+      "answer": ""
+    }
+  ],
     "69": [
       {
         "question": "다음 미분 공식을 구하시오.",
@@ -1310,6 +1311,13 @@ export const clcls1 = {
       }
     ],
     "71": [
+      {
+        "question": "다음 미분 공식을 구하시오.",
+        "choices": [],
+        "answer": ""
+      }
+    ],
+    "72": [
       {
         "question": "다음 함수 $$f(x) = 8x^2 + 7e^x - 3 \\tan x + \\ln x$$의 도함수는?",
         "choices": [],
@@ -1331,7 +1339,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "72": [
+    "73": [
       {
         "question": "$$f(x) = \\frac{x}{\\tan^{-1} x}$$일 때, $$x = 1$$에서 도함수는?",
         "choices": [],
@@ -1373,7 +1381,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "73": [
+    "74": [
       {
         "question": "$$y = (x^3 - 1)^{100}$$의 도함수는?",
         "choices": [],
@@ -1620,6 +1628,48 @@ export const clcls1 = {
         "answer": ""
       }
     ],
+    "83": [
+    {
+      "question": "$$f(x) = \\tan^2 x \\sec^2 x \\text{에서 } \\frac{d}{dx}\\left(\\frac{\\pi}{3}\\right) \\text{의 값은?}$$",
+      "choices": [
+        "$$204$$",
+        "$$216$$",
+        "$$228$$",
+        "$$248$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$f(x) = \\sqrt{x} + \\sqrt[4]{x} \\text{에 대하여 } x = 4 \\text{일 때 } f'(x) \\text{의 값은?}$$",
+      "choices": [
+        "$$1$$",
+        "$$\\frac{2}{3}$$",
+        "$$\\frac{1}{8}$$",
+        "$$\\frac{1}{24}$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$\\text{함수 } f(x) = (\\arctan x)^2 \\text{에 대하여, } f'(-\\sqrt{3}) \\text{의 값은?}$$",
+      "choices": [
+        "$$\\frac{\\pi}{6}$$",
+        "$$\\frac{\\pi}{12}$$",
+        "$$-\\frac{\\pi}{6}$$",
+        "$$-\\frac{\\pi}{12}$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$\\text{함수 } f(x) = \\sinh x \\text{에 대하여 } f(a) = \\frac{12}{5} \\text{일 때, } f'(a) \\text{의 값은?}$$",
+      "choices": [
+        "$$-\\frac{5}{12}$$",
+        "$$\\frac{5}{12}$$",
+        "$$-\\frac{13}{5}$$",
+        "$$\\frac{13}{5}$$"
+      ],
+      "answer": ""
+    }
+  ],
     "84": [
       {
         "question": "함수 $$y = \\sqrt{x} \\cos^{-1} \\sqrt{x}$$ 에 대하여 $$x = \\frac{1}{4}$$ 에서 $$\\frac{dy}{dx}$$ 의 값은? (단, $$0 \\leq x \\leq 1$$)",
@@ -1828,13 +1878,14 @@ export const clcls1 = {
     ],
     "89": [
       {
-        "question": "다음 서술 중 옳은 것을 모두 고른 것은?",
+        "question": "$$\\text{다음 서술 중 옳은 것을 모두 고른 것은?}$$",
+        "example": "$$\\begin{aligned}\n\\text{ㄱ. } & \\sinh^2 x - \\cosh^2 x = 1 \\\\\n\\text{ㄴ. } & \\frac{d}{dx} \\sinh x = \\cosh x \\\\\n\\text{ㄷ. } & \\frac{d}{dx} \\sinh^{-1}x = \\frac{1}{\\sqrt{x^2 + 1}}\n\\end{aligned}$$",
         "choices": [
-          "ㄱ",
-          "ㄴ",
-          "ㄷ",
-          "ㄴ, ㄷ",
-          "ㄱ, ㄴ, ㄷ"
+          "$$\\text{ㄱ}$$",
+          "$$\\text{ㄴ}$$",
+          "$$\\text{ㄷ}$$",
+          "$$\\text{ㄴ, ㄷ}$$",
+          "$$\\text{ㄱ, ㄴ, ㄷ}$$"
         ],
         "answer": ""
       },
@@ -1881,7 +1932,8 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f$$는 실수 전체에서 정의된 미분가능한 함수이다. 함수 $$f$$에 대한 다음 표의 값을 이용하여  $$ (f \\circ f \\circ f)'(0) $$의 값을 구하면?",
+        "question": "$$f \\text{는 실수 전체에서 정의된 미분 가능한 함수이다. 함수 } f \\text{에 대한 다음 표의 값을 이용하여 } (f \\circ f \\circ f)'(0) \\text{의 값을 구하면?$$",
+        "example": "$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\n a & -2 & -1 & 0 & 1 & 2 & 4 \\\\\n\\hline\n f(a) & 4 & 0 & 1 & -1 & 1 & 0 \\\\\n\\hline\n f'(a) & 3 & 2 & -3 & 1 & 4 & 2 \\\\\n\\hline\n\\end{array}$$",
         "choices": [
           "$$-8$$",
           "$$-6$$",
@@ -2311,7 +2363,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "108": [
+    "107": [
       {
         "question": "곡선 $$y = x^2 - x + 2$$ 위의 $$x$$ 좌표가 $$1$$인 점에서 그은 접선의 방정식은?",
         "choices": [],
@@ -2354,7 +2406,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "109": [
+    "108": [
       {
         "question": "곡선 $$y = \\sqrt{1 + 4\\sin x}$$에 대하여 곡선 위의 점 (0,1)에서의 접선의 방정식을 구하면?",
         "choices": [
@@ -2397,7 +2449,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "110": [
+    "109": [
       {
         "question": "곡선 $$x^2 + y^2 = (2x^2 + 2y^2 - x)^2$$ 상의 점 $$\\left( 0, \\frac{1}{2} \\right)$$에서 접선의 방정식은?",
         "choices": [
@@ -2440,7 +2492,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "111": [
+    "110": [
       {
         "question": "곡선 $$y = \\tan^{-1}(3x)$$ 위의 $$x$$ 좌표가 $$\\frac{\\sqrt{3}}{3}$$인 점에서의 법선의 방정식은? (단, $$|y| < \\frac{\\pi}{2}$$ 이다.)",
         "choices": [
@@ -2483,7 +2535,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "112": [
+    "111": [
       {
         "question": "직선 $$y = ax + 3$$이 곡선 $$y = 2\\sqrt{x} + 10$$에 접할 때, $$a$$의 값은?",
         "choices": [
@@ -2525,7 +2577,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "113": [
+    "112": [
       {
         "question": "곡선 $$y^3 + x^2 - 2y = 4$$와 직선 $$ax + by = 4$$이 점 $$(2,0)$$에서 접한다. 이때, $$ab$$의 값은?",
         "choices": [
@@ -2567,7 +2619,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "114": [
+    "113": [
       {
         "question": "미분가능한 함수 $$f$$가 $$-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$$일 때, $$f(\\sin x) = x^2 + 1$$을 만족한다. $$x = \\frac{1}{2}$$에서 접선의 기울기는?",
         "choices": [
@@ -2601,7 +2653,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "115": [
+    "114": [
       {
         "question": "매개변수방정식 $$x = t^2 + 1, y = 4\\sqrt{t}$$ 로 나타나는 곡선 위의 점 (2,4)에서 접선의 방정식은?",
         "choices": [
@@ -2634,7 +2686,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "116": [
+    "115": [
       {
         "question": "평면곡선 $$x^2 + xy + y^2 + x - 3 = 0$$ 위에서 $$y$$축에 평행한 접선을 갖는 점들은?",
         "choices": [
@@ -2646,7 +2698,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "117": [
+    "116": [
       {
         "question": "$$y = x^3 - 2x + 1$$과 $$y = \\frac{a}{x - 1}$$이 직교하는 $$a$$의 값의 합을 구하면?",
         "choices": [
@@ -2678,7 +2730,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "118": [
+    "117": [
       {
         "question": "두 곡선 $$y^3 = x^3$$ 과 $$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$$ 의 1 사분면 위 교점을 $$(x_0, y_0)$$ 라 하자. 점 $$(x_0, y_0)$$에서의 두 곡선에 대한 접선이 서로 수직일 때 $$a$$와 $$b$$의 관계식을 옳은 것은?",
         "choices": [
@@ -2710,7 +2762,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "119": [
+    "118": [
       {
         "question": "곡선 $$2x^3 + 2y^3 = 9xy$$ 의 그래프 위의 점 (1,2)에서의 법선의 방정식을 구하면?",
         "choices": [
@@ -2732,7 +2784,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선 $$e^y = x - y$$ 위의 점 $$(0, a)$$에서 접선이 직선 $$y = x + 3$$과 점 $$(b, c)$$에서 만날 때, $$a + b + c$$ 의 값은?",
+        "question": "$$\\text{곡선 } e^{\\frac{x}{y}} = x - y \\text{ 위의 점 } (0, a) \\text{ 에서 접선이 직선 } y = x + 3 \\text{ 과 점 } (b, c) \\text{ 에서 만날 때, } a + b + c \\text{ 의 값은?}$$",
         "choices": [
           "$$5$$",
           "$$10$$",
@@ -2742,7 +2794,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "120": [
+    "119": [
       {
         "question": "함수 $$f(x) = 2e^x + e^{-2x} - 10$$ 에 대하여 $$f(x) = 0$$의 해를 근사적으로 구하기 위해 뉴턴의 방법을 적용하려고 한다. 첫 번째 근사값이 $$0$$일 때, 두 번째 근사값은 얼마인가?",
         "choices": [
@@ -2754,7 +2806,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "121": [
+    "120": [
       {
         "question": "초기값 $$x_1 = 3$$일 때, 뉴턴방법으로 방정식 $$x^2 - 2x - 2 = 0$$의 근을 구할 때 두 번째 근사값 $$x_2$$는?",
         "choices": [
@@ -2787,7 +2839,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "122": [
+    "121": [
       {
         "question": "함수 $$f(x) = e^x + x + a$$ 에 대하여 $$f(x) = 0$$의 해를 뉴턴의 방법을 적용하여 구하려고 한다. 첫 번째 근사값이 $$0$$일 때, 두 번째 근사값이 $$0.5$$라면 $$a$$의 값은?",
         "choices": [
@@ -2820,7 +2872,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "128": [
+    "127": [
       {
         "question": "$$y = \\sec x$$ 에 대해 $$\\frac{d^2y}{dx^2}$$를 구하시오.",
         "choices": [],
@@ -2882,9 +2934,9 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "129": [
+    "128": [
       {
-        "question": "함수 $$y = \\tan^{-1} x$$의 2 차도함수는?",
+        "question": "$$y = \\tan^{-1} x$$의 2 차도함수는?",
         "choices": [
           "$$-4x^2(1 + x^2)$$",
           "$$-2x(1 + x^2)^2$$",
@@ -2914,7 +2966,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "130": [
+    "129": [
       {
         "question": "함수 $$f(x) = x^{\\ln x}$$일 때, $$f'(1)$$의 값은?",
         "choices": [
@@ -2947,7 +2999,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "131": [
+    "130": [
       {
         "question": "함수 $$f$$가 일대일 대응이고 두 번 미분 가능한 함수라 하자. $$f$$의 역함수를 $$g$$라 할 때, $$g'(x) = \\alpha \\frac{f'(g(x))}{[f(g(x))]^\\beta}$$ 가 성립한다. 이 때 $$\\alpha + \\beta$$의 값은?",
         "choices": [
@@ -2990,7 +3042,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "132": [
+    "131": [
       {
         "question": "매개방정식 $$x = t^2, y = t^3$$에서 $$t = 6$$일 때, $$\\frac{d^2 y}{dx^2}$$의 값은?",
         "choices": [
@@ -3034,7 +3086,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "133": [
+    "132": [
       {
         "question": "실수 $$t$$의 함수 $$x = \\sin t, y = 5 - 4\\cos t$$에 대하여 $$t = \\frac{\\pi}{3}$$에서 $$\\frac{d^2 y}{dx^2}$$의 값을 구하면?",
         "choices": [
@@ -3076,11 +3128,12 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "134": [
+    "133": [
       {
-        "question": "$$t = \\frac{7\\pi}{4}$$ 일 때, 다음 매개 방정식에 대해 $$\\frac{dy}{dx}$$, $$\\frac{d^2 y}{dx^2}$$ 의 값은?",
+        "question": "$$t = \\frac{7\\pi}{4} \\text{일 때, 다음 매개 방정식에 대해 } \\frac{dy}{dx}, \\frac{d^2y}{dx^2} \\text{의 값은?}$$",
+        "example": "$$x(t) = a + 20 \\cos t, \\quad y(t) = c + 19 \\sin t$$",
         "choices": [
-          "$$-\\frac{20}{c^2}$$",
+          "$$\\frac{20}{c^2}$$",
           "$$\\frac{10}{\\sqrt{2}}$$",
           "$$\\frac{a^2}{19}$$",
           "$$\\frac{19}{10}$$",
@@ -3119,7 +3172,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "135": [
+    "134": [
       {
         "question": "$$\\frac{1}{2} x^2 - \\frac{1}{3} y^3 = \\frac{1}{4}$$일 때, $$\\frac{d^2 y}{dx^2}$$의 값은?",
         "choices": [
@@ -3163,7 +3216,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "136": [
+    "135": [
       {
         "question": "관계식 $$x^3 + y^3 - xy = 1$$ 에 의해 점 $$(1,1)$$ 근처에서 정의된 함수 $$y = f(x)$$를 생각한다. 이 때 $$f'(1) + f''(1)$$의 값을 구하면?",
         "choices": [
@@ -3217,7 +3270,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "137": [
+    "136": [
       {
         "question": "방정식 $$x^4 + y^4 = 2$$가 변수 $$y$$를 $$x$$의 음함수로 정의할 때, $$0$$이 아닌 $$y$$에서 $$y'$$의 이계도함수는 $$y'' = ax^b y^c$$이다. 이때 $$a + b + c$$의 값은? (단, $$a,b,c$$는 실수)",
         "choices": [
@@ -3261,7 +3314,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "138": [
+    "137": [
       {
         "question": "함수 $$y = x^{10}$$의 $$10$$계 도함수는?",
         "choices": [
@@ -3293,9 +3346,9 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "139": [
+    "138": [
       {
-        "question": "함수 $$y = \\frac{1}{1 - 3x}$$일 때, $$\\frac{d^n y}{dx^n}$$를 구하면?",
+        "question": "$$y = \\frac{1}{1 - 3x}$$일 때, $$\\frac{d^n y}{dx^n}$$를 구하면?",
         "choices": [
           "$$n!3^{n+1}(1 - 3x)^{-n}$$",
           "$$n!3^n(1 - 3x)^{-(n+1)}$$",
@@ -3305,7 +3358,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수 $$y = \\sin \\alpha x$$의 $$n$$계 도함수는?",
+        "question": "$$y = \\sin \\alpha x$$의 $$n$$계 도함수는?",
         "choices": [
           "$$\\alpha^n \\sin \\left( \\frac{n\\pi}{2} + \\alpha x \\right)$$",
           "$$\\alpha^n \\sin \\left( \\frac{n\\pi}{4} - \\alpha x \\right)$$",
@@ -3315,7 +3368,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수 $$f(x) = (x+1)\\ln(x+1)$$ 에 대해 $$f$$의 $$n$$ 계도함수 $$\\frac{d^n f(x)}{dx^n}$$ ($$n \\geq 2$$)를 구하면?",
+        "question": "$$f(x) = (x+1)\\ln(x+1)$$ 에 대해 $$f$$의 $$n$$ 계도함수 $$\\frac{d^n f(x)}{dx^n}$$ ($$n \\geq 2$$)를 구하면?",
         "choices": [
           "$$(-1)^n(n-1)! (x+1)^{-n}$$",
           "$$(-1)^{n+1} (n-1)! (x+1)^{-n-1}$$",
@@ -3325,7 +3378,7 @@ export const clcls1 = {
         "answer": ""
       }
     ],
-    "140": [
+    "139": [
       {
         "question": "$$f(x) = \\frac{d^{35}}{dx^{35}} (x \\sin x)$$라 할 때, $$f(\\pi)$$의 값은?",
         "choices": [
@@ -3348,7 +3401,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수 $$f(x) = x^x e^x$$ 일 때 $$f^{(100)}(1)$$의 값을 구하면?",
+        "question": "$$f(x) = x^x e^x$$ 일 때 $$f^{(100)}(1)$$의 값을 구하면?",
         "choices": [
           "$$e$$",
           "$$100e$$",
@@ -3359,111 +3412,51 @@ export const clcls1 = {
         "answer": ""
       }
     ],
+    "140": [
+    {
+      "question": "$$임의의 자연수\\ n에 대하여 두 함수\\ f(x) \\text{와 } g(x) \\text{는 } n \\text{번 미분 가능하다. 두 함수의 곱 } fg \\text{의 4계 도함수가 다음과 같을 때 } \\sum_{r=0}^4 a_r \\text{의 값을 구하면?}$$",
+      "example": "$$\\sum_{r=0}^4 a_r f^{(4-r)}(x) g^{(r)}(x)$$",
+      "choices": [
+        "$$15$$",
+        "$$16$$",
+        "$$17$$",
+        "$$18$$",
+        "$$19$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$7번 미분 가능한 임의의 두 함수\\ f, g : \\mathbb{R} \\to \\mathbb{R} \\text{에 대하여 }$$\n$$ (fg)^{(7)} = f^{(7)}g + a_6 f^{(6)}g^{(1)} + a_5 f^{(5)}g^{(2)} + \\cdots + a_1 f^{(1)}g^{(6)} + f g^{(7)} $$\n$$\\text{으로 나타낼 때, 상수 } a_1, a_2, ..., a_6 \\text{의 평균은?}$$",
+      "choices": [
+        "$$20$$",
+        "$$21$$",
+        "$$24$$",
+        "$$28$$",
+        "$$35$$"
+      ],
+      "answer": ""
+    },
+    {
+      "question": "$$구간\\ I \\text{에서 무한 번 미분 가능한 두 함수 } f \\text{와 } g \\text{의 곱 } fg \\text{의 10계 도함수를 다음과 같이 쓸 때, }$$\n$$ a_0 + a_2 + a_4 + a_6 + a_8 + a_{10} \\text{의 값은?}$$",
+      "example": "$$ (fg)^{(10)}(x) = \\sum_{r=0}^{10} a_r f^{(10 - r)}(x) g^{(r)}(x), \\quad x \\in I $$",
+      "choices": [
+        "$$512$$",
+        "$$511$$",
+        "$$1024$$",
+        "$$1023$$",
+        "$$1025$$"
+      ],
+      "answer": ""
+    }
+  ],
     "141": [
       {
-        "question": "임의의 자연수 $$n$$에 대하여 두 함수 $$f(x)$$와 $$g(x)$$는 $$n$$번 미분가능하다. 두 함수의 곱 $$fg$$의 4계 도함수가 다음과 같을 때 $$\\sum_{r=0}^{4} \\alpha_r$$의 값을 구하면?",
-        "choices": [
-          "$$15$$",
-          "$$16$$",
-          "$$17$$",
-          "$$18$$",
-          "$$19$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "7번 미분가능한 임의의 두 함수 $$f, g : \\mathbb{R} \\to \\mathbb{R}$$에 대하여 $$(fg)^{(7)} = f^{(7)} g + \\alpha_1 f^{(6)} g^{(1)} + \\alpha_2 f^{(5)} g^{(2)} + ... + \\alpha_6 f g^{(7)}$$ 으로 나타낼 때, 상수 $$\\alpha_1, \\alpha_2, ..., \\alpha_6$$의 평균은?",
-        "choices": [
-          "$$20$$",
-          "$$21$$",
-          "$$24$$",
-          "$$28$$",
-          "$$35$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "구간 $$I$$에서 무한 번 미분 가능한 두 함수 $$f$$와 $$g$$의 곱 $$fg$$의 10계 도함수를 다음과 같이 쓸 때, $$\\alpha_0 + \\alpha_2 + \\alpha_4 + \\alpha_6 + \\alpha_8 + \\alpha_{10}$$의 값은?",
-        "choices": [
-          "$$512$$",
-          "$$513$$",
-          "$$1024$$",
-          "$$1025$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "임의의 자연수 $$n$$에 대하여 두 함수 $$f(x)$$와 $$g(x)$$는 $$n$$번 미분가능하다. 두 함수의 곱 $$fg$$의 4계 도함수가 다음과 같을 때 $$\\sum_{r=0}^{4} \\alpha_r$$의 값을 구하면?",
-        "choices": [
-          "$$15$$",
-          "$$16$$",
-          "$$17$$",
-          "$$18$$",
-          "$$19$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "7번 미분가능한 임의의 두 함수 $$f, g : \\mathbb{R} \\to \\mathbb{R}$$에 대하여 다음과 같이 주어진다. 상수 $$\\alpha_1, \\alpha_2, ..., \\alpha_6$$의 평균은?",
-        "choices": [
-          "$$20$$",
-          "$$21$$",
-          "$$24$$",
-          "$$28$$",
-          "$$35$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "구간 $$I$$에서 무한 번 미분 가능한 두 함수 $$f$$와 $$g$$의 곱 $$fg$$의 10계 도함수를 다음과 같이 쓸 때, $$\\alpha_0 + \\alpha_2 + \\alpha_4 + \\alpha_6 + \\alpha_8 + \\alpha_{10}$$의 값은?",
-        "choices": [
-          "$$512$$",
-          "$$513$$",
-          "$$1024$$",
-          "$$1025$$"
-        ],
-        "answer": ""
-      }
-    ],
-    "142": [
-      {
-        "question": "집합 $$I$$에서 두 함수 $$f$$와 $$g$$의 $$n$$계 도함수가 존재할 때 다음 식의 값을 구하면?",
+        "question": "$$\\text{집합 } I \\text{에서 두 함수 } f와\\ g \\text{의 } n \\text{계 도함수가 존재할 때 다음 식의 값을 구하면?}$$",
+        "example": "$$\\left(fg\\right)^{(n)}(x) = \\sum_{r=1}^{n} \\frac{n!}{(n - r)!r!} f^{(n - r)}(x)g^{(r)}(x), \\quad x \\in I$$",
         "choices": [
           "$$0$$",
-          "$$f^{(n)}(x) g(x)$$",
-          "$$f(x) g^{(n)}(x)$$",
-          "$$1$$",
-          "$$-1$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "급수 $$\\sum_{k=2}^{2021} \\binom{2021}{k} k^{k-1} (-1)^{2021-k}$$의 값을 구하시오. (단, $$\\binom{2021}{k}$$은 조합식이다.)",
-        "choices": [
-          "$$-4040$$",
-          "$$-2021$$",
-          "$$2020$$",
-          "$$2021$$",
-          "$$4040$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "실수전체집합에서 무한히 미분가능한 두 함수 $$f(x), g(x)$$의 $$x=1$$에서 $$n$$ 차 도함수의 값이 각각 $$(-2)^n$$, $$(-3)^n$$이라 할 때, $$x=1$$에서 $$f(x)g(x)$$의 8 차 도함수의 값은?",
-        "choices": [
-          "$$1$$",
-          "$$2^8$$",
-          "$$3^8$$",
-          "$$5^3$$"
-        ],
-        "answer": ""
-      },
-      {
-        "question": "집합 $$I$$에서 두 함수 $$f$$와 $$g$$의 $$n$$계 도함수가 존재할 때 다음 식의 값을 구하면?",
-        "choices": [
-          "$$0$$",
-          "$$f^{(n)}(x) g(x)$$",
-          "$$f(x) g^{(n)}(x)$$",
+          "$$f^{(n)}(x)g(x)$$",
+          "$$f(x)g^{(n)}(x)$$",
           "$$1$$",
           "$$-1$$"
         ],

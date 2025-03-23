@@ -139,23 +139,23 @@ const uploadFile = async () => {
         <span class="w-3 h-3 bg-green-500 rounded-full"></span>
       </div>
 
-      <!-- 숨겨진 Admin 페이지 이동 버튼 (router-link 사용) -->
-      <router-link 
-        to="/adminpage"
-        @click="goToAdminPage"
-        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
+      <!-- Admin 페이지 이동 버튼 -->
+    <router-link 
+      to="/adminpage"
+      @click="goToAdminPage"
+      class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
       >
-        ⚙️
-      </router-link>
+      ⚙️
+    </router-link>
 
-      <!-- 숨겨진 Mathquest 페이지 이동 버튼 (router-link 사용) -->
-      <router-link 
-        to="/mathquest"
-        @click="goToMathPage"
-        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
+    <!-- Mathquest 페이지 이동 버튼 -->
+    <router-link 
+      to="/mathquest"
+      @click="goToMathPage"
+      class="absolute text-white transition-opacity duration-300 bottom-1 right-4 opacity-10 hover:opacity-100"
       >
-        ⚙️a
-      </router-link>
+      🧑‍🏫
+    </router-link>
 
 
 
