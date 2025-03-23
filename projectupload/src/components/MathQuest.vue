@@ -1,82 +1,75 @@
 <script setup>
-import { ref, nextTick, watch, computed } from "vue";
-import { useRouter } from "vue-router";
+import { ref, reactive, watch, computed, nextTick } from "vue";
+import html2pdf from "html2pdf.js";
 import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
 
-const numQuestions = ref(100);
-const selectedQuestions = ref([]);
-const selectedSubjects = ref([]); // 다중 선택 가능하게 변경
-
+// 과목 정의
 const subjects = {
   calculus1: { name: "미적분1", data: clcls1 },
   calculus2: { name: "미적분2", data: clcls2 },
   calculus3: { name: "미적분3", data: clcls3 },
 };
 
+const selectedSubjects = ref([]);
+const pageLimits = reactive({ calculus1: null, calculus2: null, calculus3: null });
+const questionCount = ref(30);
+const selectedQuestions = ref([]);
 
-const ADMIN_PASSWORD = "2580";
-// mathquest 페이지 이동 함수 (비밀번호 확인)
-const goToMathTest = (event) => {
-  const userInput = prompt("🔑: ");
+// 출력 대상 PDF 컨테이너
+const pdfContent = ref(null);
 
-  if (userInput === ADMIN_PASSWORD) {
-    router.push("/mathtest"); // 비밀번호가 맞으면 이동
-  } else {
-    alert("❌");
-    event.preventDefault(); // 비밀번호 틀리면 이동 차단
-    router.push("/"); // 비밀번호 틀리면 홈으로 이동
-  }
-};
-
-
-// 선택된 과목들에서 문제 가져오기
-const currentQuestions = computed(() => {
-  let allQuestions = [];
-  selectedSubjects.value.forEach((subjectKey) => {
-    if (subjects[subjectKey]) {
-      const subjectQuestions = subjects[subjectKey].data.questions;
-      Object.entries(subjectQuestions).forEach(([page, questions]) => {
-        questions.forEach((q) => {
-          allQuestions.push({
-            subject: subjects[subjectKey].name, // 문제별 과목명 추가
-            page: page,
-            question: q.question,
-            choices: q.choices || [],
-            example: q.example || "" // example이 있을 경우만 추가
-          });
-        });
-      });
-    }
-  });
-  return allQuestions;
-});
-
-// 문제를 3개씩 그룹화하여 A4 한 장에 3문제씩 배치
-const paginatedQuestions = computed(() => {
-  let result = [];
-  for (let i = 0; i < selectedQuestions.value.length; i += 3) {
-    result.push(selectedQuestions.value.slice(i, i + 3));
+// 페이지 옵션 자동 추출
+const pageOptions = computed(() => {
+  const result = {};
+  for (const key in subjects) {
+    const pages = Object.keys(subjects[key].data.questions)
+      .map((p) => parseInt(p))
+      .sort((a, b) => a - b);
+    result[key] = pages;
   }
   return result;
 });
 
-function getRandomQuestions(num) {
-  if (selectedSubjects.value.length === 0) return;
+// 문제 추출
+function getRandomQuestions() {
+  const pool = [];
 
-  const shuffled = [...currentQuestions.value].sort(() => Math.random() - 0.5);
+  selectedSubjects.value.forEach((subjectKey) => {
+    const data = subjects[subjectKey].data.questions;
+    const limit = pageLimits[subjectKey];
 
-  selectedQuestions.value = shuffled.slice(0, num).map((q, index) => ({
-    number: index + 1,
-    subject: q.subject, // 문제별 과목 정보 유지
-    page: q.page,
-    question: q.question,
-    choices: q.choices,
-    example: q.example // example 포함
-  }));
+    Object.entries(data).forEach(([page, list]) => {
+      const pageNum = parseInt(page);
+      if (limit === null || pageNum <= limit) {
+        list.forEach((q) => {
+          pool.push({
+            subject: subjects[subjectKey].name,
+            page,
+            question: q.question,
+            choices: q.choices || [],
+            example: q.example || "",
+          });
+        });
+      }
+    });
+  });
+
+  const shuffled = pool.sort(() => Math.random() - 0.5);
+  selectedQuestions.value = shuffled.slice(0, questionCount.value);
 }
 
+
+function openPrintView() {
+  // 데이터를 sessionStorage에 저장
+  sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
+  // 새 탭 열기
+  window.open("/printview", "_blank");
+}
+
+
+// 수식 렌더링
 function renderMath() {
   nextTick(() => {
     if (window.MathJax) {
@@ -84,129 +77,127 @@ function renderMath() {
     }
   });
 }
-
-watch(selectedSubjects, () => {
-  if (selectedSubjects.value.length > 0) {
-    getRandomQuestions(numQuestions.value);
-    renderMath();
-  } else {
-    selectedQuestions.value = [];
-  }
-});
-
 watch(selectedQuestions, renderMath);
-
-// 프린트 기능 추가 (PDF 저장도 가능)
-function printPage() {
-  window.print();
-}
 </script>
 
 <template>
-  <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4 md:p-6">
-    <div class="w-full max-w-4xl bg-white rounded-lg p-4 md:p-6 shadow-md border border-gray-200 print:p-0">
-      
-      <!-- 헤더 -->
-      <div class="flex justify-between items-center mb-4 md:mb-6 print:hidden">
-        <h2 class="text-xl md:text-2xl font-semibold text-gray-800">랜덤 미적분 문제</h2>
-        <router-link 
-        to="/mathtest"
-        @click="goToMathTest"
-        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
-      >
-        ⚙️a
-      </router-link>
+  <div class="p-6 max-w-5xl mx-auto print:hidden">
+    <h2 class="text-2xl font-bold mb-6">랜덤 미적분 문제 출제기</h2>
 
-        <button @click="printPage" class="bg-blue-500 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-600">
-          PDF로 저장 / 프린트
-        </button>
+    <!-- 과목 선택 -->
+    <div class="mb-4">
+      <label class="block font-medium mb-2">과목 선택</label>
+      <div class="flex flex-wrap gap-4">
+        <label
+          v-for="(subject, key) in subjects"
+          :key="key"
+          class="flex items-center gap-2"
+        >
+          <input type="checkbox" v-model="selectedSubjects" :value="key" />
+          {{ subject.name }}
+        </label>
       </div>
+    </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6 print:hidden">
-        <!-- ✅ 과목 다중 선택 가능 -->
-        <div class="flex flex-col">
-          <label class="text-base md:text-lg font-medium text-gray-700 mb-2">과목 선택</label>
-          <div class="flex flex-wrap gap-2">
-            <label v-for="(subject, key) in subjects" :key="key" class="flex items-center space-x-2">
-              <input type="checkbox" :value="key" v-model="selectedSubjects" class="rounded border-gray-300">
-              <span class="text-gray-800">{{ subject.name }}</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- 문제 개수 선택 -->
-        <div v-if="selectedSubjects.length > 0" class="flex flex-col">
-          <label class="text-base md:text-lg font-medium text-gray-700 mb-2">문제 개수</label>
-          <select v-model="numQuestions" @change="getRandomQuestions(numQuestions)"
-            class="w-full p-2 md:p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500">
-            <option v-for="n in [50, 80, 100, 150, 200, 250]" :key="n" :value="n">
-              {{ n }}
+    <!-- 페이지 제한 -->
+    <div class="mb-4">
+      <label class="block font-medium mb-2">과목별 최대 페이지 제한</label>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div v-for="(subject, key) in subjects" :key="key">
+          <label class="block text-sm mb-1">{{ subject.name }}</label>
+          <select
+            v-model.number="pageLimits[key]"
+            class="w-full border px-2 py-1 rounded"
+          >
+            <option :value="null">전체</option>
+            <option v-for="page in pageOptions[key]" :key="page" :value="page">
+              {{ page }} 페이지까지
             </option>
           </select>
         </div>
       </div>
+    </div>
 
-      <p v-if="selectedSubjects.length === 0" class="text-red-500 text-base md:text-lg font-semibold text-center mt-3 md:mt-4">
-        과목을 선택하면 문제가 표시됩니다.
-      </p>
+    <!-- 문제 수 -->
+    <div class="mb-4">
+      <label class="block font-medium mb-2">출제 문제 수</label>
+      <select v-model="questionCount" class="w-full border px-2 py-1 rounded">
+        <option v-for="count in [30, 50, 100, 150, 200, 250]" :key="count" :value="count">
+          {{ count }}문제
+        </option>
+      </select>
+    </div>
 
-      <div v-for="(page, pageIndex) in paginatedQuestions" :key="pageIndex" class="print-page">
-        <ul class="space-y-3 md:space-y-4">
-          <li v-for="(question, index) in page" :key="index"
-            class="p-5 bg-white rounded-md border border-gray-200 shadow-sm">
-            
-            <!-- ✅ 문제마다 개별적으로 과목 표시 -->
-            <strong class="text-lg font-semibold text-gray-800">
-              [{{ question.subject }}] {{ question.page }}페이지 - {{ question.number }}번
-            </strong>
-            
-            <p v-html="question.question" class="mt-2 text-gray-700 text-sm md:text-base"></p>
+    <!-- 버튼 -->
+    <div class="mb-6 flex gap-4">
+      <button @click="getRandomQuestions" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+        문제 출제
+      </button>
+      <button
+  @click="openPrintView"
+  class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700"
+  :disabled="selectedQuestions.length === 0"
+>
+  PDF로 인쇄 (간편 출력)
+</button>
+    </div>
+  </div>
 
-            <!-- 📌 선지를 가로 정렬 -->
-            <ul v-if="question.choices.length > 0" class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-2">
-              <li v-for="(choice, choiceIndex) in question.choices" :key="choiceIndex"
-                class="p-3 rounded-md border border-gray-300 bg-gray-50 flex items-center space-x-2">
-                <span class="font-semibold text-gray-800">{{ ['①', '②', '③', '④', '⑤'][choiceIndex] }}</span>
-                <span v-html="choice"></span>
-              </li>
-            </ul>
+  <!-- 출력용 PDF 내용 (프린트 & PDF 포함) -->
+  <div ref="pdfContent" class="max-w-[210mm] mx-auto p-8 bg-white print:bg-white">
+    <div
+      v-for="(question, index) in selectedQuestions"
+      :key="index"
+      class="mb-6 break-inside-avoid-page"
+      :class="{ 'page-break-after': (index + 1) % 4 === 0 }"
+    >
+      <div class="text-base font-semibold mb-1">
+        [{{ question.subject }}] {{ question.page }}페이지 - {{ index + 1 }}번
+      </div>
+      <div v-html="question.question" class="text-sm mb-2"></div>
 
-            <!-- ✅ Example 항목에 사각형 추가 -->
-            <div v-if="question.example && question.example.length > 0" class="mt-4">
-              <div class="bg-gray-100 p-4 rounded-md border border-gray-300">
-                <p class="text-sm text-gray-700">보기</p>
-                <div v-html="question.example" class="space-y-2 mt-2"></div>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <!-- 선택지 -->
+      <ul v-if="question.choices.length" class="space-y-1">
+        <li
+          v-for="(choice, i) in question.choices"
+          :key="i"
+          class="text-sm pl-2 border-l-4 border-blue-300 bg-blue-50 rounded py-1 px-2"
+        >
+          <strong>{{ ['①', '②', '③', '④', '⑤'][i] }}</strong>
+          <span v-html="choice"></span>
+        </li>
+      </ul>
+
+      <!-- 보기 -->
+      <div v-if="question.example" class="mt-2 text-sm bg-gray-100 border border-gray-300 rounded p-2">
+        <p class="font-medium text-gray-700">[보기]</p>
+        <div v-html="question.example"></div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
-/* ✅ A4용지 사이즈에 맞게 프린트 스타일 적용 */
+<style scoped>
+/* A4 한 페이지에 문제 4개씩 출력용 스타일 */
+.page-break-after {
+  page-break-after: always;
+}
+.break-inside-avoid-page {
+  break-inside: avoid;
+}
 @media print {
+  @page {
+    margin: 0;
+  }
+
   body {
+    margin: 0;
+    padding: 0;
     background: white;
   }
 
-  .print-page {
-    page-break-before: always; /* 한 페이지마다 자동으로 줄 바꿈 */
-    padding: 20px;
-  }
-
-  .print-hidden {
-    display: none !important; /* 버튼 등 불필요한 요소 숨김 */
-  }
-
-  .print-visible {
-    display: block !important;
-  }
-
-  .print p, .print strong {
-    font-size: 14px; /* 프린트 시 글씨 크기 조정 */
+  .no-print {
+    display: none !important;
   }
 }
 </style>
