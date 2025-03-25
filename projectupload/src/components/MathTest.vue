@@ -16,20 +16,28 @@ const subjects = {
 // 과목 선택에 따라 문제 가져오기
 const currentQuestions = computed(() => {
   if (!selectedSubject.value) return [];
-  
-  const questions = subjects[selectedSubject.value]?.data.questions || [];
+
+  const questions = subjects[selectedSubject.value]?.data?.questions || {};
   let allQuestions = [];
+
   Object.entries(questions).forEach(([page, questionsList]) => {
+    // 🚨 여기서 undefined 체크
+    if (!Array.isArray(questionsList)) {
+      console.warn(`❗ 페이지 ${page}에 문제가 배열이 아님:`, questionsList);
+      return; // 건너뛰기
+    }
+
     questionsList.forEach((q) => {
       allQuestions.push({
-        subject: subjects[selectedSubject.value].name, 
+        subject: subjects[selectedSubject.value].name,
         page: page,
         question: q.question,
         choices: q.choices || [],
-        example: q.example || "" 
+        example: q.example || ""
       });
     });
   });
+
   return allQuestions;
 });
 
@@ -54,6 +62,7 @@ function renderMath() {
 // 초기 설정을 마친 후 MathJax 렌더링
 watch(selectedQuestions, renderMath);
 </script>
+
 
 <template>
   <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4 md:p-6">
