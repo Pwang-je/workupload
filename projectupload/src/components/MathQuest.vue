@@ -72,7 +72,7 @@ watch(selectedQuestions, renderMath);
 
 <template>
   <div class="max-w-screen-md mx-auto p-6 print:hidden text-gray-800">
-    <h2 class="text-2xl font-bold mb-6 text-center">📘 랜덤 미적분 문제 출제기</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">랜덤 미적분 문제</h2>
 
     <!-- 과목 선택 -->
     <div class="mb-6">
@@ -109,7 +109,7 @@ watch(selectedQuestions, renderMath);
     <div class="mb-6">
       <label class="block font-semibold mb-2">출제할 문제 수</label>
       <select v-model="questionCount" class="w-full border px-3 py-2 rounded-md">
-        <option v-for="count in [30, 50, 100, 150, 200, 250]" :key="count" :value="count">
+        <option v-for="count in [30, 50, 100, 150, 200, 250, 300, 350]" :key="count" :value="count">
           {{ count }}문제
         </option>
       </select>
@@ -145,22 +145,26 @@ watch(selectedQuestions, renderMath);
       </p>
       <div v-html="question.question" class="mb-3 text-sm leading-relaxed" />
 
-      <!-- 선택지 -->
-      <ul v-if="question.choices.length" class="mb-3 space-y-2 text-sm">
-        <li v-for="(choice, i) in question.choices" :key="i" class="flex gap-2">
-          <strong>{{ ['①', '②', '③', '④', '⑤'][i] }}</strong>
-          <span v-html="choice" />
-        </li>
-      </ul>
-
       <!-- 보기 -->
-      <div
-        v-if="question.example"
-        class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm"
-      >
-        <p class="text-gray-600 font-medium mb-1">[보기]</p>
-        <div v-html="question.example" />
-      </div>
+<div
+v-if="question.example"
+class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3"
+>
+<p class="text-gray-600 font-medium mb-1">[보기]</p>
+<div v-html="question.example" />
+</div>
+
+<!-- 선택지 -->
+<ul v-if="question.choices.length" class="mb-3 space-y-2 text-sm">
+<li v-for="(choice, i) in question.choices" :key="i" class="flex gap-2">
+  <strong>{{ ['①', '②', '③', '④', '⑤'][i] }}</strong>
+  <span v-html="choice" />
+</li>
+</ul>
+
+
+
+
     </div>
   </div>
 </template>

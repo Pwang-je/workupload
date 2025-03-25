@@ -129,9 +129,9 @@ const uploadFile = async () => {
 </script>
 
 <template>
-  <div class="flex items-center justify-center min-h-screen bg-[#1A1B26]">
-    <div class="w-full max-w-md p-8 bg-[#16161E] rounded-xl shadow-lg relative">
-      
+  <div class="flex items-center justify-center min-h-screen bg-[#1A1B26] px-4 sm:px-6">
+    <div class="w-full max-w-md sm:max-w-lg p-6 sm:p-8 bg-[#16161E] rounded-xl shadow-lg relative">
+
       <!-- Mac 스타일 창 버튼 -->
       <div class="absolute flex space-x-2 top-3 left-4">
         <span class="w-3 h-3 bg-red-500 rounded-full"></span>
@@ -140,40 +140,37 @@ const uploadFile = async () => {
       </div>
 
       <!-- Admin 페이지 이동 버튼 -->
-    <router-link 
-      to="/adminpage"
-      @click="goToAdminPage"
-      class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100"
+      <router-link 
+        to="/adminpage"
+        @click="goToAdminPage"
+        class="absolute text-white transition-opacity duration-300 top-3 right-4 opacity-10 hover:opacity-100 text-sm sm:text-base"
       >
-      ⚙️
-    </router-link>
+        ⚙️
+      </router-link>
 
-    <!-- Mathquest 페이지 이동 버튼 -->
-    <router-link 
-      to="/mathquest"
-      @click="goToMathPage"
-      class="absolute text-white transition-opacity duration-300 bottom-1 right-4 opacity-10 hover:opacity-100"
+      <!-- Mathquest 페이지 이동 버튼 -->
+      <router-link 
+        to="/mathquest"
+        @click="goToMathPage"
+        class="absolute text-white transition-opacity duration-300 bottom-1 right-4 opacity-10 hover:opacity-100 text-sm sm:text-base"
       >
-      🧑‍🏫
-    </router-link>
+        🧑‍🏫
+      </router-link>
 
-
-
-
-      <h2 class="text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6">파일 제출용</h2>
+      <h2 class="text-xl sm:text-2xl font-bold text-center text-[#C792EA] pb-4 mt-6 break-words">파일 제출용</h2>
 
       <div class="space-y-4">
         <!-- 이름 입력 필드 -->
         <input 
           type="text" 
-          class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none" 
+          class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none text-sm sm:text-base" 
           v-model="fileName" 
           placeholder="이름을 입력해주세요." 
         />
 
         <!-- 질문 입력 필드 -->
         <textarea 
-          class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none resize-none" 
+          class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD] focus:ring-2 focus:ring-[#C792EA] focus:outline-none resize-none text-sm sm:text-base" 
           v-model="question"
           placeholder="질문이나 하고싶은 말을 적어주세요."
           rows="3"
@@ -184,25 +181,26 @@ const uploadFile = async () => {
           v-model="fileDate" 
           :format="'yyyy-MM-dd'" 
           :enable-time-picker="false" 
-          class="w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD]"
+          class="w-full text-sm sm:text-base border border-[#2C2E40] rounded-xl bg-[#1E1E2E] text-[#A6ACCD]"
         />
 
         <!-- 파일 선택 버튼 (커스텀) -->
-        <label class="flex items-center justify-center w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#C792EA] text-white cursor-pointer hover:bg-[#AB69C6] transition duration-200">
-          <span>{{ selectedFileName }}</span>
+        <label class="flex items-center justify-center w-full px-4 py-3 border border-[#2C2E40] rounded-xl bg-[#C792EA] text-white cursor-pointer hover:bg-[#AB69C6] transition duration-200 text-sm sm:text-base">
+          <span class="truncate">{{ selectedFileName }}</span>
           <input type="file" class="hidden" @change="onFileChange" />
         </label>
 
         <!-- 업로드 버튼 -->
         <button 
           @click="uploadFile" 
-          class="w-full py-3 bg-[#C792EA] text-white font-semibold rounded-full hover:bg-[#AB69C6] transition duration-200">
+          class="w-full py-3 bg-[#C792EA] text-white font-semibold rounded-full hover:bg-[#AB69C6] transition duration-200 text-sm sm:text-base">
           🍺업로드
         </button>
       </div>
     </div>
   </div>
 </template>
+
 
 <style scoped>
 button {
