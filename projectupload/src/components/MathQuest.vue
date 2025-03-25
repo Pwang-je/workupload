@@ -28,13 +28,29 @@ const pageOptions = computed(() => {
   return result;
 });
 
-function getRandomQuestions() {
-  const pool = [];
+const subjectCounts = ref({}); // 과목별 출제 수 저장
 
-  selectedSubjects.value.forEach(subjectKey => {
+function getRandomQuestions() {
+  const totalSubjects = selectedSubjects.value.length;
+  const totalQuestions = questionCount.value;
+
+  if (totalSubjects === 0) {
+    selectedQuestions.value = [];
+    subjectCounts.value = {};
+    return;
+  }
+
+  const perSubjectCount = Math.floor(totalQuestions / totalSubjects);
+  const remainder = totalQuestions % totalSubjects;
+
+  const selected = [];
+  const counts = {};
+
+  selectedSubjects.value.forEach((subjectKey, index) => {
     const data = subjects[subjectKey].data.questions;
     const limit = pageLimits[subjectKey];
 
+    const pool = [];
     Object.entries(data).forEach(([page, list]) => {
       const pageNum = parseInt(page);
       if (limit === null || pageNum <= limit) {
@@ -49,11 +65,23 @@ function getRandomQuestions() {
         });
       }
     });
+
+    let count = perSubjectCount;
+    if (index < remainder) count += 1;
+
+    const shuffled = pool.sort(() => Math.random() - 0.5);
+    const chosen = shuffled.slice(0, count);
+    selected.push(...chosen);
+
+    // 과목별 출제 수 저장
+    counts[subjects[subjectKey].name] = chosen.length;
   });
 
-  const shuffled = pool.sort(() => Math.random() - 0.5);
-  selectedQuestions.value = shuffled.slice(0, questionCount.value);
+  selectedQuestions.value = selected;
+  subjectCounts.value = counts;
 }
+
+
 
 function openPrintView() {
   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
@@ -132,6 +160,26 @@ watch(selectedQuestions, renderMath);
       </button>
     </div>
   </div>
+
+<!-- 과목별 출제 수 요약 -->
+<div
+  v-if="Object.keys(subjectCounts).length"
+  class="max-w-screen-md mx-auto mb-6 bg-gray-100 border border-gray-300 p-4 rounded-md text-sm"
+>
+  <p class="font-semibold mb-2">출제된 문제 수</p>
+  <ul class="flex flex-wrap gap-6">
+    <li
+      v-for="(count, name) in subjectCounts"
+      :key="name"
+      class="flex items-center gap-2"
+    >
+      <span class="w-3 h-3 bg-blue-500 rounded-full inline-block"></span>
+      <span>{{ name }}: <strong>{{ count }}</strong>문제</span>
+    </li>
+  </ul>
+</div>
+
+
 
   <!-- 프린트용 미리보기 (선택적) -->
   <div ref="pdfContent" class="max-w-[210mm] mx-auto p-8 bg-gray-50 text-gray-900 print:bg-white">
