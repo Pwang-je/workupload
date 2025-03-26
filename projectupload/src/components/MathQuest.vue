@@ -1,5 +1,6 @@
 <script setup>
 import { ref, reactive, watch, computed, nextTick } from "vue";
+import { useRouter } from "vue-router";
 import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
@@ -14,6 +15,7 @@ const selectedSubjects = ref([]);
 const pageLimits = reactive({ calculus1: null, calculus2: null, calculus3: null });
 const questionCount = ref(30);
 const selectedQuestions = ref([]);
+const router = useRouter();
 
 const pdfContent = ref(null);
 
@@ -82,11 +84,15 @@ function getRandomQuestions() {
 }
 
 
-
 function openPrintView() {
   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
-  window.open("/printview", "_self");
+  router.push("/printview");
 }
+
+// function openPrintView() {
+//   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
+//   window.location.hash = "#/printview";
+// }
 
 function renderMath() {
   nextTick(() => {
