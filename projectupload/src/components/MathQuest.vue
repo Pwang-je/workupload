@@ -85,7 +85,7 @@ function getRandomQuestions() {
 
 function openPrintView() {
   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
-  window.open("/printview", "_blank");
+  window.open("/printview", "_self");
 }
 
 function renderMath() {
@@ -100,7 +100,7 @@ watch(selectedQuestions, renderMath);
 
 <template>
   <div class="max-w-screen-md mx-auto p-6 print:hidden text-gray-800">
-    <h2 class="text-2xl font-bold mb-6 text-center">랜덤 미적분 문제</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">귀차니즘을 이겨내기 위한 미적분 랜덤 문제 출제용</h2>
 
     <!-- 과목 선택 -->
     <div class="mb-6">
@@ -156,7 +156,7 @@ watch(selectedQuestions, renderMath);
         :disabled="selectedQuestions.length === 0"
         class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-5 py-2 rounded disabled:opacity-50"
       >
-        PDF로 인쇄 (간편 출력)
+        인쇄-PDF
       </button>
     </div>
   </div>
