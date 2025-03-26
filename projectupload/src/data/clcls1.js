@@ -18,7 +18,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "다음 계산을 하시오:$$-\\frac{3}{4} - \\frac{5}{3} \\times -20$$",
+        "question": "다음 계산을 하시오:$$-\\frac{3}{4} \\div -\\frac{5}{3} \\times -20 =$$",
         "choices": [],
         "answer": ""
       },
@@ -1993,7 +1993,7 @@ export const clcls1 = {
         "choices": [
           "$$-2$$",
           "$$-1$$",
-          "$$-\\frac{3}{2}$$",
+          "$$-\\frac{1}{2}$$",
           "$$-\\frac{1}{3}$$",
           "$$-\\frac{1}{4}$$"
         ],
@@ -2035,7 +2035,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$y = \\frac{(x + 1)(x + 2)^2}{(x + 3)(x + 4)^2}$$에 대하여$$y$$의 도함수는$$y' = \\left(\\frac{A}{x + 1} + \\frac{B}{x + 2} + \\frac{C}{x + 3} + \\frac{D}{x + 4} \\right)y$$이다. 이때,$$A + B + C + D$$의 값은?",
+        "question": "$$y = \\frac{(x + 1)(x + 2)^2}{(x + 3)^3(x + 4)^4}$$에 대하여$$y$$의 도함수는$$y' = \\left(\\frac{A}{x + 1} + \\frac{B}{x + 2} + \\frac{C}{x + 3} + \\frac{D}{x + 4} \\right)y$$이다. 이때,$$A + B + C + D$$의 값은?",
         "choices": [
           "$$-10$$",
           "$$-8$$",
@@ -2115,7 +2115,7 @@ export const clcls1 = {
     ],
     "95": [
       {
-        "question": "$$f(x) = \\frac{(2x + 3)^3 \\sec^2 x}{(x^2 + 4)}$$일 때,$$f'(0)$$의 값은?",
+        "question": "$$f(x) = \\frac{(2x + 3)^2 \\sec^2 x}{(x^2 + 4)}$$일 때,$$f'(0)$$의 값은?",
         "choices": [
           "$$0$$",
           "$$\\frac{16}{27}$$",
@@ -2167,7 +2167,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "방정식$$x^2 y + xy = 2$$에 대하여$$x = a, y = b$$일 때,$$y' = -2$$이다. 이때,$$2a^2 + b^2$$의 값은?",
+        "question": "방정식$$x^2 y^2 + xy = 2$$에 대하여$$x = a, y = b$$일 때,$$y' = -2$$이다. 이때,$$2a^2 + b^2$$의 값은?",
         "choices": [
           "$$3$$",
           "$$4$$",
@@ -2209,7 +2209,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수$$f(x) = 25\\arctan(\\sqrt{9 + x^2 - 2})$$에 대하여$$f'(4)$$를 구하면?",
+        "question": "함수$$f(x) = 25\\arctan(\\sqrt{9 + x^2} - 2)$$에 대하여$$f'(4)$$를 구하면?",
         "choices": [
           "$$1$$",
           "$$2$$",
