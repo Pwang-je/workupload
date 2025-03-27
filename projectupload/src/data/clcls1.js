@@ -1266,7 +1266,7 @@ export const clcls1 = {
       "question": "$$\\text{다음 중 잘못된 명제는 모두 몇 개인가?}$$",
       "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh^{-1}x = \\ln(x + \\sqrt{x^2 + 1}) \\\\\n\\text{나. } & \\cosh^2x - \\sinh^2x = 1 \\\\\n\\text{다. } & \\cosh(2\\ln x) = \\frac{x^4 + 1}{2x^2} \\\\\n\\text{라. } & \\cosh 3x - \\sinh 3x = e^{-3x} \\\\\n\\text{마. } & (\\cosh x + \\sinh x)^2 = e^x\n\\end{aligned}$$",
       "choices": [
-        "없음음",
+        "없음",
         "$$1$$",
         "$$2$$",
         "$$3$$"
@@ -1277,7 +1277,7 @@ export const clcls1 = {
       "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
       "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh(-x) = -\\sinh x \\\\\n\\text{나. } & \\cosh(-x) = \\cosh x \\\\\n\\text{다. } & \\sinh(x + y) = \\sinh x \\cosh y + \\cosh x \\sinh y \\\\\n\\text{라. } & \\cosh(x + y) = \\cosh x \\cosh y - \\sinh x \\sinh y\n\\end{aligned}$$",
       "choices": [
-        "없음음",
+        "없음",
         "$$1$$",
         "$$2$$",
         "$$3$$"
@@ -1288,7 +1288,7 @@ export const clcls1 = {
       "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
       "example": "$$\\begin{aligned}\n\\text{ㄱ. } & \\cosh x + \\sinh x = e^x \\\\\n\\text{ㄴ. } & y = \\tanh x \\text{의 정의역은 모든 실수이고, 치역은 } \\left( -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right) \\text{이다.} \\\\\n\\text{ㄷ. } & 0 < x \\leq 1 \\text{일 때, } \\cosh^{-1}\\left(\\frac{1}{x}\\right) = \\text{sech}^{-1}x \\text{이다.}\n\\end{aligned}$$",
       "choices": [
-        "없음음",
+        "없음",
         "$$1$$",
         "$$2$$",
         "$$3$$"
@@ -1361,7 +1361,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = e^{x \\tan x}$$의 도함수는?",
+        "question": "$$f(x) = e^{\\tan x}$$의 도함수는?",
         "choices": [],
         "answer": ""
       },
@@ -2287,7 +2287,7 @@ export const clcls1 = {
     ],
     "99": [
       {
-        "question": "$$\\frac{d}{dx} \\left( \\frac{1}{2} \tan^{-1} x + \\frac{1}{4} \\ln \\frac{(x+1)^2}{x^2 + 1} \\right) = \\frac{c}{(a + x)(b + x^2)}$$를 만족하는 상수$$a, b, c$$에 대하여$$abc$$의 값은?",
+        "question": "$$\\frac{d}{dx} \\left( \\frac{1}{2} \\tan^{-1} x + \\frac{1}{4} \\ln \\frac{(x+1)^2}{x^2 + 1} \\right) = \\frac{c}{(a + x)(b + x^2)}$$를 만족하는 상수$$a, b, c$$에 대하여$$abc$$의 값은?",
         "choices": [
           "$$\\frac{1}{2}$$",
           "$$1$$",
@@ -2352,7 +2352,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "영역$$(-\\infty, -\\frac{3}{4})$$에서 정의된 함수$$f(x) = x^4 - x^3 + 1$$에 대하여$$g(x) = f(f^{-1}(x))$$라 할 때,<br>$$g'(3)$$을 구하시오.",
+        "question": "영역$$(-\\infty, -\\frac{3}{4})$$에서 정의된 함수$$f(x) = x^4 - x^3 + 1$$에 대하여$$g(x) = f(7f^{-1}(x))$$라 할 때,<br>$$g'(3)$$을 구하시오.",
         "choices": [
           "$$-1519$$",
           "$$-217$$",
@@ -3238,7 +3238,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$x^4 + y^4 = 16$$위의 점$$(\\sqrt{8}, -\\sqrt{8})$$에서$$y'$$의 값은?",
+        "question": "곡선$$x^4 + y^4 = 16$$위의 점$$(\\sqrt[4]{8}, -\\sqrt[4]{8})$$에서$$y''$$의 값은?",
         "choices": [
           "$$\\sqrt{2}$$",
           "$$2\\sqrt{2}$$",
@@ -3248,7 +3248,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$x^4 + y^3 = 4$$위의 점$$(-1, \\sqrt{3})$$에서$$\\frac{d^2 y}{dx^2}$$를 구하라.",
+        "question": "곡선$$x^4 + y^2 = 4$$위의 점$$(-1, \\sqrt{3})$$에서$$\\frac{d^2 y}{dx^2}$$를 구하라.",
         "choices": [
           "$$-\\frac{22}{3\\sqrt{3}}$$",
           "$$-22\\sqrt{3}$$",
@@ -3272,7 +3272,7 @@ export const clcls1 = {
     ],
     "136": [
       {
-        "question": "방정식$$x^4 + y^4 = 2$$가 변수$$y$$를$$x$$의 음함수로 정의할 때,$$0$$이 아닌$$y$$에서$$y'$$의 이계도함수는$$y'' = ax^b y^c$$이다. 이때$$a + b + c$$의 값은? (단,$$a,b,c$$는 실수)",
+        "question": "방정식$$x^4 + y^4 = 2$$가 변수$$y$$를$$x$$의 음함수로 정의할 때,$$0$$이 아닌$$y$$에서$$y$$의 이계도함수는$$y'' = ax^b y^c$$이다. 이때$$a + b + c$$의 값은? (단,$$a,b,c$$는 실수)",
         "choices": [
           "$$-15$$",
           "$$-11$$",
