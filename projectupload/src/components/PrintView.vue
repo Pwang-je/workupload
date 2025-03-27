@@ -1,5 +1,5 @@
 <template>
-
+  <!-- 출제 개수 표시 -->
   <div v-if="Object.keys(subjectCounts).length" class="mb-6 text-sm text-gray-700">
     <p class="font-semibold mb-2">출제 개수:</p>
     <ul class="list-disc pl-5 space-y-1">
@@ -9,7 +9,11 @@
     </ul>
   </div>
 
-  <div class="max-w-[210mm] mx-auto px-8 py-10 text-base text-gray-800">
+  <!-- 문제 목록 출력 (데이터 있을 때만) -->
+  <div
+    v-if="selectedQuestions && selectedQuestions.length"
+    class="max-w-[210mm] mx-auto px-8 py-10 text-base text-gray-800"
+  >
     <div
       v-for="(question, index) in selectedQuestions"
       :key="index"
@@ -44,6 +48,11 @@
         <div v-html="question.example" />
       </div>
     </div>
+  </div>
+
+  <!-- 로딩 중일 때 메시지 -->
+  <div v-else class="text-center text-gray-400 mt-10">
+    문제를 불러오는 중입니다...
   </div>
 </template>
 
@@ -94,7 +103,6 @@ function waitForMathJax() {
     check();
   });
 }
-
 </script>
 
 <style scoped>
