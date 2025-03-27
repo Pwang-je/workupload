@@ -1,4 +1,14 @@
 <template>
+
+  <div v-if="Object.keys(subjectCounts).length" class="mb-6 text-sm text-gray-700">
+    <p class="font-semibold mb-2">출제 개수:</p>
+    <ul class="list-disc pl-5 space-y-1">
+      <li v-for="(count, subject) in subjectCounts" :key="subject">
+        {{ subject }}: {{ count }}문제
+      </li>
+    </ul>
+  </div>
+
   <div class="max-w-[210mm] mx-auto px-8 py-10 text-base text-gray-800">
     <div
       v-for="(question, index) in selectedQuestions"
@@ -41,26 +51,50 @@
 import { onMounted, ref } from "vue";
 
 const selectedQuestions = ref([]);
+const subjectCounts = ref({});
 
 onMounted(() => {
-  const saved = sessionStorage.getItem("printQuestions");
-  if (saved) {
-    try {
-      selectedQuestions.value = JSON.parse(saved);
+  const savedQuestions = sessionStorage.getItem("printQuestions");
+  const savedCounts = sessionStorage.getItem("subjectCounts");
 
-      // 수식 렌더링 후 자동 인쇄
-      if (window.MathJax) {
-        window.MathJax.typesetPromise().then(() => {
-          window.print();
-        });
-      } else {
-        window.print();
-      }
+  if (savedQuestions) {
+    try {
+      selectedQuestions.value = JSON.parse(savedQuestions);
     } catch (e) {
       console.error("문제 데이터 파싱 실패:", e);
     }
   }
+
+  if (savedCounts) {
+    try {
+      subjectCounts.value = JSON.parse(savedCounts);
+    } catch (e) {
+      console.error("출제 수 데이터 파싱 실패:", e);
+    }
+  }
+
+  // 수식 렌더링 후 프린트
+  waitForMathJax().then(() => {
+    return window.MathJax.typesetPromise();
+  }).then(() => {
+    window.print();
+  });
 });
+
+// MathJax가 로드될 때까지 기다리는 함수
+function waitForMathJax() {
+  return new Promise((resolve) => {
+    const check = () => {
+      if (window.MathJax && window.MathJax.typesetPromise) {
+        resolve();
+      } else {
+        setTimeout(check, 100); // 100ms마다 재시도
+      }
+    };
+    check();
+  });
+}
+
 </script>
 
 <style scoped>

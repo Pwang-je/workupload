@@ -86,8 +86,10 @@ function getRandomQuestions() {
 
 function openPrintView() {
   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
+  sessionStorage.setItem("subjectCounts", JSON.stringify(subjectCounts.value)); 
   router.push("/printview");
 }
+
 
 // function openPrintView() {
 //   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
