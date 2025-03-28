@@ -1137,7 +1137,7 @@ export const clcls2 = {
     "answer": ""
   },
   {
-    "question": "다음과 같이 정의된 함수 $$h(x)$$가 실수 전체에서 연속일 때, $$a$$의 값은?",
+    "question": "다음과 같이 정의된 함수$$h(x)$$가 실수 전체에서 연속일 때,$$a$$의 값은?",
     "example": "$$h(x) = \\begin{cases} \\tan \\left( \\frac{\\pi x}{2} \\right), & x < -\\frac{1}{3} \\text{ or } x > \\frac{2}{3} \\\\ ax + b, & -\\frac{1}{3} \\leq x \\leq \\frac{2}{3} \\end{cases}$$",
     "choices": [
       "$$\\frac{1}{\\sqrt{3}}$$",
@@ -4389,7 +4389,7 @@ export const clcls2 = {
   },
   {
     "question": "다음 <보기>에서 발산하는 이상 적분은 모두 몇 개인가?",
-    "example": "(가) $$\\int_1^{\\infty} \\frac{\\sin x}{x} dx$$ (나) $$\\int_0^1 \\frac{\\sqrt{x}}{\\sin x} dx$$ (다) $$\\int_0^1 \\frac{1}{\\ln(2x)} dx$$ (라) $$\\int_0^1 \\frac{1}{x (\\ln(2x))^2} dx$$",
+    "example": "(ㄱ) $$\\int_1^{\\infty} \\frac{\\sin x}{x} dx$$ (ㄴ) $$\\int_0^1 \\frac{\\sqrt{x}}{\\sin x} dx$$ (ㄷ) $$\\int_0^1 \\frac{1}{\\ln(2x)} dx$$ (ㄹ) $$\\int_0^1 \\frac{1}{x (\\ln(2x))^2} dx$$",
     "choices": [
       "0개",
       "1개",
@@ -4425,7 +4425,7 @@ export const clcls2 = {
   },
   {
     "question": "<보기>에서 수렴하는 이상적분 (improper integral)은 모두 몇 개인가?",
-    "example": "$$\\text{(가) } \\int_0^{\\infty} \\frac{e^{-x^2}}{|x - 2|^{\\frac{3}{2}}} \\ dx \\quad \\text{(나) } \\int_0^{\\infty} \\frac{1 + x^{2022}}{\\sqrt{x}} \\ dx \\quad \\text{(다) } \\int_0^{\\infty} e^{-(\\ln x)^2} \\ dx \\quad \\text{(라) } \\int_0^{\\infty} \\frac{x}{1 + 2x + x^2} \\ dx$$",
+    "example": "(가)$$\\int_0^{\\infty} \\frac{e^{-x^2}}{|x - 2|^{\\frac{3}{2}}} dx$$ (나)$$\\int_0^{\\infty} \\frac{1 + x^{2022}}{\\sqrt{x}} dx$$ (다)$$\\int_0^{\\infty} e^{-(\\ln x)^2} dx$$(라) $$\\int_0^{\\infty} \\frac{x}{1 + 2x + x^2} dx$$",
     "choices": [
       "0개",
       "1개",

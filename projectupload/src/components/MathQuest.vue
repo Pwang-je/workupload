@@ -5,12 +5,14 @@ import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
 
+// 과목 정의
 const subjects = {
   calculus1: { name: "미적분1", data: clcls1 },
   calculus2: { name: "미적분2", data: clcls2 },
   calculus3: { name: "미적분3", data: clcls3 },
 };
 
+// 단원별 범위 설정
 const chapters = {
   calculus1: [
     { name: "기초수학", start: 6, end: 33 },
@@ -34,6 +36,23 @@ const chapters = {
   ],
 };
 
+function choiceLayoutClass(question) {
+  const plainLengths = question.choices.map(c =>
+    typeof c === "string" ? c.replace(/<[^>]+>/g, '') : ''
+  );
+  const hasLongChoice = plainLengths.some(len => len > 40);
+
+  const exampleText =
+    typeof question.example === "string" ? question.example.replace(/<[^>]+>/g, '') : '';
+  const isExampleLong = exampleText.length > 250;
+
+  if (hasLongChoice || isExampleLong) return 'grid-cols-1';
+  const len = question.choices.length;
+  if (len === 2 || len === 4) return 'grid-cols-2';
+  return 'grid-cols-2';
+}
+
+// 상태 관리 변수
 const selectedSubjects = ref([]);
 const selectedChapters = reactive({
   calculus1: [],
@@ -51,17 +70,19 @@ const subjectCounts = ref({});
 const router = useRouter();
 const pdfContent = ref(null);
 
+// 각 과목의 페이지 옵션 계산
 const pageOptions = computed(() => {
   const result = {};
   for (const key in subjects) {
     const pages = Object.keys(subjects[key].data.questions)
-      .map((p) => parseInt(p))
+      .map(p => parseInt(p))
       .sort((a, b) => a - b);
     result[key] = pages;
   }
   return result;
 });
 
+// 문제 랜덤 추출
 function getRandomQuestions() {
   const totalSubjects = selectedSubjects.value.length;
   const totalQuestions = questionCount.value;
@@ -128,12 +149,80 @@ function getRandomQuestions() {
   subjectCounts.value = counts;
 }
 
+function formatExampleArray(example) {
+  const renderSingleColumn = (items) => {
+    return items.map((item) => `
+      <div class="mb-2 whitespace-pre-line leading-relaxed break-words">
+        ${item}
+      </div>
+    `).join('');
+  };
+
+  const renderTwoColumns = (items) => {
+    const rows = [];
+    for (let i = 0; i < items.length; i += 2) {
+      const left = items[i] || '';
+      const right = items[i + 1] || '';
+      rows.push(`
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-2">
+          <div class="break-words whitespace-pre-wrap">${left}</div>
+          <div class="break-words whitespace-pre-wrap">${right}</div>
+        </div>
+      `);
+    }
+    return rows.join('');
+  };
+
+  const splitItems = (value) => {
+    if (typeof value === 'string') {
+      let items = [];
+
+      // 🧠 예외 처리: 전체가 수식이면 분리하지 않음
+      const trimmed = value.trim();
+      if (trimmed.startsWith('$$') && trimmed.endsWith('$$')) {
+        return [trimmed]; // 그대로 출력
+      }
+
+      if (value.match(/\([가-힣]\)/)) {
+        items = value.split(/(?=\([가-힣]\))/g);
+      } else if (value.match(/(^|\s)[가-힣]\./)) {
+        items = value.split(/(?<=\s|^)(?=[가-힣]\.)/g);
+      } else {
+        items = value.split(/\n|(?<=\.)\s/);
+      }
+
+      return items.map(str => str.trim()).filter(Boolean);
+    }
+
+    if (Array.isArray(value)) {
+      return value.map(str => String(str).trim()).filter(Boolean);
+    }
+
+    return [];
+  };
+
+  const items = splitItems(example);
+
+  const hasLatex = items.some(item => item.includes('\\(') || item.includes('<span class="math">') || item.includes('$$'));
+  const isTooLong = items.some(item => item.length > 80);
+
+  // 수식이거나 너무 길면 1열
+  if (isTooLong || hasLatex) {
+    return renderSingleColumn(items);
+  }
+
+  return renderTwoColumns(items);
+}
+
+
+// 프린트 페이지로 이동
 function openPrintView() {
   sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
   sessionStorage.setItem("subjectCounts", JSON.stringify(subjectCounts.value));
   router.push("/printview");
 }
 
+// 수식 렌더링
 function renderMath() {
   nextTick(() => {
     if (window.MathJax) {
@@ -141,7 +230,6 @@ function renderMath() {
     }
   });
 }
-
 watch(selectedQuestions, renderMath);
 </script>
 
@@ -254,34 +342,30 @@ watch(selectedQuestions, renderMath);
       </p>
       <div v-html="question.question" class="mb-3 text-sm leading-relaxed" />
 
-      <div v-if="question.example" class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3">
-        <p class="text-gray-600 font-medium mb-1">[보기]</p>
-        <div v-html="question.example" />
-      </div>
+      <div
+  v-if="question.example"
+  class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3"
+>
+  <p class="text-gray-600 font-medium mb-1">[보기]</p>
+  <div v-html="formatExampleArray(question.example)" />
+</div>
 
       <ul
-      v-if="question.choices.length"
-      class="mb-3 grid gap-4 text-sm"
-      :class="{
-        'grid-cols-1 sm:grid-cols-2 md:grid-cols-3': question.choices.length >= 3,
-        'grid-cols-2': question.choices.length === 2,
-        'grid-cols-4': question.choices.length === 4
-      }"
-      >
-      <li
-  v-for="(choice, i) in question.choices"
-  :key="i"
-  class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full break-words min-w-0"
+  v-if="question.choices.length"
+  class="mb-3 grid gap-4 text-sm"
+  :class="choiceLayoutClass(question)"
 >
-
-          <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
-          <span v-html="choice" />
-        </li>
-      </ul>
+  <li
+    v-for="(choice, i) in question.choices"
+    :key="i"
+    class="flex items-start gap-2 p-2 rounded bg-gray-50"
+  >
+    <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
+    <span v-html="choice" />
+  </li>
+</ul>
     </div>
   </div>
 </template>
-
-
 
 

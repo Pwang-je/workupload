@@ -23,4 +23,5 @@ mjx-container[jax="CHTML"][display="true"] {
   margin: 0.6rem !important;
   font-size: 100% !important;
 }
+
 </style>

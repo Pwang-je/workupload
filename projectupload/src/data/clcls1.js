@@ -1329,12 +1329,12 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = \\ln \\left( \\frac{\\sin x \\tan 3x}{\\sqrt{x}} \\right)$$에 대해$$f' \\left( \\frac{\\pi}{4} \\right)$$의 값은?",
+        "question": "$$f(x) = \\ln \\left( \\frac{\\sin^2 x \\tan^3 x}{\\sqrt{x}} \\right)$$에 대해$$f' \\left( \\frac{\\pi}{4} \\right)$$의 값은?",
         "choices": [],
         "answer": ""
       },
       {
-        "question": "$$f(x) = e^{x \\cos x}$$일 때,$$x = \\frac{\\pi}{2}$$에서 도함수는?",
+        "question": "$$f(x) = e^{x} \\cos x$$일 때,$$x = \\frac{\\pi}{2}$$에서 도함수는?",
         "choices": [],
         "answer": ""
       }
@@ -1534,7 +1534,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$y = x^x \\ln (\\cos x)$$일 때,$$x = \\frac{\\pi}{4}$$에서$$y'$$의 값은?",
+        "question": "$$y = x^2 \\ln (\\cos x)$$일 때,$$x = \\frac{\\pi}{4}$$에서$$y'$$의 값은?",
         "choices": [
           "$$-\\frac{\\pi}{2} (\\ln 2 + \\frac{\\pi}{2})$$",
           "$$-\\frac{\\pi}{4} (\\ln 2 + \\frac{\\pi}{4})$$",
@@ -1682,7 +1682,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수$$f(x) = (\\ln x)^3 x$$일 때,$$\\frac{1}{3} f'(e)$$의 값은?",
+        "question": "함수$$f(x) = (\\ln x)^3x$$일 때,$$\\frac{1}{3} f'(e)$$의 값은?",
         "choices": [
           "$$0$$",
           "$$1$$",
@@ -1692,7 +1692,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = (x^2 + 1)^5$$에서$$f'(2)$$의 값은?",
+        "question": "$$f(x) = (x^2 + 1)^x$$에서$$f'(2)$$의 값은?",
         "choices": [
           "$$25 \\ln 5 + 8$$",
           "$$25 \\ln 5 + 40$$",
@@ -1758,7 +1758,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수$$f(x) = e^{\\cos x + 2x}$$의 역함수를$$g$$라고 놓자.$$g'(e^{-1})$$의 값은?",
+        "question": "함수$$f(x) = e^{\\cos x + 2x}$$의 역함수를$$g$$라고 놓자.$$g'(e^{\\pi})$$의 값은?",
         "choices": [
           "$$-1$$",
           "$$1$$",
@@ -1791,7 +1791,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$4x^3 - 3xy - 4y^2 = 10$$위의 점$$(2,1)$$에서 그은 접선의 기울기는?",
+        "question": "곡선$$4x^3 - 9xy - 4y^2 = 10$$위의 점$$(2,1)$$에서 그은 접선의 기울기는?",
         "choices": [
           "$$-\\frac{1}{2}$$",
           "$$-2$$",
@@ -1822,7 +1822,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$x = y^3 - y + 3$$위의 점$$(3,2)$$에서 접선의 기울기는?",
+        "question": "곡선$$x^2 = y^3 - y + 3$$위의 점$$(3,2)$$에서 접선의 기울기는?",
         "choices": [
           "$$\\frac{6}{11}$$",
           "$$\\frac{3}{11}$$",
@@ -2862,7 +2862,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "뉴턴의 방법을 이용하여$$\\sqrt[3]{3}$$의 근사값을 구할 때$$x_1 = 10$$이면$$x_3$$의 값은?",
+        "question": "뉴턴의 방법을 이용하여$$\\sqrt[3]{3}$$의 근사값을 구할 때$$x_1 = 1$$이면$$x_3$$의 값은?",
         "choices": [
           "$$\\frac{5}{3}$$",
           "$$\\frac{13}{9}$$",
@@ -2946,7 +2946,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수$$f(x) = \\ln \\left( x^3 \\sqrt{\\frac{x - 1}{x + 1}} \\right)$$에 대해$$f'(2)$$을 구하면?",
+        "question": "함수$$f(x) = \\ln \\left( x^3 \\sqrt{\\frac{x - 1}{x + 1}} \\right)$$에 대해$$f''(2)$$을 구하면?",
         "choices": [
           "$$\\frac{7}{4}$$",
           "$$\\frac{11}{7}$$",
@@ -2968,7 +2968,7 @@ export const clcls1 = {
     ],
     "129": [
       {
-        "question": "함수$$f(x) = x^{\\ln x}$$일 때,$$f'(1)$$의 값은?",
+        "question": "함수$$f(x) = x^{\\ln x}$$일 때,$$f''(1)$$의 값은?",
         "choices": [
           "$$\\frac{1}{2}$$",
           "$$\\frac{1}{e}$$",
@@ -3012,7 +3012,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = 3x + 2\\cos x$$의 역함수를$$g$$라 할 때,$$g'(2)$$의 값을 구하면?",
+        "question": "$$f(x) = 3x + 2\\cos x$$의 역함수를$$g$$라 할 때,$$g''(2)$$의 값을 구하면?",
         "choices": [
           "$$\\frac{1}{27}$$",
           "$$\\frac{2}{27}$$",
@@ -3022,7 +3022,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = 2x + \\ln x$$일 때,$$(f^{-1})'(2)$$의 값은?",
+        "question": "$$f(x) = 2x + \\ln x$$일 때,$$(f^{-1})''(2)$$의 값은?",
         "choices": [
           "$$-1$$",
           "$$-\\frac{1}{9}$$",
@@ -3228,7 +3228,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$\\sin(x+y) = y^3 \\cos x$$를 만족 할 때,$$(x,y) = (0,0)$$에서$$\\frac{d^2 y}{dx^2}$$을 구하면?",
+        "question": "$$\\sin(x+y) = y^2 \\cos x$$를 만족 할 때,$$(x,y) = (0,0)$$에서$$\\frac{d^2 y}{dx^2}$$을 구하면?",
         "choices": [
           "$$1$$",
           "$$2$$",
@@ -3294,7 +3294,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "두 번 미분가능한 함수$$f(x)$$가$$x > 0$$에서$$\\frac{d^2}{dx^2} f(2x) = \\sin x f(2x)$$,$$f(\\frac{\\pi}{2}) = 1$$,$$f'(\\frac{\\pi}{2}) = 0$$을 만족한다.$$x = \\frac{\\pi}{4}$$일 때,$$\\frac{d^2}{dx^2} f(\\sqrt{x})$$의 값은?",
+        "question": "두 번 미분가능한 함수$$f(x)$$가$$x > 0$$에서$$\\frac{d^2}{dx^2} f(2x) = \\sin^2 x f(2x)$$,$$f(\\frac{\\pi}{2}) = 1$$,$$f'(\\frac{\\pi}{2}) = 0$$을 만족한다.$$x = \\frac{\\pi}{4}$$일 때,$$\\frac{d^2}{dx^2} f(\\sqrt{x})$$의 값은?",
         "choices": [
           "$$\\frac{1}{16 \\pi^2}$$",
           "$$\\frac{1}{8 \\pi^2}$$",
@@ -3463,7 +3463,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "급수$$\\sum_{k=2}^{2021} \\binom{2021}{k} k^{k-1} (-1)^{2021-k}$$의 값을 구하시오. (단,$$\\binom{2021}{k}$$은 조합식이다.)",
+        "question": "급수$$\\sum_{k=2}^{2021} \\binom{2021}{k} k^{k-1} (-1)^{2021-k}$$의 값을 구하시오. (단,$$\\binom{2021}{k}=_{2021}C_k$$)",
         "choices": [
           "$$-4040$$",
           "$$-2021$$",
