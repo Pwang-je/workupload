@@ -259,13 +259,21 @@ watch(selectedQuestions, renderMath);
         <div v-html="question.example" />
       </div>
 
-      <ul v-if="question.choices.length" class="mb-3 flex flex-wrap gap-4 text-sm">
-        <li
-          v-for="(choice, i) in question.choices"
-          :key="i"
-          style="display: block ruby;"
-          :class="`flex items-start gap-2 p-2 rounded bg-gray-50 ${question.choices.length <= 4 ? 'w-[calc(25%-0.75rem)]' : 'w-[calc(33.333%-0.75rem)]'}`"
-        >
+      <ul
+      v-if="question.choices.length"
+      class="mb-3 grid gap-4 text-sm"
+      :class="{
+        'grid-cols-1 sm:grid-cols-2 md:grid-cols-3': question.choices.length >= 3,
+        'grid-cols-2': question.choices.length === 2,
+        'grid-cols-4': question.choices.length === 4
+      }"
+      >
+      <li
+  v-for="(choice, i) in question.choices"
+  :key="i"
+  class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full break-words min-w-0"
+>
+
           <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
           <span v-html="choice" />
         </li>
@@ -273,4 +281,7 @@ watch(selectedQuestions, renderMath);
     </div>
   </div>
 </template>
+
+
+
 

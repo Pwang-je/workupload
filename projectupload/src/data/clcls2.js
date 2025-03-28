@@ -4425,7 +4425,7 @@ export const clcls2 = {
   },
   {
     "question": "<보기>에서 수렴하는 이상적분 (improper integral)은 모두 몇 개인가?",
-    "example": "$$$\\text{(가) } \\int_0^{\\infty} \\frac{e^{-x^2}}{|x - 2|^{\\frac{3}{2}}} \\ dx \\quad \\text{(나) } \\int_0^{\\infty} \\frac{1 + x^{2022}}{\\sqrt{x}} \\ dx \\quad \\text{(다) } \\int_0^{\\infty} e^{-(\\ln x)^2} \\ dx \\quad \\text{(라) } \\int_0^{\\infty} \\frac{x}{1 + 2x + x^2} \\ dx$$",
+    "example": "$$\\text{(가) } \\int_0^{\\infty} \\frac{e^{-x^2}}{|x - 2|^{\\frac{3}{2}}} \\ dx \\quad \\text{(나) } \\int_0^{\\infty} \\frac{1 + x^{2022}}{\\sqrt{x}} \\ dx \\quad \\text{(다) } \\int_0^{\\infty} e^{-(\\ln x)^2} \\ dx \\quad \\text{(라) } \\int_0^{\\infty} \\frac{x}{1 + 2x + x^2} \\ dx$$",
     "choices": [
       "0개",
       "1개",
