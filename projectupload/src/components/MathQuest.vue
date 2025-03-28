@@ -259,15 +259,18 @@ watch(selectedQuestions, renderMath);
         <div v-html="question.example" />
       </div>
 
-      <ul v-if="question.choices.length" class="mb-3 space-y-2 text-sm">
-        <li v-for="(choice, i) in question.choices" :key="i" class="flex gap-2">
-          <strong>{{ ['①','②','③','④','⑤'][i] }}</strong>
+      <ul v-if="question.choices.length" class="mb-3 flex flex-wrap gap-4 text-sm">
+        <li
+          v-for="(choice, i) in question.choices"
+          :key="i"
+          style="display: block ruby;"
+          :class="`flex items-start gap-2 p-2 rounded bg-gray-50 ${question.choices.length <= 4 ? 'w-[calc(25%-0.75rem)]' : 'w-[calc(33.333%-0.75rem)]'}`"
+        >
+          <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
           <span v-html="choice" />
         </li>
       </ul>
     </div>
   </div>
 </template>
-
-<!-- 테마 설정은 index.html에서 data-theme="nord"로 설정하면 적용됨 -->
 
