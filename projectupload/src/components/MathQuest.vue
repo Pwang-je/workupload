@@ -216,7 +216,7 @@ function formatExampleArray(example) {
     for (let i = 0; i < items.length; i += perRow) {
       const rowItems = items.slice(i, i + perRow);
       const cols = rowItems.map(item => `<div class="inline-block break-inside-avoid whitespace-pre-wrap break-words">${item}</div>`).join('');
-      rows.push(`<div class="grid grid-cols-1 sm:grid-cols-${perRow} gap-4 mb-2">${cols}</div>`);
+      rows.push(`<div class="grid grid-cols-1 gap-4 mb-2">${cols}</div>`);
     }
     return rows.join('');
   };
