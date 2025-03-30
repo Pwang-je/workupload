@@ -150,6 +150,44 @@ function getRandomQuestions() {
 }
 
 function formatExampleArray(example) {
+  const normalizeExample = (example) => {
+    let lines = [];
+
+    if (typeof example === 'string') {
+      const alignedMatch = example.match(/\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/);
+      if (alignedMatch) {
+        const inner = alignedMatch[1];
+        lines = inner.split(/\\\\/).map(str => {
+          const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
+          if (textMatch) {
+            const label = textMatch[1].trim();
+            const content = textMatch[2].trim();
+            return `${label} $$${content}$$`;
+          } else {
+            return str.trim();
+          }
+        });
+      } else {
+        lines = example.split(/\n|<br ?\/>|\\\\/).map(l => l.trim()).filter(Boolean);
+      }
+    } else if (Array.isArray(example)) {
+      lines = example.map(str => str.trim());
+    }
+
+    return lines.filter(Boolean);
+  };
+
+  const averageEffectiveLength = (items) => {
+    const getLength = (text) =>
+      text.replace(/\\[a-zA-Z]+/g, '')
+          .replace(/[{}^_\\$]/g, '')
+          .replace(/[^a-zA-Z0-9가-힣]/g, '')
+          .length;
+
+    const total = items.reduce((sum, item) => sum + getLength(item), 0);
+    return total / (items.length || 1);
+  };
+
   const renderSingleColumn = (items) => {
     return items.map((item) => `
       <div class="mb-2 whitespace-pre-line leading-relaxed break-words">
@@ -173,46 +211,30 @@ function formatExampleArray(example) {
     return rows.join('');
   };
 
-  const splitItems = (value) => {
-    if (typeof value === 'string') {
-      let items = [];
-
-      // 🧠 예외 처리: 전체가 수식이면 분리하지 않음
-      const trimmed = value.trim();
-      if (trimmed.startsWith('$$') && trimmed.endsWith('$$')) {
-        return [trimmed]; // 그대로 출력
-      }
-
-      if (value.match(/\([가-힣]\)/)) {
-        items = value.split(/(?=\([가-힣]\))/g);
-      } else if (value.match(/(^|\s)[가-힣]\./)) {
-        items = value.split(/(?<=\s|^)(?=[가-힣]\.)/g);
-      } else {
-        items = value.split(/\n|(?<=\.)\s/);
-      }
-
-      return items.map(str => str.trim()).filter(Boolean);
+  const renderMultiRow = (items, perRow = 4) => {
+    const rows = [];
+    for (let i = 0; i < items.length; i += perRow) {
+      const rowItems = items.slice(i, i + perRow);
+      const cols = rowItems.map(item => `<div class="inline-block break-inside-avoid whitespace-pre-wrap break-words">${item}</div>`).join('');
+      rows.push(`<div class="grid grid-cols-1 sm:grid-cols-${perRow} gap-4 mb-2">${cols}</div>`);
     }
-
-    if (Array.isArray(value)) {
-      return value.map(str => String(str).trim()).filter(Boolean);
-    }
-
-    return [];
+    return rows.join('');
   };
 
-  const items = splitItems(example);
+  const items = normalizeExample(example);
+  const avgLen = averageEffectiveLength(items);
+  const isPureMath = items.every(item => item.match(/^.*\$\$.*\$\$/));
 
-  const hasLatex = items.some(item => item.includes('\\(') || item.includes('<span class="math">') || item.includes('$$'));
-  const isTooLong = items.some(item => item.length > 80);
-
-  // 수식이거나 너무 길면 1열
-  if (isTooLong || hasLatex) {
+  if (avgLen > 60) {
+    if (isPureMath && avgLen <= 80) return renderTwoColumns(items);
     return renderSingleColumn(items);
   }
-
-  return renderTwoColumns(items);
+  if (avgLen > 40) return renderTwoColumns(items);
+  if (items.length <= 4 && avgLen <= 50) return renderMultiRow(items, items.length);
+  return renderMultiRow(items, 4);
 }
+
+
 
 
 // 프린트 페이지로 이동

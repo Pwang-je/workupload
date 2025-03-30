@@ -2209,9 +2209,9 @@ export const clcls2 = {
   {
     "question": "다음 중 부정적분을 계산하였을 때, $$\\ln |x+1|$$ 항이 있는 식을 고르면?",
     "example": [
-      "ㄱ. $$\\int \\frac{2x}{x^2 - 1}dx$$",
-      "     ㄴ. $$\\int \\frac{x^2 + 1}{x(x+1)^2}dx$$",
-      "     ㄷ. $$\\int \\frac{2}{x(x+1)(x+2)}dx$$"
+      "(ㄱ) $$\\int \\frac{2x}{x^2 - 1}dx$$",
+      "(ㄴ) $$\\int \\frac{x^2 + 1}{x(x+1)^2}dx$$",
+      "(ㄷ) $$\\int \\frac{2}{x(x+1)(x+2)}dx$$"
     ],
     "choices": [
       "ㄱ, ㄴ",

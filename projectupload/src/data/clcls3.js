@@ -3516,7 +3516,7 @@ export const clcls3 = {
 "128": [
   {
     "question": "다음 중 수렴하는 것을 모두 고른 것은?",
-    "example": "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{1}{n\\sqrt{e}} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{2n}{n^2 - 5n + 8} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{n^2 - n + 5}{n^5 + 5n^4 - 2n^3 + n + 1} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\frac{(-1)^n(n-1)}{n+1}\n\\end{aligned}$$",
+    "example": ["ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n\\sqrt{e}}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{2n}{n^2 - 5n + 8}$$ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{n^2 - n + 5}{n^5 + 5n^4 - 2n^3 + n + 1}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\frac{(-1)^n(n-1)}{n+1}$$"],
     "choices": [
       "ㄱ, ㄷ",
       "ㄱ, ㄹ",
@@ -3527,7 +3527,7 @@ export const clcls3 = {
   },
   {
     "question": "다음 중 수렴하는 것을 모두 고른 것은?",
-    "example": "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{n!}{n^n} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (\\log(n+1) - \\log n) \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\tan^2 \\left( \\frac{\\pi}{n} \\right)\n\\end{aligned}$$",
+    "example": ["ㄱ. $$\\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{n!}{n^n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} (\\log(n+1) - \\log n)$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\tan^2 \\left( \\frac{\\pi}{n} \\right)$$"],
     "choices": [
       "ㄱ, ㄴ",
       "ㄴ, ㄷ",
@@ -3538,7 +3538,7 @@ export const clcls3 = {
   },
   {
     "question": "다음 중 발산하는 무한급수의 개수는?",
-    "example": "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{1}{n \\left( 1 + \\frac{1}{n} \\right)} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n \\ln n} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\ln\\left( 1 + \\frac{1}{n} \\right)\n\\end{aligned}$$",
+    "example": ["ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\left( 1 + \\frac{1}{n} \\right)}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\ln n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\ln\\left( 1 + \\frac{1}{n} \\right)$$"],
     "choices": [
       "1개",
       "2개",
@@ -3833,7 +3833,7 @@ export const clcls3 = {
 "136": [
   {
     "question": "급수$$\\sum_{n=1}^{\\infty} |a_n|, \\sum_{n=1}^{\\infty} b_n$$이 모두 수렴할 때, 다음 중 옳은 것을 모두 고른 것은?",
-    "example": "$$\\begin{aligned}\n&\\text{가. } \\sum_{n=1}^{\\infty} (a_n + b_n) \\\\\n&\\text{나. } \\sum_{n=1}^{\\infty} a_n^2 \\\\\n&\\text{다. } \\sum_{n=1}^{\\infty} \\sin(|a_n|) \\\\\n&\\text{라. } \\sum_{n=1}^{\\infty} |a_n||b_n|\n\\end{aligned}$$",
+    "example": ["가. $$\\sum_{n=1}^{\\infty} (a_n + b_n)$$ 나. $$\\sum_{n=1}^{\\infty} a_n^2$$ 다. $$\\sum_{n=1}^{\\infty} \\sin(|a_n|)$$ 라. $$\\sum_{n=1}^{\\infty} |a_n||b_n|$$"],
     "choices": [
       "나, 다",
       "가, 나, 다",
@@ -3844,7 +3844,7 @@ export const clcls3 = {
   },
   {
     "question": "급수$$\\sum_{n=0}^{\\infty} |a_n|$$이 수렴할 때, 다음 보기의 급수 가운데 항상 수렴하는 급수를 모두 고른 것은?",
-    "example": "ㄱ.$$\\sum_{n=0}^{\\infty} (-1)^n a_n$$ <br> ㄴ.$$\\sum_{n=0}^{\\infty} a_n$$<br>ㄷ.$$\\sum_{n=0}^{\\infty} \\sin(a_n)$$",
+    "example": "ㄱ.$$\\sum_{n=0}^{\\infty} (-1)^n a_n$$ ㄴ.$$\\sum_{n=0}^{\\infty} a_n$$ ㄷ.$$\\sum_{n=0}^{\\infty} \\sin(a_n)$$",
     "choices": [
       "ㄱ, ㄴ",
       "ㄱ, ㄷ",
@@ -3974,7 +3974,7 @@ export const clcls3 = {
 "140": [
   {
     "question": "다음 <보기>의 급수 중에서 수렴하는 것만을 있는 대로 고른 것은?",
-    "example": "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{n!}{2^n} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n+1} \\cos\\left( \\frac{\\pi}{n} \\right) \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\ln n}{(n+1)(n+2)}\n\\end{aligned}$$",
+    "example": "$$\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{n!}{2^n} \\quad \\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n+1} \\, \\cos\\left( \\frac{\\pi}{n} \\right) \\quad \\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\ln n}{(n+1)(n+2)}$$",
     "choices": [
       "ㄱ",
       "ㄴ",
@@ -3986,7 +3986,7 @@ export const clcls3 = {
   },
   {
     "question": "다음 급수 중 수렴하는 것을 모두 고르시오.",
-    "example": "$$\\begin{aligned}\n&\\text{(가)}\\ \\sum_{n=1}^{\\infty} n e^{-n} \\\\\n&\\text{(나)}\\ \\sum_{n=1}^{\\infty} \\left( 2 - \\frac{1}{n} \\right)^n \\\\\n&\\text{(다)}\\ \\sum_{n=1}^{\\infty} \\frac{2}{\\left( 1 + \\frac{1}{n} \\right)^{n^2}} \\\\\n&\\text{(라)}\\ \\sum_{n=2}^{\\infty} \\frac{(-1)^{n+1} n^2}{n^3 + 2}\n\\end{aligned}$$",
+    "example": "$$\\text{(가)}\\ \\sum_{n=1}^{\\infty} n e^{-n} \\quad \\text{(나)}\\ \\sum_{n=1}^{\\infty} \\left( 2 - \\frac{1}{n} \\right)^n \\quad \\text{(다)}\\ \\sum_{n=1}^{\\infty} \\frac{2}{\\left( 1 + \\frac{1}{n} \\right)^{n^2}} \\quad \\text{(라)}\\ \\sum_{n=2}^{\\infty} \\frac{(-1)^{n+1} n^2}{n^3 + 2}$$",
     "choices": [
       "(가), (나)",
       "(나), (다)",
@@ -4045,7 +4045,7 @@ export const clcls3 = {
   },
   {
     "question": "다음 <보기> 중 수렴하는 급수의 개수는?",
-    "example": "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{7n + 1}{n\\sqrt{n}} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n \\sqrt{n}} \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{3}{n \\sqrt{2\\ln n + 3}} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\arcsin\\left(\\frac{1}{n\\sqrt{n}}\\right)\n\\end{aligned}$$",
+    "example": ["\\(\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{7n + 1}{n\\sqrt{n}}\\) \\(\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n \\sqrt{n}}\\) \\(\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{3}{n \\sqrt{2\\ln n + 3}}\\) \\(\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\arcsin\\left(\\frac{1}{n\\sqrt{n}}\\right)\\)"],
     "choices": [
       "$$\\text{1개}$$",
       "$$\\text{2개}$$",
@@ -4136,7 +4136,7 @@ export const clcls3 = {
   },
   {
     "question": "다음 수열 중에서 수렴하는 것을 모두 고르면?",
-    "example": "$$\\begin{aligned}\n&(a)\\ \\left\\langle \\frac{n^3}{3^n} \\right\\rangle \\\\\n&(b)\\ \\left\\langle (3^n + 4^n)^{1/n} \\right\\rangle \\\\\n&(c)\\ \\left\\langle \\frac{1}{n} \\sin\\left( \\frac{1}{n^2} \\right) \\right\\rangle \\\\\n&(d)\\ \\left\\langle \\frac{(-1)^n n^2}{n^2 + 1} \\right\\rangle\n\\end{aligned}$$",
+    "example": "$$\\begin{aligned}\\n&(a)\\ \\left\\langle \\frac{n^3}{3^n} \\right\\rangle \\\\\\n&(b)\\ \\left\\langle (3^n + 4^n)^{1/n} \\right\\rangle \\\\\\n&(c)\\ \\left\\langle \\frac{1}{n} \\sin\\left( \\frac{1}{n^2} \\right) \\right\\rangle \\\\\\n&(d)\\ \\left\\langle \\frac{(-1)^n n^2}{n^2 + 1} \\right\\rangle\\n\\end{aligned}$$",
     "choices": [
       "$$(a)$$",
       "$$(a), (b)$$",
