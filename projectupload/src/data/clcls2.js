@@ -1382,9 +1382,7 @@ export const clcls2 = {
   },
   {
     "question": "함수 $$f(x) = 2x^3 - 3x^2 + 2x + 1$$  와 그 역함수 $$g(x)$$  에 대하여 $$\\langle$$ 보기 $$\\rangle$$ 에서 옳은 것만을 있는 대로 고른 것은?",
-    "example": [
-      "ㄱ. 모든 실수$$ x $$에 대하여$$ f'(x) \\geq \\frac{1}{2} $$이다.<br> ㄴ. 모든 실수$$ x $$에 대하여 $$0 < g'(x) \\leq 2 $$이다.<br> ㄷ. $$x < y$$인 모든 실수$$ x, y $$에 대하여$$0 < g(y) - g(x) \\leq 2(y - x)$$이다."
-    ],
+    "example": "\\begin{aligned}\n\\text{ㄱ.}\\quad & f'(x) \\ge \\dfrac{1}{2} \\text{ for all real } x \\\\ \n\\text{ㄴ.}\\quad & 0 \\le g'(x) \\le 2 \\text{ for all real } x \\\\ \n\\text{ㄷ.}\\quad & 0 < g(y) - g(x) \\le 2(y - x) \\text{ for all real } x < y\n\\end{aligned}",
     "choices": [
       "ㄱ",
       "ㄱ, ㄴ",

@@ -1576,7 +1576,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$f(x) = (x + \\alpha) \\tan^{-1} x$$이$$f'(1) = f(1)$$을 만족할 때, 상수$$\\alpha$$의 값은?",
+        "question": "$$f(x) = (x + \\alpha) \\tan^{-1} x^{2}$$이$$f'(1) = f(1)$$을 만족할 때, 상수$$\\alpha$$의 값은?",
         "choices": [
           "$$1$$",
           "$$\\frac{2}{\\pi - 2}$$",
@@ -1650,7 +1650,7 @@ export const clcls1 = {
     ],
     "83": [
     {
-      "question": "$$f(x) = \\tan^2 x \\sec^2 x$$에서$$\\frac{d}{dx}\\left(\\frac{\\pi}{3}\\right)$$의 값은?",
+      "question": "$$f(x) = \\tan^3 x \\sec^2 x$$에서 $$\\dfrac{df\\left(\\frac{\\pi}{3}\\right)}{dx}$$의 값은?",
       "choices": [
         "$$204$$",
         "$$216$$",
@@ -1660,7 +1660,7 @@ export const clcls1 = {
       "answer": ""
     },
     {
-      "question": "$$f(x) = \\sqrt{x} + \\sqrt[4]{x}$$에 대하여$$x = 4$$일 때$$f'(x)$$의 값은?",
+      "question": "$$f(x) = \\sqrt{7} + \\sqrt{x}$$에 대하여 $$x = 4$$일 때 $$f'(x)$$의 값은?",
       "choices": [
         "$$1$$",
         "$$\\frac{2}{3}$$",
@@ -1702,7 +1702,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "함수$$f(x) = (\\ln x)^3x$$일 때,$$\\frac{1}{3} f'(e)$$의 값은?",
+        "question": "함수$$f(x) = (\\ln x)^{3x}$$일 때,$$\\frac{1}{3} f'(e)$$의 값은?",
         "choices": [
           "$$0$$",
           "$$1$$",
