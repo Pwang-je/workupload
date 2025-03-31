@@ -1,121 +1,165 @@
 <script setup>
-import { ref, watch, computed, nextTick } from "vue";
+import { ref, computed, nextTick, watch } from "vue";
 import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
 
-// 문제 개수 선택, 선택된 과목, 문제 리스트 초기화
-const selectedSubject = ref(""); // 선택된 과목
-const selectedQuestions = ref([]); // 보여줄 문제들
+// 과목 정의
 const subjects = {
   calculus1: { name: "미적분1", data: clcls1 },
   calculus2: { name: "미적분2", data: clcls2 },
   calculus3: { name: "미적분3", data: clcls3 },
 };
 
-// 과목 선택에 따라 문제 가져오기
+const selectedSubject = ref("");
+const selectedQuestions = ref([]);
+
+// 선택된 과목의 전체 문제 가져오기
 const currentQuestions = computed(() => {
   if (!selectedSubject.value) return [];
 
   const questions = subjects[selectedSubject.value]?.data?.questions || {};
-  let allQuestions = [];
+  const allQuestions = [];
 
-  Object.entries(questions).forEach(([page, questionsList]) => {
-    // 🚨 여기서 undefined 체크
-    if (!Array.isArray(questionsList)) {
-      console.warn(`❗ 페이지 ${page}에 문제가 배열이 아님:`, questionsList);
-      return; // 건너뛰기
-    }
+  Object.entries(questions)
+    .sort((a, b) => parseInt(a[0]) - parseInt(b[0]))
+    .forEach(([page, questionList]) => {
+      if (!Array.isArray(questionList)) return;
 
-    questionsList.forEach((q) => {
-      allQuestions.push({
-        subject: subjects[selectedSubject.value].name,
-        page: page,
-        question: q.question,
-        choices: q.choices || [],
-        example: q.example || ""
+      questionList.forEach((q) => {
+        allQuestions.push({
+          subject: subjects[selectedSubject.value].name,
+          page,
+          question: q.question,
+          choices: q.choices || [],
+          example: q.example || ""
+        });
       });
     });
-  });
 
   return allQuestions;
 });
 
-// 문제들을 한번에 모두 출력할 때 사용될 변수
+// 선택 변경 시 전체 문제 업데이트
 watch(selectedSubject, () => {
-  if (selectedSubject.value) {
-    selectedQuestions.value = currentQuestions.value;
-  } else {
-    selectedQuestions.value = [];
-  }
+  selectedQuestions.value = currentQuestions.value;
 });
 
 // 수식 렌더링
 function renderMath() {
   nextTick(() => {
     if (window.MathJax) {
-      window.MathJax.typesetPromise(); // MathJax 수식 렌더링
+      window.MathJax.typesetPromise();
     }
   });
 }
-
-// 초기 설정을 마친 후 MathJax 렌더링
 watch(selectedQuestions, renderMath);
+
+// 보기 렌더링 함수
+function formatExampleArray(example) {
+  const normalizeExample = (example) => {
+    let lines = [];
+
+    if (typeof example === 'string') {
+      const alignedMatch = example.match(/\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/);
+      if (alignedMatch) {
+        const inner = alignedMatch[1];
+        lines = inner.split(/\\\\/).map(str => {
+          const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
+          if (textMatch) {
+            const label = textMatch[1].trim();
+            const content = textMatch[2].trim();
+            return `${label} $$${content}$$`;
+          } else {
+            return str.trim();
+          }
+        });
+      } else {
+        lines = example.split(/\n|<br ?\/>|\\\\/).map(l => l.trim()).filter(Boolean);
+      }
+    } else if (Array.isArray(example)) {
+      lines = example.map(str => str.trim());
+    }
+
+    return lines.filter(Boolean);
+  };
+
+  const renderSingleColumn = (items) => {
+    return items.map((item) => `<div class="mb-2 leading-relaxed break-words">${item}</div>`).join('');
+  };
+
+  const items = normalizeExample(example);
+  return renderSingleColumn(items);
+}
+
+// 선지 레이아웃 판단
+function choiceLayoutClass(question) {
+  const plainLengths = question.choices.map(c =>
+    typeof c === "string" ? c.replace(/<[^>]+>/g, '') : ''
+  );
+  const hasLongChoice = plainLengths.some(len => len.length > 40);
+
+  const exampleText =
+    typeof question.example === "string" ? question.example.replace(/<[^>]+>/g, '') : '';
+  const isExampleLong = exampleText.length > 250;
+
+  if (hasLongChoice || isExampleLong) return 'grid-cols-1';
+  return 'grid-cols-2';
+}
 </script>
 
-
 <template>
-  <div class="flex justify-center items-center min-h-screen bg-gray-100 p-4 md:p-6">
-    <div class="w-full max-w-4xl bg-white rounded-lg p-4 md:p-6 shadow-md border border-gray-200">
+  <div class="max-w-screen-md mx-auto p-6">
+    <h2 class="text-2xl font-bold mb-6 text-center">수식 확인용 전체 미적분 문제 보기</h2>
 
-      <!-- 헤더 -->
-      <div class="flex justify-between items-center mb-4 md:mb-6">
-        <h2 class="text-xl md:text-2xl font-semibold text-gray-800">랜덤 미적분 문제</h2>
+    <!-- 과목 선택 -->
+    <div class="mb-6">
+      <label class="block font-semibold mb-2">과목 선택</label>
+      <div class="flex gap-6">
+        <label v-for="(subject, key) in subjects" :key="key" class="flex items-center gap-2">
+          <input type="radio" v-model="selectedSubject" :value="key" class="radio radio-primary" />
+          <span>{{ subject.name }}</span>
+        </label>
       </div>
+    </div>
 
-      <!-- 과목 선택 -->
-      <div class="flex flex-col mb-6">
-        <label class="text-base md:text-lg font-medium text-gray-700 mb-2">과목 선택</label>
-        <div class="flex gap-4">
-          <label v-for="(subject, key) in subjects" :key="key" class="flex items-center space-x-2">
-            <input type="radio" :value="key" v-model="selectedSubject" class="rounded border-gray-300">
-            <span class="text-gray-800">{{ subject.name }}</span>
-          </label>
+    <!-- 문제 리스트 -->
+    <div v-if="selectedSubject && selectedQuestions.length" class="space-y-6">
+      <div
+        v-for="(q, index) in selectedQuestions"
+        :key="index"
+        class="p-5 bg-white rounded-md border border-gray-200 shadow-sm"
+      >
+        <p class="font-semibold text-sm mb-2 text-gray-800">
+          {{ index + 1 }}. [{{ q.subject }}] {{ q.page }}페이지
+        </p>
+        <div v-html="q.question" class="mb-3 text-sm text-gray-700" />
+
+        <div
+          v-if="q.example"
+          class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3"
+        >
+          <p class="text-gray-600 font-medium mb-1">[보기]</p>
+          <div v-html="formatExampleArray(q.example)" />
         </div>
-      </div>
 
-      <!-- 문제 출력 -->
-      <div v-if="selectedSubject" class="space-y-4">
-        <ul class="space-y-3 md:space-y-4">
-          <li v-for="(question, index) in selectedQuestions" :key="index" class="p-5 bg-white rounded-md border border-gray-200 shadow-sm">
-            <strong class="text-lg font-semibold text-gray-800">
-              [{{ question.subject }}] {{ question.page }}페이지 - {{ index + 1 }}번
-            </strong>
-            <p v-html="question.question" class="mt-2 text-gray-700 text-sm md:text-base"></p>
-
-            <!-- 📌 선지 표시 -->
-            <ul v-if="question.choices.length > 0" class="mt-3 space-y-2">
-              <li v-for="(choice, choiceIndex) in question.choices" :key="choiceIndex" class="p-3 rounded-md border border-gray-300 bg-gray-50">
-                <span class="font-semibold text-gray-800">{{ ['①', '②', '③', '④', '⑤'][choiceIndex] }}</span>
-                <span v-html="choice"></span>
-              </li>
-            </ul>
-
-            <!-- 예시 (example) 표시 -->
-            <div v-if="question.example && question.example.length > 0" class="mt-4">
-              <div class="bg-gray-100 p-4 rounded-md border border-gray-300">
-                <p class="text-sm text-gray-700">보기</p>
-                <div v-html="question.example" class="space-y-2 mt-2"></div>
-              </div>
-            </div>
+        <ul
+          v-if="q.choices.length"
+          class="mb-3 grid gap-4 text-sm"
+          :class="choiceLayoutClass(q)"
+        >
+          <li
+            v-for="(choice, i) in q.choices"
+            :key="i"
+            class="flex items-start gap-2 p-2 rounded bg-gray-50"
+          >
+            <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
+            <span v-html="choice" />
           </li>
         </ul>
       </div>
-      
-      <!-- 과목을 선택하지 않은 경우 -->
-      <p v-if="!selectedSubject" class="text-red-500 text-base md:text-lg font-semibold text-center mt-3 md:mt-4">
-        과목을 선택하면 문제가 표시됩니다.
-      </p>
     </div>
+
+    <p v-else class="text-center text-gray-500 mt-6">과목을 선택하면 전체 문제가 표시됩니다.</p>
   </div>
 </template>

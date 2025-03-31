@@ -86,7 +86,7 @@ export const clcls1 = {
       },
       {
         "question": "다음은 연립일차방정식이다.$$y$$의 값을 구하여라.",
-        "example": "$$\\begin{cases} 0.2x + 0.3y = 0.7 \\\\ \\frac{5}{2}x + 3y = 5 \\end{cases}$$",
+        "example": ["$$\\begin{cases} 0.2x + 0.3y = 0.7 \\\\ \\frac{5}{2}x + 3y = 5 \\end{cases}$$"],
         "choices": [],
         "answer": ""
       }
@@ -1017,7 +1017,7 @@ export const clcls1 = {
     "57": [
       {
         "question": "다음 중$$\\sin x$$와 같은 것은 모두 몇 개인가?",
-        "example": "(가)$$\\sin (\\pi - x)$$\n\n(나)$$\\cos \\left( \\frac{3\\pi}{2} + x \\right)$$\n\n(다)$$\\sin (2\\pi - x)$$\n\n(라)$$\\cos \\left( \\frac{\\pi}{2} + x \\right)$$",
+        "example": ["(가)$$\\sin (\\pi - x)$$\n\n(나)$$\\cos \\left( \\frac{3\\pi}{2} + x \\right)$$\n\n(다)$$\\sin (2\\pi - x)$$\n\n(라)$$\\cos \\left( \\frac{\\pi}{2} + x \\right)$$"],
         "choices": [
           "1개",
           "2개",
@@ -1028,7 +1028,7 @@ export const clcls1 = {
       },
       {
         "question": "다음 보기 안의 등식 가운데 항상 성립하는 것을 모두 고른 것은?",
-        "example": "(가)$$\\sin \\left( x - \\frac{3\\pi}{2} \\right) = \\cos x$$\n\n(나)$$\\sin (\\pi - x) = -\\sin x$$\n\n(다)$$\\cos (x - \\pi) = \\sin \\left( \\frac{\\pi}{2} + x \\right)$$",
+        "example": ["(가)$$\\sin \\left( x - \\frac{3\\pi}{2} \\right) = \\cos x$$\n\n(나)$$\\sin (\\pi - x) = -\\sin x$$\n\n(다)$$\\cos (x - \\pi) = \\sin \\left( \\frac{\\pi}{2} + x \\right)$$"],
         "choices": [
           "(가)",
           "(나)",
@@ -1083,7 +1083,7 @@ export const clcls1 = {
       },
       {
         "question": "다음 보기의 등식 중 항상 성립하는 것을 모두 고른 것은?",
-        "example": "(가)$$\\sin^{-1} (\\cos x) = \\frac{\\pi}{2} - x$$(단,$$0 \\leq x \\leq \\frac{\\pi}{2}$$)<br> (나)$$\\tan^{-1} x + \\tan^{-1} \\frac{1}{x} = \\frac{\\pi}{2}$$(단,$$x > 0$$)<br> (다)$$\\sin^{-1} (\\sin 1) = 1$$<br> (라)$$\\tan^{-1} \\left( \\tan \\frac{2\\pi}{3} \\right) = \\frac{2\\pi}{3}$$",
+        "example": ["(가)$$\\sin^{-1} (\\cos x) = \\frac{\\pi}{2} - x$$(단,$$0 \\leq x \\leq \\frac{\\pi}{2}$$)<br> (나)$$\\tan^{-1} x + \\tan^{-1} \\frac{1}{x} = \\frac{\\pi}{2}$$(단,$$x > 0$$)<br> (다)$$\\sin^{-1} (\\sin 1) = 1$$<br> (라)$$\\tan^{-1} \\left( \\tan \\frac{2\\pi}{3} \\right) = \\frac{2\\pi}{3}$$"],
         "choices": [
           "(가), (다)",
           "(나), (라)",
@@ -1252,8 +1252,13 @@ export const clcls1 = {
     ],
     "63": [
     {
-      "question": "$$\\text{다음 중 옳은 것을 모두 고르면?}$$",
-      "example": "$$\\begin{aligned} \n\\text{ㄱ. 모든 실수 } x \\text{에 대하여, } & \\tan^{-1}x + \\cot^{-1}x = \\frac{\\pi}{2} \\\\\n\\text{ㄴ. } 0 < x < 1 \\text{인 양의 실수 } x \\text{에 대하여, } & 2\\sin^{-1}x = \\cos^{-1}(1 - 2x^2) \\\\\n\\text{ㄷ. } x > 1 \\text{인 양의 실수 } x \\text{에 대하여 } & \\cosh^{-1}x = \\ln(x + \\sqrt{x^2 - 1}) \\\\\n\\text{ㄹ. } |x| < 1 \\text{인 임의의 실수 } x \\text{에 대하여 } & \\tanh^{-1}x = \\frac{1}{2}\\ln\\left(\\frac{1+x}{1-x}\\right)\n\\end{aligned}$$",
+      "question": "다음 중 옳은 것을 모두 고르면?",
+      "example": [
+  "$$\\text{ㄱ. 모든 실수 } x \\text{에 대하여, } \\tan^{-1}x + \\cot^{-1}x = \\frac{\\pi}{2}$$",
+  "$$\\text{ㄴ. } 0 < x < 1 \\text{인 임의의 실수 } x \\text{에 대하여, } 2\\sin^{-1}x = \\cos^{-1}(1 - 2x^2)$$",
+  "$$\\text{ㄷ. } x > 1 \\text{인 임의의 실수 } x \\text{에 대하여 } \\cosh^{-1}x = \\ln(x + \\sqrt{x^2 - 1})$$",
+  "$$\\text{ㄹ. } |x| < 1 \\text{인 임의의 실수 } x \\text{에 대하여 } \\tanh^{-1}x = \\ln\\left(\\frac{1 + x}{1 - x}\\right)$$"
+],
       "choices": [
         "$$\\text{ㄱ, ㄴ}$$",
         "$$\\text{ㄷ, ㄹ}$$",
@@ -1263,8 +1268,14 @@ export const clcls1 = {
       "answer": ""
     },
     {
-      "question": "$$\\text{다음 중 잘못된 명제는 모두 몇 개인가?}$$",
-      "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh^{-1}x = \\ln(x + \\sqrt{x^2 + 1}) \\\\\n\\text{나. } & \\cosh^2x - \\sinh^2x = 1 \\\\\n\\text{다. } & \\cosh(2\\ln x) = \\frac{x^4 + 1}{2x^2} \\\\\n\\text{라. } & \\cosh 3x - \\sinh 3x = e^{-3x} \\\\\n\\text{마. } & (\\cosh x + \\sinh x)^2 = e^x\n\\end{aligned}$$",
+      "question": "다음 중 잘못된 명제는 모두 몇 개인가?",
+"example": [
+  "$$\\text{가. } \\sinh^{-1}x = \\ln(x + \\sqrt{x^2 + 1})$$",
+  "$$\\text{나. } \\cosh^2x - \\sinh^2x = 1$$",
+  "$$\\text{다. } \\cosh(2\\ln x) = \\frac{x^4 + 1}{2x^2}$$",
+  "$$\\text{라. } \\cosh 3x - \\sinh 3x = e^{-3x}$$",
+  "$$\\text{마. } (\\cosh x + \\sinh x)^2 = e^{2x}$$"
+],
       "choices": [
         "없음",
         "$$1$$",
@@ -1274,8 +1285,13 @@ export const clcls1 = {
       "answer": ""
     },
     {
-      "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
-      "example": "$$\\begin{aligned}\n\\text{가. } & \\sinh(-x) = -\\sinh x \\\\\n\\text{나. } & \\cosh(-x) = \\cosh x \\\\\n\\text{다. } & \\sinh(x + y) = \\sinh x \\cosh y + \\cosh x \\sinh y \\\\\n\\text{라. } & \\cosh(x + y) = \\cosh x \\cosh y - \\sinh x \\sinh y\n\\end{aligned}$$",
+      "question": "다음 중 옳은 것을 모두 몇 개인가?",
+      "example": [
+  "$$\\text{가. } \\sinh(-x) = -\\sinh x$$",
+  "$$\\text{나. } \\cosh(-x) = \\cosh x$$",
+  "$$\\text{다. } \\sinh(x + y) = \\sinh x \\cosh y + \\cosh x \\sinh y$$",
+  "$$\\text{라. } \\cosh(x + y) = \\cosh x \\cosh y - \\sinh x \\sinh y$$"
+],
       "choices": [
         "없음",
         "$$1$$",
@@ -1285,8 +1301,12 @@ export const clcls1 = {
       "answer": ""
     },
     {
-      "question": "$$\\text{다음 중 옳은 것을 모두 몇 개인가?}$$",
-      "example": "$$\\begin{aligned}\n\\text{ㄱ. } & \\cosh x + \\sinh x = e^x \\\\\n\\text{ㄴ. } & y = \\tanh x \\text{의 정의역은 모든 실수이고, 치역은 } \\left( -\\frac{\\pi}{2}, \\frac{\\pi}{2} \\right) \\text{이다.} \\\\\n\\text{ㄷ. } & 0 < x \\leq 1 \\text{일 때, } \\cosh^{-1}\\left(\\frac{1}{x}\\right) = \\text{sech}^{-1}x \\text{이다.}\n\\end{aligned}$$",
+      "question": "다음 중 옳은 것을 모두 몇 개인가?",
+"example": [
+  "$$\\text{ㄱ. } \\cosh x + \\sinh x = e^x$$",
+  "$$\\text{ㄴ. } y = \\tanh x \\text{의 정의역은 모든 실수이고, 치역은 } \\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$$",
+  "$$\\text{ㄷ. } 0 < x \\leq 1 \\text{일 때, } \\cosh^{-1}\\left(\\frac{1}{x}\\right) = \\operatorname{sech}^{-1}x$$"
+],
       "choices": [
         "없음",
         "$$1$$",
@@ -1879,7 +1899,7 @@ export const clcls1 = {
     "89": [
       {
         "question": "다음 서술 중 옳은 것을 모두 고른 것은?",
-        "example": "$$\\begin{aligned}\n\\text{ㄱ. } & \\sinh^2 x - \\cosh^2 x = 1 \\\\\n\\text{ㄴ. } & \\frac{d}{dx} \\sinh x = \\cosh x \\\\\n\\text{ㄷ. } & \\frac{d}{dx} \\sinh^{-1}x = \\frac{1}{\\sqrt{x^2 + 1}}\n\\end{aligned}$$",
+        "example": ["$$\\begin{aligned}\n\\text{ㄱ. } & \\sinh^2 x - \\cosh^2 x = 1 \\\\\n\\text{ㄴ. } & \\frac{d}{dx} \\sinh x = \\cosh x \\\\\n\\text{ㄷ. } & \\frac{d}{dx} \\sinh^{-1}x = \\frac{1}{\\sqrt{x^2 + 1}}\n\\end{aligned}$$"],
         "choices": [
           "$$\\text{ㄱ}$$",
           "$$\\text{ㄴ}$$",
@@ -1933,7 +1953,7 @@ export const clcls1 = {
       },
       {
         "question": "$$f$$는 실수 전체에서 정의된 미분 가능한 함수이다. 함수$$f$$에 대한 다음 표의 값을 이용하여$(f \\circ f \\circ f)'(0)$의 값을 구하면?",
-        "example": "$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\n a & -2 & -1 & 0 & 1 & 2 & 4 \\\\\n\\hline\n f(a) & 4 & 0 & 1 & -1 & 1 & 0 \\\\\n\\hline\n f'(a) & 3 & 2 & -3 & 1 & 4 & 2 \\\\\n\\hline\n\\end{array}$$",
+        "example": ["$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\n a & -2 & -1 & 0 & 1 & 2 & 4 \\\\\n\\hline\n f(a) & 4 & 0 & 1 & -1 & 1 & 0 \\\\\n\\hline\n f'(a) & 3 & 2 & -3 & 1 & 4 & 2 \\\\\n\\hline\n\\end{array}$$"],
         "choices": [
           "$$-8$$",
           "$$-6$$",
@@ -3131,7 +3151,7 @@ export const clcls1 = {
     "133": [
       {
         "question": "$$t = \\frac{7\\pi}{4} \\text{일 때, 다음 매개 방정식에 대해 } \\frac{dy}{dx}, \\frac{d^2y}{dx^2} \\text{의 값은?}$$",
-        "example": "$$x(t) = a + 20 \\cos t, \\quad y(t) = c + 19 \\sin t$$",
+        "example": ["$$x(t) = a + 20 \\cos t, \\quad y(t) = c + 19 \\sin t$$"],
         "choices": [
           "$$\\frac{20}{c^2}$$",
           "$$\\frac{10}{\\sqrt{2}}$$",

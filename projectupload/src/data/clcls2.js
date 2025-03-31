@@ -817,7 +817,7 @@ export const clcls2 = {
 "31": [
   {
     "question": "다음에서 $$x = 0$$ 에서 미분 가능한 함수를 모두 고르면?",
-    "example": "(a) $$f(x) = \\begin{cases} \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$  (b) $$f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$  (c) $$f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$",
+    "example": ["(a) $$f(x) = \\begin{cases} \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$<br>(b)$$f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$<br>(c)$$f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$"],
     "choices": [
       "(a)",
       "(b)",
@@ -851,7 +851,11 @@ export const clcls2 = {
 "32": [
   {
     "question": "다음 보기의 함수 중 $$f'(0)$$ 가 존재하는 것의 개수는?",
-    "example": "(가) $$ f(x) = (x^2 - 1) \\sin |x| $$  <br> (나) $$ f(x) = \\begin{cases} 3\\sin x + x^3 \\cos \\frac{1}{x^2}, & (x \\neq 0) \\\\ 0, & (x = 0) \\end{cases} $$ <br>(다) $$ f(x) = \\begin{cases} x \\tan^{-1} \\frac{1}{x}, & (x \\neq 0) \\\\ 0, & (x = 0) \\end{cases} $$",
+    "example": [
+      "$$\\text{(가)}\\ f(x) = (x^2 - 1) \\sin|x|$$",
+      "$$\\text{(나)}\\ f(x) = \\begin{cases} 3 \\sin x + x^3 \\cos \\dfrac{1}{x}, & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$$",
+      "$$\\text{(다)}\\ f(x) = \\begin{cases} x \\tan^{-1} \\dfrac{1}{x}, & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$$"
+    ],
     "choices": [
       "$$0$$",
       "$$1$$",
@@ -1138,7 +1142,7 @@ export const clcls2 = {
   },
   {
     "question": "다음과 같이 정의된 함수$$h(x)$$가 실수 전체에서 연속일 때,$$a$$의 값은?",
-    "example": "$$h(x) = \\begin{cases} \\tan \\left( \\frac{\\pi x}{2} \\right), & x < -\\frac{1}{3} \\text{ or } x > \\frac{2}{3} \\\\ ax + b, & -\\frac{1}{3} \\leq x \\leq \\frac{2}{3} \\end{cases}$$",
+    "example": ["$$h(x) = \\begin{cases} \\tan \\left( \\frac{\\pi x}{2} \\right), & x < -\\frac{1}{3} \\text{ or } x > \\frac{2}{3} \\\\ ax + b, & -\\frac{1}{3} \\leq x \\leq \\frac{2}{3} \\end{cases}$$"],
     "choices": [
       "$$\\frac{1}{\\sqrt{3}}$$",
       "$$\\frac{2}{\\sqrt{3}}$$",
@@ -1150,7 +1154,7 @@ export const clcls2 = {
   },
   {
     "question": "$$f(x)$$가 연속함수일 때, $$\\alpha$$의 값은?",
-    "example": "$$f(x) = \\begin{cases} \\alpha, & x = 0 \\\\ \\frac{\\sqrt{x^2 + 16} - 4}{x^2} + \\frac{\\sin x}{3x}, & x \\neq 0 \\end{cases}$$",
+    "example": ["$$f(x) = \\begin{cases} \\alpha, & x = 0 \\\\ \\frac{\\sqrt{x^2 + 16} - 4}{x^2} + \\frac{\\sin x}{3x}, & x \\neq 0 \\end{cases}$$"],
     "choices": [
       "$$\\frac{11}{24}$$",
       "$$\\frac{13}{24}$$",
@@ -1163,7 +1167,9 @@ export const clcls2 = {
 "43": [
   {
     "question": "다음과 같이 정의된 함수 $$f(x)$$가 모든 실수 $$x$$에 대하여 미분 가능할 때, $$a - b$$의 값은?",
-    "example": "$$f(x) = \\begin{cases} ax, & x < 1 \\\\ ax^2 + bx + 4, & x \\geq 1 \\end{cases}$$",
+    "example": [
+  "$$f(x) = \\begin{cases} ax, & x < 1 \\\\ ax^2 + bx + 4, & x \\geq 1 \\end{cases}$$"
+],
     "choices": [
       "$$5$$",
       "$$6$$",
@@ -1175,7 +1181,9 @@ export const clcls2 = {
   },
   {
     "question": "다음 함수 $$f(x)$$가 실수 전체의 집합에서 미분가능 할 때, $$a + b$$의 값은? (단, $$a$$와 $$b$$는 상수이다.)",
-    "example": "$$f(x) = \\begin{cases} \\frac{\\ln (x+1)}{x}, & (x > 0) \\\\ ax + b, & (x \\leq 0) \\end{cases}$$",
+    "example": [
+      "$$f(x) = \\begin{cases} \\dfrac{\\ln(x+1)}{x}, & x > 0 \\\\ ax + b, & x \\leq 0 \\end{cases}$$"
+    ],
     "choices": [
       "$$-1$$",
       "$$-\\frac{1}{2}$$",
@@ -1233,7 +1241,7 @@ export const clcls2 = {
   },
   {
     "question": "함수 $$f_{m,n}(x)$$ 에 대한 설명으로 옳은 것은?",
-    "example": "$$f_{m,n}(x) = \\begin{cases} x^m \\sin \\frac{1}{x^n}, & x > 0 \\\\ 0, & x \\leq 0 \\end{cases}$$",
+    "example": ["$$f_{m,n}(x) = \\begin{cases} x^m \\sin \\frac{1}{x^n}, & x > 0 \\\\ 0, & x \\leq 0 \\end{cases}$$"],
     "choices": [
       "$$y = f_{0,1}(x)$$ 는 $$x = 0$$ 에서 연속이다.",
       "$$y = f_{1,1}(x)$$ 는 최소값이 존재하지 않는다.",

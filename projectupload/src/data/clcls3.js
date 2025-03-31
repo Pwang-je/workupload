@@ -2732,7 +2732,7 @@ export const clcls3 = {
   "109": [
     {
       "question": "함수$$f$$에 대한 표를 이용하여$$g(u) = f(u^2 + 1)$$의$$u = 1$$에서 일차 근사 함수(linear approximation)를 구하면?",
-      "example": "$$\\begin{array}{|c|c|c|}\\hline\n a & f(a) & f'(a) \\\\\\hline\n 1 & 1 & 4 \\\\\n 2 & 3 & -2 \\\\\n 2.21 & 2 & 1 \\\\\\hline\n\\end{array}$$",
+      "example": ["$$\\begin{array}{|c|c|c|}\\hline\n a & f(a) & f'(a) \\\\\\hline\n 1 & 1 & 4 \\\\\n 2 & 3 & -2 \\\\\n 2.21 & 2 & 1 \\\\\\hline\n\\end{array}$$"],
       "choices": [
         "$$8u - 5$$",
         "$$-4u - 1$$",
@@ -3516,7 +3516,12 @@ export const clcls3 = {
 "128": [
   {
     "question": "다음 중 수렴하는 것을 모두 고른 것은?",
-    "example": ["ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n\\sqrt{e}}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{2n}{n^2 - 5n + 8}$$ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{n^2 - n + 5}{n^5 + 5n^4 - 2n^3 + n + 1}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\frac{(-1)^n(n-1)}{n+1}$$"],
+    "example": [
+  "$$\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{1}{n\\sqrt{e}}$$",
+  "$$\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{2n}{n^2 - 5n + 8}$$",
+  "$$\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{n^2 - n + 5}{n^5 + 5n^4 - 2n^3 + n + 1}$$",
+  "$$\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\frac{(-1)^n(n - 1)}{n + 1}$$"
+],
     "choices": [
       "ㄱ, ㄷ",
       "ㄱ, ㄹ",
@@ -4544,14 +4549,6 @@ export const clcls3 = {
     "answer": ""
   }
 ]
-
-
-
-
-
-
-
-
 
 
   
