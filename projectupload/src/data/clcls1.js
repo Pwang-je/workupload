@@ -855,7 +855,7 @@ export const clcls1 = {
     ],
     "53": [
       {
-        "question": "$$\\tan^{-1} \\left( -\\frac{1}{2} \\right) + \\tan^{-1} (\\alpha) = \\frac{\\pi}{4}$$를 만족하는$$\\alpha$$를 구하면?",
+        "question": "$$\\tan^{-1} \\left( \\frac{1}{2} \\right) + \\tan^{-1} (\\alpha) = \\frac{\\pi}{4}$$를 만족하는$$\\alpha$$를 구하면?",
         "choices": [
           "$$\\frac{4}{5}$$",
           "$$\\frac{1}{3}$$",
@@ -3204,7 +3204,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$x^4 + y^3 = 4$$위의 점$$(-1, \\sqrt{3})$$에서$$\\frac{d^2 y}{dx^2}$$를 구하라.",
+        "question": "곡선$$x^4 + y^2 = 4$$위의 점$$(-1, \\sqrt{3})$$에서$$\\frac{d^2 y}{dx^2}$$를 구하라.",
         "choices": [
           "$$-\\frac{22}{3\\sqrt{3}}$$",
           "$$-22\\sqrt{3}$$",
@@ -3226,7 +3226,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "곡선$$x^4 + y^4 = 16$$위의 점$$(\\sqrt{8}, -\\sqrt{8})$$에서$$y'$$의 값은?",
+        "question": "곡선$$x^4 + y^4 = 16$$위의 점$$(\\sqrt[4]{8}, -\\sqrt[4]{8})$$에서$$y''$$의 값은?",
         "choices": [
           "$$\\sqrt{2}$$",
           "$$2\\sqrt{2}$$",
@@ -3346,7 +3346,7 @@ export const clcls1 = {
         "answer": ""
       },
       {
-        "question": "$$\\frac{d^9}{dx^9} (x^9 \\ln x)$$는?",
+        "question": "$$\\frac{d^9}{dx^9} (x^8 \\ln x)$$는?",
         "choices": [
           "$$\\frac{9!}{x}$$",
           "$$\\frac{8!}{x}$$",
