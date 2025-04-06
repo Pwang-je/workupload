@@ -17,7 +17,17 @@ mjx-container[jax="CHTML"][display="true"] {
   margin: 0 !important;
 }
 .MJX-TEX {
-  margin: 0.6rem !important;
+  margin: 0.2rem !important;
   font-size: 100% !important;
 }
+.mathjax-html {
+  display: block;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
 </style>

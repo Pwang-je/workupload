@@ -1,6 +1,7 @@
 <script setup>
 import { ref, reactive, computed, watch, nextTick } from "vue";
 import { useRouter } from "vue-router";
+import debounce from 'lodash/debounce.js';
 import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
@@ -247,11 +248,16 @@ function openPrintView() {
 // 수식 렌더링
 function renderMath() {
   nextTick(() => {
-    if (window.MathJax) {
-      window.MathJax.typesetPromise();
+    if (window.MathJax?.typesetPromise) {
+      window.MathJax.typesetClear?.(); // 이전 수식 제거
+      window.MathJax.typesetPromise()
+        .catch((err) => console.error("❌ MathJax rendering error:", err));
     }
   });
 }
+
+
+
 watch(selectedQuestions, renderMath);
 </script>
 
@@ -377,17 +383,22 @@ watch(selectedQuestions, renderMath);
   class="mb-3 grid gap-4 text-sm"
   :class="choiceLayoutClass(question)"
 >
-  <li
-    v-for="(choice, i) in question.choices"
-    :key="i"
-    class="flex items-start gap-2 p-2 rounded bg-gray-50"
-  >
-    <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
-    <span v-html="choice" />
-  </li>
+<li
+  v-for="(choice, i) in question.choices"
+  :key="i"
+  class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full"
+>
+  <span class="font-semibold shrink-0">{{ ['①','②','③','④','⑤'][i] }}</span>
+  <span v-html="choice" class="block whitespace-normal break-words w-full min-w-0" />
+</li>
+
+
 </ul>
     </div>
   </div>
 </template>
+<style scoped>
+
+</style>
 
 

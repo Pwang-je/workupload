@@ -2708,15 +2708,15 @@ export const clcls1 = {
     ],
     "115": [
       {
-        "question": "평면곡선$$x^2 + xy + y^2 + x - 3 = 0$$위에서$$y$$축에 평행한 접선을 갖는 점들은?",
+        "question": "평면곡선 $x^2 + xy + y^2 + x - 3 = 0$ 위에서 $y$ 축에 평행한 접선을 갖는 점들은?",
         "choices": [
-          "$$\\left( \\frac{-1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right), \\left( \\frac{-1 - \\sqrt{37}}{6}, \\frac{2 + 2\\sqrt{37}}{6} \\right)$$",
-          "$$\\left( \\frac{-2 - 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right), \\left( \\frac{-2 + 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$$",
-          "$$\\left( \\frac{1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right), \\left( \\frac{1 - \\sqrt{37}}{6}, \\frac{-2 + 2\\sqrt{37}}{6} \\right)$$",
-          "$$\\left( \\frac{2 + 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right), \\left( \\frac{2 - 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$$"
+          "$\\left( \\frac{-1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right)$, $\\left( \\frac{-1 - \\sqrt{37}}{6}, \\frac{2 + 2\\sqrt{37}}{6} \\right)$",
+          "$\\left( \\frac{-2 - 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right)$, $\\left( \\frac{-2 + 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$",
+          "$\\left( \\frac{1 + \\sqrt{37}}{6}, \\frac{2 - 2\\sqrt{37}}{6} \\right)$, $\\left( \\frac{1 - \\sqrt{37}}{6}, \\frac{-2 + 2\\sqrt{37}}{6} \\right)$",
+          "$\\left( \\frac{2 + 2\\sqrt{10}}{3}, \\frac{1 + \\sqrt{10}}{3} \\right)$, $\\left( \\frac{2 - 2\\sqrt{10}}{3}, \\frac{1 - \\sqrt{10}}{3} \\right)$"
         ],
         "answer": ""
-      }
+      }      
     ],
     "116": [
       {
