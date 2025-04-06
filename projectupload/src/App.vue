@@ -1,5 +1,5 @@
 <script setup>
-import { RouterView } from "vue-router"; 
+import { RouterView } from "vue-router";
 import { supabase } from "./supabase";
 
 // 정상적으로 로드되는지 확인
@@ -7,7 +7,7 @@ import { supabase } from "./supabase";
 </script>
 
 <template>
-  <router-view /> 
+  <router-view />
 </template>
 <style>
 /* MathJax 블록 수식을 강제로 인라인으로 변경 */
@@ -29,5 +29,4 @@ mjx-container[jax="CHTML"][display="true"] {
   min-width: 0;
   max-width: 100%;
 }
-
 </style>

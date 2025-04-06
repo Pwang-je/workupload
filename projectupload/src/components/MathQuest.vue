@@ -1,7 +1,7 @@
 <script setup>
 import { ref, reactive, computed, watch, nextTick } from "vue";
 import { useRouter } from "vue-router";
-import debounce from 'lodash/debounce.js';
+import debounce from "lodash/debounce.js";
 import { clcls1 } from "@/data/clcls1.js";
 import { clcls2 } from "@/data/clcls2.js";
 import { clcls3 } from "@/data/clcls3.js";
@@ -38,19 +38,21 @@ const chapters = {
 };
 
 function choiceLayoutClass(question) {
-  const plainLengths = question.choices.map(c =>
-    typeof c === "string" ? c.replace(/<[^>]+>/g, '') : ''
+  const plainLengths = question.choices.map((c) =>
+    typeof c === "string" ? c.replace(/<[^>]+>/g, "") : ""
   );
-  const hasLongChoice = plainLengths.some(len => len > 40);
+  const hasLongChoice = plainLengths.some((len) => len > 40);
 
   const exampleText =
-    typeof question.example === "string" ? question.example.replace(/<[^>]+>/g, '') : '';
+    typeof question.example === "string"
+      ? question.example.replace(/<[^>]+>/g, "")
+      : "";
   const isExampleLong = exampleText.length > 250;
 
-  if (hasLongChoice || isExampleLong) return 'grid-cols-1';
+  if (hasLongChoice || isExampleLong) return "grid-cols-1";
   const len = question.choices.length;
-  if (len === 2 || len === 4) return 'grid-cols-2';
-  return 'grid-cols-2';
+  if (len === 2 || len === 4) return "grid-cols-2";
+  return "grid-cols-2";
 }
 
 // 상태 관리 변수
@@ -76,7 +78,7 @@ const pageOptions = computed(() => {
   const result = {};
   for (const key in subjects) {
     const pages = Object.keys(subjects[key].data.questions)
-      .map(p => parseInt(p))
+      .map((p) => parseInt(p))
       .sort((a, b) => a - b);
     result[key] = pages;
   }
@@ -154,11 +156,13 @@ function formatExampleArray(example) {
   const normalizeExample = (example) => {
     let lines = [];
 
-    if (typeof example === 'string') {
-      const alignedMatch = example.match(/\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/);
+    if (typeof example === "string") {
+      const alignedMatch = example.match(
+        /\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/
+      );
       if (alignedMatch) {
         const inner = alignedMatch[1];
-        lines = inner.split(/\\\\/).map(str => {
+        lines = inner.split(/\\\\/).map((str) => {
           const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
           if (textMatch) {
             const label = textMatch[1].trim();
@@ -169,10 +173,13 @@ function formatExampleArray(example) {
           }
         });
       } else {
-        lines = example.split(/\n|<br ?\/>|\\\\/).map(l => l.trim()).filter(Boolean);
+        lines = example
+          .split(/\n|<br ?\/>|\\\\/)
+          .map((l) => l.trim())
+          .filter(Boolean);
       }
     } else if (Array.isArray(example)) {
-      lines = example.map(str => str.trim());
+      lines = example.map((str) => str.trim());
     }
 
     return lines.filter(Boolean);
@@ -180,28 +187,32 @@ function formatExampleArray(example) {
 
   const averageEffectiveLength = (items) => {
     const getLength = (text) =>
-      text.replace(/\\[a-zA-Z]+/g, '')
-          .replace(/[{}^_\\$]/g, '')
-          .replace(/[^a-zA-Z0-9가-힣]/g, '')
-          .length;
+      text
+        .replace(/\\[a-zA-Z]+/g, "")
+        .replace(/[{}^_\\$]/g, "")
+        .replace(/[^a-zA-Z0-9가-힣]/g, "").length;
 
     const total = items.reduce((sum, item) => sum + getLength(item), 0);
     return total / (items.length || 1);
   };
 
   const renderSingleColumn = (items) => {
-    return items.map((item) => `
+    return items
+      .map(
+        (item) => `
       <div class="mb-2 whitespace-pre-line leading-relaxed break-words">
         ${item}
       </div>
-    `).join('');
+    `
+      )
+      .join("");
   };
 
   const renderTwoColumns = (items) => {
     const rows = [];
     for (let i = 0; i < items.length; i += 2) {
-      const left = items[i] || '';
-      const right = items[i + 1] || '';
+      const left = items[i] || "";
+      const right = items[i + 1] || "";
       rows.push(`
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-2">
           <div class="break-words whitespace-pre-wrap">${left}</div>
@@ -209,38 +220,44 @@ function formatExampleArray(example) {
         </div>
       `);
     }
-    return rows.join('');
+    return rows.join("");
   };
 
   const renderMultiRow = (items, perRow = 4) => {
     const rows = [];
     for (let i = 0; i < items.length; i += perRow) {
       const rowItems = items.slice(i, i + perRow);
-      const cols = rowItems.map(item => `<div class="inline-block break-inside-avoid whitespace-pre-wrap break-words">${item}</div>`).join('');
+      const cols = rowItems
+        .map(
+          (item) =>
+            `<div class="inline-block break-inside-avoid whitespace-pre-wrap break-words">${item}</div>`
+        )
+        .join("");
       rows.push(`<div class="grid grid-cols-1 gap-4 mb-2">${cols}</div>`);
     }
-    return rows.join('');
+    return rows.join("");
   };
 
   const items = normalizeExample(example);
   const avgLen = averageEffectiveLength(items);
-  const isPureMath = items.every(item => item.match(/^.*\$\$.*\$\$/));
+  const isPureMath = items.every((item) => item.match(/^.*\$\$.*\$\$/));
 
   if (avgLen > 60) {
     if (isPureMath && avgLen <= 80) return renderTwoColumns(items);
     return renderSingleColumn(items);
   }
   if (avgLen > 40) return renderTwoColumns(items);
-  if (items.length <= 4 && avgLen <= 50) return renderMultiRow(items, items.length);
+  if (items.length <= 4 && avgLen <= 50)
+    return renderMultiRow(items, items.length);
   return renderMultiRow(items, 4);
 }
 
-
-
-
 // 프린트 페이지로 이동
 function openPrintView() {
-  sessionStorage.setItem("printQuestions", JSON.stringify(selectedQuestions.value));
+  sessionStorage.setItem(
+    "printQuestions",
+    JSON.stringify(selectedQuestions.value)
+  );
   sessionStorage.setItem("subjectCounts", JSON.stringify(subjectCounts.value));
   router.push("/printview");
 }
@@ -250,26 +267,31 @@ function renderMath() {
   nextTick(() => {
     if (window.MathJax?.typesetPromise) {
       window.MathJax.typesetClear?.(); // 이전 수식 제거
-      window.MathJax.typesetPromise()
-        .catch((err) => console.error("❌ MathJax rendering error:", err));
+      window.MathJax.typesetPromise().catch((err) =>
+        console.error("❌ MathJax rendering error:", err)
+      );
     }
   });
 }
-
-
 
 watch(selectedQuestions, renderMath);
 </script>
 
 <template>
   <div class="max-w-screen-md mx-auto p-6 print:hidden text-gray-800">
-    <h2 class="text-2xl font-bold mb-6 text-center">귀차니즘을 이겨내기 위한 미적분 랜덤 문제 출제용</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">
+      귀차니즘을 이겨내기 위한 미적분 랜덤 문제 출제용
+    </h2>
 
     <!-- 과목 선택 -->
     <div class="mb-6">
       <label class="block font-semibold mb-2">과목 선택 (복수 선택 가능)</label>
       <div class="flex flex-wrap gap-4">
-        <label v-for="(subject, key) in subjects" :key="key" class="flex items-center gap-2">
+        <label
+          v-for="(subject, key) in subjects"
+          :key="key"
+          class="flex items-center gap-2"
+        >
           <input
             type="checkbox"
             v-model="selectedSubjects"
@@ -277,7 +299,7 @@ watch(selectedQuestions, renderMath);
             :class="{
               'checkbox checkbox-accent': key === 'calculus1',
               'checkbox checkbox-success': key === 'calculus2',
-              'checkbox checkbox-warning': key === 'calculus3'
+              'checkbox checkbox-warning': key === 'calculus3',
             }"
           />
           <span>{{ subject.name }}</span>
@@ -291,7 +313,9 @@ watch(selectedQuestions, renderMath);
       :key="subjectKey"
       class="mb-6 border border-gray-300 p-4 rounded"
     >
-      <label class="block font-semibold mb-2">{{ subjects[subjectKey].name }} - 단원 선택</label>
+      <label class="block font-semibold mb-2"
+        >{{ subjects[subjectKey].name }} - 단원 선택</label
+      >
       <div class="flex flex-wrap gap-4">
         <label
           v-for="chapter in chapters[subjectKey]"
@@ -314,16 +338,36 @@ watch(selectedQuestions, renderMath);
       <label class="block font-semibold mb-2">과목별 페이지 범위 설정</label>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div v-for="(subject, key) in subjects" :key="key">
-          <label class="block text-sm mb-1 text-gray-600">{{ subject.name }}</label>
+          <label class="block text-sm mb-1 text-gray-600">{{
+            subject.name
+          }}</label>
           <div class="flex gap-2">
-            <select v-model.number="pageRanges[key].min" class="select select-secondary w-full">
+            <select
+              v-model.number="pageRanges[key].min"
+              class="select select-secondary w-full"
+            >
               <option :value="null">Start</option>
-              <option v-for="page in pageOptions[key]" :key="page" :value="page">{{ page }}</option>
+              <option
+                v-for="page in pageOptions[key]"
+                :key="page"
+                :value="page"
+              >
+                {{ page }}
+              </option>
             </select>
             <span class="px-1">~</span>
-            <select v-model.number="pageRanges[key].max" class="select select-secondary w-full">
+            <select
+              v-model.number="pageRanges[key].max"
+              class="select select-secondary w-full"
+            >
               <option :value="null">End</option>
-              <option v-for="page in pageOptions[key]" :key="page" :value="page">{{ page }}</option>
+              <option
+                v-for="page in pageOptions[key]"
+                :key="page"
+                :value="page"
+              >
+                {{ page }}
+              </option>
             </select>
           </div>
         </div>
@@ -334,7 +378,11 @@ watch(selectedQuestions, renderMath);
     <div class="mb-6">
       <label class="block font-semibold mb-2">출제할 문제 수</label>
       <select v-model="questionCount" class="select select-secondary w-full">
-        <option v-for="count in [30, 50, 100, 150, 200, 250, 300, 350]" :key="count" :value="count">
+        <option
+          v-for="count in [30, 50, 100, 150, 200, 250, 300, 350]"
+          :key="count"
+          :value="count"
+        >
           {{ count }}문제
         </option>
       </select>
@@ -342,63 +390,83 @@ watch(selectedQuestions, renderMath);
 
     <!-- 버튼 영역 -->
     <div class="flex flex-wrap gap-4 mb-8">
-      <button @click="getRandomQuestions" class="btn btn-primary" >
+      <button @click="getRandomQuestions" class="btn btn-primary">
         문제 출제
       </button>
-      <button @click="openPrintView" :disabled="selectedQuestions.length === 0" class="btn btn-warning disabled:opacity-50">
+      <button
+        @click="openPrintView"
+        :disabled="selectedQuestions.length === 0"
+        class="btn btn-warning disabled:opacity-50"
+      >
         인쇄-PDF
       </button>
     </div>
   </div>
 
   <!-- 출제 결과 요약 -->
-  <div v-if="Object.keys(subjectCounts).length" class="max-w-screen-md mx-auto mb-6 bg-gray-100 border border-gray-300 p-4 rounded-md text-sm">
+  <div
+    v-if="Object.keys(subjectCounts).length"
+    class="max-w-screen-md mx-auto mb-6 bg-gray-100 border border-gray-300 p-4 rounded-md text-sm"
+  >
     <p class="font-semibold mb-2">출제된 문제 수</p>
     <ul class="flex flex-wrap gap-6">
-      <li v-for="(count, name) in subjectCounts" :key="name" class="flex items-center gap-2">
+      <li
+        v-for="(count, name) in subjectCounts"
+        :key="name"
+        class="flex items-center gap-2"
+      >
         <span class="w-3 h-3 bg-blue-500 rounded-full inline-block"></span>
-        <span>{{ name }}: <strong>{{ count }}</strong>문제</span>
+        <span
+          >{{ name }}: <strong>{{ count }}</strong
+          >문제</span
+        >
       </li>
     </ul>
   </div>
 
   <!-- 문제 미리보기 -->
-  <div ref="pdfContent" class="max-w-[210mm] mx-auto p-8 bg-gray-50 text-gray-900 print:bg-white">
-    <div v-for="(question, index) in selectedQuestions" :key="index" class="mb-6 p-6 border border-gray-300 rounded-md shadow-sm bg-white break-inside-avoid">
+  <div
+    ref="pdfContent"
+    class="max-w-[210mm] mx-auto p-8 bg-gray-50 text-gray-900 print:bg-white"
+  >
+    <div
+      v-for="(question, index) in selectedQuestions"
+      :key="index"
+      class="mb-6 p-6 border border-gray-300 rounded-md shadow-sm bg-white break-inside-avoid"
+    >
       <p class="font-semibold text-sm mb-2">
         {{ index + 1 }}. [{{ question.subject }}] {{ question.page }}페이지
       </p>
       <div v-html="question.question" class="mb-3 text-sm leading-relaxed" />
 
       <div
-  v-if="question.example"
-  class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3"
->
-  <p class="text-gray-600 font-medium mb-1">[보기]</p>
-  <div v-html="formatExampleArray(question.example)" />
-</div>
+        v-if="question.example"
+        class="bg-gray-50 border border-gray-300 p-3 rounded-md text-sm mb-3"
+      >
+        <p class="text-gray-600 font-medium mb-1">[보기]</p>
+        <div v-html="formatExampleArray(question.example)" />
+      </div>
 
       <ul
-  v-if="question.choices.length"
-  class="mb-3 grid gap-4 text-sm"
-  :class="choiceLayoutClass(question)"
->
-<li
-  v-for="(choice, i) in question.choices"
-  :key="i"
-  class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full"
->
-  <span class="font-semibold shrink-0">{{ ['①','②','③','④','⑤'][i] }}</span>
-  <span v-html="choice" class="block whitespace-normal break-words w-full min-w-0" />
-</li>
-
-
-</ul>
+        v-if="question.choices.length"
+        class="mb-3 grid gap-4 text-sm"
+        :class="choiceLayoutClass(question)"
+      >
+        <li
+          v-for="(choice, i) in question.choices"
+          :key="i"
+          class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full"
+        >
+          <span class="font-semibold shrink-0">{{
+            ["①", "②", "③", "④", "⑤"][i]
+          }}</span>
+          <span
+            v-html="choice"
+            class="block whitespace-normal break-words w-full min-w-0"
+          />
+        </li>
+      </ul>
     </div>
   </div>
 </template>
-<style scoped>
-
-</style>
-
-
+<style scoped></style>
