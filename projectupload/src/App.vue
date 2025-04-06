@@ -1,9 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router"; 
 import { supabase } from "./supabase";
-import { loadMathJax } from './utils/mathjax'
-
-loadMathJax();
 
 // 정상적으로 로드되는지 확인
 // console.log("supabase 모듈 정상 로드", supabase);
@@ -23,5 +20,4 @@ mjx-container[jax="CHTML"][display="true"] {
   margin: 0.6rem !important;
   font-size: 100% !important;
 }
-
 </style>
