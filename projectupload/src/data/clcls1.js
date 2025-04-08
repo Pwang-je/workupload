@@ -2423,6 +2423,7 @@ export const clcls1 = {
       {
         question:
           "$$y$$가 다음 방정식으로 정의된$$x$$의 음함수일 때,$$\\frac{dy}{dx}$$는? (단,$$|x| > |y|$$)",
+        example: "$$\\ln(x^2 - y^2) = \\tanh^{-1}\\left(\\frac{y}{x}\\right)$$",
         choices: [
           "$$\\frac{-x + 2y}{2x + y}$$",
           "$$\\frac{x + 2y}{2x + y}$$",
@@ -3080,7 +3081,7 @@ export const clcls1 = {
       },
       {
         question:
-          "함수$$f(x) = \\ln (x + \\sqrt{x^2 + 1})$$에 대해$$f'(\\frac{1}{2})$$을 구하면?",
+          "함수$$f(x) = \\ln (x + \\sqrt{x^2 + 1})$$에 대해$$f''(\\frac{1}{2})$$을 구하면?",
         choices: [
           "$$-\\frac{2 \\sqrt{5}}{25}$$",
           "$$-\\frac{4 \\sqrt{5}}{25}$$",
@@ -3303,10 +3304,10 @@ export const clcls1 = {
         question:
           "곡선$$x^4 + y^4 = 16$$위의 점$$(\\sqrt[4]{8}, -\\sqrt[4]{8})$$에서$$y''$$의 값은?",
         choices: [
-          "$$\\sqrt{2}$$",
-          "$$2\\sqrt{2}$$",
-          "$$3\\sqrt{2}$$",
-          "$$4\\sqrt{2}$$",
+          "$$\\sqrt[4]{2}$$",
+          "$$2\\sqrt[4]{2}$$",
+          "$$3\\sqrt[4]{2}$$",
+          "$$4\\sqrt[4]{2}$$",
         ],
         answer: "",
       },
