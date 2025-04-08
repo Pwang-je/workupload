@@ -32,7 +32,7 @@ const currentQuestions = computed(() => {
           page,
           question: q.question,
           choices: q.choices || [],
-          example: q.example || ""
+          example: q.example || "",
         });
       });
     });
@@ -60,11 +60,13 @@ function formatExampleArray(example) {
   const normalizeExample = (example) => {
     let lines = [];
 
-    if (typeof example === 'string') {
-      const alignedMatch = example.match(/\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/);
+    if (typeof example === "string") {
+      const alignedMatch = example.match(
+        /\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/
+      );
       if (alignedMatch) {
         const inner = alignedMatch[1];
-        lines = inner.split(/\\\\/).map(str => {
+        lines = inner.split(/\\\\/).map((str) => {
           const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
           if (textMatch) {
             const label = textMatch[1].trim();
@@ -75,17 +77,24 @@ function formatExampleArray(example) {
           }
         });
       } else {
-        lines = example.split(/\n|<br ?\/>|\\\\/).map(l => l.trim()).filter(Boolean);
+        lines = example
+          .split(/\n|<br ?\/>|\\\\/)
+          .map((l) => l.trim())
+          .filter(Boolean);
       }
     } else if (Array.isArray(example)) {
-      lines = example.map(str => str.trim());
+      lines = example.map((str) => str.trim());
     }
 
     return lines.filter(Boolean);
   };
 
   const renderSingleColumn = (items) => {
-    return items.map((item) => `<div class="mb-2 leading-relaxed break-words">${item}</div>`).join('');
+    return items
+      .map(
+        (item) => `<div class="mb-2 leading-relaxed break-words">${item}</div>`
+      )
+      .join("");
   };
 
   const items = normalizeExample(example);
@@ -94,30 +103,45 @@ function formatExampleArray(example) {
 
 // 선지 레이아웃 판단
 function choiceLayoutClass(question) {
-  const plainLengths = question.choices.map(c =>
-    typeof c === "string" ? c.replace(/<[^>]+>/g, '') : ''
+  const plainLengths = question.choices.map((c) =>
+    typeof c === "string" ? c.replace(/<[^>]+>/g, "") : ""
   );
-  const hasLongChoice = plainLengths.some(len => len.length > 40);
+  const hasLongChoice = plainLengths.some((len) => len.length > 40);
 
   const exampleText =
-    typeof question.example === "string" ? question.example.replace(/<[^>]+>/g, '') : '';
+    typeof question.example === "string"
+      ? question.example.replace(/<[^>]+>/g, "")
+      : "";
   const isExampleLong = exampleText.length > 250;
 
-  if (hasLongChoice || isExampleLong) return 'grid-cols-1';
-  return 'grid-cols-2';
+  if (hasLongChoice || isExampleLong) return "grid-cols-1";
+  const len = question.choices.length;
+  if (len === 2 || len === 4) return "grid-cols-2";
+  return "grid-cols-2";
 }
 </script>
 
 <template>
   <div class="max-w-screen-md mx-auto p-6">
-    <h2 class="text-2xl font-bold mb-6 text-center">수식 확인용 전체 미적분 문제 보기</h2>
+    <h2 class="text-2xl font-bold mb-6 text-center">
+      수식 확인용 전체 미적분 문제 보기
+    </h2>
 
     <!-- 과목 선택 -->
     <div class="mb-6">
       <label class="block font-semibold mb-2">과목 선택</label>
       <div class="flex gap-6">
-        <label v-for="(subject, key) in subjects" :key="key" class="flex items-center gap-2">
-          <input type="radio" v-model="selectedSubject" :value="key" class="radio radio-primary" />
+        <label
+          v-for="(subject, key) in subjects"
+          :key="key"
+          class="flex items-center gap-2"
+        >
+          <input
+            type="radio"
+            v-model="selectedSubject"
+            :value="key"
+            class="radio radio-primary"
+          />
           <span>{{ subject.name }}</span>
         </label>
       </div>
@@ -153,13 +177,17 @@ function choiceLayoutClass(question) {
             :key="i"
             class="flex items-start gap-2 p-2 rounded bg-gray-50"
           >
-            <span class="font-semibold">{{ ['①','②','③','④','⑤'][i] }}</span>
+            <span class="font-semibold">{{
+              ["①", "②", "③", "④", "⑤"][i]
+            }}</span>
             <span v-html="choice" />
           </li>
         </ul>
       </div>
     </div>
 
-    <p v-else class="text-center text-gray-500 mt-6">과목을 선택하면 전체 문제가 표시됩니다.</p>
+    <p v-else class="text-center text-gray-500 mt-6">
+      과목을 선택하면 전체 문제가 표시됩니다.
+    </p>
   </div>
 </template>
