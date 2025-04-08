@@ -1352,21 +1352,202 @@ export const clcls1 = {
     ],
     69: [
       {
-        question: "다음 미분 공식을 구하시오.",
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} c$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (cx)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (cx^n)$$",
         choices: [],
         answer: "",
       },
     ],
     70: [
       {
-        question: "다음 미분 공식을 구하시오.",
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} c$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (cx)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (cx^n)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} \\{f(x) \\pm g(x) \\pm h(x) \\pm \\cdots\\}$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (e^x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (a^x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} \\ln|x|$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\log_a x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} \\left( \\frac{1}{x} \\right)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sqrt{x})$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sin x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cos x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\tan x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cot x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sec x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\csc x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sin^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cos^{-1} x)$$",
         choices: [],
         answer: "",
       },
     ],
     71: [
       {
-        question: "다음 미분 공식을 구하시오.",
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\tan^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cot^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sec^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\csc^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\operatorname{sinh} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cosh x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\tanh x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question: "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\coth x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\operatorname{sech} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\operatorname{csch} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\sinh^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\cosh^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\tanh^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\coth^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\operatorname{sech}^{-1} x)$$",
+        choices: [],
+        answer: "",
+      },
+      {
+        question:
+          "다음 미분 공식을 구하시오. $$\\frac{d}{dx} (\\operatorname{csch}^{-1} x)$$",
         choices: [],
         answer: "",
       },
