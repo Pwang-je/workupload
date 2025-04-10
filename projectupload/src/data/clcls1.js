@@ -2656,11 +2656,11 @@ export const clcls1 = {
         question:
           "곡선$$y = \\tan^{-1}(3x)$$위의$$x$$좌표가$$\\frac{\\sqrt{3}}{3}$$인 점에서의 법선의 방정식은? (단,$$|y| < \\frac{\\pi}{2}$$이다.)",
         choices: [
-          "$$4x + y - \\frac{\\pi}{3} + \\frac{4\\sqrt{3}}{9} = 0$$",
-          "$$-4x + y - \\frac{\\pi}{3} + \\frac{4\\sqrt{3}}{9} = 0$$",
-          "$$3x + y - \\frac{\\pi}{3} - \\frac{\\sqrt{3}}{4} = 0$$",
-          "$$-3x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$",
-          "$$3x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$",
+          "$$\\frac{4}{3}x + y - \\frac{\\pi}{3} - \\frac{4\\sqrt{3}}{9} = 0$$",
+          "$$-\\frac{4}{3}x + y - \\frac{\\pi}{3} + \\frac{4\\sqrt{3}}{9} = 0$$",
+          "$$\\frac{3}{4}x + y - \\frac{\\pi}{3} - \\frac{\\sqrt{3}}{4} = 0$$",
+          "$$-\\frac{3}{4}x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$",
+          "$$\\frac{3}{4}x + y - \\frac{\\pi}{3} + \\frac{\\sqrt{3}}{4} = 0$$",
         ],
         answer: "",
       },
@@ -2696,7 +2696,7 @@ export const clcls1 = {
     111: [
       {
         question:
-          "직선$$y = ax + 3$$이 곡선$$y = 2\\sqrt{x} + 10$$에 접할 때,$$a$$의 값은?",
+          "직선$$y = ax + 3$$이 곡선$$y = 2\\sqrt{x} + 1$$에 접할 때,$$a$$의 값은?",
         choices: [
           "$$\\frac{1}{4}$$",
           "$$\\frac{1}{3}$$",
@@ -2707,7 +2707,7 @@ export const clcls1 = {
       },
       {
         question:
-          "직선$$y = ax$$($$a$$는 상수)와 곡선$$y = \\sqrt{x^3} + 1$$이 접할 때,$$a^6$$의 값은?",
+          "직선$$y = ax$$($$a$$는 상수)와 곡선$$y = \\sqrt{{x^3} + 1}$$이 접할 때,$$a^6$$의 값은?",
         choices: [
           "$$27$$",
           "$$\\frac{27}{16}$$",
