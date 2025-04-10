@@ -1877,7 +1877,7 @@ export const clcls1 = {
       },
       {
         question:
-          "$$f(x) = \\sqrt{7} + \\sqrt{x}$$에 대하여 $$x = 4$$일 때 $$f'(x)$$의 값은?",
+          "$$f(x) = \\sqrt{{7} + \\sqrt{x}}$$에 대하여 $$x = 4$$일 때 $$f'(x)$$의 값은?",
         choices: [
           "$$1$$",
           "$$\\frac{2}{3}$$",
