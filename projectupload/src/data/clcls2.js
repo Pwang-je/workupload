@@ -1980,7 +1980,7 @@ export const clcls2 = {
       },
       {
         question:
-          "다음 적분을 계산하시오. $$\\int_{-\\frac{3\\pi}{2}}^{\\frac{3\\pi}{2}} \\cos^6 x \\, dx$$",
+          "다음 적분을 계산하시오. $$\\int_{-\\frac{\\pi}{2}}^{\\frac{3\\pi}{2}} \\cos^6 x \\, dx$$",
         choices: [],
         answer: "",
       },
