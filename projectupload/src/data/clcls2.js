@@ -2147,7 +2147,7 @@ export const clcls2 = {
       },
       {
         question:
-          "적분 $$\\int_{0}^{\\frac{\\sqrt{3}}{2}} x (1 - x^2)^2 \\, dx$$ 의 값은?",
+          "적분 $$\\int_{0}^{\\frac{\\sqrt{3}}{2}} x (1 - x^2)^ \\frac{3}{2} \\, dx$$ 의 값은?",
         choices: [
           "$$\\frac{1}{5}$$",
           "$$\\frac{31}{32}$$",
@@ -2180,6 +2180,44 @@ export const clcls2 = {
         answer: "",
       },
     ],
+
+    71: [
+      {
+        question: "$$\\int_1^2 \\frac{e^{\\frac{1}{x}}}{x^2} \\, dx$$의 값은?",
+        choices: [
+          "$$e - \\sqrt{e}$$",
+          "$$\\sqrt{e}$$",
+          "$$e$$",
+          "$$e + \\sqrt{e}$$",
+        ],
+        answer: "",
+      },
+      {
+        question:
+          "정적분 $$\\int_0^{\\frac{1}{2}} \\frac{2 - 8x}{1 + 4x^2} \\, dx$$의 값은?",
+        choices: [
+          "$$\\frac{\\pi}{4} - 2\\ln 2$$",
+          "$$\\frac{\\pi}{4} - \\ln 2$$",
+          "$$\\frac{\\pi}{4}$$",
+          "$$\\frac{\\pi}{4} + \\ln 2$$",
+          "$$\\frac{\\pi}{4} + 2\\ln 2$$",
+        ],
+        answer: "",
+      },
+      {
+        question:
+          "정적분 $$\\int_0^1 x^3 \\sqrt{1 + x^2} \\, dx$$의 값을 구하면?",
+        choices: [
+          "$$\\frac{2 + 2\\sqrt{2}}{15}$$",
+          "$$\\frac{2 + 3\\sqrt{2}}{15}$$",
+          "$$\\frac{3 + 2\\sqrt{2}}{15}$$",
+          "$$\\frac{3 + 3\\sqrt{2}}{15}$$",
+          "$$\\frac{2 + 4\\sqrt{2}}{15}$$",
+        ],
+        answer: "",
+      },
+    ],
+
     72: [
       {
         question:
@@ -2220,7 +2258,7 @@ export const clcls2 = {
     73: [
       {
         question:
-          "정적분 $$\\int_{0}^{64} \\frac{dx}{1 + \\sqrt{x}}$$ 의 값을 구하면?",
+          "정적분 $$\\int_{0}^{64} \\frac{dx}{\\sqrt{1 + \\sqrt{x}}}$$ 의 값을 구하면?",
         choices: [
           "$$\\frac{35}{2}$$",
           "$$\\frac{55}{4}$$",
@@ -2264,7 +2302,7 @@ export const clcls2 = {
         question:
           "정적분 $$\\int_{3}^{7} \\frac{1}{(x + 1)(x - 2)} \\, dx$$ 의 값을 구하면?",
         choices: [
-          "$$-\\frac{1}{3} \\ln 5$$",
+          "$$-\\frac{1}{3} \\ln \\frac{2}{5}$$",
           "$$\\frac{3}{2} \\ln 5$$",
           "$$-\\frac{1}{4} \\ln \\frac{1}{2}$$",
           "$$\\frac{1}{2} \\ln \\frac{1}{5}$$",
@@ -2346,10 +2384,10 @@ export const clcls2 = {
       {
         question: "$$\\int e^x \\sinh x \\, dx$$ 를 계산하면?",
         choices: [
-          "$$\\frac{1}{2} e^x - \\frac{1}{2} e^{-x} + C$$",
-          "$$\\frac{1}{4} e^x - \\frac{1}{2} x + C$$",
-          "$$\\frac{1}{4} e^{2x} - \\frac{1}{4} x + C$$",
-          "$$\\frac{1}{4} e^x - \\frac{1}{4} e^{-x} + C$$",
+          "$$\\frac{1}{2} e^{2x} - \\frac{1}{2} e^{-x} + C$$",
+          "$$\\frac{1}{4} e^{2x} - \\frac{1}{2} x + C$$",
+          "$$\\frac{1}{4} e^{-2x} - \\frac{1}{4} x + C$$",
+          "$$\\frac{1}{4} e^{2x} - \\frac{1}{4} e^{-x} + C$$",
         ],
         answer: "",
       },
@@ -2373,7 +2411,7 @@ export const clcls2 = {
       },
       {
         question:
-          "적분 $$\\int_{0}^{\\pi} \\sin^2 x \\cos x \\ln(\\sin x) \\, dx$$ 의 값을 구하면?",
+          "적분 $$\\int_{0}^{\\frac {\\pi}{2}} \\sin^2 x \\cos x \\ln(\\sin x) \\, dx$$ 의 값을 구하면?",
         choices: [
           "$$\\frac{1}{3}$$",
           "$$-\\frac{1}{5}$$",
@@ -2397,7 +2435,7 @@ export const clcls2 = {
     78: [
       {
         question:
-          "$$\\int_{0}^{\\sqrt{3}} \\left( x \\tan^{-1} x + \\frac{x^2}{2(1 + x^2)} \\right) dx$$ 의 값은?",
+          "$$\\int_{0}^{\\sqrt{3}} x \\tan^{-1} x + \\frac{x^2}{2(1 + x^2)} dx$$ 의 값은?",
         choices: [
           "$$\\frac{\\pi}{8}$$",
           "$$\\frac{\\pi}{4}$$",
@@ -2419,7 +2457,7 @@ export const clcls2 = {
       },
       {
         question:
-          "이상적분 $$\\int_{0}^{1} \\left( 2x \\sin \\frac{1}{x} - \\frac{2}{x} \\cos \\frac{1}{x} \\right) dx$$ 의 값은?",
+          "이상적분 $$\\int_{0}^{1} \\left( 2x \\sin \\frac{1}{x^2} - \\frac{2}{x} \\cos \\frac{1}{x^2} \\right) dx$$ 의 값은?",
         choices: [
           "$$-\\sin 2$$",
           "$$-\\sin 1$$",
@@ -2502,7 +2540,7 @@ export const clcls2 = {
       },
       {
         question:
-          "1보다 큰 자연수 $$n$$에 대하여 $$a_n$$과 $$b_n$$을 다음의 등식\n$$\\int \\sin^n x \\, dx = -a_n \\sin^{n-1}x \\cos x + b_n \\int \\sin^{n-2}x \\, dx$$\n가 성립하도록 정의할 때, $$a_n + b_n$$의 값을 구하면?",
+          "$$1$$보다 큰 자연수 $$n$$에 대하여 $$a_n$$과 $$b_n$$을 다음의 등식\n$$\\int \\sin^n x \\, dx = -a_n \\sin^{n-1}x \\cos x + b_n \\int \\sin^{n-2}x \\, dx$$\n가 성립하도록 정의할 때, $$a_n + b_n$$의 값을 구하면?",
         choices: [
           "$$\\frac{1}{n}$$",
           "$$\\frac{n-2}{n}$$",
@@ -2513,7 +2551,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$n$$은 3 이상의 자연수이다. $$\\int \\tan^n x \\, dx = \\frac{\\tan^{n-1}x}{n-1} - \\int B \\, dx$$ 를 만족하는 $$B$$는?",
+          "$$n$$은 $$3$$이상의 자연수이다. $$\\int \\tan^n x \\, dx = \\frac{\\tan^{n-1}x}{n-1} - \\int B \\, dx$$ 를 만족하는 $$B$$는?",
         choices: [
           "$$\\tan^{n-1}x$$",
           "$$\\sec^{n-1}x$$",
@@ -2650,7 +2688,7 @@ export const clcls2 = {
         question:
           "정적분 $$\\int_{-2}^{-1} \\frac{x}{(x^2 + 4x + 5)^2} \\, dx$$의 값은?",
         choices: [
-          "$$\\frac{1}{4} (\\pi + 1)$$",
+          "$$-\\frac{1}{4} (\\pi + 1)$$",
           "$$-\\frac{\\pi}{2} + \\frac{1}{2} \\ln 2$$",
           "$$-\\frac{1}{2}(\\pi + 1)$$",
           "$$-\\pi + \\ln 2$$",
@@ -2671,7 +2709,7 @@ export const clcls2 = {
       },
       {
         question:
-          "정적분 $$\\int_{0}^{\\frac{1}{\\sqrt{2}}} x \\sqrt{1 - x^2} \\, dx$$를 계산하면?",
+          "정적분 $$\\int_{0}^{\\frac{1}{\\sqrt{2}}} x \\sqrt{1 - x^4} \\, dx$$를 계산하면?",
         choices: [
           "$$\\frac{1}{4} \\left( \\frac{\\pi}{6} + \\frac{\\sqrt{2}}{4} \\right)$$",
           "$$\\frac{1}{4} \\left( \\frac{\\pi}{6} - \\frac{\\sqrt{2}}{4} \\right)$$",
@@ -2749,7 +2787,7 @@ export const clcls2 = {
       },
       {
         question:
-          "함수 $$f(t) = \\begin{cases} 0 & -\\pi \\leq t < 0 \\\\ 5 \\sin t & 0 \\leq t \\leq \\pi \\end{cases}$$ 에 대하여 $$a_n = \\frac{1}{\\pi} \\int_{-\\pi}^{\\pi} f(t) \\cos nt \\, dt$$라 할 때, $$a_2 + a_4$$의 값은?",
+          "함수 $$f(t) = \\begin{cases} 0 ,& -\\pi \\leq t < 0 \\\\ 5 \\sin t ,& 0 \\leq t \\leq \\pi \\end{cases}$$ 에 대하여 $$a_n = \\frac{1}{\\pi} \\int_{-\\pi}^{\\pi} f(t) \\cos nt \\, dt$$라 할 때, $$a_2 + a_4$$의 값은?",
         choices: [
           "$$-\\frac{4}{\\pi}$$",
           "$$-\\frac{3}{\\pi}$$",
@@ -2936,11 +2974,11 @@ export const clcls2 = {
       },
       {
         question:
-          "함수 $$f(x)$$가 다음과 같고, $$\\int_{0}^{2} f(x) dx$$를 구하시오.\n\n$$f(x) = \\begin{cases} \\frac{e^x + 1}{e^x + x}, & 0 \\le x \\le 1 \\\\ \\frac{(\\ln x)^2}{x + 1}, & x \\ge 1 \\end{cases}$$",
+          "함수 $$f(x)$$가 다음과 같다. $$f(x) = \\begin{cases} \\frac{e^x + 1}{e^x + x}, & 0 \\le x \\le 1 \\\\ \\frac{(\\ln x)^2}{x + 1}, & x \\ge 1 \\end{cases}$$ 이 때, $$\\int_{0}^{2} f(x) dx$$를 구하시오.",
         choices: [
           "$$\\ln(e^2 + 2) + \\frac{(\\ln 2)^3}{3} + 1$$",
           "$$\\ln(e + 1) + \\frac{(\\ln 2)^3}{3} + 1$$",
-          "$$\\frac{e^2 + 2}{e^2 + 2} + \\frac{(\\ln 2)^2}{2}$$",
+          "$$\\frac{e^2 + 1}{e^2 + 2} + \\frac{(\\ln 2)^2}{2}$$",
           "$$-\\infty$$",
         ],
         answer: "",
@@ -2949,7 +2987,7 @@ export const clcls2 = {
     93: [
       {
         question:
-          "정적분 $$\\int_{1}^{2} \\frac{x^2 - 1}{x^2 + x} dx$$ 의 값은?",
+          "정적분 $$\\int_{1}^{2} \\frac{x^2 - 1}{x^3 + x} dx$$ 의 값은?",
         choices: [
           "$$\\ln\\left(\\frac{5}{4}\\right)$$",
           "$$\\ln\\left(\\frac{3}{2}\\right)$$",
@@ -2971,7 +3009,8 @@ export const clcls2 = {
         answer: "",
       },
       {
-        question: "적분 $$\\int_{1/2}^{1} (\\arccos x)^2 dx$$ 를 구하면?",
+        question:
+          "적분 $$\\int_{\\frac{1}{2}}^{1} (\\arccos x)^2 dx$$ 를 구하면?",
         choices: [
           "$$\\frac{\\pi}{6} - 2 + \\sqrt{3} - \\frac{\\pi^2}{72}$$",
           "$$\\frac{\\pi}{6} + 2 + \\sqrt{3} - \\frac{\\pi^2}{72}$$",
@@ -3008,14 +3047,14 @@ export const clcls2 = {
       },
       {
         question:
-          "이차함수 $$f(x)$$에 대하여 부정적분 $$\\int \\frac{-f(x)}{x^2(x+1)^3} dx$$ 가 유리함수이다. $$f(0) = 1$$ 일 때, $$f'(0)$$의 값은?",
+          "이차함수 $$f(x)$$에 대하여 부정적분 $$\\int \\frac{f(x)}{x^2(x+1)^3} dx$$ 가 유리함수이다. $$f(0) = 1$$ 일 때, $$f'(0)$$의 값은?",
         choices: ["1", "2", "3", "4", "5"],
         answer: "",
       },
       {
         question: "이차함수$$f(x)$$가 다음을 만족시킨다. $$f'(0)$$의 값은?",
         example:
-          "(가) $$f(0) = 9$$ ,             \n\n(나) $$\\int \\frac{-f(x)}{x^2(x+3)^2} dx$$ 는 유리함수이다.",
+          "(가) $$f(0) = 9$$ ,             \n\n(나) $$\\int \\frac{f(x)}{x^2(x+3)^2} dx$$ 는 유리함수이다.",
         choices: ["$$-6$$", "$$-3$$", "$$0$$", "$$3$$", "$$6$$"],
         answer: "",
       },
@@ -3035,13 +3074,13 @@ export const clcls2 = {
       },
       {
         question:
-          "다음을 계산하시오. $$\\lim_{n \\to \\infty} \\frac{7}{\\sqrt{n^2}} \\sum_{k=1}^{n} \\frac{1}{\\sqrt{n + 7k}}$$",
+          "다음을 계산하시오. $$\\lim_{n \\to \\infty} \\frac{7}{\\sqrt[3]{n^2}} \\sum_{k=1}^{n} \\frac{1}{\\sqrt[3]{n + 7k}}$$",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. $$\\lim_{n \\to \\infty} \\left( \\frac{1}{n^2 + 1^2} + \\frac{1}{n^2 + 2^2} + \\cdots + \\frac{1}{n^2 + n^2} \\right)$$",
+          "다음을 계산하시오. $$\\lim_{n \\to \\infty}n \\left( \\frac{1}{n^2 + 1^2} + \\frac{1}{n^2 + 2^2} + \\cdots + \\frac{1}{n^2 + n^2} \\right)$$",
         choices: [],
         answer: "",
       },
