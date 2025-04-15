@@ -3118,7 +3118,7 @@ export const clcls2 = {
       },
       {
         question:
-          "다음을 계산하시오. $$f(x) = \\int_{0}^{x} (e^{-t} - t) e^t dt$$ 에서 $$f'(0)$$의 값은?",
+          "다음을 계산하시오. $$f(x) = \\int_{0}^{x} (e^{x} - t) e^t dt$$ 에서 $$f'(0)$$의 값은?",
         choices: [],
         answer: "",
       },
@@ -3130,7 +3130,7 @@ export const clcls2 = {
       },
       {
         question:
-          "다음을 계산하시오. 함수 $$f(x) = \\int_{0}^{x^2 + x - 2} \\frac{1}{\\sqrt{x + t^2}} dt$$일 때, $$f'(1)$$의 값은?",
+          "다음을 계산하시오. 함수 $$f(x) = \\int_{0}^{x^2 + x - 2} \\sqrt{x + t^2} dt$$일 때, $$f'(1)$$의 값은?",
         choices: [],
         answer: "",
       },
@@ -3138,31 +3138,31 @@ export const clcls2 = {
     105: [
       {
         question:
-          "다음을 계산하시오. $$\\lim_{x \\to 2} \\frac{1}{x - 2} \\int_{2}^{x} e^{t^2} dt$$ 값은?",
+          "다음 극한 $$\\lim_{x \\to 2} \\frac{1}{x - 2} \\int_{2}^{x} e^{t^2} dt$$ 값은?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. $$\\lim_{x \\to \\pi} \\frac{1}{x - \\pi} \\int_{\\pi}^{x} \\frac{\\sin t \\cos t}{t + \\pi} dt$$ 값을 구하면?",
+          "다음 극한 $$\\lim_{x \\to \\pi} \\frac{1}{x - \\pi} \\int_{\\pi}^{x} \\frac{\\sin t \\cos t}{t + \\pi} dt$$ 값을 구하면?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. $$\\lim_{x \\to 0^+} \\frac{1}{x} \\int_{x}^{3x} \\frac{\\sin 3t}{t} dt$$ 값을 구하면?",
+          "다음 극한 $$\\lim_{x \\to 0^+} \\frac{1}{x} \\int_{x}^{3x} \\frac{\\sin 3t}{t} dt$$ 값을 구하면?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. 구간 $$[0, 3]$$에서 $$f(x) = x^2 - 2x + 2$$일 때, $$f(x)$$의 평균값은?",
+          "구간 $$[0, 3]$$에서 $$f(x) = x^2 - 2x + 2$$일 때, $$f(x)$$의 평균값은?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. 실수 $$a, b$$가 $$0 \\le a < b \\le 1$$을 만족할 때, $$\\frac{1}{b - a} \\int_{a}^{b} \\frac{1}{1 + x^3} dx$$의 값이 될 수 있는 것은?",
+          "실수 $$a, b$$가 $$0 \\le a < b \\le 1$$을 만족할 때, $$\\frac{1}{b - a} \\int_{a}^{b} \\frac{1}{1 + x^3} dx$$의 값이 될 수 있는 것은?",
         choices: ["$$1/3$$", "$$2/3$$", "$$4/3$$", "$$8/3$$"],
         answer: "",
       },
@@ -3170,19 +3170,19 @@ export const clcls2 = {
     107: [
       {
         question:
-          "다음을 계산하시오. $$\\int_{\\frac{\\pi}{3}}^{\\pi} \\cos x + x \\sin^2 x + x^3 \\cos x\\, dx$$의 값을 계산하시오.",
+          "다음을 계산하시오. $$\\int_{-\\frac{\\pi}{3}}^{\\frac{\\pi}{3}} \\cos x + x \\sin^2 x + x^3 \\cos x\\, dx$$의 값을 계산하시오.",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. $$\\int_{-1}^{1} \\left( x^5 - 6x^9 + \\frac{\\sin x}{(1+x^4)^2 + xe^{-x^2}} \\right) dx$$의 값은?",
+          "다음을 계산하시오. $$\\int_{-1}^{1} \\left( x^5 - 6x^9 + \\frac{\\sin x}{(1+x^4)^2} + xe^{-x^2} \\right) dx$$의 값은?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "다음을 계산하시오. $$\\int_{\\frac{1}{2}}^{1} \\sin^{-1} x\\, dx$$의 값을 계산하시오.",
+          "다음을 계산하시오. $$\\int_{\\frac{1}{2}}^{\\frac{1}{2}} \\sin^{-1} x\\, dx$$의 값을 계산하시오.",
         choices: [],
         answer: "",
       },
@@ -3220,13 +3220,13 @@ export const clcls2 = {
       },
       {
         question:
-          "$$f(x)=1+x+x^3$$일 때 $$\\int_1^3 \\pi(f^{-1}(y))^2 dy$$의 값은?",
+          "$$f(x) = 1 + x + x^3$$일 때 $$\\int_1^3 \\pi \\left\\{ f^{-1}(y) \\right\\}^2 dy$$의 값은?",
         choices: [],
         answer: "",
       },
       {
         question:
-          "$$\\int_0^{\\frac{\\pi}{2}} \\frac{\\sin^2 x}{\\sin^2 x + \\cos^2 x} dx$$의 값을 계산하시오.",
+          "$$\\int_0^{\\frac{\\pi}{2}} \\frac{\\sin^n x}{\\sin^n x + \\cos^n x} dx$$의 값을 계산하시오.",
         choices: [],
         answer: "",
       },
@@ -3298,7 +3298,7 @@ export const clcls2 = {
       },
       {
         question:
-          "극한 $$\\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{\\pi}{4n} \\tan\\left(\\frac{i\\pi}{4n}\\right)$$의 값은?",
+          "극한 $$\\lim_{n \\to \\infty} \\sum_{i=1}^{n} \\frac{\\pi}{4n} \\tan \\frac{i\\pi}{4n}$$의 값은?",
         choices: ["$$\\sqrt{2}$$", "$$2$$", "$$\\ln\\sqrt{2}$$", "$$\\ln 2$$"],
         answer: "",
       },
@@ -3306,9 +3306,9 @@ export const clcls2 = {
     111: [
       {
         question:
-          "함수 $$f$$가 자연수 $$n$$에 대하여 $$f(n) = \\frac{1}{n} \\sum_{k=1}^{n} \\left[1 + \\left( \\frac{k\\sqrt{\\pi}}{n} \\right) \\sin \\left( \\frac{k\\pi}{n} \\right)^2 \\right]$$ 와 같이 정의될 때, $$\\lim_{n \\to \\infty} f(n)$$의 값은?",
+          "함수 $$f$$가 자연수 $$n$$에 대하여 $$f(n) = \\frac{1}{n} \\sum_{k = 1}^{n} \\left[ 1 + \\left( \\frac{k\\sqrt{\\pi}}{n} \\right) \\sin \\pi \\left( \\frac{k}{n} \\right) \\right]^2$$ 와 같이 정의될 때, $$\\lim_{n \\to \\infty} f(n)$$의 값은?",
         choices: [
-          "$$1 - \\frac{\\sqrt{\\pi}}{\\sqrt{\\pi}}$$",
+          "$$\\frac{1 - \\sqrt{\\pi}}{\\sqrt{\\pi}}$$",
           "$$\\frac{1 + \\sqrt{\\pi}}{\\sqrt{\\pi}}$$",
           "$$\\frac{1 + \\sqrt{\\pi}}{\\sqrt{2}}$$",
           "$$\\frac{1 - \\sqrt{\\pi}}{\\sqrt{2}}$$",
@@ -3340,7 +3340,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$\\lim_{n \\to \\infty} \\left( \\frac{8n}{n^2 + 1} + \\frac{8n}{n^2 + 4} + \\frac{8n}{n^2 + 9} + \\cdots + \\frac{8n}{2n^2 - 2n + 1} \\right)$$의 값은?",
+          "$$\\lim_{n \\to \\infty} \\left( \\frac{8}{n} + \\frac{8n}{n^2 + 1} + \\frac{8n}{n^2 + 4} + \\frac{8n}{n^2 + 9} + \\cdots + \\frac{8n}{2n^2 - 2n + 1} \\right)$$의 값은?",
         choices: [
           "$$\\pi$$",
           "$$2\\pi$$",
@@ -3360,7 +3360,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$f(x) = \\int_{8}^{x^2} \\ln(t^2 + 4)\\,dt$$에 대하여, $$y = f(x)$$와 점 $$(2, 0)$$에서 접하는 직선의 $$y$$절편은?",
+          "$$f(x) = \\int_{8}^{x^3} \\ln(t^2 + 4)\\,dt$$에 대하여, $$y = f(x)$$와 점 $$(2, 0)$$에서 접하는 직선의 $$y$$절편은?",
         choices: [
           "$$-4\\ln 6$$",
           "$$-2\\ln 68$$",
@@ -3384,7 +3384,7 @@ export const clcls2 = {
     113: [
       {
         question:
-          "$$\\lim_{x \\to 0} \\frac{1}{x^3} \\left( \\int_0^{x^2} \\frac{\\sin t}{t} dt - x \\right)$$의 값은?",
+          "$$\\lim_{x \\to 0} \\frac{1}{x^3} \\left\\{ \\int_0^{x} \\frac{\\sin t}{t} dt - x \\right\\}$$의 값은?",
         choices: [
           "$$\\frac{1}{18}$$",
           "$$-\\frac{1}{18}$$",
@@ -3395,7 +3395,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$\\lim_{x \\to a} \\frac{1}{x - a} \\int_{\\sqrt{a}}^{\\sqrt{x}} te^{t^2} \\sin t dt$$ 를 구하시오. $$(a > 0)$$",
+          "$$\\lim_{x \\to a} \\frac{1}{x - a} \\int_{\\sqrt{a}}^{\\sqrt{x}} te^{t} \\sin t dt$$ 를 구하시오. $$(a > 0)$$",
         choices: [
           "$$\\frac{1}{2} e^{\\sqrt{a}} \\sin \\sqrt{a}$$",
           "$$e^{\\sqrt{a}}$$",
@@ -3414,7 +3414,7 @@ export const clcls2 = {
         question:
           "$$f(x) = \\int_0^{2x} \\frac{1}{\\sqrt{1 + t^3}} dt$$일 때 극한 $$\\lim_{h \\to 0} \\frac{f(1 + 3h) - f(1 - h)}{h}$$의 값은?",
         choices: [
-          "$$2$$",
+          "$$\\frac{2}{3}$$",
           "$$\\frac{4}{3}$$",
           "$$\\frac{8}{3}$$",
           "$$\\frac{16}{3}$$",
@@ -3431,7 +3431,7 @@ export const clcls2 = {
       },
       {
         question:
-          "극한 $$\\lim_{x \\to 0} \\left( \\frac{\\int_0^{x^2} \\sin 2t\\,dt}{\\int_0^{x^2} x^2 \\tan t\\,dt} \\right)$$의 값은?",
+          "극한 $$\\lim_{x \\to 0} \\left( \\frac{\\int_0^{x} \\sin 2t\\,dt}{\\int_0^{x^2} x^2 \\tan t\\,dt} \\right)$$의 값은?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
         answer: "",
       },
@@ -3462,18 +3462,18 @@ export const clcls2 = {
     115: [
       {
         question:
-          "$$\\lim_{x \\to 1} \\frac{a}{x^{a-1} - 1} \\cdot \\frac{1}{x^{b-1}} \\int_1^x \\left(e^{c(e+1)} - ec\\right) dc$$의 값은 얼마인가? (단, $$a, b$$는 모두 1이 아님.)",
+          "$$\\lim_{x \\to 1} \\frac{a}{a^{x-1} - b^{x-1}} \\int_1^x \\left( e^{c}(c+1) - ec \\right) \\, dc$$ 의 값은 얼마인가? (단, $$a, b$$는 모두 $$1$$이 아님.)",
         choices: [
           "$$0$$",
           "$$\\frac{ae}{\\ln a - \\ln b}$$",
-          "$$\\frac{1}{2} \\cdot \\frac{e}{\\ln a - a \\ln b}$$",
-          "$$\\frac{1}{2} \\cdot \\frac{ae}{\\ln a - \\ln b}$$",
+          "$$\\frac{1}{2} \\frac{e}{\\ln a - \\ln b}$$",
+          "$$\\frac{1}{2} \\frac{ae}{\\ln a - \\ln b}$$",
         ],
         answer: "",
       },
       {
         question:
-          "두 함수 $$f(x)$$와 $$g(x)$$가 $$f(x) = \\int_0^{\\tan x} \\sqrt{1 + t^2} dt$$, $$g(x) = \\int_0^{2x} f(t) dt$$를 만족시킬 때, $$g'\\left(\\frac{\\pi}{6}\\right)$$의 값은?",
+          "두 함수 $$f(x)$$와 $$g(x)$$가 $$f(x) = \\int_0^{\\tan x} \\sqrt{1 + t^2} dt$$, $$g(x) = \\int_0^{2x} f(t) dt$$를 만족시킬 때, $$g''\\left(\\frac{\\pi}{6}\\right)$$의 값은?",
         choices: ["$$20$$", "$$24$$", "$$28$$", "$$32$$"],
         answer: "",
       },
@@ -3550,7 +3550,7 @@ export const clcls2 = {
         question:
           "양의 실수 $$x$$에 대하여 함수 $$F(x), f(x)$$는 다음 세 조건을 만족한다. 이 때, $$f\\left(\\frac{\\pi}{4}\\right)$$의 값은?",
         example:
-          "① $$F'(x) = f(x)$$ <br> ② $$F(x) = x f(x) + x \\sin x + \\cos x$$ <br> ③ $$F\\left(\\frac{\\pi}{2}\\right) = -1$$",
+          "① $$F'(x) = f(x)$$ <br> ② $$F(x) = x f(x) + x \\sin x + \\cos x$$ <br> ③ $$f\\left(\\frac{\\pi}{2}\\right) = -1$$",
         choices: [
           "$$-\\frac{\\sqrt{3}}{2}$$",
           "$$-\\frac{\\sqrt{2}}{2}$$",
@@ -3563,10 +3563,10 @@ export const clcls2 = {
     118: [
       {
         question:
-          "$$a \\geq -1$$일 때, 정적분 $$\\int_0^1 \\frac{x^a - 1}{\\ln x} dx$$의 값을 구하면?",
+          "$$\\alpha \\geq -1$$일 때, 정적분 $$\\int_0^1 \\frac{x^\\alpha - 1}{\\ln x} dx$$의 값을 구하면?",
         choices: [
-          "$$a + 1$$",
-          "$$a \\ln(\\alpha + 1)$$",
+          "$$\\alpha + 1$$",
+          "$$\\alpha \\ln(\\alpha + 1)$$",
           "$$\\ln(\\alpha + 1)$$",
           "$$\\frac{\\ln(\\alpha + 1)}{\\alpha}$$",
         ],
@@ -3595,7 +3595,7 @@ export const clcls2 = {
         choices: [
           "$$e \\cos(1) - 2$$",
           "$$-2 + e$$",
-          "$$\\frac{e - 3}{2}$$",
+          "$$\\frac{e}{2} - \\frac{3}{2}$$",
           "$$\\frac{e}{2} + \\frac{1}{2}$$",
           "$$\\frac{e}{2} - \\frac{1}{2}$$",
         ],
@@ -3729,13 +3729,14 @@ export const clcls2 = {
     122: [
       {
         question:
-          "적분 $$\\int_{\\frac{1}{2}}^{1} \\frac{x^2 \\sin^{-1}x - 6 \\cos^{-1}x}{\\sqrt{1 - x^2}} dx$$의 값은?",
+          "적분 $$\\int_{-\\frac{1}{2}}^\\frac{1}{2} \\frac{x^2 \\sin^{-1}x - 6 \\cos^{-1}x}{\\sqrt{1 - x^2}} dx$$의 값은?",
         choices: ["$$-\\pi^2$$", "$$-\\pi$$", "$$\\pi$$", "$$\\pi^2$$"],
         answer: "",
       },
       {
-        question:
-          "$$a_n$$을 다음과 같이 정의할 때, $$a_{2020}$$의 값은?\n\n$$a_n = \\int_{-1}^{1} x^2 (\\cos(n \\pi x) + \\sin(n \\pi x)) dx$$",
+        question: "$$a_n$$을 다음과 같이 정의할 때, $$a_{2020}$$의 값은?",
+        example:
+          "$$a_n = \\int_{-1}^{1} x^2 (\\cos(n \\pi x) + \\sin(n \\pi x)) dx$$",
         choices: [
           "$$-\\frac{8}{3(2020\\pi)^3}$$",
           "$$-\\frac{4}{(2020\\pi)^2}$$",
@@ -3746,7 +3747,7 @@ export const clcls2 = {
       },
       {
         question:
-          "정적분 $$\\int_{-\\pi}^{\\pi} \\{ \\sin(mx)\\cos(nx) + \\sin(mx)\\sin(nx) + \\cos(mx)\\cos(nx) \\} dx$$의 값은?\n\n(단, $$m, n$$은 양의 정수이고, $$m \\ne n$$이다.)",
+          "정적분 $$\\int_{-\\pi}^{\\pi} \\{ \\sin(mx)\\cos(nx) + \\sin(mx)\\sin(nx) + \\cos(mx)\\cos(nx) \\} dx$$의 값은? <br> (단, $$m, n$$은 양의 정수이고, $$m \\ne n$$이다.)",
         choices: ["$$m + n$$", "$$m - n$$", "$$0$$", "$$\\pi$$", "$$2\\pi$$"],
         answer: "",
       },
@@ -3782,8 +3783,9 @@ export const clcls2 = {
         answer: "",
       },
       {
-        question:
-          "다음 극한을 구하시오.\n$$\\lim_{n \\to \\infty} \\left( \\frac{n^2}{n^2 + 1^2} \\right)^{\\frac{1}{n + 1}} \\left( \\frac{n^2}{n^2 + 2^2} \\right)^{\\frac{2}{n + 2}} \\cdots \\left( \\frac{n^2}{n^2 + n^2} \\right)^{\\frac{n}{n + n}}$$",
+        question: "다음 극한을 구하시오.",
+        example:
+          "$$\\lim_{n \\to \\infty} \\left( \\frac{n^2}{n^2 + 1^2} \\right)^{\\frac{1}{n^2 + 1^2}} \\left( \\frac{n^2}{n^2 + 2^2} \\right)^{\\frac{2}{n^2 + 2^2}} \\cdots \\left( \\frac{n^2}{n^2 + n^2} \\right)^{\\frac{n}{n^2 + n^2}}$$",
         choices: [
           "$$\\frac{\\ln 2}{2}$$",
           "$$-\\frac{(\\ln 2)^2}{4}$$",
@@ -3794,7 +3796,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$\\lim_{n \\to \\infty} \\left( \\sum_{k=1}^{n} \\sqrt{1 + \\cos \\frac{\\pi k}{2n}} \\sqrt{1 - \\cos \\frac{\\pi k}{2n}} \\right)$$의 값은?",
+          "$$\\lim_{n \\to \\infty} \\left\\{ \\left( \\sum_{k=1}^{n} \\sqrt{1 + \\cos \\frac{\\pi k}{2n}} \\right) \\sqrt{1 - \\cos \\frac{\\pi k}{2n}} \\right\\} $$의 값은?",
         choices: ["$$1$$", "$$\\sqrt{2}$$", "$$2$$", "$$2\\sqrt{2}$$", "$$4$$"],
         answer: "",
       },
@@ -3826,18 +3828,18 @@ export const clcls2 = {
       },
       {
         question:
-          "모든 실수 $$x$$에 대하여 $$f(-x) = f(x),\\ f(x + 3) = f(x)$$를 만족하는 연속함수 $$f(x)$$에 대하여 $$\\int_2^5 f(x) dx = 5$$와 $$\\int_0^3 f(x) dx = 7$$이 성립한다. 이때, $$\\int_{-4}^5 f(x) dx$$의 값은?",
+          "모든 실수 $$x$$에 대하여 $$f(-x) = f(x),\\ f(x + 3) = f(x)$$를 만족하는 연속함수 $$f(x)$$에 대하여 $$\\int_0^2 f(x) dx = 5$$와 $$\\int_0^3 f(x) dx = 7$$이 성립한다. 이때, $$\\int_{-4}^9 f(x) dx$$의 값은?",
         choices: ["$$26$$", "$$28$$", "$$30$$", "$$32$$"],
         answer: "",
       },
       {
         question:
-          "정적분 $$\\int_0^1 \\left( \\sqrt[3]{1 - x^5} - \\sqrt[3]{1 - x^3 + 1} \\right) dx$$의 값은?",
+          "정적분 $$\\int_0^1 \\left( \\sqrt[3]{1 - x^5} - \\sqrt[5]{1 - x^3} + 1 \\right) dx$$의 값은?",
         choices: [
-          "$$\\sqrt[3]{3} - 1$$",
+          "$$\\sqrt[5]{3} - 1$$",
           "$$\\sqrt[3]{5} - 1$$",
           "$$1$$",
-          "$$\\sqrt[3]{3} + 1$$",
+          "$$\\sqrt[5]{3} + 1$$",
           "$$\\sqrt[3]{5} + 1$$",
         ],
         answer: "",
@@ -3866,7 +3868,7 @@ export const clcls2 = {
       },
       {
         question: "다음 적분을 계산하시오.",
-        example: "$$\\int_0^{\\infty} e^{-x^2} \\cos x\\,dx$$",
+        example: "$$\\int_0^{\\infty} e^{-x} \\cos x\\,dx$$",
         answer: "",
       },
       {
@@ -3942,7 +3944,7 @@ export const clcls2 = {
       {
         question:
           "다음 적분의 수렴, 발산을 판단하고 수렴한다면 적분값을 계산하시오.",
-        example: "$$\\int_1^2 \\frac{1}{(x - 1)^{2/3}} dx$$",
+        example: "$$\\int_1^2 \\frac{1}{(x - 1)^\\frac{2}{3}} dx$$",
         answer: "",
       },
       {
@@ -3986,7 +3988,7 @@ export const clcls2 = {
         question: "다음 중 발산하는 적분은?",
         choices: [
           "$$\\int_0^1 \\frac{dx}{x^2 + \\sqrt{x}}$$",
-          "$$\\int_0^1 \\frac{1}{\\sqrt{x(1 + x^2)}} dx$$",
+          "$$\\int_0^1 \\frac{1}{\\sqrt{x}(1 + x^2)} dx$$",
           "$$\\int_0^{\\frac{\\pi}{2}} \\frac{1}{x \\cos x} dx$$",
           "$$\\int_0^1 \\frac{e^x}{\\sqrt{x}} dx$$",
         ],
@@ -4015,7 +4017,7 @@ export const clcls2 = {
         question:
           "$$\\int_e^{\\infty} \\frac{dx}{x \\ln x (\\ln \\ln x)^3}$$의 값은?",
         choices: [
-          "$$\\frac{1}{(\\ln 3)^2}$$",
+          "$$\\frac{1}{(\\ln\\ln 3)^2}$$",
           "$$\\frac{3}{(\\ln 3)^4}$$",
           "$$\\frac{1}{2(\\ln 3)^2}$$",
           "발산한다.",
@@ -4036,7 +4038,7 @@ export const clcls2 = {
       },
       {
         question:
-          "$$A = \\int_0^{\\infty} \\frac{\\sqrt{\\tan^{-1}(x^2)}}{1 + x^4} dx$$일 때, $$A^2$$의 값은?",
+          "$$A = \\int_0^{\\infty} \\frac{x \\sqrt{\\tan^{-1}(x^2)}}{1 + x^4} dx$$일 때, $$A^2$$의 값은?",
         choices: [
           "$$\\frac{\\pi^3}{24}$$",
           "$$\\frac{\\pi^3}{36}$$",
@@ -4130,7 +4132,7 @@ export const clcls2 = {
       },
       {
         question:
-          "두 실수 $$a, b$$에 대하여 $$\\int_0^{\\infty} \\left( \\frac{a}{2x + 1} - \\frac{x^{2021}}{x^{2022} + 1} \\right) dx = b$$일 때, $$ab$$의 값은?",
+          "두 실수 $$a, b$$에 대하여 $$\\int_0^{\\infty} \\frac{a}{2x + 1} - \\frac{x^{2021}}{x^{2022} + 1} dx = b$$일 때, $$ab$$의 값은?",
         choices: [
           "$$\\ln 2$$",
           "$$2 \\ln 2$$",
@@ -4193,7 +4195,7 @@ export const clcls2 = {
       {
         question: "다음 이상적분 중에서 수렴하는 것은?",
         choices: [
-          "$$\\int_0^1 \\frac{1}{x + \\sqrt{x}} dx$$",
+          "$$\\int_1^\\infty \\frac{1}{x + \\sqrt{x}} dx$$",
           "$$\\int_0^1 \\frac{\\ln x}{x} dx$$",
           "$$\\int_1^{\\infty} \\frac{1}{x + e^x} dx$$",
           "$$\\int_0^1 \\frac{1}{x^2} dx$$",
@@ -4240,14 +4242,14 @@ export const clcls2 = {
       {
         question: "다음의 이상적분 중 수렴하는 것을 모두 몇 개인가?",
         example:
-          "(가) $$\\int_0^1 \\frac{1}{x \\ln x} dx$$ (나) $$\\int_0^1 \\frac{1}{x (\\ln x)^2} dx$$ (다) $$\\int_0^1 \\frac{\\sin x}{x} dx$$ (라) $$\\int_0^1 \\frac{1}{x^{1/2}} dx$$",
+          "(가) $$\\int_0^1 \\frac{1}{x \\ln x} dx$$ (나) $$\\int_0^1 \\frac{1}{x (\\ln x)^2} dx$$ (다) $$\\int_0^1 \\frac{\\sin x}{x} dx$$ (라) $$\\int_0^1 \\frac{1}{x^{\\frac{1}{2}}} dx$$",
         choices: ["0개", "1개", "2개", "3개"],
         answer: "",
       },
       {
         question: "다음 특이적분 중 수렴하는 것을 모두 찾으시오.",
         example:
-          "(ㄱ) $$\\int_0^1 \\frac{dx}{\\sqrt{x + x^3}}$$ (ㄴ) $$\\int_1^2 \\frac{dx}{x \\ln x}$$ (ㄷ) $$\\int_2^{\\infty} \\frac{1}{x^2 - x} dx$$",
+          "(ㄱ) $$\\int_0^1 \\frac{dx}{\\sqrt{x} + x^3}$$ (ㄴ) $$\\int_1^2 \\frac{dx}{x \\ln x}$$ (ㄷ) $$\\int_2^{\\infty} \\frac{1}{x^2 - x} dx$$",
         choices: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
         answer: "",
       },
@@ -4255,7 +4257,7 @@ export const clcls2 = {
         question:
           "다음 중 수렴하는 이상적분(특이적분)만을 있는 대로 고른 것은?",
         example:
-          "(ㄱ) $$\\int_0^1 \\frac{1}{x - 3} dx$$ (ㄴ) $$\\int_0^{\\frac{\\pi}{2}} \\sec x \\tan x dx$$ (ㄷ) $$\\int_\\pi^{\\infty} \\frac{1}{x^2} dx$$ (ㄹ) $$\\int_0^{\\infty} x e^{-x} dx$$",
+          "(ㄱ) $$\\int_0^4 \\frac{1}{x - 3} dx$$ (ㄴ) $$\\int_0^{\\frac{\\pi}{2}} \\sec x \\tan x dx$$ (ㄷ) $$\\int_\\pi^{\\infty} \\frac{1}{x^2} dx$$ (ㄹ) $$\\int_0^{\\infty} x e^{-x} dx$$",
         choices: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
         answer: "",
       },
@@ -4332,7 +4334,7 @@ export const clcls2 = {
       {
         question: "다음의 적분 중 수렴하는 것을 모두 고르시오.",
         example:
-          "(ㄱ) $$\\int_1^{\\infty} \\frac{\\cos^4 x}{x^3 + 1} dx$$ (ㄴ) $$\\int_0^1 \\frac{e^{-x}}{x^2} dx$$ (ㄷ) $$\\int_2^{\\infty} \\frac{x^2}{\\sqrt{x^2 - 1}} dx$$",
+          "(ㄱ) $$\\int_1^{\\infty} \\frac{\\cos^4 x}{x^3 + 1} dx$$ (ㄴ) $$\\int_0^1 \\frac{e^{-x}}{x^2} dx$$ (ㄷ) $$\\int_2^{\\infty} \\frac{x^2}{\\sqrt{x^5 - 1}} dx$$",
         choices: ["ㄱ", "ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
         answer: "",
       },
@@ -4349,7 +4351,7 @@ export const clcls2 = {
       {
         question: "다음의 이상적분(improper integral) 중에서 발산하는 것은?",
         choices: [
-          "$$\\int_0^1 \\frac{1}{x + x^2} dx$$",
+          "$$\\int_1^\\infty \\frac{1}{x + x^2} dx$$",
           "$$\\int_0^{\\infty} \\frac{e^{-3x}}{\\sqrt{x}} dx$$",
           "$$\\int_0^1 \\frac{\\sin x}{x^{3/2}} dx$$",
           "$$\\int_0^1 \\frac{\\cos \\pi x}{1 - x} dx$$",

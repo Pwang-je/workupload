@@ -1311,7 +1311,7 @@ export const clcls1 = {
         choices: [
           "$$\\text{ㄱ, ㄴ}$$",
           "$$\\text{ㄷ, ㄹ}$$",
-          "$$\\text{ㄱ, ㄷ, ㄹ}$$",
+          "$$\\text{ㄱ, ㄴ, ㄷ}$$",
           "$$\\text{ㄴ, ㄷ, ㄹ}$$",
         ],
         answer: "",
@@ -1560,7 +1560,7 @@ export const clcls1 = {
         answer: "",
       },
       {
-        question: "$$f(x) = x^2 + \\sin^{-1} x$$일 때$$f'(x)$$의 도함수는?",
+        question: "$$f(x) = x^2 + \\sin^{-1} x$$일 때$$f(x)$$의 도함수는?",
         choices: [],
         answer: "",
       },
@@ -2755,7 +2755,7 @@ export const clcls1 = {
       {
         question:
           "곡선$$y = e^x$$위의 점$$P$$에서 그은 접선이 원점$$O$$를 지날 때 선분$$\\overline{OP}$$의 길이는?",
-        choices: ["$$1$$", "$$e$$", "$$\\sqrt{e} + 1$$", "$$\\sqrt{e^2 + 1}$$"],
+        choices: ["$$1$$", "$$e$$", "$$\\sqrt{e + 1}$$", "$$\\sqrt{e^2 + 1}$$"],
         answer: "",
       },
       {
