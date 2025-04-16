@@ -3146,10 +3146,11 @@ export const clcls1 = {
         question:
           "$$y = f(x), x = g(z)$$이고$$f$$와$$g$$는 모두 2계도함수가 존재한다고 할 때$$\\frac{d^2 y}{dx^2}$$의 값은?",
         choices: [
-          "$$f'(x) g'(z) + f'(x) g'(z)$$",
-          "$$f'(x) (g'(z))^2 + f'(x) g''(z)$$",
-          "$$f'(x) g'(z) + (f(x))' g''(z)$$",
-          "$$2 f'(x) g'(z) + 2 f'(x) g'(z)$$",
+          "$$f''(x) g'(z) + f'(x) g''(z)$$",
+          "$$f''(x)(g'(z))^2 + f'(x) g''(z)$$",
+          "$$f''(x) g'(z) + (f'(x))^2 g''(z)$$",
+          "$$2f''(x) g'(z) + f'(x) g''(z)$$",
+          "$$f''(x) g'(z) + 2f'(x) g''(z)$$",
         ],
         answer: "",
       },
@@ -3236,7 +3237,7 @@ export const clcls1 = {
     133: [
       {
         question:
-          "$$t = \\frac{7\\pi}{4} \\text{일 때, 다음 매개 방정식에 대해 } \\frac{dy}{dx}, \\frac{d^2y}{dx^2} \\text{의 값은?}$$",
+          "$$t = \\frac{7\\pi}{4} \\text{일 때, 다음 매개 방정식에 대해 } \\frac{dy}{dx} / \\frac{d^2y}{dx^2} \\text{의 값은?}$$",
         example: ["$$x(t) = a + 20 \\cos t, \\quad y(t) = c + 19 \\sin t$$"],
         choices: [
           "$$\\frac{20}{c^2}$$",
