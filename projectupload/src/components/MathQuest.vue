@@ -37,6 +37,15 @@ const chapters = {
   ],
 };
 
+// Fisher–Yates 셔플 함수
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+// 선지 레이아웃 결정 함수 (기존 그대로)
 function choiceLayoutClass(question) {
   const plainLengths = question.choices.map((c) =>
     typeof c === "string" ? c.replace(/<[^>]+>/g, "") : ""
@@ -85,7 +94,7 @@ const pageOptions = computed(() => {
   return result;
 });
 
-// 문제 랜덤 추출
+// 문제 랜덤 추출 (셔플 적용)
 function getRandomQuestions() {
   const totalSubjects = selectedSubjects.value.length;
   const totalQuestions = questionCount.value;
@@ -108,8 +117,8 @@ function getRandomQuestions() {
     const chapterList = chapters[subjectKey];
     const selectedChapterNames = selectedChapters[subjectKey];
 
+    // 풀(pool) 구성
     const pool = [];
-
     Object.entries(data).forEach(([page, list]) => {
       const pageNum = parseInt(page);
       let inRange =
@@ -139,11 +148,14 @@ function getRandomQuestions() {
       }
     });
 
+    // 셔플 후 선택
+    const poolCopy = [...pool];
+    shuffle(poolCopy);
+
     let count = perSubjectCount;
     if (index < remainder) count += 1;
 
-    const shuffled = pool.sort(() => Math.random() - 0.5);
-    const chosen = shuffled.slice(0, count);
+    const chosen = poolCopy.slice(0, count);
     selected.push(...chosen);
     counts[subjects[subjectKey].name] = chosen.length;
   });
@@ -152,6 +164,7 @@ function getRandomQuestions() {
   subjectCounts.value = counts;
 }
 
+// 예제 배열 포맷팅 함수 (기존 그대로)
 function formatExampleArray(example) {
   const normalizeExample = (example) => {
     let lines = [];
@@ -266,7 +279,7 @@ function openPrintView() {
 function renderMath() {
   nextTick(() => {
     if (window.MathJax?.typesetPromise) {
-      window.MathJax.typesetClear?.(); // 이전 수식 제거
+      window.MathJax.typesetClear?.();
       window.MathJax.typesetPromise().catch((err) =>
         console.error("❌ MathJax rendering error:", err)
       );
@@ -403,7 +416,7 @@ watch(selectedQuestions, renderMath);
     </div>
   </div>
 
-  <!-- 출제 결과 요약 -->
+  <!-- 출제된 문제 수 요약 -->
   <div
     v-if="Object.keys(subjectCounts).length"
     class="max-w-screen-md mx-auto mb-6 bg-gray-100 border border-gray-300 p-4 rounded-md text-sm"
@@ -457,9 +470,9 @@ watch(selectedQuestions, renderMath);
           :key="i"
           class="flex items-start gap-2 p-2 rounded bg-gray-50 w-full"
         >
-          <span class="font-semibold shrink-0">{{
-            ["①", "②", "③", "④", "⑤"][i]
-          }}</span>
+          <span class="font-semibold shrink-0">
+            {{ ["①", "②", "③", "④", "⑤"][i] }}
+          </span>
           <span
             v-html="choice"
             class="block whitespace-normal break-words w-full min-w-0"
@@ -469,4 +482,5 @@ watch(selectedQuestions, renderMath);
     </div>
   </div>
 </template>
+
 <style scoped></style>
