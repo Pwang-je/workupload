@@ -3733,12 +3733,12 @@ export const clcls3 = {
     127: [
       {
         question:
-          "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{n \\cdot 8^n}$$",
+          "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{n 8^n}$$",
         answer: "",
       },
       {
         question:
-          "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{\\sqrt{n} \\cdot 3^n}$$",
+          "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{\\sqrt{n} 3^n}$$",
         answer: "",
       },
       {
@@ -3783,7 +3783,7 @@ export const clcls3 = {
       },
       {
         question:
-          "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{n x^3 n}{8^n}$$",
+          "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{n x^{3 n}}{8^n}$$",
         answer: "",
       },
     ],
@@ -3791,7 +3791,7 @@ export const clcls3 = {
       {
         question: "다음 중 수렴하는 것을 모두 고른 것은?",
         example: [
-          "$$\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{1}{n\\sqrt{e}}$$",
+          "$$\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{1}{n^\\sqrt{e}}$$",
           "$$\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{2n}{n^2 - 5n + 8}$$",
           "$$\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{n^2 - n + 5}{n^5 + 5n^4 - 2n^3 + n + 1}$$",
           "$$\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\frac{(-1)^n(n - 1)}{n + 1}$$",
@@ -3810,7 +3810,7 @@ export const clcls3 = {
       {
         question: "다음 중 발산하는 무한급수의 개수는?",
         example: [
-          "ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\left( 1 + \\frac{1}{n} \\right)}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\ln n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\ln\\left( 1 + \\frac{1}{n} \\right)$$",
+          "ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n^{1 + \\frac{1}{n}}}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\ln n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\ln\\left( 1 + \\frac{1}{n} \\right)$$",
         ],
         choices: ["1개", "2개", "3개", "4개"],
         answer: "",
@@ -3820,7 +3820,7 @@ export const clcls3 = {
       {
         question: "다음 중 수렴하는 무한급수의 개수는?",
         example:
-          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^n \\ln\\left(1 + \\sinh\\left(\\frac{1}{n}\\right)\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{n \\ln e^{2n}}{n^n} \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\arctan\\left(\\frac{1}{n}\\right)}{\\ln n} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\tan^2\\left(\\frac{4\\pi}{n}\\right)\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^n \\ln\\left(1 + \\sinh \\frac{1}{n}\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{n! e^{2n}}{n^n} \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\arctan\\left(\\frac{1}{n}\\right)}{\\ln n} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\tan^2\\left(\\frac{4\\pi}{n}\\right)\n\\end{aligned}$$",
         choices: ["1개", "2개", "3개", "4개"],
         answer: "",
       },
@@ -3834,7 +3834,7 @@ export const clcls3 = {
       {
         question: "다음 중 수렴하는 무한급수의 개수는?",
         example:
-          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\left(e^n - e^{-(n+1)}\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\sqrt[3]{n^2 + n + 1}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{n - 999}{n + 1000} \\\\\n&\\text{ㄹ. } \\sum_{n=2}^{\\infty} \\frac{2n - 1}{(n - 1)(n + 1)^2} \\\\\n&\\text{ㅁ. } 1 - 2 + 4 - \\cdots + (-2)^n + \\cdots\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\left(e^-n - e^{-(n+1)}\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\sqrt[3]{n^2 + n + 1}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{n - 999}{n + 1000} \\\\\n&\\text{ㄹ. } \\sum_{n=2}^{\\infty} \\frac{2n - 1}{(n - 1)(n + 1)^2} \\\\\n&\\text{ㅁ. } 1 - 2 + 4 - \\cdots + (-2)^n + \\cdots\n\\end{aligned}$$",
         choices: ["1개", "2개", "3개", "4개", "5개"],
         answer: "",
       },
@@ -3856,15 +3856,15 @@ export const clcls3 = {
         choices: [
           "$$\\sum_{n=1}^{\\infty} n^{-\\sin 1}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\sqrt{n+1} - \\sqrt{n - 1}}{n}$$",
-          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\ln n}$$",
-          "$$\\sum_{n=1}^{\\infty} \\frac{5^{2n}}{n^9}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n n}{\\ln n}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{5^{2n}}{n^2 9^n}$$",
         ],
         answer: "",
       },
       {
         question: "다음 중 수렴하는 급수는?",
         choices: [
-          "$$\\sum_{n=1}^{\\infty} \\sin\\left( \\sin\\left(\\frac{1}{n} \\right) \\right)$$",
+          "$$\\sum_{n=1}^{\\infty} \\sin\\left( \\sin \\frac{1}{n} \\right)$$",
           "$$\\sum_{n=1}^{\\infty} \\left(\\frac{3 + 5n}{5 + 3n}\\right)^n$$",
           "$$\\sum_{n=1}^{\\infty} \\left( \\frac{n}{n + 1} \\right)^n$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\sin\\left(\\frac{1}{n}\\right)}{n}$$",
@@ -3877,7 +3877,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{1}{(\\ln n)^3}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{2n + 1}{3n^2 + 1}$$",
           "$$\\sum_{n=1}^{\\infty} \\sin\\left(\\frac{1}{n}\\right)$$",
-          "$$\\sum_{n=1}^{\\infty} \\frac{2n!}{n^n}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{2^n n!}{n^n}$$",
         ],
         answer: "",
       },
@@ -3899,7 +3899,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{1 + \\sin n}{n^2}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{1}{n \\sqrt{n}}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\ln(n + 2)}{n^2}$$",
-          "$$\\sum_{n=1}^{\\infty} \\frac{n \\sqrt{n + 1}}{\\sqrt{n^6 + 5n}}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{n \\sqrt{n + 1}}{\\sqrt{n^5 + 5n}}$$",
         ],
         answer: "",
       },
@@ -3908,8 +3908,8 @@ export const clcls3 = {
         choices: [
           "$$\\sum_{n=1}^{\\infty} \\left(1 - e^{-\\frac{1}{n^2}}\\right)$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\sin n}{n}$$",
-          "$$\\sum_{n=1}^{\\infty} n \\left( \\sin\\left(\\frac{1}{n}\\right) - \\frac{1}{n} \\right)$$",
-          "$$\\sum_{n=1}^{\\infty} \\left| \\sum_{k=1}^{n} \\frac{1}{k^2} \\right| \\cdot \\frac{1}{n}$$",
+          "$$\\sum_{n=1}^{\\infty} n \\left( \\sin \\frac{1}{n} - \\frac{1}{n} \\right)$$",
+          "$$\\sum_{n=1}^{\\infty} \\left( \\sum_{k=1}^{n} \\frac{1}{k^2} \\right) \\frac{1}{n}$$",
         ],
         answer: "",
       },
@@ -3938,7 +3938,7 @@ export const clcls3 = {
       },
       {
         question:
-          "무한급수$$\\sum_{n=1}^{\\infty} b^n$$가 수렴하기 위한 가능한 양수$$b$$의 값은?",
+          "무한급수$$\\sum_{n=1}^{\\infty} b^{ln n}$$가 수렴하기 위한 가능한 양수$$b$$의 값은?",
         choices: [
           "$$0 < b < \\frac{1}{e}$$",
           "$$0 < b < \\frac{1}{e^2}$$",
@@ -4036,7 +4036,7 @@ export const clcls3 = {
       },
       {
         question:
-          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{2^n}$$에 대한 수렴성에 대한 설명 중 옳은 것은?",
+          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n n}{2^n}$$에 대한 수렴성에 대한 설명 중 옳은 것은?",
         choices: [
           "절대수렴",
           "조건부 수렴",
@@ -4065,7 +4065,7 @@ export const clcls3 = {
         choices: [
           "$$\\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| = \\rho < 1$$",
           "$$\\lim_{n \\to \\infty} \\sqrt[n]{|a_n|} = r < 1$$",
-          "모든$$n$$에 대하여 \\sum_{k=1}^{n} |a_k| \\leq M$$인 양수$$M$$이 존재한다.$$",
+          "모든$$n$$에 대하여 $$\\sum_{k=1}^{n} |a_k| \\leq M$$인 양수$$M$$이 존재한다.",
           "$$|a_1| > |a_2| > \\cdots$$이고,$$\\lim_{n \\to \\infty} |a_n| = 0$$",
         ],
         answer: "",
@@ -4084,9 +4084,9 @@ export const clcls3 = {
     136: [
       {
         question:
-          "급수$$\\sum_{n=1}^{\\infty} |a_n|, \\sum_{n=1}^{\\infty} b_n$$이 모두 수렴할 때, 다음 중 옳은 것을 모두 고른 것은?",
+          "급수$$\\sum_{n=1}^{\\infty} |a_n| \\text{과} \\sum_{n=1}^{\\infty} b_n$$이 모두 수렴할 때, 다음 중 옳은 것을 모두 고른 것은?",
         example: [
-          "가. $$\\sum_{n=1}^{\\infty} (a_n + b_n)$$ 나. $$\\sum_{n=1}^{\\infty} a_n^2$$ 다. $$\\sum_{n=1}^{\\infty} \\sin(|a_n|)$$ 라. $$\\sum_{n=1}^{\\infty} |a_n||b_n|$$",
+          "가. $$\\sum_{n=1}^{\\infty} (a_n + b_n)$$ 나. $$\\sum_{n=1}^{\\infty} a_n^2$$ 다. $$\\sum_{n=1}^{\\infty} \\sin(|a_n|)$$ 라. $$\\sum_{n=1}^{\\infty} |a_n|b_n$$",
         ],
         choices: ["나, 다", "가, 나, 다", "가, 나, 라", "가, 나, 다, 라"],
         answer: "",
@@ -4144,7 +4144,7 @@ export const clcls3 = {
       {
         question: "다음 급수 중 수렴하는 것을 모두 고르면?",
         example:
-          "$$\\begin{aligned}\n&\\text{(ㄱ)}\\ \\sum_{n=1}^{\\infty} \\frac{n!}{e^n n^2} \\\\\n&\\text{(ㄴ)}\\ \\sum_{n=1}^{\\infty} \\left( \\frac{n}{n+1} \\right)^n \\\\\n&\\text{(ㄷ)}\\ \\sum_{n=1}^{\\infty} \\frac{2^n n^3}{n!}\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{(ㄱ)}\\ \\sum_{n=1}^{\\infty} \\frac{n!}{e^{n^2}} \\\\\n&\\text{(ㄴ)}\\ \\sum_{n=1}^{\\infty} \\left( \\frac{n}{n+1} \\right)^n \\\\\n&\\text{(ㄷ)}\\ \\sum_{n=1}^{\\infty} \\frac{2^n n^3}{n!}\n\\end{aligned}$$",
         choices: [
           "$$\\text{(ㄱ), (ㄴ)}$$",
           "$$\\text{(ㄱ), (ㄷ)}$$",
@@ -4192,11 +4192,11 @@ export const clcls3 = {
       },
       {
         question:
-          "멱급수$$\\sum_{n=0}^{\\infty} \\frac{n(2x + 4)^n}{6^n + 1}$$의 수렴구간은?",
+          "멱급수$$\\sum_{n=0}^{\\infty} \\frac{n(2x + 4)^n}{6^{n + 1}}$$의 수렴구간은?",
         choices: [
           "$$(-5, 1)$$",
           "$$[-5, 1]$$",
-          "$${-2}$$",
+          "$$\\{-2\\}$$",
           "$$(-8, 4)$$",
           "$$[-8, 4]$$",
         ],
@@ -4204,8 +4204,13 @@ export const clcls3 = {
       },
       {
         question: "다음 중 수렴하는 급수의 개수는?",
-        example:
-          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n} \\\\\n&\\text{ㄴ. } \\sum_{n=0}^{\\infty} \\frac{\\sin((n + 0.5)\\pi)}{2 + \\sqrt{2n}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{4n^2 + 10^5 n}{\\sqrt{2 + 10n^5}} \\\\\n&\\text{ㄹ. } \\sum_{n=0}^{\\infty} \\frac{1000^{1000^n}}{n!} \\\\\n&\\text{ㅁ. } \\sum_{n=3}^{\\infty} \\frac{(-1)^n n}{10^n}\n\\end{aligned}$$",
+        example: [
+          "$$\\text{ㄱ.}\\quad \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n}$$",
+          "$$\\text{ㄴ.}\\quad \\sum_{n=1}^{\\infty} \\frac{4n^2 + 10^5n}{\\sqrt{2+10n^5}}$$",
+          "$$\\text{ㄷ.}\\quad \\sum_{n=3}^{\\infty} \\frac{(-1)^n}{10^n n}$$",
+          "$$\\text{ㄹ.}\\quad \\sum_{n=0}^{\\infty} \\frac{\\sin((n+0.5)\\pi)}{2+\\sqrt[3]{2n}}$$",
+          "$$\\text{ㅁ.}\\quad \\sum_{n=0}^{\\infty} \\frac{n^{1000} 1000^n}{n!}$$",
+        ],
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
         answer: "",
       },
