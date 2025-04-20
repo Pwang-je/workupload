@@ -1,6 +1,281 @@
 export const clcls1 = {
   subject: "calculus1",
   questions: {
+    공식: [
+      {
+        question: "곱셈공식",
+        example: [
+          "$$\\text{1. } ~ a(x + y) =$$",
+          "$$\\text{2. } ~ (x \\pm y)^2 =$$",
+          "$$\\text{3. } ~ (x + y)(x - y) =$$",
+          "$$\\text{4. } ~ (x + a)(x + b) =$$",
+          "$$\\text{5. } ~ (ax + b)(cx + d) =$$",
+          "$$\\text{6. } ~ (x + y)^3 =$$",
+          "$$\\text{7. } ~ (x - y)^3 =$$",
+          "$$\\text{8. } ~ x^3 + y^3 =$$",
+          "$$\\text{9. } ~ x^3 - y^3 =$$",
+          "$$\\text{10. } ~ (x + y + z)^2 =$$",
+          "$$\\text{11. } ~ (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) =$$",
+          "$$\\text{12. } ~ x^2 + y^2 + z^2 - xy - yz - zx =$$",
+        ],
+      },
+      {
+        question: "이중근호",
+        example: [
+          "$$\\sqrt{a + b + 2\\sqrt{ab}} =$$",
+          "$$\\sqrt{a + b - 2\\sqrt{ab}} =$$",
+        ],
+      },
+      {
+        question: "지수법칙",
+        example: [
+          "$$\\text{1. } ~ x^0 =$$",
+          "$$\\text{2. } ~ x^{-n} =$$",
+          "$$\\text{3. } ~ x^m \\times x^n =$$",
+          "$$\\text{4. } ~ \\frac{x^m}{x^n} =$$",
+          "$$\\text{5. } ~ (x^m)^n =$$",
+          "$$\\text{6. } ~ (xy)^m =~~~~~~~~~~~~~~~~~~~~$$ , $$\\left(\\frac{y}{x}\\right)^m =$$",
+          "$$\\text{7. } ~ x^{\\frac{1}{m}} =~~~~~~~~~~~~~~~$$ , $$x^{\\frac{n}{m}} = ( ~~~~~~~~~~ )^n = \\sqrt[m]{ ~~~~~~~~~~ } = ( ~~~~~~~~~~ )^{\\frac{1}{m}}$$",
+        ],
+      },
+      {
+        question: "로그의 성질",
+        example: [
+          "$$\\text{1. } ~ \\log_a a =$$ , $$\\log_a 1 =$$",
+          "$$\\text{2. } ~ \\log_a M^n =$$",
+          "$$\\text{3. } ~ \\log_a (M \\times N) =$$",
+          "$$\\text{4. } ~ \\log_a (M \\div N) =$$",
+          "$$\\text{5. } ~ \\log_a x =$$",
+          "$$\\text{6. } ~ a^{\\log_a x} =$$",
+        ],
+      },
+      {
+        question: "삼각함수의 기본공식",
+        example: [
+          "$$\\text{1. } ~ \\sin^2 \\theta + \\cos^2 \\theta =$$",
+          "$$\\text{2. } ~ 1 + \\tan^2 \\theta =$$",
+          "$$\\text{3. } ~ 1 + \\cot^2 \\theta =$$",
+        ],
+      },
+      {
+        question: "특수 예각의 삼각비의 값",
+        example: [
+          `$$
+          \\begin{array}{|c|c|c|c|c|c|}
+          \\hline
+          & 0^\\circ\\ (0) & 30^\\circ\\ \\left(\\frac{\\pi}{6}\\right) & 45^\\circ\\ \\left(\\frac{\\pi}{4}\\right) & 60^\\circ\\ \\left(\\frac{\\pi}{3}\\right) & 90^\\circ\\ \\left(\\frac{\\pi}{2}\\right) \\\\ \\hline
+          \\sin \\theta &  &  &  &  &  \\\\ \\hline
+          \\cos \\theta &  &  &  &  &  \\\\ \\hline
+          \\tan \\theta &  &  &  &  &  \\\\ \\hline
+          \\end{array}
+          $$`,
+        ],
+      },
+      {
+        question: "삼각함수의 합성",
+        example: [
+          "$$a \\sin A + b \\cos A$$ 의 최댓값 : $$~~~~~~~~~~~~~~~~~~~$$, 최솟값 : $$~~~~~~~~~~~~~~~~~~~$$",
+        ],
+      },
+      {
+        question: "삼각함수의 가법정리",
+        example: [
+          "$$\\text{1. } ~ \\sin(A + B) =$$",
+          "$$\\text{2. } ~ \\sin(A - B) =$$",
+          "$$\\text{3. } ~ \\cos(A + B) =$$",
+          "$$\\text{4. } ~ \\cos(A - B) =$$",
+          "$$\\text{5. } ~ \\tan(A + B) =$$",
+          "$$\\text{6. } ~ \\tan(A - B) =$$",
+        ],
+      },
+      {
+        question: "삼각함수의 합차공식",
+        example: [
+          "$$\\text{1. } ~ \\sin(A + B) + \\sin(A - B) =$$",
+          "$$\\text{2. } ~ \\sin(A + B) - \\sin(A - B) =$$",
+          "$$\\text{3. } ~ \\cos(A + B) + \\cos(A - B) =$$",
+          "$$\\text{4. } ~ \\cos(A + B) - \\cos(A - B) =$$",
+        ],
+      },
+      {
+        question: "삼각함수의 2배각 공식",
+        example: [
+          "$$\\sin 2A =$$",
+          "$$\\cos 2A = ~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~ = $$",
+          "$$\\tan 2A =$$",
+        ],
+      },
+      {
+        question: "삼각함수의 반각 공식",
+        example: [
+          "$$\\text{1. } ~ \\sin^2 \\frac{A}{2} =$$",
+          "$$\\text{2. } ~ \\cos^2 \\frac{A}{2} =$$",
+          "$$\\text{3. } ~ \\tan^2 \\frac{A}{2} =$$",
+        ],
+      },
+      {
+        question: "역삼각함수의 성질",
+        example: [
+          "$$\\text{1. } ~ \\sin^{-1} x + \\cos^{-1} x =$$",
+          "$$\\text{2. } ~ \\cos^{-1} x + \\cos^{-1}(-x) =$$",
+          "$$\\text{3. } ~ \\tan^{-1} x + \\cot^{-1} x =$$",
+          "$$\\text{4. } ~ \\sec^{-1} x + \\csc^{-1} x =$$",
+        ],
+      },
+      {
+        question: "삼각함수와 역삼각함수의 주치범위",
+        example: [
+          `$$
+          \\begin{array}{c|c}            
+            \\sin^{-1}(\\sin x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &\\sin(\\sin^{-1} x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\
+            \\hline
+            \\cos^{-1}(\\cos x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &\\cos(\\cos^{-1} x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\
+            \\hline
+            \\tan^{-1}(\\tan x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ &\\tan(\\tan^{-1} x) = x & ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
+          \\end{array}
+          $$`,
+        ],
+      },
+      {
+        question: "쌍곡선함수",
+        example: [
+          "$$\\text{1. } ~ \\sinh A =$$",
+          "$$\\text{2. } ~ \\cosh A =$$",
+          "$$\\text{3. } ~ \\tanh A =$$",
+          "$$\\text{4. } ~ \\coth A =$$",
+          "$$\\text{5. } ~ \\operatorname{sech} A =$$",
+          "$$\\text{6. } ~ \\operatorname{csch} A =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수의 기본공식",
+        example: [
+          "$$\\text{1. } ~ \\cosh^2 A - \\sinh^2 A =$$",
+          "$$\\text{2. } ~ 1 - \\tanh^2 A =$$",
+          "$$\\text{3. } ~ 1 - \\coth^2 A =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수의 가법정리",
+        example: [
+          "$$\\text{1. } ~ \\sinh(A + B) =$$",
+          "$$\\text{2. } ~ \\sinh(A - B) =$$",
+          "$$\\text{3. } ~ \\cosh(A + B) =$$",
+          "$$\\text{4. } ~ \\cosh(A - B) =$$",
+          "$$\\text{5. } ~ \\tanh(A + B) =$$",
+          "$$\\text{6. } ~ \\tanh(A - B) =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수의 배각공식",
+        example: [
+          "$$\\text{1. } ~ \\sinh 2A =$$",
+          "$$\\text{2. } ~ \\cosh 2A = ~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~ = $$",
+          "$$\\text{3. } ~ \\tanh 2A =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수의 반각공식",
+        example: [
+          "$$\\text{1. } ~ \\sinh^2 \\frac{A}{2} =$$ , $$\\sinh^2 A =$$",
+          "$$\\text{2. } ~ \\cosh^2 \\frac{A}{2} =$$ , $$\\cosh^2 A =$$",
+          "$$\\text{3. } ~ \\tanh^2 \\frac{A}{2} =$$ , $$\\tanh^2 A =$$",
+        ],
+      },
+      {
+        question: "역쌍곡선함수의 정의",
+        example: [
+          "$$\\text{1. } ~ \\sinh^{-1} A =$$",
+          "$$\\text{2. } ~ \\cosh^{-1} A =$$",
+          "$$\\text{3. } ~ \\tanh^{-1} A =$$",
+          "$$\\text{4. } ~ \\coth^{-1} A =$$",
+          "$$\\text{5. } ~ \\operatorname{sech}^{-1} A =$$",
+          "$$\\text{6. } ~ \\operatorname{csch}^{-1} A =$$",
+        ],
+      },
+      {
+        question: "삼각함수 미분공식",
+        example: [
+          "$$\\text{1. } ~ \\frac{d}{dx}(\\sin x) =$$",
+          "$$\\text{2. } ~ \\frac{d}{dx}(\\cos x) =$$",
+          "$$\\text{3. } ~ \\frac{d}{dx}(\\tan x) =$$",
+          "$$\\text{4. } ~ \\frac{d}{dx}(\\csc x) =$$",
+          "$$\\text{5. } ~ \\frac{d}{dx}(\\sec x) =$$",
+          "$$\\text{6. } ~ \\frac{d}{dx}(\\cot x) =$$",
+        ],
+      },
+      {
+        question: "역삼각함수 미분공식",
+        example: [
+          "$$\\text{1. } ~ \\frac{d}{dx}(\\sin^{-1} x) =$$",
+          "$$\\text{2. } ~ \\frac{d}{dx}(\\cos^{-1} x) =$$",
+          "$$\\text{3. } ~ \\frac{d}{dx}(\\tan^{-1} x) =$$",
+          "$$\\text{4. } ~ \\frac{d}{dx}(\\csc^{-1} x) =$$",
+          "$$\\text{5. } ~ \\frac{d}{dx}(\\sec^{-1} x) =$$",
+          "$$\\text{6. } ~ \\frac{d}{dx}(\\cot^{-1} x) =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수 미분공식",
+        example: [
+          "$$\\text{1. } ~ \\frac{d}{dx}(\\sinh x) =$$",
+          "$$\\text{2. } ~ \\frac{d}{dx}(\\cosh x) =$$",
+          "$$\\text{3. } ~ \\frac{d}{dx}(\\tanh x) =$$",
+          "$$\\text{4. } ~ \\frac{d}{dx}(\\operatorname{csch} x) =$$",
+          "$$\\text{5. } ~ \\frac{d}{dx}(\\operatorname{sech} x) =$$",
+          "$$\\text{6. } ~ \\frac{d}{dx}(\\coth x) =$$",
+        ],
+      },
+      {
+        question: "역쌍곡선함수 미분공식",
+        example: [
+          "$$\\text{1. } ~ \\frac{d}{dx}(\\sinh^{-1} x) =$$",
+          "$$\\text{2. } ~ \\frac{d}{dx}(\\cosh^{-1} x) =$$",
+          "$$\\text{3. } ~ \\frac{d}{dx}(\\tanh^{-1} x) =$$",
+          "$$\\text{4. } ~ \\frac{d}{dx}(\\operatorname{csch}^{-1} x) =$$",
+          "$$\\text{5. } ~ \\frac{d}{dx}(\\operatorname{sech}^{-1} x) =$$",
+          "$$\\text{6. } ~ \\frac{d}{dx}(\\coth^{-1} x) =$$",
+        ],
+      },
+      {
+        question: "지수함수 & 로그함수 미분공식",
+        example: [
+          "$$\\text{1. } ~ \\frac{d}{dx}(e^x) =$$",
+          "$$\\text{2. } ~ \\frac{d}{dx}(a^x) =$$",
+          "$$\\text{3. } ~ \\frac{d}{dx}\\ln|x| =$$",
+          "$$\\text{4. } ~ \\frac{d}{dx}(\\log_a x) =$$",
+        ],
+      },
+      {
+        question: "곱의 미분법",
+        example: ["$$y = f(x) \\cdot g(x) \\Rightarrow y' =$$"],
+      },
+      {
+        question: "분수함수의 미분법",
+        example: ["$$y = \\frac{g(x)}{f(x)} =$$"],
+      },
+      {
+        question: "이항정리",
+        example: [
+          "$$(a + b)^n = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = \\sum_{r=0}^{n}$$",
+        ],
+      },
+      {
+        question: "라이프니츠의 정리",
+        example: [
+          "$$(fg)^{(n)} = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = \\sum_{r=0}^{n}$$",
+        ],
+      },
+      {
+        question: "이항계수의 합",
+        example: [
+          "$$_n\\mathrm{C}_0 + _n\\mathrm{C}_1 + \\cdots + _n\\mathrm{C}_n =$$",
+          "$$_n\\mathrm{C}_0 + _n\\mathrm{C}_2 + \\cdots + _n\\mathrm{C}_{n-2} + _n\\mathrm{C}_n =$$",
+          "$$_n\\mathrm{C}_1 + _n\\mathrm{C}_3 + \\cdots + _n\\mathrm{C}_{n-1} =$$",
+        ],
+      },
+    ],
+
     6: [
       {
         question:

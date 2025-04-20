@@ -16,6 +16,7 @@ const subjects = {
 // 단원별 범위 설정
 const chapters = {
   calculus1: [
+    { name: "공식", start: "공식", end: "공식" },
     { name: "기초수학", start: 6, end: 33 },
     { name: "삼각함수와 쌍곡선함수", start: 42, end: 63 },
     { name: "여러 가지 함수의 미분법", start: 69, end: 100 },
@@ -37,7 +38,6 @@ const chapters = {
   ],
 };
 
-// Fisher–Yates 셔플 함수
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -45,7 +45,6 @@ function shuffle(array) {
   }
 }
 
-// 선지 레이아웃 결정 함수 (기존 그대로)
 function choiceLayoutClass(question) {
   const plainLengths = question.choices.map((c) =>
     typeof c === "string" ? c.replace(/<[^>]+>/g, "") : ""
@@ -64,7 +63,6 @@ function choiceLayoutClass(question) {
   return "grid-cols-2";
 }
 
-// 상태 관리 변수
 const selectedSubjects = ref([]);
 const selectedChapters = reactive({
   calculus1: [],
@@ -82,19 +80,17 @@ const subjectCounts = ref({});
 const router = useRouter();
 const pdfContent = ref(null);
 
-// 각 과목의 페이지 옵션 계산
 const pageOptions = computed(() => {
   const result = {};
   for (const key in subjects) {
     const pages = Object.keys(subjects[key].data.questions)
-      .map((p) => parseInt(p))
-      .sort((a, b) => a - b);
+      .map((p) => (isNaN(p) ? p : parseInt(p)))
+      .sort((a, b) => (isNaN(a) ? 1 : a - b));
     result[key] = pages;
   }
   return result;
 });
 
-// 문제 랜덤 추출 (셔플 적용)
 function getRandomQuestions() {
   const totalSubjects = selectedSubjects.value.length;
   const totalQuestions = questionCount.value;
@@ -117,22 +113,29 @@ function getRandomQuestions() {
     const chapterList = chapters[subjectKey];
     const selectedChapterNames = selectedChapters[subjectKey];
 
-    // 풀(pool) 구성
     const pool = [];
     Object.entries(data).forEach(([page, list]) => {
       const pageNum = parseInt(page);
+      const isFormulaPage = page === "공식";
+
       let inRange =
-        (range.min === null || pageNum >= range.min) &&
-        (range.max === null || pageNum <= range.max);
+        isFormulaPage ||
+        ((range.min === null || pageNum >= range.min) &&
+          (range.max === null || pageNum <= range.max));
 
       if (selectedChapterNames.length > 0 && chapterList) {
-        const included = chapterList.some(
-          (ch) =>
+        const included = chapterList.some((ch) => {
+          const isFormulaChapter = ch.name === "공식";
+          return (
             selectedChapterNames.includes(ch.name) &&
-            pageNum >= ch.start &&
-            pageNum <= ch.end
-        );
+            (page === "공식"
+              ? isFormulaChapter
+              : pageNum >= ch.start && pageNum <= ch.end)
+          );
+        });
         inRange = inRange && included;
+      } else if (isFormulaPage) {
+        inRange = true;
       }
 
       if (inRange) {
@@ -148,7 +151,6 @@ function getRandomQuestions() {
       }
     });
 
-    // 셔플 후 선택
     const poolCopy = [...pool];
     shuffle(poolCopy);
 
@@ -164,7 +166,6 @@ function getRandomQuestions() {
   subjectCounts.value = counts;
 }
 
-// 예제 배열 포맷팅 함수 (기존 그대로)
 function formatExampleArray(example) {
   const normalizeExample = (example) => {
     let lines = [];
@@ -180,7 +181,7 @@ function formatExampleArray(example) {
           if (textMatch) {
             const label = textMatch[1].trim();
             const content = textMatch[2].trim();
-            return `${label} $$${content}$$`;
+            return `${label} $${content}$`;
           } else {
             return str.trim();
           }
@@ -265,7 +266,6 @@ function formatExampleArray(example) {
   return renderMultiRow(items, 4);
 }
 
-// 프린트 페이지로 이동
 function openPrintView() {
   sessionStorage.setItem(
     "printQuestions",
@@ -275,7 +275,6 @@ function openPrintView() {
   router.push("/printview");
 }
 
-// 수식 렌더링
 function renderMath() {
   nextTick(() => {
     if (window.MathJax?.typesetPromise) {
