@@ -462,7 +462,7 @@ watch(selectedQuestions, renderMath);
 
       <ul
         v-if="question.choices.length"
-        class="mb-3 grid gap-4 text-sm"
+        class="mb-3 grid gap-4 text-sm grid-cols-2"
         :class="choiceLayoutClass(question)"
       >
         <li
