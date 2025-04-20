@@ -4279,7 +4279,10 @@ export const clcls3 = {
       {
         question: "다음 <보기> 중 수렴하는 급수의 개수는?",
         example: [
-          "\\(\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{7n + 1}{n\\sqrt{n}}\\) \\(\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n \\sqrt{n}}\\) \\(\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{3}{n \\sqrt{2\\ln n + 3}}\\) \\(\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\arcsin\\left(\\frac{1}{n\\sqrt{n}}\\right)\\)",
+          "$$\\text{ㄱ.}\\sum_{n=1}^{\\infty} (-1)^{n+1} \\frac{7n+1}{n\\sqrt{n}}$$",
+          "$$\\text{ㄴ.}\\sum_{n=1}^{\\infty} \\frac{\\ln n}{n\\sqrt{n}}$$",
+          "$$\\text{ㄷ.}\\sum_{n=2}^{\\infty} \\frac{3}{n\\sqrt{2\\ln n + 3}}$$",
+          "$$\\text{ㄹ.}\\sum_{n=1}^{\\infty} \\arcsin \\left( \\frac{1}{n\\sqrt{n}} \\right)$$",
         ],
         choices: [
           "$$\\text{1개}$$",
