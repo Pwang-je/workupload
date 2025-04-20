@@ -4260,11 +4260,11 @@ export const clcls3 = {
         question:
           "무한급수$$\\sum_{n=1}^{\\infty} a_n$$의 수렴·발산에 대한 다음 설명 중 옳은 것은?",
         choices: [
-          "모든$$n$$에 대해$$a_n \\leq b_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$",
-          "모든$$n$$에 대해$$b_n \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$",
-          "모든$$n$$에 대해$$b_n \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$",
-          "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$",
-          "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 발산하면$$\\sum_{n=1}^{\\infty} a_n$$",
+          "모든$$n$$에 대해$$a_n \\leq b_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$은 수렴한다.",
+          "모든$$n$$에 대해$$b_n \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$은 수렴한다.",
+          "모든$$n$$에 대해$$b_n \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$은 발산한다.",
+          "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$은 수렴한다.",
+          "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 발산하면$$\\sum_{n=1}^{\\infty} a_n$$은 발산한다.",
         ],
         answer: "",
       },
@@ -4331,7 +4331,7 @@ export const clcls3 = {
       },
       {
         question:
-          "멱급수$$\\sum_{n=0}^{\\infty} \\frac{(-1)^n (x - 3)^n}{n + 1}$$의 수렴구간은?",
+          "멱급수$$\\sum_{n=0}^{\\infty} \\frac{(-1)^n}{n+1} (x-3)^n$$ 의 수렴구간은?",
         choices: [
           "$$(1, 5)$$",
           "$$[1, 5)$$",
@@ -4397,9 +4397,9 @@ export const clcls3 = {
         question: "다음 급수들 중 조건부 수렴하는 것은?",
         choices: [
           "$$\\sum_{n=1}^{\\infty} (-1)^n \\left( \\frac{2}{3} \\right)^n$$",
-          "$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{e^n}{n^3}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n e^\\frac{1}{n}}{n^3}$$",
           "$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{2^n}{n^2}$$",
-          "$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\tan^{-1} n}{n^2}$$",
+          "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n \\tan^{-1} n}{n^2}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\ln(n + 1)}$$",
         ],
         answer: "",
@@ -4438,14 +4438,14 @@ export const clcls3 = {
       {
         question: "〈보기〉에서 수렴하는 급수만을 있는 대로 고른 것은?",
         example:
-          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\frac{1}{n (\\ln n)^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{1 + (\\ln n)^2} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\ln(n+1)} \\sin \\left( \\frac{1}{n^2} \\right)\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\frac{1}{n (\\ln n)^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{1 + (\\ln n)^2} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\ln(n+1)} \\sin \\frac{1}{n^2} \n\\end{aligned}$$",
         choices: ["ㄱ", "ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
         answer: "",
       },
       {
         question: "다음 급수들 중 발산하는 것은 모두 몇 개인가?",
         example:
-          "$$\\begin{aligned}\n&\\text{a. } \\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n} \\\\\n&\\text{b. } \\sum_{n=1}^{\\infty} \\frac{n!}{3^n - 1} \\\\\n&\\text{c. } \\sum_{n=0}^{\\infty} \\frac{x}{1 + x^n} \\quad (0 < x < 1) \\\\\n&\\text{d. } \\sum_{n=2}^{\\infty} \\frac{(-1)^n}{\\ln n}\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{a. } \\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n} \\\\\n&\\text{b. } \\sum_{n=1}^{\\infty} \\frac{n!}{3^{n-1}} \\\\\n&\\text{c. } \\sum_{n=0}^{\\infty} \\frac{x}{1 + x^n} \\quad (0 < x < 1) \\\\\n&\\text{d. } \\sum_{n=2}^{\\infty} \\frac{(-1)^n}{\\ln n}\n\\end{aligned}$$",
         choices: ["0개", "1개", "2개", "3개", "4개"],
         answer: "",
       },
@@ -4535,7 +4535,7 @@ export const clcls3 = {
       {
         question: "다음 급수 중 수렴하는 것을 모두 고르면?",
         example:
-          "$$\\begin{aligned}&\\text{(a) } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n} \\\\&\\text{(b) } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\cdot \\sin\\left( \\frac{1}{n} \\right) \\\\&\\text{(c) } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\cdot \\sin\\left( \\arctan\\left( \\frac{1}{n} \\right) \\right)\\end{aligned}$$",
+          "$$\\begin{aligned}&\\text{(a) } \\sum_{n=1}^{\\infty} \\frac{\\ln n}{n} \\\\&\\text{(b) } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin\\left( \\frac{1}{n} \\right) \\\\&\\text{(c) } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin\\left( \\arctan\\left( \\frac{1}{n} \\right) \\right)\\end{aligned}$$",
         choices: [
           "$$(a)$$",
           "$$(b)$$",
@@ -4557,7 +4557,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{(x - 3)^n}{n}$$",
           "$$\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{2^n (n!)^2}$$",
           "$$\\sum_{n=0}^{\\infty} x^n$$",
-          "$$\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n + 1}}{2n + 1}$$",
+          "$$\\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n + 1}}{2n + 1}$$",
           "$$\\sum_{n=1}^{\\infty} (-1)^{n - 1} \\frac{x^n}{n}$$",
         ],
         answer: "",
@@ -4572,7 +4572,7 @@ export const clcls3 = {
           "$$(-1, 5]$$",
           "$$(-\\infty, \\infty)$$",
           "$$\\left(\\frac{5}{3}, \\frac{7}{3}\\right)$$",
-          "$$\\left[\\frac{5}{3}, \\frac{7}{3}\\right)$$",
+          "$$\\left(\\frac{5}{3}, \\frac{7}{3}\\right]$$",
         ],
         answer: "",
       },
@@ -4580,14 +4580,14 @@ export const clcls3 = {
         question:
           "다음 〈보기〉의 급수 중에서 수렴하는 것만을 있는 대로 고른 것은?",
         example:
-          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\left( \\frac{n}{n - 1} \\right)^{n^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin\\left( \\frac{1}{\\sqrt{n}} \\right) \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{\\ln n}{n}\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\left( \\frac{n}{n - 1} \\right)^{n^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin \\frac{1}{\\sqrt{n}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{\\ln n}{n}\n\\end{aligned}$$",
         choices: ["ㄱ", "ㄷ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
         answer: "",
       },
       {
         question: "다음 중 발산하는 급수를 모두 고른 것은?",
         example:
-          "$$\\begin{aligned}\n&\\text{(가) } \\sum_{n=1}^{\\infty} \\frac{4}{\\pi^n} \\\\\n&\\text{(나) } \\sum_{n=1}^{\\infty} \\frac{4}{\\pi^n} \\\\\n&\\text{(다) } \\sum_{n=1}^{\\infty} \\frac{1 + \\cos \\frac{n\\pi}{2}}{e^n} \\\\\n&\\text{(라) } \\sum_{n=1}^{\\infty} \\frac{e^n}{n^2}\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{(가) } \\sum_{n=1}^{\\infty} \\frac{4}{\\pi^n} \\\\\n&\\text{(나) } \\sum_{n=1}^{\\infty} \\frac{2}{4+e^{-n}} \\\\\n&\\text{(다) } \\sum_{n=1}^{\\infty} \\frac{1 + \\cos \\frac{n\\pi}{2}}{e^n} \\\\\n&\\text{(라) } \\sum_{n=1}^{\\infty} \\frac{e^n}{n^2}\n\\end{aligned}$$",
         choices: ["가, 나", "나, 라", "다, 라", "라"],
         answer: "",
       },
@@ -4613,7 +4613,7 @@ export const clcls3 = {
       },
       {
         question:
-          "$$c > 0$$일 때, 멱급수$$1 + \\sum_{n=1}^{\\infty} \\frac{\\binom{2n}{n} (-3)_n}{n! (c)_n} \\left( \\frac{x}{2} \\right)^{2n}$$의 수렴 반경을 구하면? (단, 임의의 실수$$a$$에 대하여$$(a)_n = a(a + 1)(a + 2) \\dots (a + n - 1)$$으로 정의한다.)",
+          "$$c > 0$$일 때, 멱급수$$1 + \\sum_{n=1}^{\\infty} \\frac{(2)_n (-3)_n}{n! (c)_n} \\left( \\frac{x}{2} \\right)^{2n}$$의 수렴 반경을 구하면? (단, 임의의 실수$$a$$에 대하여$$(a)_n = a(a + 1)(a + 2) \\dots (a + n - 1)$$으로 정의한다.)",
         choices: ["$$2$$", "$$3c$$", "$$6c$$", "$$+\\infty$$"],
         answer: "",
       },
@@ -4633,7 +4633,7 @@ export const clcls3 = {
       },
       {
         question:
-          "모든 항이 양수인 수열$$(n^2 a_n)$$이$$1$$로 수렴할 때,$$\\sum_{n=1}^{\\infty} (a_n)^p$$이 수렴하는 실수$$p$$만 있는 것은?",
+          "모든 항이 양수인 수열$$\\{n^2 a_n\\}$$이$$1$$로 수렴할 때,$$\\sum_{n=1}^{\\infty} (a_n)^p$$이 수렴하는 실수$$p$$만 있는 것은?",
         choices: [
           "$$-1$$",
           "$$-1, 1$$",
@@ -4681,7 +4681,7 @@ export const clcls3 = {
       {
         question: "다음 중 옳은 것을 모두 고르면?",
         example:
-          "$$\\begin{aligned}\n&\\text{㉠ 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 이 수렴하면 } \\lim_{n \\to \\infty} a_n = 0 \\text{ 이다.} \\\\\n&\\text{㉡ 급수 } \\sum_{n=1}^{\\infty} n \\cdot \\frac{2}{3^n} \\text{ 는 수렴한다.} \\\\\n&\\text{㉢ 두 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 과 } \\sum_{n=1}^{\\infty} b_n \\text{ 에 대하여 } \\lim_{n \\to \\infty} \\frac{a_n}{b_n} = 0 \\text{ 이고 } \\sum_{n=1}^{\\infty} b_n \\text{ 이 발산하면 } \\sum_{n=1}^{\\infty} a_n \\text{ 도 발산한다.}\n\\end{aligned}$$",
+          "$$\\begin{aligned}\n&\\text{㉠ 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 이 수렴하면 } \\lim_{n \\to \\infty} a_n = 0 \\text{ 이다.} \\\\\n&\\text{㉡ 급수 } \\sum_{n=1}^{\\infty} n^{-\\frac{2}{3}} \\text{ 는 수렴한다.} \\\\\n&\\text{㉢ 두 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 과 } \\sum_{n=1}^{\\infty} b_n \\text{ 에 대하여 } \\lim_{n \\to \\infty} \\frac{a_n}{b_n} = 0 \\text{ 이고 } \\sum_{n=1}^{\\infty} b_n \\text{ 이 발산하면 } \\sum_{n=1}^{\\infty} a_n \\text{ 도 발산한다.}\n\\end{aligned}$$",
         choices: [" ㉠", " ㉡", " ㉢", " ㉡, ㉢", " ㉠, ㉢"],
         answer: "",
       },
