@@ -114,31 +114,47 @@ function getRandomQuestions() {
     const selectedChapterNames = selectedChapters[subjectKey];
 
     const pool = [];
+
     Object.entries(data).forEach(([page, list]) => {
       const pageNum = parseInt(page);
       const isFormulaPage = page === "공식";
 
-      let inRange =
-        isFormulaPage ||
-        ((range.min === null || pageNum >= range.min) &&
-          (range.max === null || pageNum <= range.max));
+      const hasPageRange = range.min !== null || range.max !== null;
+      const hasSelectedChapters = selectedChapterNames.length > 0;
 
-      if (selectedChapterNames.length > 0 && chapterList) {
-        const included = chapterList.some((ch) => {
-          const isFormulaChapter = ch.name === "공식";
-          return (
-            selectedChapterNames.includes(ch.name) &&
-            (page === "공식"
-              ? isFormulaChapter
-              : pageNum >= ch.start && pageNum <= ch.end)
-          );
-        });
-        inRange = inRange && included;
-      } else if (isFormulaPage) {
-        inRange = true;
+      let includePage = false;
+
+      if (isFormulaPage) {
+        if (!hasPageRange) {
+          // 페이지 범위 설정이 없을 경우 공식 포함
+          includePage = true;
+        } else {
+          // 페이지 범위가 설정되어 있으면 공식 단원 체크된 경우에만
+          includePage = selectedChapterNames.includes("공식");
+        }
+      } else {
+        // 숫자 페이지
+        const inPageRange =
+          (range.min === null || pageNum >= range.min) &&
+          (range.max === null || pageNum <= range.max);
+
+        if (hasSelectedChapters) {
+          // 단원별로 포함되는지 확인
+          const included = chapterList.some((ch) => {
+            return (
+              selectedChapterNames.includes(ch.name) &&
+              pageNum >= ch.start &&
+              pageNum <= ch.end
+            );
+          });
+          includePage = inPageRange && included;
+        } else {
+          // 단원 선택 없으면 범위만 따짐
+          includePage = inPageRange;
+        }
       }
 
-      if (inRange) {
+      if (includePage) {
         list.forEach((q) => {
           pool.push({
             subject: subjects[subjectKey].name,
@@ -162,7 +178,7 @@ function getRandomQuestions() {
     counts[subjects[subjectKey].name] = chosen.length;
   });
 
-  // 🟡 전체 문제를 한 번 더 셔플!
+  // 전체 랜덤 셔플
   shuffle(selected);
 
   selectedQuestions.value = selected;
