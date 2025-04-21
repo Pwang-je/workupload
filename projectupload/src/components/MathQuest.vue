@@ -162,6 +162,9 @@ function getRandomQuestions() {
     counts[subjects[subjectKey].name] = chosen.length;
   });
 
+  // 🟡 전체 문제를 한 번 더 셔플!
+  shuffle(selected);
+
   selectedQuestions.value = selected;
   subjectCounts.value = counts;
 }
