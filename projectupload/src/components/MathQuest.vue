@@ -115,31 +115,30 @@ function getRandomQuestions() {
 
     const pool = [];
 
+    const isValidNumber = (val) => typeof val === "number" && !isNaN(val);
+    const hasPageRange = isValidNumber(range.min) || isValidNumber(range.max);
+    const hasSelectedChapters = selectedChapterNames.length > 0;
+
     Object.entries(data).forEach(([page, list]) => {
-      const pageNum = parseInt(page);
-      const isFormulaPage = page === "공식";
-
-      const hasPageRange = range.min !== null || range.max !== null;
-      const hasSelectedChapters = selectedChapterNames.length > 0;
-
+      const trimmedPage = page.trim();
+      const isFormulaPage = trimmedPage === "공식";
+      const pageNum = parseInt(trimmedPage);
       let includePage = false;
 
       if (isFormulaPage) {
-        if (!hasPageRange) {
-          // 페이지 범위 설정이 없을 경우 공식 포함
-          includePage = true;
-        } else {
-          // 페이지 범위가 설정되어 있으면 공식 단원 체크된 경우에만
+        if (hasPageRange) {
           includePage = selectedChapterNames.includes("공식");
+        } else if (hasSelectedChapters) {
+          includePage = selectedChapterNames.includes("공식");
+        } else {
+          includePage = true;
         }
       } else {
-        // 숫자 페이지
         const inPageRange =
-          (range.min === null || pageNum >= range.min) &&
-          (range.max === null || pageNum <= range.max);
+          (!isValidNumber(range.min) || pageNum >= range.min) &&
+          (!isValidNumber(range.max) || pageNum <= range.max);
 
         if (hasSelectedChapters) {
-          // 단원별로 포함되는지 확인
           const included = chapterList.some((ch) => {
             return (
               selectedChapterNames.includes(ch.name) &&
@@ -149,7 +148,6 @@ function getRandomQuestions() {
           });
           includePage = inPageRange && included;
         } else {
-          // 단원 선택 없으면 범위만 따짐
           includePage = inPageRange;
         }
       }
@@ -158,7 +156,7 @@ function getRandomQuestions() {
         list.forEach((q) => {
           pool.push({
             subject: subjects[subjectKey].name,
-            page,
+            page: trimmedPage,
             question: q.question,
             choices: q.choices || [],
             example: q.example || "",
@@ -167,7 +165,7 @@ function getRandomQuestions() {
       }
     });
 
-    const poolCopy = [...pool];
+    const poolCopy = [...pool]; // ✅ 원본 보존
     shuffle(poolCopy);
 
     let count = perSubjectCount;
@@ -178,7 +176,6 @@ function getRandomQuestions() {
     counts[subjects[subjectKey].name] = chosen.length;
   });
 
-  // 전체 랜덤 셔플
   shuffle(selected);
 
   selectedQuestions.value = selected;
