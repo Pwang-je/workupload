@@ -2720,7 +2720,7 @@ export const clcls2 = {
       },
       {
         question:
-          "정적분 $$\\int_{\\frac{1}{2}}^{1} \\frac{1}{\\sqrt{x}} - 1 \\, dx$$ 의 값을 구하면?",
+          "정적분 $$\\int_{\\frac{1}{2}}^{1} \\sqrt{\\frac{1}{x}- 1} \\, dx$$ 의 값을 구하면?",
         choices: [
           "$$\\frac{\\pi}{4} - \\frac{1}{2}$$",
           "$$\\frac{\\pi}{3} - \\frac{1}{2}$$",
