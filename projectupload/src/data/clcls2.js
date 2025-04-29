@@ -667,7 +667,7 @@ export const clcls2 = {
       {
         question:
           "$$f(x) > 0$$이며 $$\\lim_{{x \\to \\infty}} f(x) = 0$$일 때, $$\\lim_{{x \\to -\\infty}} \\left[1 + 2f(x)\\right]^\\frac{1}{3f(x)}$$ 의 값은?",
-        choices: ["$$e^2$$", "$$\\frac{2}{e^3}$$", "$$e^3$$", "$$1$$"],
+        choices: ["$$e^2$$", "$$e^\\frac{2}{3}$$", "$$e^3$$", "$$1$$"],
         answer: "",
       },
       {
