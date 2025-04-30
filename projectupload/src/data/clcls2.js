@@ -1,6 +1,158 @@
 export const clcls2 = {
   subject: "calculus2",
   questions: {
+    공식: [
+      {
+        question: "함수 형태 암기",
+        example: [
+          "$$\\lim_{x \\to \\infty} x^{\\frac{1}{x}} =$$",
+          "$$\\lim_{x \\to 0^+} x^{\\frac{1}{x}} =$$",
+          "$$\\lim_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x =$$",
+          "$$\\lim_{x \\to \\infty} f(x) = 0 \\text{일 때, } \\lim_{x \\to \\infty} \\left(1 + f(x)\\right)^{\\frac{1}{f(x)}} =$$",
+          "$$\\lim_{x \\to \\infty} \\left(1 \\pm \\frac{c}{ax \\pm b}\\right)^{\\pm dx \\pm e} =$$",
+          "$$\\lim_{x \\to 0} \\left(e^{ax} + \\sin bx\\right)^{\\frac{1}{x}} =$$",
+          "$$a < b < c \\text{일 때, } \\lim_{n \\to \\infty} (a^n + b^n + c^n)^{\\frac{1}{n}} =$$",
+        ],
+      },
+      {
+        question: "매클로린 급수 공식",
+        example: [
+          "$$e^x =$$",
+          "$$\\sin x =$$",
+          "$$\\cos x =$$",
+          "$$\\tan x =$$",
+          "$$\\tan^{-1} x =$$",
+          "$$\\sin^{-1} x =$$",
+          "$$\\ln(1 + x) =$$",
+          "$$\\ln(1 - x) =$$",
+          "$$-\\ln(1 - x) =$$",
+          "$$(1 + x)^p =$$",
+        ],
+      },
+      {
+        question: "다항함수, 지수함수, 로그함수",
+        example: [
+          "$$\\int x^n \\, dx =$$",
+          "$$\\int \\ln x \\, dx =$$",
+          "$$\\int x^n \\ln x \\, dx =$$",
+          "$$\\int \\frac{1}{x} \\, dx =$$",
+          "$$\\int \\frac{1}{x^2} \\, dx =$$",
+          "$$\\int e^x \\, dx =$$",
+          "$$\\int a^x \\, dx =$$",
+          "$$\\int \\frac{f'(x)}{f(x)} \\, dx =$$",
+          "$$\\int \\{f(x)\\}^n f'(x) \\, dx =$$",
+        ],
+      },
+      {
+        question: "삼각함수",
+        example: [
+          "$$\\int \\sin x \\, dx =$$",
+          "$$\\int \\cos x \\, dx =$$",
+          "$$\\int \\tan x \\, dx =$$",
+          "$$\\int \\cot x \\, dx =$$",
+          "$$\\int \\sec x \\tan x \\, dx =$$",
+          "$$\\int \\csc x \\cot x \\, dx =$$",
+          "$$\\int \\sec x \\, dx =$$",
+          "$$\\int \\csc x \\, dx =$$",
+          "$$\\int \\sec^2 x \\, dx =$$",
+          "$$\\int \\csc^2 x \\, dx =$$",
+          "$$\\int \\sec^3 x \\, dx =$$",
+          "$$\\int \\csc^3 x \\, dx =$$",
+          "$$\\int \\sin^2 x \\, dx =$$",
+          "$$\\int \\cos^2 x \\, dx =$$",
+          "$$\\int e^{ax} \\sin bx \\, dx =$$",
+          "$$\\int e^{ax} \\cos bx \\, dx =$$",
+        ],
+      },
+      {
+        question: "쌍곡선함수",
+        example: [
+          "$$\\int \\sinh x \\, dx =$$",
+          "$$\\int \\cosh x \\, dx =$$",
+          "$$\\int \\operatorname{sech^2} x \\, dx =$$",
+          "$$\\int \\operatorname{csch^2} x \\, dx =$$",
+          "$$\\int \\tanh x \\, dx =$$",
+          "$$\\int \\coth x \\, dx =$$",
+          "$$\\int \\operatorname{sech x} \\tanh x \\, dx =$$",
+          "$$\\int \\operatorname{csch x} \\coth x \\, dx =$$",
+        ],
+      },
+      {
+        question: "역삼각함수",
+        example: [
+          "$$\\int \\frac{1}{\\sqrt{1 - x^2}} \\, dx =$$",
+          "$$\\int \\frac{-1}{\\sqrt{1 - x^2}} \\, dx =$$",
+          "$$\\int \\frac{1}{1 + x^2} \\, dx =$$",
+          "$$\\int \\frac{-1}{1 + x^2} \\, dx =$$",
+          "$$\\int \\frac{1}{x \\sqrt{x^2 - 1}} \\, dx =$$",
+          "$$\\int \\frac{-1}{x \\sqrt{x^2 - 1}} \\, dx =$$",
+          "$$\\int \\frac{1}{\\sqrt{a^2 - x^2}} \\, dx =$$",
+          "$$\\int \\frac{1}{x^2 + a^2} \\, dx =$$",
+          "$$\\int \\frac{1}{a^2 x^2 + b^2} \\, dx =$$",
+        ],
+      },
+      {
+        question: "역쌍곡선함수",
+        example: [
+          "$$\\int \\frac{1}{\\sqrt{1 + x^2}} \\, dx =$$",
+          "$$\\int \\frac{1}{\\sqrt{x^2 - 1}} \\, dx =$$",
+          "$$\\int \\frac{1}{1 - x^2} \\, dx =$$",
+          "$$\\int \\frac{1}{\\sqrt{x^2 + a^2}} \\, dx =$$",
+          "$$\\int \\frac{1}{\\sqrt{x^2 - a^2}} \\, dx =$$",
+        ],
+      },
+      {
+        question: "삼각치환적분",
+        example: [
+          "$$\\text{(1) 피적분함수에 } \\sqrt{x^2 + a^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{x^2 + a^2} =$$",
+          "$$\\text{(2) 피적분함수에 } \\sqrt{a^2 - x^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{a^2 - x^2} =$$",
+          "$$\\text{(3) 피적분함수에 } \\sqrt{x^2 - a^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{x^2 - a^2} =$$",
+        ],
+      },
+      {
+        question:
+          "$$\\int \\sin^n x dx,~~ \\int \\cos^n x dx,~~ \\int \\tan^n x dx$$ 점화식 형태 암기",
+        example: [
+          "$$\\int \\sin^n x \\, dx =$$",
+          "$$\\int \\cos^n x \\, dx =$$",
+          "$$\\int \\tan^n x \\, dx =$$",
+        ],
+      },
+      {
+        question: "분모에 삼각함수가 포함된 형태",
+        example: [
+          "$$\\int \\frac{c}{a + b \\cos x} \\, dx$$, $$\\int \\frac{c}{a + b \\sin x} \\, dx$$, $$\\int \\frac{c}{a \\cos x + b \\sin x} \\, dx \\text{의 형태가 보일 때}$$",
+          "$$\\tan \\frac{x}{2} =~~~~~~~$$, $$\\sin x =~~~~~~~$$, $$\\cos x =~~~~~~~$$, $$dx =~~~~~~~~~~~~$$를 대입",
+          "$$\\int \\frac{c}{a + b \\cos 2x} \\, dx$$, $$\\int \\frac{c}{a + b \\sin 2x} \\, dx$$, $$\\int \\frac{c}{a + b \\tan x} \\, dx \\text{의 형태가 보일 때}$$",
+          "$$\\tan x =~~~~~~~$$, $$\\sin 2x =~~~~~~~$$, $$\\cos 2x =~~~~~~~$$, $$dx =~~~~~~~~~~~~$$를 대입",
+        ],
+      },
+      {
+        question: "삼각함수의 곱으로 이루어진 형태",
+        example: [
+          "$$\\int \\sin(ax) \\cdot \\cos(bx) \\, dx =$$",
+          "$$\\int \\cos(ax) \\cdot \\cos(bx) \\, dx =$$",
+          "$$\\int \\sin(ax) \\cdot \\sin(bx) \\, dx =$$",
+        ],
+      },
+      {
+        question: "감마 함수 정리",
+        example: [
+          "$$\\Gamma(n) = \\int_0^{\\infty} x^{n - 1} e^{-x} \\, dx =$$ (단, $$n > 0$$)",
+          "$$\\Gamma(n + 1) =$$",
+        ],
+      },
+      {
+        question: "암기해야 하는 이상적분",
+        example: [
+          "$$\\int_0^{\\infty} e^{-x^2} \\, dx =$$",
+          "$$\\int_0^{\\infty} \\frac{e^{-x}}{\\sqrt{x}} \\, dx =$$",
+          "$$\\int_0^{\\infty} \\sqrt{x} \\, e^{-x} \\, dx =$$",
+          "$$\\int_0^{\\infty} x^2 e^{-x^2} \\, dx =$$",
+          "$$\\int_0^1 (\\ln x)^n \\, dx =$$",
+        ],
+      },
+    ],
     6: [
       {
         question:

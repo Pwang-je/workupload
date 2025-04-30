@@ -24,6 +24,7 @@ const chapters = {
     { name: "고계도함수", start: 127, end: 141 },
   ],
   calculus2: [
+    { name: "공식", start: "공식", end: "공식" },
     { name: "극한", start: 6, end: 49 },
     { name: "적분의 계산", start: 56, end: 94 },
     { name: "정적분의 여러 가지 유형", start: 102, end: 124 },
