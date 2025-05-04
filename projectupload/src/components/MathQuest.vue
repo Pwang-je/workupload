@@ -24,6 +24,7 @@ const chapters = {
     { name: "고계도함수", start: 127, end: 141 },
   ],
   calculus2: [
+    { name: "공식", start: "공식", end: "공식" },
     { name: "극한", start: 6, end: 49 },
     { name: "적분의 계산", start: 56, end: 94 },
     { name: "정적분의 여러 가지 유형", start: 102, end: 124 },
@@ -114,35 +115,49 @@ function getRandomQuestions() {
     const selectedChapterNames = selectedChapters[subjectKey];
 
     const pool = [];
+
+    const isValidNumber = (val) => typeof val === "number" && !isNaN(val);
+    const hasPageRange = isValidNumber(range.min) || isValidNumber(range.max);
+    const hasSelectedChapters = selectedChapterNames.length > 0;
+
     Object.entries(data).forEach(([page, list]) => {
-      const pageNum = parseInt(page);
-      const isFormulaPage = page === "공식";
+      const trimmedPage = page.trim();
+      const isFormulaPage = trimmedPage === "공식";
+      const pageNum = parseInt(trimmedPage);
+      let includePage = false;
 
-      let inRange =
-        isFormulaPage ||
-        ((range.min === null || pageNum >= range.min) &&
-          (range.max === null || pageNum <= range.max));
+      if (isFormulaPage) {
+        if (hasPageRange) {
+          includePage = selectedChapterNames.includes("공식");
+        } else if (hasSelectedChapters) {
+          includePage = selectedChapterNames.includes("공식");
+        } else {
+          includePage = true;
+        }
+      } else {
+        const inPageRange =
+          (!isValidNumber(range.min) || pageNum >= range.min) &&
+          (!isValidNumber(range.max) || pageNum <= range.max);
 
-      if (selectedChapterNames.length > 0 && chapterList) {
-        const included = chapterList.some((ch) => {
-          const isFormulaChapter = ch.name === "공식";
-          return (
-            selectedChapterNames.includes(ch.name) &&
-            (page === "공식"
-              ? isFormulaChapter
-              : pageNum >= ch.start && pageNum <= ch.end)
-          );
-        });
-        inRange = inRange && included;
-      } else if (isFormulaPage) {
-        inRange = true;
+        if (hasSelectedChapters) {
+          const included = chapterList.some((ch) => {
+            return (
+              selectedChapterNames.includes(ch.name) &&
+              pageNum >= ch.start &&
+              pageNum <= ch.end
+            );
+          });
+          includePage = inPageRange && included;
+        } else {
+          includePage = inPageRange;
+        }
       }
 
-      if (inRange) {
+      if (includePage) {
         list.forEach((q) => {
           pool.push({
             subject: subjects[subjectKey].name,
-            page,
+            page: trimmedPage,
             question: q.question,
             choices: q.choices || [],
             example: q.example || "",
@@ -151,7 +166,7 @@ function getRandomQuestions() {
       }
     });
 
-    const poolCopy = [...pool];
+    const poolCopy = [...pool]; // ✅ 원본 보존
     shuffle(poolCopy);
 
     let count = perSubjectCount;
@@ -161,6 +176,8 @@ function getRandomQuestions() {
     selected.push(...chosen);
     counts[subjects[subjectKey].name] = chosen.length;
   });
+
+  shuffle(selected);
 
   selectedQuestions.value = selected;
   subjectCounts.value = counts;
