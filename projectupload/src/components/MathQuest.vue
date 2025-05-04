@@ -408,7 +408,7 @@ watch(selectedQuestions, renderMath);
       <label class="block font-semibold mb-2">출제할 문제 수</label>
       <select v-model="questionCount" class="select select-secondary w-full">
         <option
-          v-for="count in [30, 50, 100, 150, 200, 250, 300, 350]"
+          v-for="count in [30, 50, 60, 80, 100, 150, 200, 250, 300, 350]"
           :key="count"
           :value="count"
         >
