@@ -856,7 +856,7 @@ export const clcls1 = {
       },
       {
         question:
-          "$$\\sin \\alpha = \\frac{4}{5} \\quad \\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때,$$\\tan \\frac{\\alpha}{2}$$의 값을 구하시오.",
+          "$$\\sin \\alpha = -\\frac{4}{5} \\quad \\left( \\pi < \\alpha < \\frac{3}{2} \\pi \\right)$$일 때,$$\\tan \\frac{\\alpha}{2}$$의 값을 구하시오.",
         choices: [],
         answer: "",
       },
