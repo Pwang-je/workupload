@@ -50,11 +50,34 @@ const chunkedAnswers = computed(() => {
 
 function isLongAnswer(answer) {
   if (!answer) return false;
+
+  // 수식 구조상 넓게 차지할 가능성이 있는 패턴
+  const wideKeywords = [
+    "frac",
+    "sqrt",
+    "cdot",
+    "int",
+    "sum",
+    "log",
+    "ln",
+    "cos",
+    "sin",
+    "tan",
+    "sec",
+    "csc",
+    "cot",
+    "displaystyle",
+  ];
+
+  const keywordMatched = wideKeywords.some((k) => answer.includes("\\" + k));
+
+  // 수식 텍스트 길이도 여전히 참고
   const plain = answer
     .replace(/<[^>]+>/g, "")
     .replace(/\\[a-zA-Z]+/g, "")
     .replace(/\s+/g, "");
-  return plain.length > 20; // 20자 이상이면 긴 수식으로 판단
+
+  return keywordMatched || plain.length > 10;
 }
 
 function shuffle(array) {
