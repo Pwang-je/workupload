@@ -39,6 +39,24 @@ const chapters = {
   ],
 };
 
+const chunkedAnswers = computed(() => {
+  const chunkSize = 5;
+  const result = [];
+  for (let i = 0; i < selectedQuestions.value.length; i += chunkSize) {
+    result.push(selectedQuestions.value.slice(i, i + chunkSize));
+  }
+  return result;
+});
+
+function isLongAnswer(answer) {
+  if (!answer) return false;
+  const plain = answer
+    .replace(/<[^>]+>/g, "")
+    .replace(/\\[a-zA-Z]+/g, "")
+    .replace(/\s+/g, "");
+  return plain.length > 20; // 20자 이상이면 긴 수식으로 판단
+}
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -161,6 +179,7 @@ function getRandomQuestions() {
             question: q.question,
             choices: q.choices || [],
             example: q.example || "",
+            answer: q.answer || "",
           });
         });
       }
@@ -495,6 +514,32 @@ watch(selectedQuestions, renderMath);
           />
         </li>
       </ul>
+    </div>
+
+    <!-- ✅ 정답 모음 (버튼 스타일 번호 + 6열 정렬) -->
+    <div
+      v-if="selectedQuestions.length"
+      class="mt-12 pt-8 border-t-2 border-gray-300 print:break-before-page"
+    >
+      <h3 class="text-base font-bold mb-4">정답 모음</h3>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-lg text-gray-900"
+      >
+        <div
+          v-for="(q, idx) in selectedQuestions"
+          :key="'ans-' + idx"
+          class="flex items-center gap-3"
+        >
+          <!-- 검정 배경 번호 원형 -->
+          <span
+            class="bg-black text-white rounded-full w-6 h-6 text-sm flex items-center justify-center"
+          >
+            {{ idx + 1 }}
+          </span>
+          <!-- 정답 수식 -->
+          <span class="break-words" v-html="q.answer || '정답 없음'"></span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
