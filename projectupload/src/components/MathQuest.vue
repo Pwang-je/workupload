@@ -542,11 +542,11 @@ watch(selectedQuestions, renderMath);
     <!-- ✅ 정답 모음 (버튼 스타일 번호 + 6열 정렬) -->
     <div
       v-if="selectedQuestions.length"
-      class="mt-12 pt-8 border-t-2 border-gray-300 print:break-before-page"
+      class="mt-12 pt-4 border-t-2 border-gray-300 print:break-before-page"
     >
       <h3 class="text-base font-bold mb-4">정답 모음</h3>
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-lg text-gray-900"
+        class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-900"
       >
         <div
           v-for="(q, idx) in selectedQuestions"
@@ -567,4 +567,4 @@ watch(selectedQuestions, renderMath);
   </div>
 </template>
 
-<style scoped></style>
+<style></style>
