@@ -39,6 +39,24 @@ const chapters = {
   ],
 };
 
+// MathQuest.vue 내부 <script setup> 상단에 추가
+function sanitizeAnswer(answer) {
+  if (Array.isArray(answer)) {
+    return answer.map((a) => a.replace(/<br\s*\/?>/gi, "").trim()).join("<br>");
+  } else if (typeof answer === "string") {
+    return answer.replace(/<br\s*\/?>/gi, "").trim();
+  }
+  return "정답 없음";
+}
+
+const chunkedAnswers2 = computed(() => {
+  const result = [];
+  for (let i = 0; i < selectedQuestions.value.length; i += 2) {
+    result.push(selectedQuestions.value.slice(i, i + 2));
+  }
+  return result;
+});
+
 const chunkedAnswers = computed(() => {
   const chunkSize = 5;
   const result = [];
@@ -51,7 +69,9 @@ const chunkedAnswers = computed(() => {
 function isLongAnswer(answer) {
   if (!answer) return false;
 
-  // 수식 구조상 넓게 차지할 가능성이 있는 패턴
+  // answer가 배열이면 join해서 문자열로 변환
+  const answerText = Array.isArray(answer) ? answer.join(" ") : answer;
+
   const wideKeywords = [
     "frac",
     "sqrt",
@@ -69,10 +89,11 @@ function isLongAnswer(answer) {
     "displaystyle",
   ];
 
-  const keywordMatched = wideKeywords.some((k) => answer.includes("\\" + k));
+  const keywordMatched = wideKeywords.some((k) =>
+    answerText.includes("\\" + k)
+  );
 
-  // 수식 텍스트 길이도 여전히 참고
-  const plain = answer
+  const plain = answerText
     .replace(/<[^>]+>/g, "")
     .replace(/\\[a-zA-Z]+/g, "")
     .replace(/\s+/g, "");
@@ -450,7 +471,9 @@ watch(selectedQuestions, renderMath);
       <label class="block font-semibold mb-2">출제할 문제 수</label>
       <select v-model="questionCount" class="select select-secondary w-full">
         <option
-          v-for="count in [30, 50, 60, 80, 100, 150, 200, 250, 300, 350]"
+          v-for="count in [
+            30, 50, 60, 70, 80, 90, 100, 150, 200, 250, 300, 350,
+          ]"
           :key="count"
           :value="count"
         >
@@ -539,28 +562,32 @@ watch(selectedQuestions, renderMath);
       </ul>
     </div>
 
-    <!-- ✅ 정답 모음 (버튼 스타일 번호 + 6열 정렬) -->
+    <!-- 정답 모음 영역 -->
     <div
       v-if="selectedQuestions.length"
       class="mt-12 pt-4 border-t-2 border-gray-300 print:break-before-page"
     >
       <h3 class="text-base font-bold mb-4">정답 모음</h3>
-      <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-sm text-gray-900"
-      >
+
+      <!-- ✅ flex-wrap 구조로 변경 -->
+      <div class="flex flex-wrap gap-x-8 gap-y-4 text-sm text-gray-900">
         <div
           v-for="(q, idx) in selectedQuestions"
           :key="'ans-' + idx"
-          class="flex items-center gap-3"
+          :class="[
+            'flex items-start gap-2',
+            isLongAnswer(q.answer) ? 'w-full' : 'w-full sm:w-[calc(50%-1rem)]',
+          ]"
         >
-          <!-- 검정 배경 번호 원형 -->
           <span
-            class="bg-black text-white rounded-full w-6 h-6 text-sm flex items-center justify-center"
+            class="bg-black text-white rounded-full w-6 h-6 text-sm flex items-center justify-center mt-1 shrink-0"
           >
             {{ idx + 1 }}
           </span>
-          <!-- 정답 수식 -->
-          <span class="break-words" v-html="q.answer || '정답 없음'"></span>
+          <span
+            v-html="sanitizeAnswer(q.answer || '정답 없음')"
+            class="break-words"
+          />
         </div>
       </div>
     </div>

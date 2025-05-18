@@ -18,12 +18,30 @@ export const clcls1 = {
           "$$\\text{11. } ~ (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx) =$$",
           "$$\\text{12. } ~ x^2 + y^2 + z^2 - xy - yz - zx =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ ax + ay $$",
+          "$$\\text{2. } ~ x^2 \\pm 2xy + y^2$$",
+          "$$\\text{3. } ~ x^2-y^2$$",
+          "$$\\text{4. } ~ x^2 + (a+b)x + ab$$",
+          "$$\\text{5. } ~ acx^2 + (ad+bc)x + bd$$",
+          "$$\\text{6. } ~ x^3+3x^{2}y+3xy^2+y^3$$",
+          "$$\\text{7. } ~ x^3-3x^{2}y+3xy^2-y^3$$",
+          "$$\\text{8. } ~ (x+y)(x^{2}-xy+y^2)$$",
+          "$$\\text{9. } ~ (x-y)(x^{2}+xy+y^2)$$",
+          "$$\\text{10. } ~ x^2 + y^2 + z^2 + 2(xy+yz+zx)$$",
+          "$$\\text{11. } ~ x^3 + y^3 + z^3 - 3xyz$$",
+          "$$\\text{12. } ~ \\frac{1}{2} \\{(x-y)^2 + (y-z)^2 + (z-x)^2 \\}$$",
+        ],
       },
       {
         question: "이중근호",
         example: [
-          "$$\\sqrt{a + b + 2\\sqrt{ab}} =$$",
-          "$$\\sqrt{a + b - 2\\sqrt{ab}} =$$",
+          "$$\\text{1. } ~ \\sqrt{a + b + 2\\sqrt{ab}} =$$",
+          "$$\\text{2. } ~ \\sqrt{a + b - 2\\sqrt{ab}} =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ \\sqrt{a} + \\sqrt{b}$$",
+          "$$\\text{2. } ~ \\sqrt{a} - \\sqrt{b}$$",
         ],
       },
       {
@@ -37,6 +55,15 @@ export const clcls1 = {
           "$$\\text{6. } ~ (xy)^m =~~~~~~~~~~~~~~~~~~~~$$ , $$\\left(\\frac{y}{x}\\right)^m =$$",
           "$$\\text{7. } ~ x^{\\frac{1}{m}} =~~~~~~~~~~~~~~~$$ , $$x^{\\frac{n}{m}} = ( ~~~~~~~~~~ )^n = \\sqrt[m]{ ~~~~~~~~~~ } = ( ~~~~~~~~~~ )^{\\frac{1}{m}}$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ 1$$ <br><br>",
+          "$$\\text{2. } ~ \\frac{1}{x^n}$$",
+          "$$\\text{3. } ~ x^{m+n}$$",
+          "$$\\text{4. } ~ x^{m-n}$$",
+          "$$\\text{5. } ~ x^{mn}$$",
+          "$$\\text{6. } ~ x^m y^m , ~ \\frac{y^m}{x^m}, ~ (\\frac{y}{x})^m$$",
+          "$$\\text{7. } ~ \\sqrt[m]{x} , ~~ x^{\\frac{n}{m}} = (x^{\\frac{1}{m}})^n = \\sqrt[m]{x^n} = (x^n)^\\frac{1}{m}$$",
+        ],
       },
       {
         question: "로그의 성질",
@@ -48,6 +75,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\log_a x =$$",
           "$$\\text{6. } ~ a^{\\log_a x} =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ 1 , ~ 0$$",
+          "$$\\text{2. } ~ n \\log_a M$$",
+          "$$\\text{3. } ~ \\log_a M + \\log_a N$$",
+          "$$\\text{4. } ~ \\log_a M - \\log_a N$$",
+          "$$\\text{5. } ~ \\frac{1}{\\log_x a}$$",
+          "$$\\text{6. } ~ x$$",
+        ],
       },
       {
         question: "삼각함수의 기본공식",
@@ -55,6 +90,11 @@ export const clcls1 = {
           "$$\\text{1. } ~ \\sin^2 \\theta + \\cos^2 \\theta =$$",
           "$$\\text{2. } ~ 1 + \\tan^2 \\theta =$$",
           "$$\\text{3. } ~ 1 + \\cot^2 \\theta =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ 1$$",
+          "$$\\text{2. } ~ \\sec^2 \\theta$$",
+          "$$\\text{3. } ~ \\csc^2 \\theta$$",
         ],
       },
       {
@@ -70,11 +110,20 @@ export const clcls1 = {
           \\end{array}
           $$`,
         ],
+        answer: [
+          "$$sin \\theta = 0, \\frac{1}{2}, \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{3}}{2}, 1$$",
+          "$$cos \\theta = 1, \\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{2}}{2}, \\frac{1}{2}, 0$$",
+          "$$tan \\theta = 0, \\frac{1}{\\sqrt{3}}, 1, \\sqrt{3}, \\infty$$",
+        ],
       },
       {
         question: "삼각함수의 합성",
         example: [
           "$$a \\sin A + b \\cos A$$ 의 최댓값 : $$~~~~~~~~~~~~~~~~~~~$$, 최솟값 : $$~~~~~~~~~~~~~~~~~~~$$",
+        ],
+        answer: [
+          "$$\\text{최대 : } ~ \\sqrt{a^2 + b^2}$$",
+          "$$\\text{최소 : } ~ -\\sqrt{a^2 + b^2}$$",
         ],
       },
       {
@@ -87,6 +136,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\tan(A + B) =$$",
           "$$\\text{6. } ~ \\tan(A - B) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\sin A \\cos B + \\cos A \\sin B$$",
+          "$$\\text{2. } ~ \\sin A \\cos B - \\cos A \\sin B$$",
+          "$$\\text{3. } ~ \\cos A \\cos B - \\sin A \\sin B$$",
+          "$$\\text{4. } ~ \\cos A \\cos B + \\sin A \\sin B$$",
+          "$$\\text{5. } ~ \\frac{\\tan A + \\tan B}{1 - \\tan A \\tan B}$$",
+          "$$\\text{6. } ~ \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}$$",
+        ],
       },
       {
         question: "삼각함수의 합차공식",
@@ -96,13 +153,24 @@ export const clcls1 = {
           "$$\\text{3. } ~ \\cos(A + B) + \\cos(A - B) =$$",
           "$$\\text{4. } ~ \\cos(A + B) - \\cos(A - B) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ 2 \\sin A \\cos B$$",
+          "$$\\text{2. } ~ 2 \\cos A \\sin B$$",
+          "$$\\text{3. } ~ 2 \\cos A \\cos B$$",
+          "$$\\text{4. } ~ -2 \\sin A \\sin B$$",
+        ],
       },
       {
         question: "삼각함수의 2배각 공식",
         example: [
-          "$$\\sin 2A =$$",
-          "$$\\cos 2A = ~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~ = $$",
-          "$$\\tan 2A =$$",
+          "$$\\text{1. } ~ \\sin 2A =$$",
+          "$$\\text{2. } ~ \\cos 2A = ~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~ = $$",
+          "$$\\text{3. } ~ \\tan 2A =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ 2 \\sin A \\cos A$$",
+          "$$\\text{2. } ~ \\cos^2 A - \\sin^2 A = 1-2 \\sin^{2} A = 2 \\cos^{2} A - 1$$",
+          "$$\\text{3. } ~ \\frac{2 \\tan A}{1 - \\tan^2 A}$$",
         ],
       },
       {
@@ -112,6 +180,11 @@ export const clcls1 = {
           "$$\\text{2. } ~ \\cos^2 \\frac{A}{2} =$$",
           "$$\\text{3. } ~ \\tan^2 \\frac{A}{2} =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{1 - \\cos A}{2}$$",
+          "$$\\text{2. } ~ \\frac{1 + \\cos A}{2}$$",
+          "$$\\text{3. } ~ \\frac{1 - \\cos A}{1 + \\cos A}$$",
+        ],
       },
       {
         question: "역삼각함수의 성질",
@@ -120,6 +193,12 @@ export const clcls1 = {
           "$$\\text{2. } ~ \\cos^{-1} x + \\cos^{-1}(-x) =$$",
           "$$\\text{3. } ~ \\tan^{-1} x + \\cot^{-1} x =$$",
           "$$\\text{4. } ~ \\sec^{-1} x + \\csc^{-1} x =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{\\pi}{2}$$",
+          "$$\\text{2. } ~ \\pi$$",
+          "$$\\text{3. } ~ \\frac{\\pi}{2}$$",
+          "$$\\text{4. } ~ \\frac{\\pi}{2}$$",
         ],
       },
       {
@@ -135,6 +214,17 @@ export const clcls1 = {
           \\end{array}
           $$`,
         ],
+        answer: [
+          `$$
+          \\begin{array}{c|c}            
+            \\sin^{-1}(\\sin x) = x & -\\frac{\\pi}{2} \\le x \\le \\frac{\\pi}{2} &\\sin(\\sin^{-1} x) = x & -1 \\le x \\le 1 \\\\
+            \\hline
+            \\cos^{-1}(\\cos x) = x & 0 \\le x \\le \\pi &\\cos(\\cos^{-1} x) = x & -1 \\le x \\le 1 \\\\
+            \\hline
+            \\tan^{-1}(\\tan x) = x & -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} &\\tan(\\tan^{-1} x) = x & x \\text{는 모든 실수}    
+          \\end{array}
+          $$`,
+        ],
       },
       {
         question: "쌍곡선함수",
@@ -146,6 +236,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\operatorname{sech} A =$$",
           "$$\\text{6. } ~ \\operatorname{csch} A =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{e^A - e^{-A}}{2}$$",
+          "$$\\text{2. } ~ \\frac{e^A + e^{-A}}{2}$$",
+          "$$\\text{3. } ~ \\frac{e^{A}-e^{-A}}{e^{A}+e^{-A}}$$",
+          "$$\\text{4. } ~ \\frac{e^{A}+e^{-A}}{e^{A}-e^{-A}} = \\frac{1}{\\tanh A}$$",
+          "$$\\text{5. } ~ \\frac{2}{e^{A}+e^{-A}} = \\frac{1}{\\cosh A}$$",
+          "$$\\text{6. } ~ \\frac{2}{e^{A}-e^{-A}} = \\frac{1}{\\sinh A}$$",
+        ],
       },
       {
         question: "쌍곡선함수의 기본공식",
@@ -153,6 +251,11 @@ export const clcls1 = {
           "$$\\text{1. } ~ \\cosh^2 A - \\sinh^2 A =$$",
           "$$\\text{2. } ~ 1 - \\tanh^2 A =$$",
           "$$\\text{3. } ~ 1 - \\coth^2 A =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ 1$$",
+          "$$\\text{2. } ~ \\operatorname{sech}^2 A$$",
+          "$$\\text{3. } ~ -\\operatorname{csch}^2 A$$",
         ],
       },
       {
@@ -165,6 +268,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\tanh(A + B) =$$",
           "$$\\text{6. } ~ \\tanh(A - B) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\sinh A \\cosh B + \\cosh A \\sinh B$$",
+          "$$\\text{2. } ~ \\sinh A \\cosh B - \\cosh A \\sinh B$$",
+          "$$\\text{3. } ~ \\cosh A \\cosh B + \\sinh A \\sinh B$$",
+          "$$\\text{4. } ~ \\cosh A \\cosh B - \\sinh A \\sinh B$$",
+          "$$\\text{5. } ~ \\frac{\\tanh A + \\tanh B}{1 + \\tanh A \\tanh B}$$",
+          "$$\\text{6. } ~ \\frac{\\tanh A - \\tanh B}{1 - \\tanh A \\tanh B}$$",
+        ],
       },
       {
         question: "쌍곡선함수의 배각공식",
@@ -173,6 +284,11 @@ export const clcls1 = {
           "$$\\text{2. } ~ \\cosh 2A = ~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~ = $$",
           "$$\\text{3. } ~ \\tanh 2A =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ 2 \\sinh A \\cosh A$$",
+          "$$\\text{2. } ~ \\cosh^2 A + \\sinh^2 A = 2\\cosh^2 A - 1 = 1 + 2\\sinh^2 A$$",
+          "$$\\text{3. } ~ \\frac{2\\tanh A}{1 + \\tanh^2 A}$$",
+        ],
       },
       {
         question: "쌍곡선함수의 반각공식",
@@ -180,6 +296,11 @@ export const clcls1 = {
           "$$\\text{1. } ~ \\sinh^2 \\frac{A}{2} =$$ , $$\\sinh^2 A =$$",
           "$$\\text{2. } ~ \\cosh^2 \\frac{A}{2} =$$ , $$\\cosh^2 A =$$",
           "$$\\text{3. } ~ \\tanh^2 \\frac{A}{2} =$$ , $$\\tanh^2 A =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{1 - \\cosh A}{2} , ~ \\sinh^2 A = 2\\sinh^2 \\frac{A}{2}$$",
+          "$$\\text{2. } ~ \\frac{1 + \\cosh A}{2} , ~ \\cosh^2 A = 2\\cosh^2 \\frac{A}{2} - 1$$",
+          "$$\\text{3. } ~ \\frac{1 - \\cosh A}{1 + \\cosh A} , ~ \\tanh^2 A = 2\\tanh^2 \\frac{A}{2}$$",
         ],
       },
       {
@@ -192,6 +313,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\operatorname{sech}^{-1} A =$$",
           "$$\\text{6. } ~ \\operatorname{csch}^{-1} A =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\ln(A + \\sqrt{A^2 + 1}), ~ (-\\infty < A < \\infty)$$",
+          "$$\\text{2. } ~ \\ln(A + \\sqrt{A^2 - 1}), ~ (A \\ge 1)$$",
+          "$$\\text{3. } ~ \\frac{1}{2} \\ln\\left(\\frac{1 + A}{1 - A}\\right), ~ (-1 < A < 1)$$",
+          "$$\\text{4. } ~ \\frac{1}{2} \\ln\\left(\\frac{A + 1}{A - 1}\\right), ~ (A > 1 \\text{or} A < -1)$$",
+          "$$\\text{5. } ~ \\ln(A + \\sqrt{A^2 + 1}), ~ (0 < A \\le 1)$$",
+          "$$\\text{6. } ~ \\ln(A + \\sqrt{A^2 - 1}), ~ (A \\neq 0)$$",
+        ],
       },
       {
         question: "삼각함수 미분공식",
@@ -202,6 +331,14 @@ export const clcls1 = {
           "$$\\text{4. } ~ \\frac{d}{dx}(\\csc x) =$$",
           "$$\\text{5. } ~ \\frac{d}{dx}(\\sec x) =$$",
           "$$\\text{6. } ~ \\frac{d}{dx}(\\cot x) =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ \\cos x$$",
+          "$$\\text{2. } ~ -\\sin x$$",
+          "$$\\text{3. } ~ \\sec^2 x$$",
+          "$$\\text{4. } ~ -\\csc x \\cot x$$",
+          "$$\\text{5. } ~ \\sec x \\tan x$$",
+          "$$\\text{6. } ~ -\\csc^2 x$$",
         ],
       },
       {
@@ -214,6 +351,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\frac{d}{dx}(\\sec^{-1} x) =$$",
           "$$\\text{6. } ~ \\frac{d}{dx}(\\cot^{-1} x) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{1}{\\sqrt{1 - x^2}}$$",
+          "$$\\text{2. } ~ \\frac{-1}{\\sqrt{1 - x^2}}$$",
+          "$$\\text{3. } ~ \\frac{1}{1 + x^2}$$",
+          "$$\\text{4. } ~ \\frac{-1}{|x| \\sqrt{x^2 - 1}}$$",
+          "$$\\text{5. } ~ \\frac{1}{|x| \\sqrt{x^2 - 1}}$$",
+          "$$\\text{6. } ~ \\frac{-1}{1 + x^2}$$",
+        ],
       },
       {
         question: "쌍곡선함수 미분공식",
@@ -224,6 +369,14 @@ export const clcls1 = {
           "$$\\text{4. } ~ \\frac{d}{dx}(\\operatorname{csch} x) =$$",
           "$$\\text{5. } ~ \\frac{d}{dx}(\\operatorname{sech} x) =$$",
           "$$\\text{6. } ~ \\frac{d}{dx}(\\coth x) =$$",
+        ],
+        answer: [
+          "$$\\text{1. } ~ \\cosh x$$",
+          "$$\\text{2. } ~ \\sinh x$$",
+          "$$\\text{3. } ~ \\operatorname{sech}^2 x$$",
+          "$$\\text{4. } ~ -\\operatorname{csch} x \\cdot \\coth x$$",
+          "$$\\text{5. } ~ -\\operatorname{sech} x \\cdot \\tanh x$$",
+          "$$\\text{6. } ~ -\\operatorname{csch}^2 x$$",
         ],
       },
       {
@@ -236,6 +389,14 @@ export const clcls1 = {
           "$$\\text{5. } ~ \\frac{d}{dx}(\\operatorname{sech}^{-1} x) =$$",
           "$$\\text{6. } ~ \\frac{d}{dx}(\\coth^{-1} x) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ \\frac{1}{\\sqrt{x^2 + 1}}$$",
+          "$$\\text{2. } ~ \\frac{1}{\\sqrt{x^2 - 1}}$$",
+          "$$\\text{3. } ~ \\frac{1}{1 - x^2}, ~ (|x|<1)$$",
+          "$$\\text{4. } ~ \\frac{-1}{x \\sqrt{x^2 + 1}}$$",
+          "$$\\text{5. } ~ \\frac{-1}{x \\sqrt{x^2 - 1}}$$",
+          "$$\\text{6. } ~ \\frac{1}{1 - x^2}, ~ (|x|>1)$$",
+        ],
       },
       {
         question: "지수함수 & 로그함수 미분공식",
@@ -245,34 +406,49 @@ export const clcls1 = {
           "$$\\text{3. } ~ \\frac{d}{dx}\\ln|x| =$$",
           "$$\\text{4. } ~ \\frac{d}{dx}(\\log_a x) =$$",
         ],
+        answer: [
+          "$$\\text{1. } ~ e^x$$",
+          "$$\\text{2. } ~ a^x \\ln a$$",
+          "$$\\text{3. } ~ \\frac{1}{x}$$",
+          "$$\\text{4. } ~ \\frac{1}{x \\ln a}$$",
+        ],
       },
       {
         question: "곱의 미분법",
         example: ["$$y = f(x) \\cdot g(x) \\Rightarrow y' =$$"],
+        answer: ["$$f'(x) g(x) + f(x) g'(x)$$"],
       },
       {
         question: "분수함수의 미분법",
         example: ["$$y = \\frac{g(x)}{f(x)} =$$"],
+        answer: ["$$\\frac{ g'(x) f(x)- g(x) f'(x)}{(f(x))^2}$$"],
       },
       {
         question: "이항정리",
         example: [
           "$$(a + b)^n = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = \\sum_{r=0}^{n}$$",
         ],
+        answer: [
+          "$$ _nC_0 a^n + _nC_1 a^{n-1}b + _nC_2 a^{n-2}b^2 + \\cdots + _nC_{n-1} ab^{n-1} + _nC_nb^n $$",
+        ],
       },
       {
         question: "라이프니츠의 정리",
         example: [
-          "$$(fg)^{(n)} = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = \\sum_{r=0}^{n}$$",
+          "$$(fg)^{(n)} = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = \\sum_{r=0}^{n} {_nC_r} f^{(n-r)} g^{(r)}$$",
+        ],
+        answer: [
+          "$$ {_nC_0} f^{(n)} g + {_nC_1} f^{(n)} g' + \\cdots {_nC_{n-1}} f' g^{n-1} + {_nC_n} f g^{n} $$",
         ],
       },
       {
         question: "이항계수의 합",
         example: [
-          "$$_n\\mathrm{C}_0 + _n\\mathrm{C}_1 + \\cdots + _n\\mathrm{C}_n =$$",
-          "$$_n\\mathrm{C}_0 + _n\\mathrm{C}_2 + \\cdots + _n\\mathrm{C}_{n-2} + _n\\mathrm{C}_n =$$",
-          "$$_n\\mathrm{C}_1 + _n\\mathrm{C}_3 + \\cdots + _n\\mathrm{C}_{n-1} =$$",
+          "$$\\text{1.}~ _n\\mathrm{C}_0 + _n\\mathrm{C}_1 + \\cdots + _n\\mathrm{C}_n =$$",
+          "$$\\text{2.}~ _n\\mathrm{C}_0 + _n\\mathrm{C}_2 + \\cdots + _n\\mathrm{C}_{n-2} + _n\\mathrm{C}_n =$$",
+          "$$\\text{3.}~ _n\\mathrm{C}_1 + _n\\mathrm{C}_3 + \\cdots + _n\\mathrm{C}_{n-1} =$$",
         ],
+        answer: ["$$2^n$$", "$$2^{n-1}$$", "$$2^{n-1}$$"],
       },
     ],
 
