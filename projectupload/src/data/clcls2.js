@@ -13,6 +13,8 @@ export const clcls2 = {
           "(6) $$\\lim_{x \\to 0} \\left(e^{ax} + \\sin bx\\right)^{\\frac{1}{x}} =$$",
           "(7) $$a < b < c \\text{일 때, } \\lim_{n \\to \\infty} (a^n + b^n + c^n)^{\\frac{1}{n}} =$$",
         ],
+        answer:
+          "(1) $$1$$, (2) $$0$$, (3) $$e$$, (4) $$e$$, (5) $$ e^{\\pm \\frac{c}{a} \\times \\pm {d}} $$, (6) $$e^{a+b}$$, (7) $$c$$",
       },
       {
         question: "매클로린 급수 공식",
@@ -28,6 +30,18 @@ export const clcls2 = {
           "(9) $$-\\ln(1 - x) =$$",
           "(10) $$(1 + x)^p =$$",
         ],
+        answer: [
+          "(1) $$ 1+x+ \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\cdots $$",
+          "(2) $$ x - \\frac{x^3}{3!} +  \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots $$",
+          "(3) $$ 1- \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots $$",
+          "(4) $$ x+ \\frac{1}{3} x^{3} + \\frac{2}{15} x^{5} + \\cdots $$",
+          "(5) $$ x - \\frac{x^3}{3} + \\frac{x^5}{5} - \\frac{x^7}{7} \\cdots $$",
+          "(6) $$ x + \\frac{1}{6} x^{3} + \\frac{3}{40} x^{5} + \\cdots $$",
+          "(7) $$x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} \\cdots$$",
+          "(8) $$-x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} \\cdots$$",
+          "(9) $$x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\frac{x^4}{4} \\cdots$$",
+          "(10) $$ 1 + px + \\frac{p(p-1)}{2!} x^{2} + \\frac{p(p-1)(p-2)}{3!} x^{3} + \\cdots$$",
+        ],
       },
       {
         question: "다항함수, 지수함수, 로그함수",
@@ -41,6 +55,17 @@ export const clcls2 = {
           "(7) $$\\int a^x \\, dx =$$",
           "(8) $$\\int \\frac{f'(x)}{f(x)} \\, dx =$$",
           "(9) $$\\int \\{f(x)\\}^n f'(x) \\, dx =$$",
+        ],
+        answer: [
+          "(1) $$\\frac{1}{n+1} x^{n+1}+C$$)",
+          "(2) $$x \\ln x - x + C$$",
+          "(3) $$ \\frac{1}{n+1} x^{n+1} lnx - \\frac{1}{(n+1)^2} x^{n+1}+C $$",
+          "(4) $$\\ln |x| + C$$",
+          "(5) $$-\\frac{1}{x} + C$$",
+          "(6) $$e^x + C$$",
+          "(7) $$\\frac{a^x}{\\ln a} + C$$",
+          "(8) $$\\ln |f(x)| + C$$",
+          "(9) $$ \\frac{1}{n+1} {f(x)}^{n+1} \\cdot + C$$",
         ],
       },
       {
@@ -63,6 +88,24 @@ export const clcls2 = {
           "(15) $$\\int e^{ax} \\sin bx \\, dx =$$",
           "(16) $$\\int e^{ax} \\cos bx \\, dx =$$",
         ],
+        answer: [
+          "(1) $$-\\cos x + C$$",
+          "(2) $$\\sin x + C$$",
+          "(3) $$-\\ln (\\cos x) + C$$",
+          "(4) $$\\ln(\\sin x) + C$$",
+          "(5) $$\\sec x + C$$",
+          "(6) $$- \\csc x + C$$",
+          "(7) $$\\ln (\\sec x+ \\tan x) + C$$",
+          "(8) $$- \\ln(\\csc x + \\cot x) + C$$",
+          "(9) $$\\tan x + C$$",
+          "(10) $$-\\cot x + C$$",
+          "(11) $$\\frac{1}{2} \\left[ \\ln (\\sec x + \\tan x)+ \\sec x \\tan x \\right] + C$$",
+          "(12) $$\\frac{1}{2} \\left[ -\\ln (\\csc x + \\cot x) - \\csc x \\cot x \\right] + C$$",
+          "(13) $$\\frac{1}{2} \\left( x - \\frac{1}{2} \\sin 2x \\right) + C$$",
+          "(14) $$\\frac{1}{2} \\left( x + \\frac{1}{2} \\sin 2x \\right) + C$$",
+          "(15) $$\\frac{e^{ax}}{a^{2}+b^{2}} (a \\sin b x - b \\cos b x) + C$$",
+          "(16) $$\\frac{e^{ax}}{a^{2}+b^{2}} (a \\cos b x + b \\sin b x) + C$$",
+        ],
       },
       {
         question: "쌍곡선함수",
@@ -75,6 +118,16 @@ export const clcls2 = {
           "(6) $$\\int \\coth x \\, dx =$$",
           "(7) $$\\int \\operatorname{sech x} \\tanh x \\, dx =$$",
           "(8) $$\\int \\operatorname{csch x} \\coth x \\, dx =$$",
+        ],
+        answer: [
+          "(1) $$ \\cosh x + C $$",
+          "(2) $$ \\sinh x + C $$",
+          "(3) $$ \\tanh x + C $$",
+          "(4) $$ -\\coth x + C $$",
+          "(5) $$ \\ln (\\cosh x) + C $$",
+          "(6) $$ \\ln (\\sinh x) + C $$",
+          "(7) $$ - \\operatorname{sech} x + C $$",
+          "(8) $$ - \\operatorname{csch} x + C $$",
         ],
       },
       {
@@ -90,6 +143,15 @@ export const clcls2 = {
           "(8) $$\\int \\frac{1}{x^2 + a^2} \\, dx =$$",
           "(9) $$\\int \\frac{1}{a^2 x^2 + b^2} \\, dx =$$",
         ],
+        answer: [
+          "(3) $$ \\tan^{-1} x + C $$",
+          "(4) $$ \\cot^{-1} x+C $$",
+          "(5) $$ \\sec^{-1} x+C  $$",
+          "(6) $$ \\csc^{-1} x+C  $$",
+          "(7) $$ \\sin^{-1} \\left( \\frac{x}{a} \\right) + C $$",
+          "(8) $$ \\frac{1}{a} \\tan^{-1} \\left( \\frac{x}{a} \\right) + C $$",
+          "(9) $$ \\frac{1}{ab} \\tan^{-1} \\left( \\frac{ax}{b} \\right) + C $$",
+        ],
       },
       {
         question: "역쌍곡선함수",
@@ -100,6 +162,13 @@ export const clcls2 = {
           "(4) $$\\int \\frac{1}{\\sqrt{x^2 + a^2}} \\, dx =$$",
           "(5) $$\\int \\frac{1}{\\sqrt{x^2 - a^2}} \\, dx =$$",
         ],
+        answer: [
+          "(1) $$ \\sinh^{-1} x+ C$$",
+          "(2) $$ \\cosh^{-1} x + C$$",
+          "(3) $$ \\tanh^{-1} x + C$$",
+          "(4) $$ \\sinh^{-1} \\left( \\frac{x}{a} \\right) + C$$",
+          "(5) $$ \\cosh^{-1} \\left( \\frac{x}{a} \\right) + C$$",
+        ],
       },
       {
         question: "삼각치환적분",
@@ -107,6 +176,11 @@ export const clcls2 = {
           "$$\\text{(1) 피적분함수에 } \\sqrt{x^2 + a^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{x^2 + a^2} =$$",
           "$$\\text{(2) 피적분함수에 } \\sqrt{a^2 - x^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{a^2 - x^2} =$$",
           "$$\\text{(3) 피적분함수에 } \\sqrt{x^2 - a^2} \\text{ 가 보일 때 : } x = ~~~~~~~~~~~~~~~~~$$, $$dx = ~~~~~~~~~~~~~~~~~$$, $$\\sqrt{x^2 - a^2} =$$",
+        ],
+        answer: [
+          "(1) $$ a \\tan \\theta ,~ a \\sec^2 \\theta d \\theta ,~ a \\sec \\theta $$",
+          "(2) $$ a \\sin \\theta ,~ a \\cos \\theta d \\theta ,~ a \\cos \\theta $$",
+          "(3) $$ a \\sec \\theta ,~ a \\sec \\theta \\tan \\theta d \\theta ,~ a \\tan \\theta $$",
         ],
       },
       {
@@ -117,6 +191,11 @@ export const clcls2 = {
           "$$\\int \\cos^n x \\, dx =$$",
           "$$\\int \\tan^n x \\, dx =$$",
         ],
+        answer: [
+          "$$ - \\frac{1}{n} \\sin^{n-1} x \\cos x + \\frac{n-1}{n} \\int \\sin^{n-2} x dx $$",
+          "$$ \\frac{1}{n} \\sin x \\cos^{n-1} x+ \\frac{n-1}{n} \\int \\cos^{n-2} x dx $$",
+          "$$ \\frac{1}{n-1} \\tan^{n-1} x - \\int \\tan^{n-2} x dx $$",
+        ],
       },
       {
         question: "분모에 삼각함수가 포함된 형태",
@@ -126,6 +205,10 @@ export const clcls2 = {
           "(2) $$\\int \\frac{c}{a + b \\cos 2x} \\, dx$$, $$\\int \\frac{c}{a + b \\sin 2x} \\, dx$$, $$\\int \\frac{c}{a + b \\tan x} \\, dx \\text{의 형태가 보일 때}$$",
           "$$\\tan x =~~~~~~~$$, $$\\sin 2x =~~~~~~~$$, $$\\cos 2x =~~~~~~~$$, $$dx =~~~~~~~~~~~~$$를 대입",
         ],
+        answer: [
+          "(1) $$ t ,~ \\frac{2t}{1+t^{2}} ,~ \\frac{1-t^2}{1+t^2} ,~ \\frac{2}{1+t^2} $$",
+          "(2) $$ t ,~ \\frac{2t}{1+t^{2}} ,~ \\frac{1-t^2}{1+t^2} ,~ \\frac{1}{1+t^2} $$",
+        ],
       },
       {
         question: "삼각함수의 곱으로 이루어진 형태",
@@ -134,6 +217,11 @@ export const clcls2 = {
           "(2) $$\\int \\cos(ax) \\cdot \\cos(bx) \\, dx =$$",
           "(3) $$\\int \\sin(ax) \\cdot \\sin(bx) \\, dx =$$",
         ],
+        answer: [
+          "() $$ \\frac{1}{2} \\int \\sin (a+b)x + \\sin (a-b)x dx $$",
+          "() $$ \\frac{1}{2} \\int \\cos (a+b)x + \\cos (a-b)x dx $$",
+          "() $$ -\\frac{1}{2} \\int \\cos (a+b)x - \\cos (a-b)x dx $$",
+        ],
       },
       {
         question: "감마 함수 정리",
@@ -141,6 +229,7 @@ export const clcls2 = {
           "$$\\Gamma(n) = \\int_0^{\\infty} x^{n - 1} e^{-x} \\, dx =$$ (단, $$n > 0$$)",
           "$$\\Gamma(n + 1) =$$",
         ],
+        answer: ["$$ (n-1)! (단, n > 0) $$", "$$ n \\Gamma (n) $$"],
       },
       {
         question: "암기해야 하는 이상적분",
@@ -150,6 +239,13 @@ export const clcls2 = {
           "(3) $$\\int_0^{\\infty} \\sqrt{x} \\, e^{-x} \\, dx =$$",
           "(4) $$\\int_0^{\\infty} x^2 e^{-x^2} \\, dx =$$",
           "(5) $$\\int_0^1 (\\ln x)^n \\, dx =$$",
+        ],
+        answer: [
+          "(1) $$ \\frac{\\sqrt{pi}}{2} $$",
+          "(2) $$ \\sqrt{pi} $$",
+          "(3) $$ \\frac{\\sqrt{pi}}{2} $$",
+          "(4) $$ \\frac{\\sqrt{pi}}{4} $$",
+          "(5) $$ (-1)^{n} n! $$",
         ],
       },
     ],
