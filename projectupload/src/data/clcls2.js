@@ -252,345 +252,354 @@ export const clcls2 = {
     6: [
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\sin \\frac{1}{x}$$",
+          "다음 극한값을 계산하시오. 1. $$\\lim_{{x \\to 0}} \\sin \\frac{1}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0^+}} \\tan^{-1} \\frac{1}{x}$$",
+          "다음 극한값을 계산하시오. 2. $$\\lim_{{x \\to 0^+}} \\tan^{-1} \\frac{1}{x}$$",
         choices: [],
-        answer: "",
-      },
-      {
-        question: "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} x e^{-x}$$",
-        choices: [],
-        answer: "",
+        answer: "$$\\frac{\\pi}{2}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0^+}} \\frac{x}{\\ln x}$$",
+          "다음 극한값을 계산하시오. 3. $$\\lim_{{x \\to 0}} x e^{-x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\cosh x}{x}$$",
+          "다음 극한값을 계산하시오. 4. $$\\lim_{{x \\to 0^+}} \\frac{x}{\\ln x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\left( 1 + \\frac{\\cos(\\cos x)}{x} \\right)$$",
+          "다음 극한값을 계산하시오. 5. $$\\lim_{{x \\to 0}} \\frac{\\cosh x}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} x^4 \\cos \\frac{2}{x}$$",
+          "다음 극한값을 계산하시오. 6. $$\\lim_{{x \\to 0}} \\left( 1 + \\frac{\\cos(\\cos x)}{x} \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} \\frac{\\cos(n\\pi)}{n}$$",
+          "다음 극한값을 계산하시오. 7. $$\\lim_{{x \\to 0}} x^4 \\cos \\frac{2}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\sin^{-1} x + \\cos^{-1} x}{x}$$",
+          "다음 극한값을 계산하시오. 8. $$\\lim_{{n \\to \\infty}} \\frac{\\cos(n\\pi)}{n}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 3}} \\frac{2x+1}{x^2 - x - 6}$$",
+          "다음 극한값을 계산하시오. 9. $$\\lim_{{x \\to 0}} \\frac{\\sin^{-1} x + \\cos^{-1} x}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
+      },
+      {
+        question:
+          "다음 극한값을 계산하시오. 10. $$\\lim_{{x \\to 3}} \\frac{2x+1}{x^2 - x - 6}$$",
+        choices: [],
+        answer: "$$\\infty$$",
       },
     ],
 
     9: [
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{x+1}{x+2}$$",
+          "다음 극한값을 계산하시오. 11. $$\\lim_{{x \\to \\infty}} \\frac{x+1}{x+2}$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{x+1}{x^2 + x + 1}$$",
+          "다음 극한값을 계산하시오. 12. $$\\lim_{{x \\to \\infty}} \\frac{x+1}{x^2 + x + 1}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{x^2 + 1}{x - 4}$$",
+          "다음 극한값을 계산하시오. 13. $$\\lim_{{x \\to \\infty}} \\frac{x^2 + 1}{x - 4}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{4x^2 + x + 1}{x^2 - 3x}$$",
+          "다음 극한값을 계산하시오. 14. $$\\lim_{{x \\to \\infty}} \\frac{4x^2 + x + 1}{x^2 - 3x}$$",
         choices: [],
-        answer: "",
+        answer: "$$4$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\sin x}{x}$$",
+          "다음 극한값을 계산하시오. 15. $$\\lim_{{x \\to 0}} \\frac{\\sin x}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\sin x - \\tan x}{x^3}$$",
+          "다음 극한값을 계산하시오. 16. $$\\lim_{{x \\to 0}} \\frac{\\sin x - \\tan x}{x^3}$$",
         choices: [],
-        answer: "",
+        answer: "$$-\\frac{1}{2}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\sin^{-1} x}{x^2}$$",
+          "다음 극한값을 계산하시오. 17. $$\\lim_{{x \\to 0}} \\frac{\\sin^{-1} x}{x^2}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{e^x - \\cos x - x}{x}$$",
+          "다음 극한값을 계산하시오. 18. $$\\lim_{{x \\to 0}} \\frac{e^x - \\cos x - x}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{e^x}{x^{2020}}$$",
+          "다음 극한값을 계산하시오. 19. $$\\lim_{{x \\to \\infty}} \\frac{e^x}{x^{2020}}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} \\frac{\\ln n^5}{n}$$",
+          "다음 극한값을 계산하시오. 20. $$\\lim_{{n \\to \\infty}} \\frac{\\ln n^5}{n}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{e^x + 2x^5 + 3x + 4}{x^{2020} + 2021}$$",
+          "다음 극한값을 계산하시오. 21. $$\\lim_{{x \\to \\infty}} \\frac{e^x + 2x^5 + 3x + 4}{x^{2020} + 2021}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\frac{2\\sin x + \\ln x^3 + x^4 + 5}{3e^x + 4x}$$",
+          "다음 극한값을 계산하시오. 22. $$\\lim_{{x \\to \\infty}} \\frac{2\\sin x + \\ln x^3 + x^4 + 5}{3e^x + 4x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
     ],
     11: [
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 1}} \\frac{\\sin(x-1)}{\\sqrt{x}-1}$$",
+          "다음 극한값을 계산하시오. 23. $$\\lim_{{x \\to 1}} \\frac{\\sin(x-1)}{\\sqrt{x}-1}$$",
         choices: [],
-        answer: "",
+        answer: "$$2$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\frac{\\sin x}{\\sqrt{1+x} - \\sqrt{1-x}}$$",
+          "다음 극한값을 계산하시오. 24. $$\\lim_{{x \\to 0}} \\frac{\\sin x}{\\sqrt{1+x} - \\sqrt{1-x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 1}} \\frac{e^{x - 1} - 1}{\\ln x}$$",
+          "다음 극한값을 계산하시오. 25. $$\\lim_{{x \\to 1}} \\frac{e^{x - 1} - 1}{\\ln x}$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\frac{\\pi}{2}}} \\frac{\\ln \\sin x}{1 - \\sin x}$$",
+          "다음 극한값을 계산하시오. 26. $$\\lim_{{x \\to \\frac{\\pi}{2}}} \\frac{\\ln \\sin x}{1 - \\sin x}$$",
         choices: [],
-        answer: "",
+        answer: "$$-1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 1}} \\log_2 \\left( \\frac{1 - \\sqrt{x}}{1 - x} \\right)$$",
+          "다음 극한값을 계산하시오. 27. $$\\lim_{{x \\to 1}} \\log_2 \\left( \\frac{1 - \\sqrt{x}}{1 - x} \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$-1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\sqrt{2}}} \\frac{(x^2 + x) \\sin(x - \\sqrt{2})}{x^2 - 2}$$",
+          "다음 극한값을 계산하시오. 28. $$\\lim_{{x \\to \\sqrt{2}}} \\frac{(x^2 + x) \\sin(x - \\sqrt{2})}{x^2 - 2}$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{\\sqrt{2} + 1}{2}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 1}} \\frac{x^{2019} + 2x - 3}{x - 1}$$",
+          "다음 극한값을 계산하시오. 29. $$\\lim_{{x \\to 1}} \\frac{x^{2019} + 2x - 3}{x - 1}$$",
         choices: [],
-        answer: "",
+        answer: "$$2021$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\frac{1}{2}}} \\frac{4x^2 - 1}{2x - 1}$$",
+          "다음 극한값을 계산하시오. 30. $$\\lim_{{x \\to \\frac{1}{2}}} \\frac{4x^2 - 1}{2x - 1}$$",
         choices: [],
-        answer: "",
+        answer: "$$2$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\sin x \\cot 3x$$",
+          "다음 극한값을 계산하시오. 31. $$\\lim_{{x \\to 0}} \\sin x \\cot 3x$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{3}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\frac{\\pi}{2}}} (\\sec x - \\tan x)$$",
+          "다음 극한값을 계산하시오. 32. $$\\lim_{{x \\to \\frac{\\pi}{2}}} (\\sec x - \\tan x)$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 1^+}} \\left( \\frac{x}{x - 1} - \\frac{1}{\\ln x} \\right)$$",
+          "다음 극한값을 계산하시오. 33. $$\\lim_{{x \\to 1^+}} \\left( \\frac{x}{x - 1} - \\frac{1}{\\ln x} \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{2}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to -2}} \\left( \\frac{1}{x^2 + x - 2} - \\frac{1}{2x^2 + 5x + 2} \\right)$$",
+          "다음 극한값을 계산하시오. 34. $$\\lim_{{x \\to -2}} \\left( \\frac{1}{x^2 + x - 2} - \\frac{1}{2x^2 + 5x + 2} \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{9}$$",
       },
     ],
 
     12: [
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0^+}} \\frac{e^{-\\frac{1}{x}}}{x}$$",
+          "다음 극한값을 계산하시오. 35. $$\\lim_{{x \\to 0^+}} \\frac{e^{-\\frac{1}{x}}}{x}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( x e^{1/x} - x \\right)$$",
+          "다음 극한값을 계산하시오. 36. $$\\lim_{{x \\to \\infty}} \\left( x e^{1/x} - x \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( \\sqrt{x^2 + x} - x \\right)$$",
+          "다음 극한값을 계산하시오. 37. $$\\lim_{{x \\to \\infty}} \\left( \\sqrt{x^2 + x} - x \\right)$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{2}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( \\sqrt{4x^2 + x} - 2x \\right)$$",
+          "다음 극한값을 계산하시오. 38. $$\\lim_{{x \\to \\infty}} \\left( \\sqrt{4x^2 + x} - 2x \\right)$$",
         choices: [],
-        answer: "",
-      },
-      {
-        question: "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} x \\ln x$$",
-        choices: [],
-        answer: "",
-      },
-      {
-        question: "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} x^x$$",
-        choices: [],
-        answer: "",
-      },
-      {
-        question: "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} x^x$$",
-        choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{4}$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0^+}} x^{\\frac{1}{x}}$$",
+          "다음 극한값을 계산하시오. 39. $$\\lim_{{x \\to 0}} x \\ln x$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} x^{\\frac{1}{x}}$$",
+          "다음 극한값을 계산하시오. 40. $$\\lim_{{x \\to \\infty}} x^x$$",
         choices: [],
-        answer: "",
+        answer: "$$\\infty$$",
+      },
+      {
+        question: "다음 극한값을 계산하시오. 41. $$\\lim_{{x \\to 0}} x^x$$",
+        choices: [],
+        answer: "$$1$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( \\cos \\frac{1}{x} \\right)^x$$",
+          "다음 극한값을 계산하시오. 42. $$\\lim_{{x \\to 0^+}} x^{\\frac{1}{x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} \\left( \\sin \\frac{1}{x} \\right)^x$$",
+          "다음 극한값을 계산하시오. 43. $$\\lim_{{x \\to \\infty}} x^{\\frac{1}{x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$1$$",
+      },
+      {
+        question:
+          "다음 극한값을 계산하시오. 44. $$\\lim_{{x \\to \\infty}} \\left( \\cos \\frac{1}{x} \\right)^x$$",
+        choices: [],
+        answer: "$$1$$",
+      },
+      {
+        question:
+          "다음 극한값을 계산하시오. 45. $$\\lim_{{x \\to 0}} \\left( \\sin \\frac{1}{x} \\right)^x$$",
+        choices: [],
+        answer: "$$1$$",
       },
     ],
     13: [
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} \\left( 1 - \\frac{3}{2n - 5} \\right)^n$$",
+          "다음 극한값을 계산하시오. 46. $$\\lim_{{n \\to \\infty}} \\left( 1 - \\frac{3}{2n - 5} \\right)^n$$",
         choices: [],
-        answer: "",
+        answer: "$$ e^-\\frac{3}{2} $$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} \\left( \\frac{n - 1}{n} \\right)^{2n + 2020}$$",
+          "다음 극한값을 계산하시오. 47. $$\\lim_{{n \\to \\infty}} \\left( \\frac{n - 1}{n} \\right)^{2n + 2020}$$",
         choices: [],
-        answer: "",
+        answer: "$$ e^{-2} $$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{p \\to \\infty}} \\frac{p^{p+1}}{(p+1)^{p+1}}$$",
+          "다음 극한값을 계산하시오. 48. $$\\lim_{{p \\to \\infty}} \\frac{p^{p+1}}{(p+1)^{p+1}}$$",
         choices: [],
-        answer: "",
+        answer: "$$e^-1 $$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( \\frac{x + \\ln 3}{x - \\ln 3} \\right)^x$$",
+          "다음 극한값을 계산하시오. 49. $$\\lim_{{x \\to \\infty}} \\left( \\frac{x + \\ln 3}{x - \\ln 3} \\right)^x$$",
         choices: [],
-        answer: "",
+        answer: "$$9$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} (1 + \\sin x)^{\\frac{1}{x}}$$",
+          "다음 극한값을 계산하시오. 50. $$\\lim_{{x \\to 0}} (1 + \\sin x)^{\\frac{1}{x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$e$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} (e^x + \\sin 2x)^{\\frac{1}{x}}$$",
+          "다음 극한값을 계산하시오. 51. $$\\lim_{{x \\to 0}} (e^x + \\sin 2x)^{\\frac{1}{x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$e^3$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} (1 + \\sin 4x)^{\\cot x}$$",
+          "다음 극한값을 계산하시오. 52. $$\\lim_{{x \\to 0}} (1 + \\sin 4x)^{\\cot x}$$",
         choices: [],
-        answer: "",
+        answer: "$$e^4$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to 0}} (\\cos x + 3x)^{\\frac{2}{x}}$$",
+          "다음 극한값을 계산하시오. 53. $$\\lim_{{x \\to 0}} (\\cos x + 3x)^{\\frac{2}{x}}$$",
         choices: [],
-        answer: "",
+        answer: "$$e^6$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{x \\to \\infty}} \\left( \\sin \\frac{2}{x} + \\cos \\frac{3}{x} \\right)^x$$",
+          "다음 극한값을 계산하시오. 54. $$\\lim_{{x \\to \\infty}} \\left( \\sin \\frac{2}{x} + \\cos \\frac{3}{x} \\right)^x$$",
         choices: [],
-        answer: "",
+        answer: "$$e^2$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} (2^n + 3^n + 4^n)^{\\frac{1}{n}}$$",
+          "다음 극한값을 계산하시오. 55. $$\\lim_{{n \\to \\infty}} (2^n + 3^n + 4^n)^{\\frac{1}{n}}$$",
         choices: [],
-        answer: "",
+        answer: "$$4$$",
       },
       {
         question:
-          "다음 극한값을 계산하시오. $$\\lim_{{n \\to \\infty}} \\frac{n 2^n}{3^n}$$",
+          "다음 극한값을 계산하시오. 56. $$\\lim_{{n \\to \\infty}} \\frac{n 2^n}{3^n}$$",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
+      },
+      {
+        question:
+          "$$ 0<a<b $$이ㄴ 상수 $$a, b$$에 대하여 $$\\lim_{{x \\to \\infty}} (a^{n} + b^{n})^{\\frac{1}{n}}$$의 값은?",
+        choices: [],
+        answer: "$$b$$",
       },
     ],
 
@@ -599,60 +608,60 @@ export const clcls2 = {
         question:
           "$$\\lim_{{x \\to 2}} \\frac{x^2 - ax - 2}{x - 2}$$ 가 극한값이 존재한다면 그 극한값은 얼마인가?",
         choices: [],
-        answer: "",
+        answer: "$$3$$",
       },
       {
         question:
           "$$\\lim_{{x \\to 1}} \\frac{x^2 + ax + b}{x - 1} = 3$$일 때 $$2a + b$$의 값은?",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
           "$$\\lim_{{x \\to 0}} \\frac{1}{3 + 2^ \\frac{1}{x}}$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "존재X",
       },
       {
         question: "$$\\lim_{{x \\to 2}} 3^ \\frac{1}{x-2}$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "존재X",
       },
       {
         question:
           "$$\\lim_{{x \\to 1}} \\frac{x^2 - 1}{|x - 1|}$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "존재X",
       },
       {
         question:
           "$$\\lim_{{x \\to 5}} \\left\\lfloor \\frac{x}{5} \\right\\rfloor$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "존재X",
       },
       {
         question:
           "$$\\lim_{x \\to 3} \\left( \\left\\lfloor \\frac{x}{2} \\right\\rfloor - \\frac{\\lfloor x \\rfloor}{2} \\right)$$의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "존재X",
       },
       {
         question:
           "$$\\lim_{{x \\to \\infty}} \\frac{\\lfloor x^2 \\rfloor - x^2}{\\sqrt{x}}$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
           "$$\\lim_{{x \\to 0^+}} \\frac{x}{2} \\left\\lfloor \\frac{3}{x} \\right\\rfloor$$ 의 극한값은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{3}{2}$$",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to -2^+}} f(x)$$이 존재하고 $$\\frac{x^2 + x - 1}{x + 3} \\leq \\frac{f(x)}{x^2} \\leq \\frac{x^2 + 2x + 1}{x + 3}$$이 성립할 때 $$\\lim_{{x \\to -2^+}} f(x)$$의 값은?",
         choices: ["1", "2", "3", "4", "5"],
-        answer: "",
+        answer: "④",
       },
     ],
     17: [
@@ -660,31 +669,31 @@ export const clcls2 = {
         question:
           "$$f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$ 일 때, $$x = 0$$에서 연속성과 미분가능성은?",
         choices: [],
-        answer: "",
+        answer: "연속, 미분불가능",
       },
       {
         question:
           "$$f(x) = \\begin{cases} \\sqrt{x} \\tan^{-1} \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$ 일 때, $$x = 0$$에서 연속성과 미분가능성은?",
         choices: [],
-        answer: "",
+        answer: "연속, 미분불가능",
       },
       {
         question:
           "$$f(x) = |x|^{\\alpha}$$ 일 때, $$f(x)$$가 원점에서 미분가능하게 되는 $$\\alpha$$의 범위는?",
         choices: [],
-        answer: "",
+        answer: "$$\\alpha > 1$$",
       },
       {
         question:
           "함수 $$f(x)$$에 대하여 $$f(x+y) = f(x) + f(y) + xy$$가 성립하고, $$f'(0) = 5$$ 일 때, $$f'(3)$$을 구하시오.",
         choices: [],
-        answer: "",
+        answer: "$$8$$",
       },
       {
         question:
           "$$f(x)$$가 모든 $$x, y$$에 대해 $$f(x+y) = 4f(x)f(y)$$ 가 성립하고, $$f(2) = \\frac{1}{2}, f'(0) = 1$$ 일 때, $$f'(2)$$를 구하면?",
         choices: [],
-        answer: "",
+        answer: "$$2$$",
       },
       {
         question:
@@ -695,25 +704,25 @@ export const clcls2 = {
           "적분가능하면 미분가능하다",
           "연속이면 평등연속이다",
         ],
-        answer: "",
+        answer: "④, $$~$$ 연속이면 평등연속이다.",
       },
     ],
     20: [
       {
         question: "음이 아닌 두 수의 곱이 $$25$$일 때, 두 수의 합의 최소값은?",
         choices: [],
-        answer: "",
+        answer: "$$10$$",
       },
       {
         question: "$$x > 0$$일 때, $$x + \\frac{1}{x}$$ 의 최소값을 구하여라.",
         choices: [],
-        answer: "",
+        answer: "$$2$$",
       },
       {
         question:
           "실수 $$x, y, z$$가 $$4x + y + 3z = 12$$를 만족할 때, $$4x^2 + y^2 + 9z^2$$ 의 최소값을 구하면?",
         choices: [],
-        answer: "",
+        answer: "$$24$$",
       },
       {
         question:
@@ -724,19 +733,19 @@ export const clcls2 = {
           "$$38\\sqrt{3}$$",
           "$$38\\sqrt{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "방정식 $$2x^7 + 7x^3 + 4x - 15 = 0$$ 의 실근이 속하는 구간은?",
         choices: ["$$[-2, -1]$$", "$$[-1, 0]$$", "$$[0, 1]$$", "$$[1, 2]$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$f(0) = -3$$이고 모든 $$x$$값에 대해 $$f'(x) \\leq 5$$라고 가정하자. $$f(2)$$의 최댓값은?",
         choices: [],
-        answer: "",
+        answer: "$$7$$",
       },
       {
         question:
@@ -747,7 +756,7 @@ export const clcls2 = {
           "$$\\frac{3}{2}$$",
           "$$\\frac{2}{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     21: [
@@ -760,19 +769,19 @@ export const clcls2 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{1}{4}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} \\frac{\\sin x}{\\ln(x+1)}$$ 의 값은?",
         choices: ["$$1$$", "$$e$$", "$$e^2$$", "$$e^3$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} \\frac{1}{x} \\ln(2x^3 - x^2 - 2x + 1)$$ 의 값은?",
         choices: ["$$-2$$", "$$-1$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -783,7 +792,7 @@ export const clcls2 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{2}{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     22: [
@@ -797,7 +806,7 @@ export const clcls2 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{1}{6}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -808,13 +817,13 @@ export const clcls2 = {
           "$$-\\frac{1}{2}$$",
           "$$-\\frac{3}{2}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "함수 $$f(x)$$가 구간 $$\\left[ -\\frac{1}{2}, \\frac{1}{2} \\right]$$ 에서 연속이고 $$\\arcsin x = 2x f(x)$$를 만족할 때, $$f(0)$$을 구하시오.",
         choices: ["$$-\\frac{1}{2}$$", "$$0$$", "$$\\frac{1}{2}$$", "$$1$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     23: [
@@ -822,38 +831,38 @@ export const clcls2 = {
         question:
           "극한 $$\\lim_{{x \\to 0}} (\\cosh x)^\\frac{1}{x}$$ 의 값은?",
         choices: ["$$0$$", "$$1$$", "$$2$$", "$$e$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극한 $$\\lim_{x \\to \\infty} x^{\\frac{1}{3 + \\ln x}}$$의 값은?",
         choices: ["$$e^{-2}$$", "$$e^{-1}$$", "$$1$$", "$$e$$", "$$e^2$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "극한 $$\\lim_{{n \\to \\infty}} n (\\sqrt[n]{3} - 1)$$ 의 값은?",
         choices: ["$$1$$", "$$\\sqrt{3}$$", "$$3$$", "$$\\ln 3$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "극한 $$\\lim_{x \\to \\infty} \\left( x e^{\\frac{1}{x}} - x \\right)$$의 값은?",
         choices: ["$$-\\infty$$", "$$0$$", "$$1$$", "$$e$$", "$$\\infty$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     24: [
       {
         question: "극한 $$\\lim_{{x \\to 0^+}} x(2 - 3 \\ln x)$$ 의 값은?",
         choices: ["$$-\\infty$$", "$$-3$$", "$$0$$", "$$2$$", "$$+\\infty$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} x^2 \\left( 1 + \\sin^2 \\frac{2\\pi}{x} \\right)$$ 의 값은?",
         choices: ["$$2\\pi$$", "$$1$$", "$$0$$", "$$2$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -864,13 +873,13 @@ export const clcls2 = {
           "$$e^{-e-1}$$",
           "$$e^{-e-2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to \\infty}} \\frac{\\tan^{-1} x - \\frac{\\pi}{2}}{\\frac{1}{x}}$$ 의 값은?",
         choices: ["$$-2$$", "$$-1$$", "$$0$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "②",
       },
     ],
     25: [
@@ -884,13 +893,13 @@ export const clcls2 = {
           "$$\\frac{3}{2}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} (1 - \\sin x)^{\\frac{1}{x}}$$ 을 구하시오.",
         choices: ["$$0$$", "$$1$$", "$$e$$", "$$\\frac{1}{e}$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -902,13 +911,13 @@ export const clcls2 = {
           "$$e$$",
           "$$\\frac{1}{e}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to \\infty}} (x+1)^ \\frac{2}{x}$$ 의 값을 구하면?",
         choices: ["$$1$$", "$$e$$", "$$e^2$$", "$$e^{-2}$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     26: [
@@ -916,19 +925,19 @@ export const clcls2 = {
         question:
           "$$f(x) > 0$$이며 $$\\lim_{{x \\to \\infty}} f(x) = 0$$일 때, $$\\lim_{{x \\to -\\infty}} \\left[1 + 2f(x)\\right]^\\frac{1}{3f(x)}$$ 의 값은?",
         choices: ["$$e^2$$", "$$e^\\frac{2}{3}$$", "$$e^3$$", "$$1$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극한 $$\\lim_{{n \\to \\infty}} \\sqrt[n]{2^n + 3^n}$$ 의 값은?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "상수 $$a, b$$에 대하여 극한 $$\\lim_{{n \\to \\infty}} \\left(1 + \\frac{a}{n} + \\frac{b}{n^2}\\right)^n$$ 의 값은?",
         choices: ["$$e^a$$", "$$e^b$$", "$$e^{a+b}$$", "$$1$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     27: [
@@ -936,7 +945,7 @@ export const clcls2 = {
         question:
           "극한 $$\\lim_{{x \\to -2}} \\frac{1 - \\sqrt{x + a}}{x + 2} = b$$ 를 만족시키는 상수 $$a, b$$ 에 대하여 $$ab$$의 값은?",
         choices: ["$$-\\frac{3}{2}$$", "$$-1$$", "$$-\\frac{1}{2}$$", "$$1$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -947,13 +956,13 @@ export const clcls2 = {
           "$$\\frac{4}{3}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} \\left( \\frac{\\tan x}{x^2} + \\alpha + \\frac{\\beta}{x} \\right) = 3$$ 을 만족시키는 $$\\alpha, \\beta$$에 대하여 $$\\alpha + \\beta$$의 값은?",
         choices: ["$$0$$", "$$1$$", "$$2$$", "$$3$$", "$$4$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     28: [
@@ -967,7 +976,7 @@ export const clcls2 = {
           "$$x = 0, x = 1$$",
           "$$x = -1, x = 0, x = 1$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -979,13 +988,13 @@ export const clcls2 = {
           "$$x = -1$$",
           "없다",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "함수 $$\\ f(x) = \\begin{cases} \\frac{x^2 - x - 12}{x^2 - 10x + 24}, & x \\neq 4 \\\\ -\\frac{7}{2}, & x = 4 \\end{cases}$$ 의 불연속점을 모두 찾으면?",
         choices: ["$$4$$", "$$6$$", "$$-6, 4$$", "$$4, 6$$", "불연속점 없음"],
-        answer: "",
+        answer: "②",
       },
     ],
     29: [
@@ -993,19 +1002,19 @@ export const clcls2 = {
         question:
           "다음 함수 $$f(x)$$가 $$x = 0$$에서 연속이라고 한다. $$a$$의 값은? $$f(x) = \\begin{cases} 1 - x \\sin \\frac{1}{e^{4x}}, & x \\neq 0 \\\\ a, & x = 0 \\end{cases}$$",
         choices: ["$$-2$$", "$$-1$$", "$$0$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "다음과 같이 정의된 함수 $$f$$가 연속이기 위한 실수 $$a$$의 값은? $$f(x) = \\begin{cases} (e^x + x)^{\\frac{1}{\\sin^{-1} x}}, & x \\neq 0 \\\\ a, & x = 0 \\end{cases}$$",
         choices: ["$$1$$", "$$e$$", "$$e^{-1}$$", "$$e^2$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "함수 $$\\ f(x) = \\begin{cases} \\frac{a \\sqrt{x+1} - b}{x-1}, & (x > 1) \\\\ 2x-1, & (x \\leq 1) \\end{cases}$$ 가 $$x = 1$$에서 연속이기 위한 상수 $$a, b$$ 에 대해 $$ab$$의 값을 구하면?",
         choices: ["$$4$$", "$$4\\sqrt{2}$$", "$$8$$", "$$8\\sqrt{2}$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     30: [
@@ -1018,13 +1027,13 @@ export const clcls2 = {
           "$$ab < 0$$",
           "$$abc < 0$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$f(x) = \\begin{cases} \\frac{\\tan x}{x}, & x \\neq 0 \\\\ 1, & x = 0 \\end{cases}$$ 일 때, $$f'(0)$$ 의 값은?",
         choices: ["$$0$$", "$$\\frac{1}{2}$$", "$$1$$", " 존재하지 않는다."],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1035,7 +1044,7 @@ export const clcls2 = {
           "$$\\frac{1}{6}$$",
           "$$\\frac{1}{2}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     31: [
@@ -1045,7 +1054,7 @@ export const clcls2 = {
           "(a) $$f(x) = \\begin{cases} \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$<br>(b)$$f(x) = \\begin{cases} x \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$<br>(c)$$f(x) = \\begin{cases} x^2 \\sin \\frac{1}{x}, & x \\neq 0 \\\\ 0, & x = 0 \\end{cases}$$",
         ],
         choices: ["(a)", "(b)", "(c)", "(a), (b)", "(b), (c)"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1056,7 +1065,7 @@ export const clcls2 = {
           " 연속은 아니지만 미분가능하다.",
           " 연속도 아니고 미분가능하지도 않다.",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1068,7 +1077,7 @@ export const clcls2 = {
           "ㄹ \\( x = 1 \\)에서 미분가능하다.",
         ],
         choices: ["ㄱ, ㄷ", "ㄱ, ㄴ, ㄷ", "ㄱ, ㄷ, ㄹ", "ㄱ, ㄴ, ㄷ, ㄹ"],
-        answer: "",
+        answer: "④",
       },
     ],
     32: [
@@ -1080,7 +1089,7 @@ export const clcls2 = {
           "$$\\text{(다)}\\ f(x) = \\begin{cases} x \\tan^{-1} \\dfrac{1}{x}, & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$$",
         ],
         choices: ["$$0$$", "$$1$$", "$$2$$", "$$3$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 함수 중 $$x = 0$$에서 미분 불가능한 것은?",
@@ -1091,7 +1100,7 @@ export const clcls2 = {
           "$$f(x) = x|x|$$",
           "$$f(x) = |x|^3$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1099,7 +1108,7 @@ export const clcls2 = {
         example:
           "(가) $$f(x) = |x| \\sin x$$  (나) $$g(x) = |x| \\cos x$$  (다) $$h(x) = |x| \\tan x$$  (라) $$i(x) = |x| e^x$$",
         choices: ["(가), (나)", "(가), (다)", "(나), (라)", "(가), (다), (라)"],
-        answer: "",
+        answer: "②",
       },
     ],
     33: [
@@ -1109,24 +1118,24 @@ export const clcls2 = {
         example:
           "(i) $$f(x+y) = \\frac{1}{5} f(x) f(y)$$ <br> (ii) $$f(0) = 5$$ <br> (iii) $$f'(0) = 10$$",
         choices: ["$$f(2)$$", "$$2f(2)$$", "$$5f(2)$$", "$$50f(2)$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "함수 $$f$$가 $$x = 1$$에서 미분가능하며, 다음 식 $$f(x+y) = f(x) + f(y) + 5xy$$와 $$\\lim_{{h \\to 0}} \\frac{f(h)}{h} = 3$$을 만족한다. 이 때 $$f'(x)$$를 구하면?",
         choices: ["$$5x + 3$$", "$$5x - 3$$", "$$3x + 5$$", "$$3x - 5$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "$$[x]$$가 실수 $$x$$를 넘지 않는 최대 정수이고 $$f(x) = [x]^2 - x^2$$일 때, $$f'(0.4)$$의 값은?",
         choices: ["$$0$$", "$$-0.8$$", "$$0.8$$", "$$\\infty$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question: "방정식 $$x^5 - 2x^4 - x - 3 = 0$$ 의 근이 존재하는 구간은?",
         choices: ["$$(-1, 0)$$", "$$(0, 1)$$", "$$(1, 2)$$", "$$(2, 3)$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     34: [
@@ -1139,7 +1148,7 @@ export const clcls2 = {
           "$$7 \\leq f(5) - f(2) \\leq 14$$",
           "$$10 \\leq f(5) - f(2) \\leq 21$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1150,7 +1159,7 @@ export const clcls2 = {
           "$$8 \\leq f(4) \\leq 11$$",
           "$$9 \\leq f(4) \\leq 12$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1161,13 +1170,13 @@ export const clcls2 = {
           "$$-8 \\leq f(2) \\leq -1$$",
           "$$-3 \\leq f(2) \\leq 2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "미분 가능한 함수 $$f : \\mathbb{R} \\to \\mathbb{R}$$가 $$\\lim_{{a \\to \\infty}} f'(a) = 5$$를 만족시킬 때 $$\\lim_{{a \\to \\infty}} \\{ f(2+a) - f(a) \\}$$ 의 값을 구하면?",
         choices: ["$$-10$$", "$$-5$$", "$$0$$", "$$5$$", "$$10$$"],
-        answer: "",
+        answer: "⑤",
       },
     ],
     36: [
@@ -1175,7 +1184,7 @@ export const clcls2 = {
         question:
           "극한 $$\\lim_{{x \\to \\infty}} \\frac{e^x -1}{\\cosh x}$$ 의 값은?",
         choices: ["$$0$$", "$$\\frac{1}{2}$$", "$$1$$", "$$2$$", "$$\\infty$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1187,13 +1196,13 @@ export const clcls2 = {
           "$$1$$",
           "$$0$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "극한 $$\\lim_{{x \\to 0}} \\frac{1 - \\cos(1 - \\cos x)}{x^n} = \\frac{1}{8}$$ 을 만족하는 자연수 $$n$$의 값은?",
         choices: ["$$4$$", "$$5$$", "$$6$$", "$$7$$", "$$8$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     37: [
@@ -1201,7 +1210,7 @@ export const clcls2 = {
         question:
           "극한 $$\\lim_{x \\to \\infty} \\left( \\sqrt{2x^2 + 2x + 1} - \\sqrt{2x^2 - 2x + 1} \\right)$$ 의 값은?",
         choices: ["$$1$$", "$$\\sqrt{2}$$", "$$2\\sqrt{2}$$", "$$4$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1213,13 +1222,13 @@ export const clcls2 = {
           "$$\\sqrt{5}$$",
           "$$\\sqrt{10}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "$$\\lim_{n \\to \\infty} \\frac{1}{\\sqrt{3n + \\sqrt{2n} - \\sqrt{3n}}}$$ 의 값은?",
         choices: ["$$\\sqrt{6}$$", "$$1$$", "$$\\sqrt{3}$$", "$$\\sqrt{2}$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     38: [
@@ -1232,7 +1241,7 @@ export const clcls2 = {
           "$$\\frac{3}{2}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1243,7 +1252,7 @@ export const clcls2 = {
           "$$\\frac{\\pi + 4}{2\\pi}$$",
           "$$\\frac{\\pi + 6}{2\\pi}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1254,7 +1263,7 @@ export const clcls2 = {
           "$$\\frac{4}{3}$$",
           "$$\\frac{16}{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1265,7 +1274,7 @@ export const clcls2 = {
           "$$\\frac{1}{20}$$",
           "$$\\frac{1}{60}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
 
@@ -1279,13 +1288,13 @@ export const clcls2 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{4}{3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극한 $$\\lim_{{h \\to 0}} \\frac{\\sin x (\\cosh - 1) + (\\cos x)(\\sinh)}{h}$$ 의 값은?",
         choices: ["$$0$$", "$$\\sin x$$", "$$\\cos x$$", "$$1$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1297,7 +1306,7 @@ export const clcls2 = {
           "$$\\frac{5}{3}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1308,7 +1317,7 @@ export const clcls2 = {
           "$$\\sqrt[3]{e}$$",
           "$$\\sqrt[3]{e} + 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     40: [
@@ -1322,7 +1331,7 @@ export const clcls2 = {
           "$$\\frac{1}{2}$$",
           "$$\\frac{1}{e}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1334,7 +1343,7 @@ export const clcls2 = {
           "$$2$$",
           "$$\\frac{5}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1345,13 +1354,14 @@ export const clcls2 = {
           "$$\\sqrt{e}$$",
           "$$1$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
-        question:
-          "$$a$$가 양수일 때, 다음 극한값은? $$\\lim_{{x \\to a}} \\frac{\\sqrt{2a^3 x - x^4} - a \\sqrt[3]{a^2 x}}{a - \\sqrt[4]{ax^3}}$$",
+        question: "$$a$$가 양수일 때, 다음 극한값은?",
+        example:
+          "$$\\lim_{{x \\to a}} \\frac{\\sqrt{2a^3 x - x^4} - a \\sqrt[3]{a^2 x}}{a - \\sqrt[4]{ax^3}}$$",
         choices: ["$$1$$", "$$a$$", "$$\\frac{16}{9}$$", "$$\\frac{16a}{9}$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     41: [
