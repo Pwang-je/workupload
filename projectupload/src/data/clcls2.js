@@ -218,9 +218,9 @@ export const clcls2 = {
           "(3) $$\\int \\sin(ax) \\cdot \\sin(bx) \\, dx =$$",
         ],
         answer: [
-          "() $$ \\frac{1}{2} \\int \\sin (a+b)x + \\sin (a-b)x dx $$",
-          "() $$ \\frac{1}{2} \\int \\cos (a+b)x + \\cos (a-b)x dx $$",
-          "() $$ -\\frac{1}{2} \\int \\cos (a+b)x - \\cos (a-b)x dx $$",
+          "(1) $$ \\frac{1}{2} \\int \\sin (a+b)x + \\sin (a-b)x dx $$",
+          "(2) $$ \\frac{1}{2} \\int \\cos (a+b)x + \\cos (a-b)x dx $$",
+          "(3) $$ -\\frac{1}{2} \\int \\cos (a+b)x - \\cos (a-b)x dx $$",
         ],
       },
       {
@@ -229,7 +229,7 @@ export const clcls2 = {
           "$$\\Gamma(n) = \\int_0^{\\infty} x^{n - 1} e^{-x} \\, dx =$$ (단, $$n > 0$$)",
           "$$\\Gamma(n + 1) =$$",
         ],
-        answer: ["$$ (n-1)! (단, n > 0) $$", "$$ n \\Gamma (n) $$"],
+        answer: ["$$ (n-1)! ( \\text{단}, n > 0) $$", "$$ n \\Gamma (n) $$"],
       },
       {
         question: "암기해야 하는 이상적분",
