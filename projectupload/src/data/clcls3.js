@@ -1,5 +1,5 @@
 export const clcls3 = {
-  subject: "calculus1",
+  subject: "calculus3",
   questions: {
     6: [
       {
@@ -11,7 +11,7 @@ export const clcls3 = {
           "$$(1, -\\frac{\\pi}{4})$$",
           "$$(1, \\frac{\\pi}{4})$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "제 3사분면에 속하는 점은?",
@@ -21,7 +21,7 @@ export const clcls3 = {
           "$$(2, -\\frac{\\pi}{6})$$",
           "$$(1, \\frac{4\\pi}{3})$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -32,13 +32,13 @@ export const clcls3 = {
           "$$(x - 2)^2 + y^2 = 4$$",
           "$$x^2 + (y - 2)^2 = 4$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$\\left(1, \\frac{\\pi}{6}\\right)$$을 직교좌표로 나타내면?",
         choices: [],
-        answer: "",
+        answer: "$$\\left(\\frac{\\sqrt{3}}{2}, \\frac{1}{2}\\right)$$",
       },
       {
         question:
@@ -49,7 +49,7 @@ export const clcls3 = {
           "$$\\sqrt{ {3} + \\sqrt{3}}$$",
           "$$\\sqrt{ {3} + \\sqrt{6}}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
 
@@ -63,7 +63,7 @@ export const clcls3 = {
           "$$2\\pi$$",
           "$$\\sqrt{2}\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "곡선$$r = 2(\\cos \\theta + \\sin \\theta)$$의 길이는?",
@@ -73,7 +73,7 @@ export const clcls3 = {
           "$$2\\pi$$",
           "$$4\\sqrt{2}\\pi$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음은 원들의 방정식들이다. 이 중 반지름이 가장 작은 것은?",
@@ -83,7 +83,7 @@ export const clcls3 = {
           "$$r = 2\\left(\\cos^2 \\frac{\\theta}{2} - \\sin^2 \\frac{\\theta}{2}\\right)$$",
           "$$r = -2 \\cos \\theta$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "극좌표로 표현된 곡선 중에서 원점을 지나지 않는 것을 고르면?",
@@ -93,7 +93,7 @@ export const clcls3 = {
           "$$r = \\tan \\theta$$",
           "$$r = \\sec \\theta$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     10: [
@@ -101,19 +101,19 @@ export const clcls3 = {
         question:
           "극곡선$$r = 4\\sin\\theta$$에 대하여$$\\theta = \\frac{\\pi}{2}$$에서의 접선의 기울기는?",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
           "극곡선$$r = 2\\cos\\theta$$에 대하여$$\\theta = \\frac{\\pi}{4}$$에서의 접선의 기울기는?",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
           "평면상에서 극방정식$$r = 1 - 2\\cos\\theta$$로 주어지는 곡선상의 점 $$P$$의 직교 좌표는$$(0, 1)$$이다. 점$$P$$에서의 접선의 기울기는?",
         choices: [],
-        answer: "",
+        answer: "$$-2$$",
       },
       {
         question:
@@ -124,13 +124,13 @@ export const clcls3 = {
           "$$\\frac{\\pi}{4}$$",
           "$$\\frac{\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극곡선$$r = 2\\sin\\theta$$위에서 동경과 접선 사이의 각이$$\\frac{\\pi}{6}$$인 점의 극좌표는?",
         choices: [],
-        answer: "",
+        answer: "$$ \\left( 1, \\frac{pi}{6} \\right) $$",
       },
     ],
     11: [
@@ -143,7 +143,7 @@ export const clcls3 = {
           "$$y = \\sqrt{x}$$",
           "$$y = \\sqrt{1 - x^2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -154,12 +154,12 @@ export const clcls3 = {
           "$$1$$",
           "$$\\sqrt{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "곡선$$r = \\frac{6}{3 + 2\\sin \\theta}$$는?",
         choices: ["직선", "포물선", "타원", "쌍곡선"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -171,7 +171,7 @@ export const clcls3 = {
           "$$\\sqrt{6}$$",
           "$$\\sqrt{7}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     12: [
@@ -179,7 +179,7 @@ export const clcls3 = {
         question:
           "$$xy$$평면에 두 극방정식$$r = 2\\cos\\theta$$와$$r = 0$$의 그래프를 그렸을 때, 두 그래프가 만나는 점의 개수는?",
         choices: ["0개", "1개", "2개", "4개"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 극방정식의 그래프의 모양을 잘못 나타낸 것을 고르시오.",
@@ -189,19 +189,19 @@ export const clcls3 = {
           "$$r = 4\\sin\\theta$$: 원점을 지나는 원 (반지름 2)",
           "$$r = \\sec\\theta$$: 수평선",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "극 좌표로 주어진 곡선$$r = 1 - \\cos\\theta$$를$$xy$$좌표평면에 나타낼 때, 이 곡선이$$x$$축 또는$$y$$축과 만나는 4개 점들의$$x$$좌표값과$$y$$좌표값을 모두 더하면?",
         choices: ["$$-2$$", "$$-1$$", "$$0$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "두 극 방정식$$r = 1 + \\sin\\theta$$,$$r = 1 - \\cos\\theta$$로 정의된 두 곡선의 교점의 개수는?",
         choices: ["0개", "1개", "2개", "3개", "4개"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "직교방정식$$(x - 2)^2 + y^2 = 4$$를 극방정식으로 나타내면?",
@@ -211,7 +211,7 @@ export const clcls3 = {
           "$$r = 4 - 8\\cos^2 \\frac{\\theta}{2}$$",
           "$$r = 4 - 8\\sin^2 \\frac{\\theta}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     13: [
@@ -224,7 +224,7 @@ export const clcls3 = {
           "$$\\frac{3\\pi}{2}$$",
           "$$2\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "심장선$$r = 1 + \\sin \\theta$$로 둘러싸인 영역의 넓이는?",
@@ -234,13 +234,13 @@ export const clcls3 = {
           "$$\\frac{13\\pi}{8}$$",
           "$$\\frac{7\\pi}{4}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극좌표평면상에서 곡선$$r = 2\\sqrt{2}(1 + \\cos \\theta)$$로 둘러싸인 영역의 넓이는?",
         choices: ["$$6\\pi$$", "$$12\\pi$$", "$$8\\pi$$", "$$16\\pi$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -252,7 +252,7 @@ export const clcls3 = {
           "$$4\\pi$$",
           "$$5\\pi$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     14: [
@@ -265,7 +265,7 @@ export const clcls3 = {
           "$$\\frac{5\\pi}{8} + 1$$",
           "$$\\frac{5\\pi}{8} + \\frac{1}{2}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -276,18 +276,18 @@ export const clcls3 = {
           "$$\\frac{7}{4}\\pi - 2$$",
           "$$\\frac{9}{4}\\pi - 2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "곡선$$r = 5 + 4\\cos\\theta$$로 둘러싸인 부분의 넓이는?",
         choices: ["$$32\\pi$$", "$$33\\pi$$", "$$31\\pi$$", "$$35\\pi$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "극곡선$$r = 1 + \\sin\\theta$$에 의해 둘러싸인 영역의 넓이를$$a$$, 둘레의 길이를$$b$$라 할 때,$$ab$$의 값은?",
         choices: ["$$16\\pi$$", "$$16\\pi^2$$", "$$12\\pi$$", "$$12\\pi^2$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     15: [
@@ -295,13 +295,13 @@ export const clcls3 = {
         question:
           "극방정식$$r = 1 + \\cos \\theta$$($$0 \\leq \\theta \\leq 2\\pi$$)로 주어진 닫힌 곡선의 길이는?",
         choices: ["$$4$$", "$$5$$", "$$6$$", "$$7$$", "$$8$$"],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "극방정식$$r = 2(1 - \\cos \\theta)$$으로 주어진 곡선의 길이는?",
         choices: ["$$8$$", "$$10$$", "$$12$$", "$$14$$", "$$16$$"],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -312,7 +312,7 @@ export const clcls3 = {
           "$$\\frac{3\\pi}{4}$$",
           "$$\\frac{3\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -324,7 +324,7 @@ export const clcls3 = {
           "$$12\\pi$$",
           "$$13\\pi$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     16: [
@@ -332,7 +332,7 @@ export const clcls3 = {
         question:
           "극방정식$$r = 1 + \\sin \\theta$$로 주어진 곡선의$$\\theta = \\frac{\\pi}{3}$$인 점에서 접선의 기울기는?",
         choices: ["$$-2$$", "$$-1$$", "$$0$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -344,7 +344,7 @@ export const clcls3 = {
           "$$-\\frac{1}{2}$$",
           "$$-\\frac{\\sqrt{3}}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -356,7 +356,7 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}}{3}$$",
           "$$1$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -368,7 +368,7 @@ export const clcls3 = {
           "$$7\\sqrt{3}$$",
           "$$9\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -379,7 +379,7 @@ export const clcls3 = {
           "$$\\frac{1}{\\sqrt{3}}$$",
           "$$\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     17: [
@@ -392,7 +392,7 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}}{2}$$",
           "$$\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -404,7 +404,7 @@ export const clcls3 = {
           "$$y = \\frac{3\\sqrt{3}}{2}x - \\frac{7}{2}$$",
           "$$y = \\frac{3\\sqrt{3}}{2}x + \\frac{\\pi}{6} - 3\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -415,7 +415,7 @@ export const clcls3 = {
           "$$y = \\frac{1}{3}(x - e^{2\\pi})$$",
           "$$y = \\frac{1}{2}(x - e^{2\\pi})$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -427,7 +427,7 @@ export const clcls3 = {
           "$$\\frac{5}{4}$$",
           "$$\\frac{3\\sqrt{3}}{4}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     18: [
@@ -440,7 +440,7 @@ export const clcls3 = {
           "$$(1, \\pi)$$",
           "$$\\left(1, \\frac{3\\pi}{2} \\right)$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -452,7 +452,7 @@ export const clcls3 = {
           "$$3\\pi$$",
           "$$\\frac{7}{2}\\pi$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -463,7 +463,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{4}$$",
           "$$\\frac{\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -474,7 +474,7 @@ export const clcls3 = {
           "$$\\tan^{-1} 2\\sqrt{5}$$",
           "$$\\tan^{-1} 5\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -486,7 +486,7 @@ export const clcls3 = {
           "$$1$$",
           "$$\\frac{4}{3}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     24: [
@@ -494,25 +494,25 @@ export const clcls3 = {
         question:
           "다음 함수의 임계점과 변곡점을 구하여라.$$y = \\frac{1}{3}x^3 - \\frac{1}{2}x^2 - 2x$$",
         choices: [],
-        answer: "",
+        answer: "임계점 : $$ x=-1, 2 $$ , 변곡점 : $$ x = \\frac{1}{2} $$",
       },
       {
         question:
           "다음 함수의 임계점과 변곡점을 구하여라.$$y = 3x^5 + 10x^3 + 15x + 1$$",
         choices: [],
-        answer: "",
+        answer: "임계점 : $$x$$ , 변곡점 : $$ x = 0 $$",
       },
       {
         question:
           "다음 함수의 극댓값, 극솟값을 구하여라.$$y = x + \\frac{1}{x}$$",
         choices: [],
-        answer: "",
+        answer: "극댓값 : $$-2$$, 극솟값 : $$2$$",
       },
       {
         question:
           "다음 함수의 극댓값, 극솟값을 구하여라.$$y = x^3 - 9x^2 + 15x - 5$$",
         choices: [],
-        answer: "",
+        answer: "극댓값 : $$6$$, 극솟값 : $$-30$$",
       },
       {
         question:
@@ -523,35 +523,35 @@ export const clcls3 = {
           "$$1 \\leq x$$",
           "$$0 < x \\leq 1$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "방정식$$4x^5 + 2x^3 + 8x - 10 = 0$$의 실근의 개수를 구하면?",
         choices: ["0개", "1개", "3개", "5개"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "함수$$f(x) = 3x^6 + 4x^3 - x$$에 대한 역함수가 존재하지 않는 구간은?",
         choices: ["$$(-3, -2)$$", "$$(-2, -1)$$", "$$(-1, 1)$$", "$$(1, 2)$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
-          "$$y = xe^{-2x}$$는$$x = a$$에서 극값$$b$$를 갖는다고 할 때,$$ab$$는 얼마인가?",
+          "함수 $$y = xe^{-2x}$$는$$x = a$$에서 극값$$b$$를 갖는다고 할 때,$$ab$$는 얼마인가?",
         choices: [
           "$$\\frac{e^{-1}}{2}$$",
           "$$\\frac{e^{-1}}{4}$$",
           "$$e^{-2}$$",
           "$$\\frac{e^{-2}}{4}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "함수$$f(x) = x^3 - 3ax^2 + a^2$$($$a > 0$$)의 극댓값과 극솟값의 차가$$32$$일 때,$$a$$의 값은?",
         choices: ["$$1$$", "$$2$$", "$$4$$", "$$6$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question: "함수$$f(x) = \\frac{1}{3}x^{2/3}(5 - 2x)$$의 극소점은?",
@@ -561,7 +561,7 @@ export const clcls3 = {
           "$$(8, -44/3)$$",
           "$$(0, 0)$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     27: [
@@ -569,31 +569,31 @@ export const clcls3 = {
         question:
           "$$x$$축 위에 두 꼭짓점을 그리고 포물선$$y = 1 - x^2$$위에 두 꼭짓점을 갖는 직사각형의 넓이의 최댓값은?",
         choices: [],
-        answer: "",
+        answer: "$$ \\frac{4}{3 \\sqrt{3}} $$",
       },
       {
         question:
           "$$x$$축 위에 두 꼭짓점을 그리고 포물선$$y = 12 - x^2$$위에 두 꼭짓점을 갖는 직사각형의 넓이의 최댓값은?<br>(단,$$y > 0$$)",
         choices: [],
-        answer: "",
+        answer: "$$32$$",
       },
       {
         question:
           "점$$(5, -1)$$에서 곡선$$y = x^2$$위의 점까지의 거리 중 최단거리는?",
         choices: [],
-        answer: "",
+        answer: "$$2 \\sqrt{5}$$",
       },
       {
         question:
           "구 모양의 기구 안으로 공기를 불어넣을 때, 기구의 부피는$$200\\ \\text{cm}^3/\\text{s}$$의 비율로 증가한다. 직경(지름)이$$40\\ \\text{cm}$$일 때, 기구의 반지름은 얼마나 빨리 증가하겠는가?",
         choices: [],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "어떤 정육면체의 겉넓이가 매초$$24\\text{cm}^2$$의 비율로 일정하게 증가한다면 이 정육면체의 모서리의 길이가$$1\\text{cm}$$가 되는 순간의 부피의 변화율은 얼마인가?",
         choices: [],
-        answer: "",
+        answer: "$$6$$",
       },
     ],
     28: [
@@ -601,13 +601,13 @@ export const clcls3 = {
         question:
           "곡선$$x^2y^2 + 2x^2y + x^2 - 4y^2 - 7 = 0$$의 점근선이 아닌 것은?",
         choices: ["$$x = 2$$", "$$x = -2$$", "$$y = 1$$", "$$y = -1$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "함수$$f(x) = \\frac{2x^3 - 3x^2 + 4x - 1}{x^2 + x + 1}$$의 사점근선을 구하면?",
         choices: [],
-        answer: "",
+        answer: "$$ y=2x-5 $$",
       },
     ],
     29: [
@@ -615,7 +615,7 @@ export const clcls3 = {
         question:
           "함수$$f(x) = \\frac{2x^4 + ax + b}{x^3}$$($$a, b$$는 상수)가$$x = 1$$에서 극값 $$5$$를 가질 때,$$f(-1)$$의 값은?",
         choices: ["$$9$$", "$$-9$$", "$$5$$", "$$-5$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question: "$$f(x) = (3x + 1)(x - 1)^3$$일 때, 극댓값과 극솟값의 값은?",
@@ -625,7 +625,7 @@ export const clcls3 = {
           "극댓값 : $$0$$, 극솟값은 존재하지 않는다",
           "극댓값은 존재하지 않는다, 극솟값 : $$-1$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     30: [
@@ -633,7 +633,7 @@ export const clcls3 = {
         question:
           "함수$$f(x) = -x^3 - kx^2 + kx - 4$$가$$x_1 < x_2$$인 임의의 실수$$x_1, x_2$$에 대하여 항상$$f(x_1) > f(x_2)$$를 만족하도록 하는 실수$$k$$의 범위를 구하면?",
         choices: ["$$(-3, 0)$$", "$$(-2, 1)$$", "$$(-1, 3)$$", "$$(0, 3)$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -644,7 +644,7 @@ export const clcls3 = {
           "$$\\text{다. } f'(c) = 0 \\text{이고 } f''(c) > 0 \\text{이면 } f \\text{는 } c \\text{에서 극댓값을 갖는다.}$$",
         ],
         choices: ["가", "가, 나", "가, 나, 다", "가, 다"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -656,7 +656,7 @@ export const clcls3 = {
           "두 그래프는 두 번 이상 만난다.",
           "두 그래프는 공통 접선을 가진다.",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -667,7 +667,7 @@ export const clcls3 = {
           "$$f(3) > g(3)$$",
           "$$f(4) < g(4)$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     31: [
@@ -680,7 +680,7 @@ export const clcls3 = {
           "$$f(x)$$의 그래프는 구간$$[1, \\infty)$$에서 아래로 볼록이다.",
           "$$f(x)$$는 최소값$$-1$$을 갖는다.",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -691,31 +691,31 @@ export const clcls3 = {
           "$$3 < a < 7$$",
           "$$a < -7$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$f(x) = x^3 - 3x^2 + 5x + 1$$의 그래프에서 서로 다른 두 점$$P = (x_1, f(x_1))$$,$$Q = (x_2, f(x_2))$$를 임의로 선택하였다. <br> 단, 점$$x_1, x_2$$는 조건$$2 \\leq x_1 \\leq 3,\\ 2 \\leq x_2 \\leq 3$$을 만족한다. 다음 중에서 직선$$PQ$$의 기울기가 될 수 없는 것은?",
         choices: ["$$5.5$$", "$$6$$", "$$13.5$$", "$$15.5$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     32: [
       {
         question: "방정식$$10x^4 - 5x + 1 = 0$$의 실근의 개수는?",
         choices: ["$$0$$개", "$$1$$개", "$$2$$개", "$$4$$개"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "방정식$$x - 2 = \\ln x$$의 실수해의 개수를 구하면?",
         choices: ["$$0$$개", "$$1$$개", "$$2$$개", "$$4$$개"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "$$x$$에 대한 방정식$$x^4 + 4ax + 5 = 0$$이 실근을 갖지 않게 하는$$a$$의 값 중에 정수인 것의 개수는?",
         choices: ["$$1$$개", "$$2$$개", "$$3$$개", "$$4$$개"],
-        answer: "",
+        answer: "③",
       },
     ],
     33: [
@@ -728,7 +728,7 @@ export const clcls3 = {
           "$$\\frac{1}{2e}$$",
           "$$\\frac{1}{e}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -739,13 +739,13 @@ export const clcls3 = {
           "$$\\text{sech} 1$$",
           "$$\\tanh 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "구간$$[1, 5]$$에서 함수$$f(x) = (x - 1)^2 - 4 \\ln x$$의 최댓값을$$a + b \\ln c$$라 할 때$$a - b + c$$의 값은?",
         choices: ["$$7$$", "$$12$$", "$$17$$", "$$25$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     34: [
@@ -758,7 +758,7 @@ export const clcls3 = {
           "$$e$$",
           "$$e + \\frac{9}{e^3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -770,7 +770,7 @@ export const clcls3 = {
           "$$\\frac{5}{2}$$",
           "$$\\frac{3}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -782,20 +782,20 @@ export const clcls3 = {
           "$$\\frac{7}{27}$$",
           "$$\\frac{8}{27}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     35: [
       {
         question:
-          "$$x^2 - x + \\frac{5}{4} - y^2 = 0$$에 가장 가까운 점의 좌표는?",
+          "원점에서 곡선 $$x^2 - x + \\frac{5}{4} - y^2 = 0$$에 가장 가까운 점의 좌표는?",
         choices: [
           "$$\\left(0, \\frac{\\sqrt{5}}{2} \\right)$$",
           "$$\\left(1, \\frac{\\sqrt{5}}{2} \\right)$$",
           "$$\\left(\\frac{1}{4}, \\frac{\\sqrt{17}}{4} \\right)$$",
           "$$\\left(\\frac{1}{2}, 1 \\right)$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "$$x^2 + y^2 = 1$$에서$$f(x, y) = -\\sqrt{2}xy$$의 최댓값은?",
@@ -805,13 +805,13 @@ export const clcls3 = {
           "$$\\sqrt{2}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "타원 $$x^2 + 2y^2 = 1$$,$$f(x, y) = 2x^2 - y^2$$의 최댓값과 최솟값의 합은?",
         choices: ["$$-\\frac{1}{2}$$", "$$0$$", "$$1$$", "$$\\frac{3}{2}$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     36: [
@@ -823,11 +823,11 @@ export const clcls3 = {
           "$$x \\geq \\ln x + 1$$",
           "$$\\ln(1 + x) > \\frac{x}{1 + x}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
-          "$$0 \\leq x \\leq \\frac{\\pi}{2}$$에서 항상 성립하는 절대부등식을 모두 고르면?",
+          "다음 <보기> 중 $$0 \\leq x \\leq \\frac{\\pi}{2}$$에서 항상 성립하는 절대부등식을 모두 고르면?",
         example:
           "$$(a) \\ x \\cos x \\leq \\sin x <br> (b) \\ \\sin x \\leq \\frac{|\\sqrt{2}}{2}\\left(x-{\\frac{\\pi}{4}} + 1\\right) <br> (c) \\ \\cos x \\leq \\frac{\\pi}{2} - x$$",
         choices: [
@@ -836,7 +836,7 @@ export const clcls3 = {
           "$$(b), (c)$$",
           "$$(a), (b), (c)$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "$$0 < x < 1$$일 때, 다음 중 옳지 않은 것은?",
@@ -846,7 +846,7 @@ export const clcls3 = {
           "$$\\tan^{-1} x > \\frac{x}{1 + x^2}$$",
           "$$\\sin^{-1} x < x$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     37: [
@@ -854,13 +854,13 @@ export const clcls3 = {
         question:
           "어떤 물체가 곡선$$y = \\sqrt{1 + x^3}$$위에서 움직이고 있다. 점$$(2, 3)$$을 지나는 순간$$y$$좌표가$$4\\,m/s$$의 속력으로 움직이고 있을 때$$x$$좌표의 속력은?",
         choices: ["$$0.5\\,m/s$$", "$$1\\,m/s$$", "$$2\\,m/s$$", "$$3\\,m/s$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "두 대의 차가 동일 지점에서 출발한다. 그 중 한 대는 시속$$30\\,km$$로 남쪽으로 향하고, 다른 한 대는 시속$$72\\,km$$로 서쪽을 향해 달린다. 30분 후 두 대의 차가 멀어지는 속력은 시속 몇$$km$$인가?",
         choices: ["$$75$$", "$$76$$", "$$77$$", "$$78$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -871,7 +871,7 @@ export const clcls3 = {
           "$$65\\,km/h$$",
           "$$75\\,km/h$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     38: [
@@ -884,13 +884,13 @@ export const clcls3 = {
           "$$18\\sqrt{3}$$",
           "$$4\\sqrt{6}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "곡선$$y = \\sqrt{4 - x^2}$$과$$x$$축으로 둘러싸인 부분에 내접하고 한 변이$$x$$축에 놓여 있는 직사각형의 넓이의 최댓값을 구하면?",
         choices: ["$$2$$", "$$2\\sqrt{2}$$", "$$4$$", "$$4\\sqrt{2}$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -901,7 +901,7 @@ export const clcls3 = {
           "$$6 + 2\\sqrt{10}$$",
           "$$8 + 4\\sqrt{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -913,7 +913,7 @@ export const clcls3 = {
           "$$\\frac{5\\sqrt{3}}{9}$$",
           "$$\\frac{2\\sqrt{3}}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     39: [
@@ -921,13 +921,13 @@ export const clcls3 = {
         question:
           "원$$x^2 + y^2 = 49$$에 내접하면서 면적이 최대가 되는 직사각형의 면적은?",
         choices: ["$$12$$", "$$14$$", "$$28$$", "$$42$$", "$$98$$"],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "타원$$\\frac{x^2}{16} + \\frac{y^2}{9} = 1$$에 내접하면서 면적이 최대가 되는 직사각형의 면적은?",
         choices: ["$$12$$", "$$24$$", "$$48$$", "$$12\\pi$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -938,7 +938,7 @@ export const clcls3 = {
           "$$\\frac{8}{3\\sqrt{3}}$$",
           "$$\\frac{64}{3\\sqrt{3}}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -949,13 +949,13 @@ export const clcls3 = {
           "$$\\frac{16}{\\sqrt{3}}$$",
           "$$\\frac{40}{3\\sqrt{3}}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "반지름의 길이가$$\\sqrt{3}$$인 구에 내접하는 원기둥의 최대 부피는?",
         choices: ["$$\\pi$$", "$$2\\pi$$", "$$2\\sqrt{2}\\pi$$", "$$4\\pi$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     40: [
@@ -963,13 +963,13 @@ export const clcls3 = {
         question:
           "반지름이 매초$$2\\text{cm}$$씩 증가하는 구가 있다. 반지름이$$10\\text{cm}$$되는 순간의 이 구의 표면적의 증가율은?",
         choices: ["$$2\\pi$$", "$$20\\pi$$", "$$80\\pi$$", "$$160\\pi$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$5\\text{cm}^3/sec$$의 비율로 부풀고 있는 정육면체 모양의 물체가 있다. 한 변의 길이가$$10\\text{cm}$$일 때, 이 물체의 표면적의 증가율은?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -980,7 +980,7 @@ export const clcls3 = {
           "$$2000\\text{mm}^2/sec$$",
           "$$4000\\text{mm}^2/sec$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -991,7 +991,7 @@ export const clcls3 = {
           "$$\\frac{3}{25\\pi} \\text{m/min}$$",
           "$$\\frac{4}{25\\pi} \\text{m/min}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     41: [
@@ -1004,7 +1004,7 @@ export const clcls3 = {
           "$$\\frac{5}{6}$$",
           "$$\\frac{7}{8}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1015,7 +1015,7 @@ export const clcls3 = {
           "$$25 \\text{ m/h}$$",
           "$$\\frac{95}{2} \\text{ m/h}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1026,7 +1026,7 @@ export const clcls3 = {
           "$$140 \\text{ m/min}$$",
           "$$142 \\text{ m/min}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     42: [
@@ -1040,13 +1040,13 @@ export const clcls3 = {
           "$$\\sqrt{\\frac{30}{\\pi}}\\,cm$$",
           "$$\\sqrt{\\frac{50}{\\pi}}\\,cm$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "어떤 상품을 매주$$x$$개씩 판매할 때 개당 판매가격은$$P(x) = 500 - 0.02x$$원이고 이 상품을 매주$$x$$개씩 생산할 때, 총생산비는$$C(x) = 100x + 40,000$$원이다. 주당 얻는 이익을 최대로 하려면 매주 몇 개씩 생산해야 하는가?",
         choices: ["$$10^2$$개", "$$10^3$$개", "$$10^4$$개", "$$10^5$$개"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1057,7 +1057,7 @@ export const clcls3 = {
           "$$x = \\frac{\\pi}{4}$$",
           "$$x = \\frac{\\pi}{3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     43: [
@@ -1071,7 +1071,7 @@ export const clcls3 = {
           "$$y = 2x - 1$$",
           "$$y = 2x + 1$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1082,13 +1082,13 @@ export const clcls3 = {
           "$$y = 3x + 1$$",
           "$$y = 3x - 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$x \\in [0, \\infty)$$일 때, 곡선$$y = \\frac{3x^2}{x^2 - 1}$$의 수직점근선과 수평점근선을 각각$$x = \\alpha,\\ y = \\beta$$라 하면$$\\alpha - \\beta$$의 값은?",
         choices: ["$$0$$", "$$1$$", "$$-1$$", "$$2$$", "$$-2$$"],
-        answer: "",
+        answer: "⑤",
       },
     ],
     44: [
@@ -1103,7 +1103,7 @@ export const clcls3 = {
           "$$F$$는 감소 함수이면서 아래로 볼록이다.",
           "$$F$$는 1차 함수이다.",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     45: [
@@ -1117,7 +1117,7 @@ export const clcls3 = {
           "$$\\frac{3}{2}\\pi$$",
           "$$\\frac{\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -1129,7 +1129,7 @@ export const clcls3 = {
           "$$\\frac{1}{8}\\left(\\pi - \\frac{4}{3}\\right)$$",
           "$$\\frac{1}{8}\\left(\\pi - \\frac{5}{3}\\right)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1141,7 +1141,7 @@ export const clcls3 = {
           "$$6 - \\sqrt{2}$$",
           "$$7$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     46: [
@@ -1154,7 +1154,7 @@ export const clcls3 = {
           "$$36\\pi\\text{cm}^2/\\text{s}$$",
           "$$50\\pi\\text{cm}^2/\\text{s}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     47: [
@@ -1162,19 +1162,19 @@ export const clcls3 = {
         question:
           "$$1L$$를 담을 수 있는 뚜껑이 없는 원기둥 모양의 저장 용기의 겉넓이가 최소가 되는 반지름$$r$$와 높이$$h$$에 대하여,$$\\frac{h}{r}$$는? (단, 저장용기의 두께는 무시한다.)",
         choices: ["$$\\frac{1}{4}$$", "$$\\frac{1}{2}$$", "$$1$$", "$$2$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "어떤 함수 $$f$$의 도함수가$$f'(x) = \\sin(3x + 2)$$일 때,$$0 < x < 5$$에서$$f$$의 극대점의 개수는?",
         choices: ["2", "3", "4", "5"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "함수 $$f(x) = x^3 e^{-kx}$$가$$x = 1$$에서 변곡점을 갖게 하는 모든$$k$$값들의 곱은?",
         choices: ["$$-15$$", "$$6$$", "$$9$$", "$$15$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1186,7 +1186,7 @@ export const clcls3 = {
           "$$\\sqrt{3} + 7.5$$",
           "$$\\sqrt{3} + 7$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     48: [
@@ -1194,7 +1194,7 @@ export const clcls3 = {
         question:
           "점$$(1, 4)$$이 곡선$$y = x^3 + ax^2 + bx + 1$$의 변곡점일 때,$$b$$의 값은? (단,$$a, b$$는 상수)",
         choices: ["1", "3", "5", "7"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1205,7 +1205,7 @@ export const clcls3 = {
           "$$\\frac{3}{e}$$",
           "$$\\frac{4}{e}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1216,7 +1216,7 @@ export const clcls3 = {
           "$$\\frac{3}{4}$$",
           "$$\\frac{4}{5}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     49: [
@@ -1224,13 +1224,13 @@ export const clcls3 = {
         question:
           "함수$$f(x) = \\int_3^{x^2} (1 - t)e^t dt$$에 대하여 곡선$$y = f(x)$$가 위로 오목(아래로 볼록)인 구간에 속하는 정수는?",
         choices: ["−2", "−1", "0", "1", "2"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "함수$$f(x) = 5x + 11 + \\frac{20}{x}$$가$$x = a$$에서 극댓값을 갖고$$x = b$$에서 극솟값을 가질 때$$f(a) − f(b)$$의 값은?",
         choices: ["25", "30", "35", "40", "−40"],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -1242,161 +1242,161 @@ export const clcls3 = {
           "$$\\frac{3}{4}cm^2/sec$$",
           "$$\\frac{5}{3}cm^2/sec$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     55: [
       {
         question:
-          "좌표평면에서 곡선$$y = \\arccos x$$와 직선$$x = \\frac{1}{\\sqrt{2}}$$및$$x$$축으로 둘러싸인 영역의 넓이는?",
+          "1. 좌표평면에서 곡선$$y = \\arccos x$$와 직선$$x = \\frac{1}{\\sqrt{2}}$$및$$x$$축으로 둘러싸인 영역의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{\\sqrt{2}} - \\frac{\\pi}{4\\sqrt{2}}$$" 
       },
       {
         question:
-          "함수$$f(x) = x^2 - 3$$과$$g(x) = x - 1$$로 둘러싸인 영역의 넓이는?",
+          "2. 함수$$f(x) = x^2 - 3$$과$$g(x) = x - 1$$로 둘러싸인 영역의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{9}{2}$$" 
       },
       {
         question:
-          "매개함수$$\\begin{cases} x(\\theta) = a(\\theta - \\sin \\theta) \\\\ y(\\theta) = a(1 - \\cos \\theta) \\end{cases}$$인 사이클로이드(Cycloid) ($$0 \\leq \\theta \\leq 2\\pi$$)와$$x$$축으로 둘러싸인 영역의 넓이는?",
+          "3. 매개함수$$\\begin{cases} x(\\theta) = a(\\theta - \\sin \\theta) \\\\ y(\\theta) = a(1 - \\cos \\theta) \\end{cases}$$인 사이클로이드(Cycloid) ($$0 \\leq \\theta \\leq 2\\pi$$)와$$x$$축으로 둘러싸인 영역의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$3\\pi a^2$$" 
       },
       {
         question:
-          "곡선$$x = 5 \\cos^3 t, \\quad y = 5 \\sin^3 t \\left( 0 \\leq t \\leq \\frac{\\pi}{2} \\right)$$을$$x$$축으로 둘러싸인 영역의 넓이는?",
+          "4. 곡선$$x = 5 \\cos^3 t, \\quad y = 5 \\sin^3 t \\left( 0 \\leq t \\leq \\frac{\\pi}{2} \\right)$$을$$x$$축으로 둘러싸인 영역의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{75}{32}\\pi$$" 
       },
       {
         question:
-          "곡선$$r = 2 \\cos \\theta$$의 내부와 곡선$$r = 1$$의 외부의 공통부분 면적은?",
+          "5. 곡선$$r = 2 \\cos \\theta$$의 내부와 곡선$$r = 1$$의 외부의 공통부분 면적은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{\\pi}{3} + \\frac{\\sqrt{3}}{2}$$"
       },
       {
         question:
-          "심장선$$r = 2 + 2 \\sin \\theta$$의 내부와 원$$r = 4 \\sin \\theta$$의 외부에 놓인 영역의 넓이는?",
+          "6. 심장선$$r = 2 + 2 \\sin \\theta$$의 내부와 원$$r = 4 \\sin \\theta$$의 외부에 놓인 영역의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$2\\pi$$" 
       },
       {
         question:
-          "밀면이$$y = \\sin x \\, (0 \\leq x \\leq \\pi)$$인 입체가 있다. 이 입체를$$x$$축에 수직인 평면으로 자른 단면이 정삼각형일 때 입체의 체적은?",
+          "7. 밀면이$$y = \\sin x \\, (0 \\leq x \\leq \\pi)$$인 입체가 있다. 이 입체를$$x$$축에 수직인 평면으로 자른 단면이 정삼각형일 때 입체의 체적은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{\\pi}{2}$$" 
       },
       {
         question:
-          "곡선$$y = \\sqrt{x} + 1$$, 직선$$x = 1$$, 그리고$$x$$축으로 둘러싸인 영역이 밑면이고,$$x$$축에 수직인 단면이 정사각형인 입체도형의 부피는?",
+          "8. 곡선$$y = \\sqrt{x} + 1$$, 직선$$x = 1$$, 그리고$$x$$축으로 둘러싸인 영역이 밑면이고,$$x$$축에 수직인 단면이 정사각형인 입체도형의 부피는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{17}{6}$$" 
       },
     ],
     57: [
       {
         question:
-          "곡선$$y = \\frac{1}{4}x^2 - \\frac{1}{2}\\ln x \\, (1 \\leq x \\leq e)$$의 길이는?",
+          "9. 곡선$$y = \\frac{1}{4}x^2 - \\frac{1}{2}\\ln x \\, (1 \\leq x \\leq e)$$의 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{4}(e^2 + 1)$$" 
       },
       {
         question:
-          "곡선$$y = \\ln(\\sin(x)) \\, \\left( \\frac{\\pi}{6} \\leq x \\leq \\frac{\\pi}{2} \\right)$$의 길이를 구하면?",
+          "10. 곡선$$y = \\ln(\\sin(x)) \\, \\left( \\frac{\\pi}{6} \\leq x \\leq \\frac{\\pi}{2} \\right)$$의 길이를 구하면?",
         choices: [],
-        answer: "",
+        answer: "$$\\ln(2 + \\sqrt{3})$$" 
       },
       {
         question:
-          "매개함수$$\\begin{cases} x(t) = a \\cos^{3} t \\\\ y(t) = a \\sin^{3} t \\end{cases}$$은 성망형(Astroid) ($$0 \\leq t \\leq 2\\pi$$)의 곡선이다. 이 곡선의 길이는?",
+          "11. 매개함수$$\\begin{cases} x(t) = a \\cos^{3} t \\\\ y(t) = a \\sin^{3} t \\end{cases}$$은 성망형(Astroid) ($$0 \\leq t \\leq 2\\pi$$)의 곡선이다. 이 곡선의 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$6a$$" 
       },
       {
         question:
-          "다음 곡선$$x(t) = 3 + t^2, \\quad y(t) = \\cosh(t^2) \\, (0 \\leq t \\leq 1)$$의 길이는?",
+          "12. 다음 곡선$$x(t) = 3 + t^2, \\quad y(t) = \\cosh(t^2) \\, (0 \\leq t \\leq 1)$$의 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\sinh(1)$$" 
       },
       {
         question:
-          "극곡선$$r = 1 + \\sin \\theta$$의$$0 \\leq \\theta \\leq \\frac{\\pi}{2}$$부분에 대한 길이는?",
+          "13. 극곡선$$r = 1 + \\sin \\theta$$의$$0 \\leq \\theta \\leq \\frac{\\pi}{2}$$부분에 대한 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{\\pi}{8}$$" 
       },
       {
         question:
-          "$$-\\frac{\\pi}{4} \\leq \\theta \\leq \\frac{\\pi}{4}$$에서 곡선$$r = 2 \\sec \\theta$$의 호의 길이는?",
+          "14. $$-\\frac{\\pi}{4} \\leq \\theta \\leq \\frac{\\pi}{4}$$에서 곡선$$r = 2 \\sec \\theta$$의 호의 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$4\\sqrt{2}$$" 
       },
       {
         question:
-          "곡선$$r = \\sin \\theta$$를$$x$$축에 대하여 회전시켰을 때 생기는 곡면의 부피와 면적을 구하면?",
+          "15. 곡선$$r = \\sin \\theta$$를$$x$$축에 대하여 회전시켰을 때 생기는 곡면의 부피와 면적을 구하면?",
         choices: [],
-        answer: "",
+        answer: "$$\\text{부피: } \\pi^2 ,\\ \\text{표면적: } 2\\pi^2$$" 
       },
       {
         question:
-          "극좌표 곡선$$r = -4\\cos\\theta$$를 직선$$r = \\sec \\theta$$에 관하여 회전시켰을 때 생긴 회전체의 부피와 표면적은?",
+          "16. 극좌표 곡선$$r = -4\\cos\\theta$$를 직선$$r = \\sec \\theta$$에 관하여 회전시켰을 때 생긴 회전체의 부피와 표면적은?",
         choices: [],
-        answer: "",
+        answer: "$$\\text{부피: } 24\\pi^2 ,\\ \\text{표면적: } 24\\pi^2$$" 
       },
     ],
     62: [
       {
         question:
-          "$$x = 0$$에서$$x = 1$$까지 곡선$$y = \\sqrt{x}$$아래의 영역을$$x$$축으로 회전하여 생긴 입체의 부피를 구하시오.",
+          "17. $$x = 0$$에서$$x = 1$$까지 곡선$$y = \\sqrt{x}$$아래의 영역을$$x$$축으로 회전하여 생긴 입체의 부피를 구하시오.",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{\\pi}{2}$$" 
       },
       {
         question:
-          "$$y = 0$$과$$y = 10x^2 - 5x^3$$으로 둘러싸인 영역을$$y$$축 중심으로 회전하여 생기는 입체의 부피는?",
+          "18. $$y = 0$$과$$y = 10x^2 - 5x^3$$으로 둘러싸인 영역을$$y$$축 중심으로 회전하여 생기는 입체의 부피는?",
         choices: [],
-        answer: "",
+        answer: "$$16\\pi$$" 
       },
       {
         question:
-          "곡선$$x = \\cos t, y = \\sin t \\left(\\frac{\\pi}{t} \\leq t \\leq \\frac{3}{2}\\pi\\right)$$을$$y$$축 중심으로 회전시킨 회전체의 체적은?",
+          "19. 곡선$$x = \\cos t, y = \\sin t \\left(\\frac{\\pi}{t} \\leq t \\leq \\frac{3}{2}\\pi\\right)$$을$$y$$축 중심으로 회전시킨 회전체의 체적은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{2\\pi}{3}$$" 
       },
       {
         question:
-          "곡선$$y = x^2$$의 점$$(0,0)$$부터 점$$(\\sqrt{6}, 6)$$까지의 부분을$$y$$축으로 회전시킨 회전체의 곡면적은?",
+          "20. 곡선$$y = x^2$$의 점$$(0,0)$$부터 점$$(\\sqrt{6}, 6)$$까지의 부분을$$y$$축으로 회전시킨 회전체의 곡면적은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{62}{3}\\pi$$" 
       },
       {
         question:
-          "곡선$$x = 3\\cos^3 t, y = 3\\sin^3 t (0 \\leq t \\leq 2\\pi)$$을$$x$$축을 중심으로 회전해서 생기는 회전곡면의 넓이는?",
+          "21. 곡선$$x = 3\\cos^3 t, y = 3\\sin^3 t (0 \\leq t \\leq 2\\pi)$$을$$x$$축을 중심으로 회전해서 생기는 회전곡면의 넓이는?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{108}{5}\\pi$$" 
       },
       {
-        question: "$$r = 3 - 3\\cos \\theta$$의 면적을 구하면?",
+        question: "22. $$r = 3 - 3\\cos \\theta$$의 면적을 구하면?",
         choices: [],
-        answer: "",
-      },
-      {
-        question:
-          "$$r = 3\\cos 2\\theta$$와$$r = 2\\cos 3\\theta$$의 면적을 각각$$A, B$$라 했을 때,$$AB$$의 값은?",
-        choices: [],
-        answer: "",
+        answer: "$$\\frac{27}{2}\\pi$$"
       },
       {
         question:
-          "사이클로이드(Cycloid)$$x = 3(\\theta - \\sin \\theta), y = 3(1 - \\cos \\theta)$$의 한 호의 길이는?",
+          "23. $$r = 3\\cos 2\\theta$$와$$r = 2\\cos 3\\theta$$의 면적을 각각$$A, B$$라 했을 때,$$AB$$의 값은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{9}{2}\\pi^2$$" 
       },
       {
-        question: "곡선$$r^2 = 4\\sin 2\\theta$$이 이루는 영역의 면적은?",
+        question:
+          "24. 사이클로이드(Cycloid)$$x = 3(\\theta - \\sin \\theta), y = 3(1 - \\cos \\theta)$$의 한 호의 길이는?",
         choices: [],
-        answer: "",
+        answer: "$$24$$",
+      },
+      {
+        question: "25. 곡선$$r^2 = 4\\sin 2\\theta$$이 이루는 영역의 면적은?",
+        choices: [],
+        answer: "$$12$$",
       },
     ],
     63: [
@@ -1404,7 +1404,7 @@ export const clcls3 = {
         question:
           "곡선$$y = \\sqrt{2x - 1}$$과 직선$$x = 5$$, 그리고$$x$$축으로 둘러싸인 영역의 넓이는?",
         choices: ["6", "7", "8", "9"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1415,19 +1415,19 @@ export const clcls3 = {
           "$$\\frac{\\pi}{24}$$",
           "$$\\frac{\\pi}{48}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "곡선$$y = 2e^x$$, 원점을 지나는 이 곡선의 접선,$$y$$축으로 둘러싸인 영역의 넓이는?",
         choices: ["$$2e$$", "$$e - 1$$", "$$2e - 1$$", "$$e - 2$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "$$y = -x, y = x + 6$$과 곡선$$y = x^3$$으로 둘러싸인 영역의 넓이는?",
         choices: ["17", "18", "19", "20"],
-        answer: "",
+        answer: "③",
       },
     ],
     64: [
@@ -1441,19 +1441,19 @@ export const clcls3 = {
           "$$\\frac{8}{5}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "좌표평면에서 매개 방정식$$x = 3(\\theta - \\sin \\theta),\\ y = 3(1 - \\cos \\theta),\\ 0 \\leq \\theta \\leq 2\\pi$$으로 주어진 곡선과$$x$$축으로 둘러싸인 영역의 면적은?",
         choices: ["$$3\\pi$$", "$$9\\pi$$", "$$27\\pi$$", "$$81\\pi$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "극좌표평면상에서 곡선$$r = 2\\sqrt{2}(1 + \\cos \\theta)$$로 둘러싸인 영역의 넓이는?",
         choices: ["$$6\\pi$$", "$$12\\pi$$", "$$8\\pi$$", "$$16\\pi$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1464,7 +1464,7 @@ export const clcls3 = {
           "$$\\frac{19\\pi}{2}$$",
           "$$11\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     65: [
@@ -1477,7 +1477,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{3} + \\frac{1}{2}$$",
           "$$\\frac{\\pi}{3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1488,7 +1488,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{3}$$",
           "$$\\frac{\\pi}{4}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1499,7 +1499,7 @@ export const clcls3 = {
           "$$\\pi$$",
           "$$\\frac{49\\pi}{11}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1510,7 +1510,7 @@ export const clcls3 = {
           "$$2\\pi$$",
           "$$\\frac{\\pi}{2} - 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     66: [
@@ -1523,7 +1523,7 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}}{2}$$",
           "$$\\frac{\\sqrt{3}}{2} \\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1535,7 +1535,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{2}$$",
           "$$\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1547,7 +1547,7 @@ export const clcls3 = {
           "$$\\frac{4\\pi}{15}$$",
           "$$\\frac{\\pi}{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     67: [
@@ -1559,7 +1559,7 @@ export const clcls3 = {
           "$$2\\sinh 1$$",
           "$$2\\cosh 1$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1570,7 +1570,7 @@ export const clcls3 = {
           "$$\\ln \\sqrt{2}$$",
           "$$\\ln \\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1581,7 +1581,7 @@ export const clcls3 = {
           "$$5\\pi$$",
           "$$\\frac{5\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1592,14 +1592,14 @@ export const clcls3 = {
           "$$\\frac{1}{3}(5\\sqrt{5} - 8)$$",
           "$$\\frac{1}{5}(\\sqrt{2} - 1)$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     68: [
       {
         question: "극곡선$$r = 1 - \\cos \\theta$$의 전체 길이를 구하면?",
         choices: ["4", "5", "6", "7", "8"],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -1610,19 +1610,19 @@ export const clcls3 = {
           "$$\\frac{3\\pi}{4}$$",
           "$$\\frac{3\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "사이클로이드(cycloid)$$x = 2(\\theta - \\sin \\theta), \\quad y = 2(1 - \\cos \\theta)$$의 한 호의 길이는?",
         choices: ["2", "4", "8", "16"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "곡선$$x = 3 \\cos^3 \\theta, \\quad y = 3 \\sin^3 \\theta$$의 전체 길이는?",
         choices: ["3", "6", "18", "36"],
-        answer: "",
+        answer: "③",
       },
     ],
     69: [
@@ -1635,7 +1635,7 @@ export const clcls3 = {
           "3",
           "$$\\frac{32}{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1646,7 +1646,7 @@ export const clcls3 = {
           "$$\\frac{34}{6}$$",
           "$$\\frac{91}{12}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1657,7 +1657,7 @@ export const clcls3 = {
           "$$\\frac{32}{3}$$",
           "$$\\frac{16}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1668,7 +1668,7 @@ export const clcls3 = {
           " 2 보다 크고$$\\pi$$보다 작다.",
           "$$\\pi$$보다 크다.",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     70: [
@@ -1676,7 +1676,7 @@ export const clcls3 = {
         question:
           "원$$(x - 3)^2 + (y - 4)^2 = 1$$의 내부 영역을$$y$$축에 대해 회전시켰을 때의 회전체의 부피는?",
         choices: ["$$2\\pi^2$$", "$$4\\pi^2$$", "$$6\\pi^2$$", "$$8\\pi^2$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1687,7 +1687,7 @@ export const clcls3 = {
           "$$\\frac{\\pi^2}{2}$$",
           "$$\\pi^2$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -1699,13 +1699,13 @@ export const clcls3 = {
           "$$2\\pi^2$$",
           "$$4\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "영역$$\\{(x, y) \\in \\mathbb{R}^2\\ |\\ x^2 + (y - 2)^2 \\leq 1\\}$$을$$x$$축 중심으로 회전시켰을 때, 생기는 입체의 체적을 구하면?",
         choices: ["$$6\\pi^2$$", "$$4\\pi^2$$", "$$2\\pi^2$$", "$$\\pi^2$$"],
-        answer: "",
+        answer: "②",
       },
     ],
     71: [
@@ -1718,13 +1718,13 @@ export const clcls3 = {
           "$$12\\pi^2$$",
           "$$9\\pi^2$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "$$x = \\cos\\theta + 1$$,$$y = \\sin\\theta$$의 호를$$y$$축에 관하여 회전시켰을 때 회전곡면의 겉넓이는?",
         choices: ["$$8\\pi^2$$", "$$4\\pi^2$$", "$$2\\pi^2$$", "$$\\pi^2$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1735,7 +1735,7 @@ export const clcls3 = {
           "$$12\\sqrt{2}\\pi^2$$",
           "$$16\\sqrt{2}\\pi^2$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1747,7 +1747,7 @@ export const clcls3 = {
           "$$9\\sqrt{2}\\pi$$",
           "$$10\\sqrt{3}\\pi$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     72: [
@@ -1760,7 +1760,7 @@ export const clcls3 = {
           "$$\\frac{8}{3}\\pi$$",
           "$$\\frac{10}{3}\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1772,7 +1772,7 @@ export const clcls3 = {
           "$$\\frac{3}{5}\\pi$$",
           "$$\\frac{7}{10}\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1784,7 +1784,7 @@ export const clcls3 = {
           "$$\\frac{4}{5}$$",
           "1",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     73: [
@@ -1797,7 +1797,7 @@ export const clcls3 = {
           "$$\\frac{\\pi^2}{10}$$",
           "$$\\frac{\\pi^2}{12}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1809,7 +1809,7 @@ export const clcls3 = {
           "$$20\\pi$$",
           "$$24\\pi$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     74: [
@@ -1822,7 +1822,7 @@ export const clcls3 = {
           "$$\\pi(\\pi + 3)$$",
           "$$\\pi(\\pi + 4)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1834,7 +1834,7 @@ export const clcls3 = {
           "$$\\frac{254\\sqrt{2}}{15}\\pi$$",
           "$$\\frac{256\\sqrt{2}}{15}\\pi$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -1845,7 +1845,7 @@ export const clcls3 = {
           "$$\\frac{6^7}{7}\\pi$$",
           "$$\\frac{8^7}{7}\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1857,7 +1857,7 @@ export const clcls3 = {
           "$$\\frac{5\\sqrt{5} + 1}{3}$$",
           "$$\\frac{5(\\sqrt{5} + 1)}{3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     75: [
@@ -1870,7 +1870,7 @@ export const clcls3 = {
           "$$\\frac{98\\pi}{81}$$",
           "$$\\frac{512\\pi}{7}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1882,7 +1882,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{54}(39^{\\frac{3}{2}} - 1)$$",
           "$$\\frac{\\pi}{81}(39^{\\frac{3}{2}} - 1)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1894,7 +1894,7 @@ export const clcls3 = {
           "$$14\\pi$$",
           "$$16\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1905,7 +1905,7 @@ export const clcls3 = {
           "$$\\frac{2}{5}\\sqrt{2}\\pi(2e^\\pi + 1)$$",
           "$$\\frac{2}{5}\\sqrt{2}\\pi(e^\\pi + 1)$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     76: [
@@ -1913,7 +1913,7 @@ export const clcls3 = {
         question:
           "곡선$$r = 1 + \\cos\\theta$$는 곡선$$r = 3\\cos\\theta$$에 의해 세 부분으로 나누어진다. 이 때, 가장 긴 부분의 길이는?",
         choices: ["2", "4", "6", "8"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -1924,7 +1924,7 @@ export const clcls3 = {
           "$$\\left(\\frac{8}{5}, \\cos^{-1}\\left(-\\frac{3}{5}\\right)\\right)$$",
           "$$\\left(\\frac{3}{2}, \\frac{2\\pi}{3}\\right)$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     77: [
@@ -1937,7 +1937,7 @@ export const clcls3 = {
           "$$\\frac{3\\pi}{4}$$",
           "$$\\pi$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     78: [
@@ -1945,7 +1945,7 @@ export const clcls3 = {
         question:
           "함수$$f(x) = x^2 - 3$$과$$g(x) = x - 1$$로 둘러싸인 영역의 넓이는?",
         choices: ["$$\\frac{9}{2}$$", "$$5$$", "$$\\frac{11}{2}$$", "$$6$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1957,7 +1957,7 @@ export const clcls3 = {
           "$$\\frac{260}{3}$$",
           "$$90$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -1969,7 +1969,7 @@ export const clcls3 = {
           "$$\\sqrt{2} \\pi$$",
           "$$\\frac{3}{2} \\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -1981,7 +1981,7 @@ export const clcls3 = {
           "$$\\frac{9}{2}$$",
           "$$5$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     79: [
@@ -1995,13 +1995,13 @@ export const clcls3 = {
           "$$2\\pi - 2$$",
           "$$2\\pi - 1$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "다음 곡선$$x = 2\\cos^3\\theta$$,$$y = 2\\sin^3\\theta$$,$$0 \\le \\theta \\le \\frac{\\pi}{2}$$의 길이는?",
         choices: ["$$\\sqrt{2}$$", "$$\\sqrt{3}$$", "$$2$$", "$$3$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2012,7 +2012,7 @@ export const clcls3 = {
           "$$\\pi$$",
           "$$\\frac{4\\pi}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2024,7 +2024,7 @@ export const clcls3 = {
           "$$\\pi$$",
           "$$\\frac{3\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     80: [
@@ -2038,7 +2038,7 @@ export const clcls3 = {
           "$$\\frac{1}{3}\\pi$$",
           "$$\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2050,7 +2050,7 @@ export const clcls3 = {
           "$$\\frac{11\\pi - 4\\sqrt{3}}{6}$$",
           "$$\\frac{12\\pi - 5\\sqrt{3}}{6}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2062,7 +2062,7 @@ export const clcls3 = {
           "$$6 - 2\\sqrt{2} - \\sqrt{6}$$",
           "$$10 - 4\\sqrt{3} - \\sqrt{6}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2074,7 +2074,7 @@ export const clcls3 = {
           "$$\\sqrt{2}\\left(1 - \\frac{1}{e}\\right)$$",
           "$$\\sqrt{3}\\left(1 - \\frac{1}{e}\\right)$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     81: [
@@ -2088,7 +2088,7 @@ export const clcls3 = {
           "$$2\\pi + \\ln 63$$",
           "$$2\\pi \\ln 63$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -2099,7 +2099,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{6}$$",
           "$$\\frac{2\\sqrt{2}}{5}\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2111,7 +2111,7 @@ export const clcls3 = {
           "$$\\frac{124}{5}$$",
           "$$\\frac{126}{5}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2123,7 +2123,7 @@ export const clcls3 = {
           "$$3\\pi$$",
           "$$\\frac{10}{3}\\pi$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     82: [
@@ -2131,7 +2131,7 @@ export const clcls3 = {
         question:
           "곡선$$x = (y - 1)^2$$과 직선$$x = 9$$로 둘러싸인 영역을 직선$$y = 5$$를 축으로 하여 회전시켰을 때 얻어지는 회전체의 부피는?",
         choices: ["$$120\\pi$$", "$$144\\pi$$", "$$240\\pi$$", "$$288\\pi$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2143,7 +2143,7 @@ export const clcls3 = {
           "$$\\left( \\frac{\\pi}{4} - \\frac{3}{5} \\right)\\pi$$",
           "$$\\pi^2$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2155,7 +2155,7 @@ export const clcls3 = {
           "$$2\\pi(\\pi + 3)$$",
           "$$2\\pi(\\pi + 4)$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2167,7 +2167,7 @@ export const clcls3 = {
           "$$\\frac{18}{5}\\pi$$",
           "$$\\frac{21}{5}\\pi$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     83: [
@@ -2181,7 +2181,7 @@ export const clcls3 = {
           "$$\\frac{8}{\\pi} + \\frac{32}{3}$$",
           "$$\\frac{8}{\\pi} + \\frac{64}{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2193,7 +2193,7 @@ export const clcls3 = {
           "$$\\frac{5\\pi}{2}$$",
           "$$3\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2205,7 +2205,7 @@ export const clcls3 = {
           "$$\\frac{53}{16}\\pi$$",
           "$$\\frac{53}{17}\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2216,7 +2216,7 @@ export const clcls3 = {
           "$$\\frac{2\\sqrt{2}}{15}$$",
           "$$\\frac{\\sqrt{2}}{15}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     84: [
@@ -2230,7 +2230,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{3} +\\frac{\\pi e^{-4}}{2}$$",
           "$$\\frac{\\pi}{2} -\\frac{\\pi e^{-4}}{3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2242,7 +2242,7 @@ export const clcls3 = {
           "$$\\frac{7}{15}\\pi$$",
           "$$\\frac{8}{15}\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     85: [
@@ -2256,7 +2256,7 @@ export const clcls3 = {
           "$$2\\cosh 1$$",
           "$$2\\sinh 1$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2268,13 +2268,13 @@ export const clcls3 = {
           "$$8\\pi$$",
           "$$2\\sqrt{17}\\pi$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "곡선$$x^2 + y^2 - 4x + 3 = 0$$으로 둘러싸인 영역을$$y$$축을 중심으로 회전하여 얻은 회전체의 부피는?",
         choices: ["$$\\pi^2$$", "$$2\\pi^2$$", "$$4\\pi^2$$", "$$8\\pi^2$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2286,7 +2286,7 @@ export const clcls3 = {
           "$$9\\sqrt{2}\\pi$$",
           "$$10\\sqrt{2}\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2298,7 +2298,7 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{5}\\pi}{4}$$",
           "$$\\frac{\\sqrt{5}\\pi}{8}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     86: [
@@ -2312,7 +2312,7 @@ export const clcls3 = {
           "$$\\frac{12 + \\sqrt{3}}{2}$$",
           "$$\\frac{8 - 2\\sqrt{3}}{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2326,7 +2326,7 @@ export const clcls3 = {
           "$$\\ln 3$$",
           "$$\\sqrt{5}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2338,7 +2338,7 @@ export const clcls3 = {
           "$$\\frac{\\pi}{240}$$",
           "$$\\frac{\\pi^2}{240}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2350,7 +2350,7 @@ export const clcls3 = {
           "$$\\frac{4}{3}\\pi + \\sqrt{3}$$",
           "$$6\\pi$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     87: [
@@ -2364,7 +2364,7 @@ export const clcls3 = {
           "$$\\frac{(15\\sqrt{3} - 2\\pi)}{24}\\pi$$",
           "$$\\frac{(18\\sqrt{3} - \\pi)}{24}\\pi$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2375,7 +2375,7 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}\\pi}{4}$$",
           "$$\\frac{2\\sqrt{3}\\pi}{15}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2386,7 +2386,7 @@ export const clcls3 = {
           "$$3\\pi$$",
           "$$\\frac{3\\pi}{2}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2398,7 +2398,7 @@ export const clcls3 = {
           "$$2(\\pi + 3\\sqrt{3})$$",
           "$$4(\\pi + 3\\sqrt{3})$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     88: [
@@ -2411,7 +2411,7 @@ export const clcls3 = {
           "$$\\pi(3 - \\ln 2)$$",
           "$$\\pi(3 - \\ln 3)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2422,7 +2422,7 @@ export const clcls3 = {
           "$$\\pi(e - e^{-1})$$",
           "$$\\pi\\left(\\frac{\\sinh 2}{2} + 1\\right)$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2433,7 +2433,7 @@ export const clcls3 = {
           "$$\\frac{5\\sqrt{3}}{3}\\pi$$",
           "$$\\frac{20}{3}\\pi$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2445,7 +2445,7 @@ export const clcls3 = {
           "$$2\\pi(\\pi + 3)$$",
           "$$2\\pi(\\pi + 4)$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -2457,128 +2457,128 @@ export const clcls3 = {
           "$$5\\pi$$",
           "$$5\\pi + e$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     96: [
       {
         question:
-          "$$f(x) = x^5 - x^3 - x - 1$$을$$x = 1$$에서 Taylor급수를 전개했을 때,$$(x - 1)^3$$의 계수는?",
+          "1. $$f(x) = x^5 - x^3 - x - 1$$을$$x = 1$$에서 Taylor급수를 전개했을 때,$$(x - 1)^3$$의 계수는?",
         choices: [],
-        answer: "",
+        answer: "$$ 9 $$",
       },
       {
         question:
-          "$$f(x) = x^2 \\ln x$$를$$x = e$$에서 Taylor급수 전개했을 때,$$(x - e)^2$$의 계수는?",
+          "2. $$f(x) = x^2 \\ln x$$를$$x = e$$에서 Taylor급수 전개했을 때,$$(x - e)^2$$의 계수는?",
         choices: [],
-        answer: "",
+        answer: "$$ \\frac{5}{2}$$",
       },
       {
         question:
-          "$$f(x) = \\sin(x^2)$$를$$x = 0$$에서 Taylor급수 전개했을 때,$$x^2$$의 계수는?",
+          "3. $$f(x) = \\sin(x^2)$$를$$x = 0$$에서 Taylor급수 전개했을 때,$$x^2$$의 계수는?",
         choices: [],
-        answer: "",
+        answer: "$$0$$",
       },
       {
         question:
-          "$$f(x) = \\sqrt[3]{1 - 2x}$$를$$x = 0$$에서 Taylor급수 전개했을 때,$$x^2$$의 계수는?",
+          "4. $$f(x) = \\sqrt[3]{1 - 2x}$$를$$x = 0$$에서 Taylor급수 전개했을 때,$$x^2$$의 계수는?",
         choices: [],
-        answer: "",
+        answer: "$$- \\frac{4}{9}$$",
       },
       {
         question:
-          "$$f(x) = e^{-4x}$$의 Maclaurin급수가$$\\sum_{k=0}^{\\infty} c_k x^k$$일 때,$$c_4$$의 값은?",
+          "5. $$f(x) = e^{-4x}$$의 Maclaurin급수가$$\\sum_{k=0}^{\\infty} c_k x^k$$일 때,$$c_4$$의 값은?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{32}{3}$$",
       },
       {
-        question: "$$f(x) = x \\ln(1 + x^2)$$에 대하여$$f^{(5)}(0)$$는?",
+        question: "6. $$f(x) = x \\ln(1 + x^2)$$에 대하여$$f^{(5)}(0)$$는?",
         choices: [],
-        answer: "",
-      },
-      {
-        question:
-          "$$f(x) = \\int_0^x \\cos(t^{1011})\\,dt$$에 대하여$$\\frac{f^{(2023)}(0)}{2023!}$$는?",
-        choices: [],
-        answer: "",
+        answer: "$$-60$$",
       },
       {
         question:
-          "함수$$f(x) = \\sin^2 x$$의 Maclaurin 급수에서$$x^4$$항의 계수는?",
+          "7. $$f(x) = \\int_0^x \\cos(t^{1011})\\,dt$$에 대하여$$\\frac{f^{(2023)}(0)}{2023!}$$는?",
         choices: [],
-        answer: "",
+        answer: "$$- \\frac{1}{4046}$$",
       },
       {
         question:
-          "함수$$f(x) = x^5 - 4x^3 + 3x^2 - 2 + \\sin^4(x - 1)$$에 대한$$x = 1$$에서 2차의 테일러 다항식을$$P(x)$$라 할 때,$$P(2)$$는?",
+          "8. 함수$$f(x) = \\sin^2 x$$의 Maclaurin 급수에서$$x^4$$항의 계수는?",
+        choices: [],
+        answer: "$$- \\frac{1}{3}$$",
+      },
+      {
+        question:
+          "9. 함수$$f(x) = x^5 - 4x^3 + 3x^2 - 2 + \\sin^4(x - 1)$$에 대한$$x = 1$$에서 2차의 테일러 다항식을$$P(x)$$라 할 때,$$P(2)$$는?",
         choices: ["$$-4$$", "$$-2$$", "$$4$$", "$$2$$"],
-        answer: "",
+        answer: "②",
       },
     ],
     97: [
       {
         question:
-          "$$f(x) = \\sqrt{x + 3}$$에 대한$$x = 1$$에서의 일차근사함수를 이용하여$$f(1.2)$$의 근삿값을 하면?",
+          "10. $$f(x) = \\sqrt{x + 3}$$에 대한$$x = 1$$에서의 일차근사함수를 이용하여$$f(1.2)$$의 근삿값을 하면?",
         choices: ["$$1.92$$", "$$1.99$$", "$$2.05$$", "$$2.12$$", "$$2.32$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
-          "정적분 $$\\int_0^1 \\cos(\\sqrt{x})\\,dx$$을 소수 둘째자리까지 구한 값은?",
+          "11. 정적분 $$\\int_0^1 \\cos(\\sqrt{x})\\,dx$$을 소수 둘째자리까지 구한 값은?",
         choices: ["$$0.74$$", "$$0.75$$", "$$0.76$$", "$$0.77$$", "$$0.78$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
-          "정적분 $$\\int_0^1 \\frac{\\sin x}{x}\\,dx = \\sum_{k=1}^\\infty A_k$$를$$A_1 + A_2$$의 값으로 근사할 때, 오차의 크기는 얼마보다 작은가?",
+          "12. 정적분 $$\\int_0^1 \\frac{\\sin x}{x}\\,dx = \\sum_{k=1}^\\infty A_k$$를$$A_1 + A_2$$의 값으로 근사할 때, 오차의 크기는 얼마보다 작은가?",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{600}$$",
       },
       {
-        question: "$$\\sum_{n=0}^{\\infty} x^n =$$",
+        question: "13. $$\\sum_{n=0}^{\\infty} x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{1-x}$$",
       },
       {
-        question: "$$\\sum_{n=0}^{\\infty} (-1)^n x^n =$$",
+        question: "14. $$\\sum_{n=0}^{\\infty} (-1)^n x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{1+x}$$",
       },
       {
-        question: "$$\\sum_{n=1}^{\\infty} x^n =$$",
+        question: "15. $$\\sum_{n=1}^{\\infty} x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{1-x} - 1$$",
       },
       {
-        question: "$$\\sum_{n=1}^{\\infty} n x^n =$$",
+        question: "16. $$\\sum_{n=1}^{\\infty} n x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$\\frac{1}{(1-x)^{2}$$",
       },
       {
-        question: "$$\\sum_{n=1}^{\\infty} n^2 x^n =$$",
+        question: "17. $$\\sum_{n=1}^{\\infty} n^2 x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$ \\frac{(x+1) x } {(1-x)^{3}} $$",
       },
       {
-        question: "$$\\sum_{n=1}^{\\infty} n^3 x^n =$$",
+        question: "18. $$\\sum_{n=1}^{\\infty} n^3 x^n =$$",
         choices: [],
-        answer: "",
+        answer: "$$ \\frac{(x^{2}+4x+1)x}{(1-x)^{4}} $$",
       },
       {
         question:
-          "$$\\frac{\\pi^2}{2!} - \\frac{\\pi^4}{4!} + \\frac{\\pi^6}{6!} - \\frac{\\pi^8}{8!} + \\cdots$$",
+          "19. $$\\frac{\\pi^2}{2!} - \\frac{\\pi^4}{4!} + \\frac{\\pi^6}{6!} - \\frac{\\pi^8}{8!} + \\cdots$$",
         choices: ["$$2$$", "$$1$$", "$$0$$", "$$-1$$"],
-        answer: "",
+        answer: "①",
       },
       {
-        question: "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{2^{2n}}$$의 값은?",
+        question: "20. $$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{2^{2n}}$$의 값은?",
         choices: [
           "$$-\\frac{1}{4}$$",
           "$$-\\frac{1}{5}$$",
           "$$\\frac{1}{2}$$",
           "$$\\frac{3}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     98: [
@@ -2591,7 +2591,7 @@ export const clcls3 = {
           "$$\\frac{1}{9}$$",
           "$$\\frac{1}{18}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2602,7 +2602,7 @@ export const clcls3 = {
           "$$(-1)^n n!$$",
           "$$(-1)^{n + 1} n!$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2613,13 +2613,13 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{2}}{128}$$",
           "$$-\\frac{\\sqrt{2}}{128}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "테일러급수$$e^x = \\sum_{n=0}^{\\infty} a_n (x - 1)^n$$에서$$a_2$$의 값은?",
         choices: ["$$1$$", "$$\\frac{e}{2}$$", "$$e$$", "$$e^2$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2631,7 +2631,7 @@ export const clcls3 = {
           "$$-\\frac{3}{8}$$",
           "$$-\\frac{5}{16}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     99: [
@@ -2644,13 +2644,13 @@ export const clcls3 = {
           "$$4 + \\frac{\\sqrt{3}}{3} - \\frac{4\\pi}{3}$$",
           "$$4 + \\sqrt{3} - \\frac{4\\pi}{3}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "함수$$f(x) = \\sqrt{25 - x^2}$$에 대한$$x = 3$$에서의 일차근사함수를 이용하여$$f(3.2)$$의 근삿값을 구하면?",
         choices: ["$$3.56$$", "$$3.85$$", "$$3.92$$", "$$4.00$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2662,13 +2662,13 @@ export const clcls3 = {
           "$$\\frac{2\\pi + 1}{8}$$",
           "$$\\frac{2\\pi - 1}{8}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "실수 전체에서 정의된 함수$$f$$가$$f(3) = -4,\\ f'(x) = \\sqrt[3]{x^2 + 9}$$을 만족한다고 하자. 이 함수의$$x = 3$$에서의 일차 근사함수를 이용하여$$f(2.8)$$의 근삿값을 구하면?",
         choices: ["$$-5.2$$", "$$-5.1$$", "$$-4.9$$", "$$5.1$$", "$$4.9$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     100: [
@@ -2676,7 +2676,7 @@ export const clcls3 = {
         question:
           "실수 전체에서 정의된 미분가능 함수$$f(x)$$가 아래 표에 나타낸 값을 가진다.<br>$$\\begin{array}{|c|c|c|c|c|c|}\n\\hline\nx & -2 & -1 & 0 & 1 & 2 \\\\\n\\hline\nf(x) & -8.5 & -1 & -0.5 & 0.25 & 2.5 \\\\\n\\hline\nf'(x) & 12 & 3 & 0 & 0.5 & 2 \\\\\n\\hline\n\\end{array}\n$$<br>함수$$g(x) = \\sqrt{x^3 - 3f(x)}$$의$$x = 1$$에서의 일차근사함수를 이용하여$$g(1.1)$$의 근삿값을 구하면?",
         choices: ["$$0.65$$", "$$0.68$$", "$$0.7$$", "$$0.72$$", "$$0.75$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2687,12 +2687,12 @@ export const clcls3 = {
           "$$\\frac{271}{90}$$",
           "$$\\frac{273}{90}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 중$$\\sqrt[3]{9}$$과 가장 가까운 근삿값은?",
         choices: ["$$2.08$$", "$$2.09$$", "$$2.10$$", "$$2.11$$", "$$2.12$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question: "다음 중$$\\sqrt{99}$$과 가장 가까운 근삿값은?",
@@ -2702,7 +2702,7 @@ export const clcls3 = {
           "$$\\frac{199}{20}$$",
           "$$\\frac{999}{100}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     101: [
@@ -2715,12 +2715,12 @@ export const clcls3 = {
           "$$\\sum_{n=0}^{\\infty} \\frac{(x - 1)^n}{5^n}$$",
           "$$\\sum_{n=0}^{\\infty} \\frac{(x - 1)^n}{n!}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "$$x = 0$$에서 Taylor전개가 불가능한 함수를 고르면?",
         choices: ["$$\\log x$$", "$$e^{x^2}$$", "$$\\tan x$$", "$$\\sin x$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2728,7 +2728,7 @@ export const clcls3 = {
         example:
           "가.$$f$$는$$x = 0$$에서 연속이다.<br>나$$f$$는$$x = 0$$에서 미분가능이다.<br>다.$$f$$는$$x = 0$$에서 Taylor 급수 전개 가능하다.",
         choices: ["없다.", "가", "가, 나", "가, 나, 다"],
-        answer: "",
+        answer: "④",
       },
     ],
     102: [
@@ -2741,19 +2741,19 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}}{2}$$",
           "$$1$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "항등식$$(x^2 + x + 1)^{10} = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \\cdots + a_{20} x^{20}$$에서 계수$$a_2$$의 값은?",
         choices: ["$$45$$", "$$50$$", "$$55$$", "$$110$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "$$f(x) = \\tan x$$에 대하여$$x = 0$$에서 Taylor 급수를$$\\sum_{n=0}^{\\infty} a_n x^n$$일 때,$$a_4$$의 값은?",
         choices: ["$$\\frac{1}{2}$$", "$$0$$", "$$-\\frac{1}{3}$$", "$$1$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2764,7 +2764,7 @@ export const clcls3 = {
           "$$\\frac{1}{5!}$$",
           "$$\\frac{1}{6!}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     103: [
@@ -2772,13 +2772,13 @@ export const clcls3 = {
         question:
           "$$|x| < \\frac{1}{2}$$인 모든 실수$$x$$에 대하여$$\\frac{1}{1 + x + x^2} = \\sum_{n=0}^{\\infty} a_n x^n$$라 하자.$$a_0 + a_3$$의 값을 구하여라. <br>(단,$$a_n$$은 상수이다.)",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "$$f(x) = x \\cos(2x)$$의 매클로린급수가$$\\sum_{n=0}^{\\infty} c_n x^n$$일 때,$$c_0 + c_1 + c_2 + c_3$$의 값은?",
         choices: ["$$-2$$", "$$-1$$", "$$0$$", "$$1$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2790,7 +2790,7 @@ export const clcls3 = {
           "$$\\frac{43}{120}$$",
           "$$\\frac{11}{30}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2801,7 +2801,7 @@ export const clcls3 = {
           "$$-\\frac{1}{8}$$",
           "$$\\frac{1}{8}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     104: [
@@ -2814,12 +2814,12 @@ export const clcls3 = {
           "$$\\frac{400}{9}$$",
           "$$\\frac{2000}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question: "$$f(x) = \\cos(x^2)$$일 때,$$f^{(6)}(0)$$의 값은?",
         choices: ["$$-8!$$", "$$-1$$", "$$0$$", "$$1$$", "$$8!$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2831,7 +2831,7 @@ export const clcls3 = {
           "$$\\frac{15!}{7!}$$",
           "$$\\frac{15!}{6!}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2842,7 +2842,7 @@ export const clcls3 = {
           "$$\\frac{3}{5}$$",
           "$$\\frac{4}{5}$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     105: [
@@ -2856,7 +2856,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} nx^n$$",
           "$$\\sum_{n=0}^{\\infty} (n + 1)x^n$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2867,7 +2867,7 @@ export const clcls3 = {
           "$$\\frac{x}{(1 - x)^3}$$",
           "$$\\frac{x(1 + x) - 1}{(1 - x)^3}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2880,7 +2880,7 @@ export const clcls3 = {
           "$$\\frac{1}{20}$$",
           "$$\\frac{1}{100}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     106: [
@@ -2894,7 +2894,7 @@ export const clcls3 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{1}{4}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -2905,7 +2905,7 @@ export const clcls3 = {
           "$$\\frac{1}{4}$$",
           "$$\\frac{4}{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2916,7 +2916,7 @@ export const clcls3 = {
           "$$\\ln\\left(\\frac{3}{2}\\right)$$",
           "$$2 \\ln\\left(\\frac{3}{2}\\right)$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2927,7 +2927,7 @@ export const clcls3 = {
           "$$1 - \\ln 2$$",
           "$$1 - \\frac{\\ln 2}{2}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     107: [
@@ -2940,7 +2940,7 @@ export const clcls3 = {
           "$$\\frac{15}{2}$$",
           "$$3$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2951,7 +2951,7 @@ export const clcls3 = {
           "$$\\pi$$",
           "$$2\\pi$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -2963,13 +2963,13 @@ export const clcls3 = {
           "$$\\frac{1}{2}$$",
           "$$\\frac{5}{6}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "무한급수$$\\sum_{n=2}^{\\infty} \\ln\\left(1 - \\frac{1}{n^2}\\right)$$의 합은?",
         choices: ["$$-e$$", "$$-e^{-1}$$", "$$-\\ln 2$$", "$$-(\\ln 2)^{-1}$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -2980,7 +2980,7 @@ export const clcls3 = {
           "$$\\frac{p + 1}{p - 1} \\le S_p \\le \\frac{p + 2}{p - 1}$$",
           "$$S_p \\ge \\frac{p + 2}{p - 1}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     108: [
@@ -2988,7 +2988,7 @@ export const clcls3 = {
         question:
           "다음 중 선형근사(linear approximation)를 이용하여$$(8.06)^{\\frac{2}{3}}$$의 근삿값을 구한 것은?",
         choices: ["$$4$$", "$$4.02$$", "$$4.07$$", "$$4.1$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -2999,12 +2999,12 @@ export const clcls3 = {
           "$$\\frac{9}{2}$$",
           "$$\\frac{13}{2}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "선형근사를 이용하여 구한$$\\sqrt{4.04}$$의 근삿값은?",
         choices: ["$$2.1$$", "$$2.01$$", "$$2.001$$", "$$2.02$$", "$$2.002$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -3016,7 +3016,7 @@ export const clcls3 = {
           "$$T_3 = 1 - x - \\frac{1}{3}x^3$$",
           "$$T_3 = 1 - x^2 - \\frac{1}{3}x^3$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     109: [
@@ -3033,7 +3033,7 @@ export const clcls3 = {
           "$$-4u + 7$$",
           "$$u + 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -3045,13 +3045,13 @@ export const clcls3 = {
           "$$-\\frac{3}{2}$$",
           "$$\\frac{5}{2}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "$$y = x^2 \\ln(1 + x^2)$$일 때$$\\frac{d^6 y}{dx^6}(0)$$의 값은?",
         choices: ["$$0$$", "$$180$$", "$$-360$$", "$$540$$", "$$-720$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -3063,7 +3063,7 @@ export const clcls3 = {
           "$$\\frac{1}{3}$$",
           "$$\\frac{1}{2}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     110: [
@@ -3077,7 +3077,7 @@ export const clcls3 = {
           "$$\\frac{8!}{2}$$",
           "$$9!$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
@@ -3088,7 +3088,7 @@ export const clcls3 = {
           "$$\\frac{4}{3}$$",
           "$$\\frac{5}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -3100,13 +3100,13 @@ export const clcls3 = {
           "$$\\frac{3}{5}$$",
           "$$1$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "$$0 < x < 2$$에서$$\\frac{x}{x - 2} = \\sum_{n=0}^{\\infty} a_n (x - 1)^n$$일 때$$a_7$$의 값은?",
         choices: ["$$-2$$", "$$0$$", "$$\\frac{1}{7!}$$", "$$\\frac{2}{7!}$$"],
-        answer: "",
+        answer: "①",
       },
     ],
     111: [
@@ -3116,13 +3116,13 @@ export const clcls3 = {
         example:
           "$$f(x) = \\int_0^x s \\ln(1 + s^2)\\,ds = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + a_4 x^4 + a_5 x^5 + \\cdots$$",
         choices: ["$$0$$", "$$\\frac{1}{4}$$", "$$\\frac{3}{16}$$", "$$6$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "급수$$1 - 2\\ln3 + \\frac{(2\\ln3)^2}{2!} - \\frac{(2\\ln3)^3}{3!} + \\cdots$$의 합은?",
         choices: ["$$9$$", "$$3$$", "$$\\frac{1}{3}$$", "$$\\frac{1}{9}$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -3134,7 +3134,7 @@ export const clcls3 = {
           "$$\\ln 3$$",
           "$$\\ln 4$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -3146,7 +3146,7 @@ export const clcls3 = {
           "$$\\frac{1}{6} + \\frac{2}{3} \\log \\frac{3}{2}$$",
           "$$\\frac{1}{6} + \\frac{4}{3} \\log \\frac{3}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     112: [
@@ -3160,12 +3160,12 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3}}{5} \\pi$$",
           "$$\\frac{\\sqrt{3}}{6} \\pi$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question: "급수$$\\sum_{n=2}^{\\infty} \\frac{2}{n^2 - 1}$$의 합은?",
         choices: ["$$\\frac{3}{2}$$", "$$2$$", "$$\\frac{5}{2}$$", "$$4$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question: "다음 무한급수의 합은?",
@@ -3178,7 +3178,7 @@ export const clcls3 = {
           "$$2 \\ln 2 - 1$$",
           "$$3 \\ln 2 - 2$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     113: [
@@ -3192,7 +3192,7 @@ export const clcls3 = {
           "$$x(f'(x) - f(x))$$",
           "$$xf'(x) - f(x)$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -3204,13 +3204,13 @@ export const clcls3 = {
           "$$2xf'(x) - x^2 f(x)$$",
           "$$2xf'(x) + x^2 f(x)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
           "급수$$\\sum_{n=1}^{\\infty} \\frac{n(n+1)}{2^n}$$의 값을 구하면?",
         choices: ["$$7$$", "$$8$$", "$$9$$", "$$10$$", "$$11$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -3222,7 +3222,7 @@ export const clcls3 = {
           "$$3$$",
           "$$\\frac{7}{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     114: [
@@ -3237,7 +3237,7 @@ export const clcls3 = {
           "$$\\frac{1}{2020}$$",
           "$$\\frac{2019}{2020}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -3249,7 +3249,7 @@ export const clcls3 = {
           "$$\\frac{31}{26}$$",
           "$$\\frac{33}{27}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "$$f(x) = 2x^2 \\sqrt{3 + x^2}$$일 때,$$f^{(6)}(0)$$의 값은?",
@@ -3260,13 +3260,13 @@ export const clcls3 = {
           "$$15\\sqrt{3}$$",
           "$$20\\sqrt{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "급수$$\\sum_{n=1}^{\\infty} \\frac{1}{n^6}$$를 오차가$$0.001$$보다 작게 계산하기 위한 항의 최소 개수는?",
         choices: ["$$2$$", "$$3$$", "$$4$$", "$$5$$", "$$6$$"],
-        answer: "",
+        answer: "②",
       },
     ],
     115: [
@@ -3279,7 +3279,7 @@ export const clcls3 = {
           "$$40 + 26 \\sqrt{2}$$",
           "$$40 + 28 \\sqrt{2}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "$$f(x) = e^{x^2}$$일 때,$$f^{(2n)}(0)$$의 값은?",
@@ -3290,7 +3290,7 @@ export const clcls3 = {
           "$$\\frac{(2n)!}{n!}$$",
           "$$\\frac{(2n + 1)!}{n!}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -3302,7 +3302,7 @@ export const clcls3 = {
           "$$2^9 3^2 5$$",
           "$$-2^{10}$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -3313,7 +3313,7 @@ export const clcls3 = {
           "$$\\ln \\frac{5}{2}$$",
           "$$\\ln 3$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     116: [
@@ -3327,7 +3327,7 @@ export const clcls3 = {
           "$$4 \\times (-2)^7$$",
           "$$4 \\times (-1)^7$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 급수의 값은?",
@@ -3339,13 +3339,13 @@ export const clcls3 = {
           "$$1 + \\ln 2$$",
           "$$\\ln 3 + \\ln 2$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "함수$$f(x) = \\frac{x^2 + x}{(1 - x)^3}$$의 거듭제급수 표현이$$\\sum_{n=1}^{\\infty} (an + b)^c x^n$$이면,$$a + b + c$$는?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -3357,437 +3357,437 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{3} \\pi}{6} - \\frac{1}{2} \\ln \\frac{4}{3}$$",
           "$$\\frac{\\sqrt{3} \\pi}{18} - \\frac{1}{2} \\ln \\frac{1}{3}$$",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     121: [
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\cos \\frac{1}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\cos \\frac{1}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1 - n^2}{3n^2 + 2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{1 - n^2}{3n^2 + 2}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^3}{2n^3 + n^2 + 1}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\frac{n^3}{2n^3 + n^2 + 1}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} n \\sin \\frac{1}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} n \\sin \\frac{1}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} n^\\frac{1}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (5)$$\\sum_{n=1}^{\\infty} n^\\frac{1}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\left(1 - \\frac{1}{2k}\\right)^k$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (6)$$\\sum_{n=1}^{\\infty} \\left(1 - \\frac{1}{2k}\\right)^k$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{k=1}^{\\infty} \\frac{1}{k \\log k}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{k=1}^{\\infty} \\frac{1}{k \\log k}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=2}^{\\infty} \\frac{1}{n (\\log n)^2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=2}^{\\infty} \\frac{1}{n (\\log n)^2}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=2}^{\\infty} \\frac{1}{(\\log n)^3}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=2}^{\\infty} \\frac{1}{(\\log n)^3}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n^3}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\frac{1}{n^3}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n \\sqrt{n}}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{1}{n \\sqrt{n}}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\ln n}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\frac{\\ln n}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\cos n}{n^2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} \\frac{\\cos n}{n^2}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^2}{n^3 + 3}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (5)$$\\sum_{n=1}^{\\infty} \\frac{n^2}{n^3 + 3}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^n}{n!}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (6)$$\\sum_{n=1}^{\\infty} \\frac{n^n}{n!}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n^ {sin1}}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} \\frac{1}{n^ {sin1}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(n + 1)^2}{2^n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (8)$$\\sum_{n=1}^{\\infty} \\frac{(n + 1)^2}{2^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n}{\\sqrt{n^3 + 1}}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (9)$$\\sum_{n=1}^{\\infty} \\frac{n}{\\sqrt{n^3 + 1}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\sqrt{n + 2} - \\sqrt{n - 2}}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (10)$$\\sum_{n=1}^{\\infty} \\frac{\\sqrt{n + 2} - \\sqrt{n - 2}}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n!3^n}{n^n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (11)$$\\sum_{n=1}^{\\infty} \\frac{n!3^n}{n^n}$$",
+        answer: "발산",
       },
     ],
     122: [
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n}{2^n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\frac{n}{2^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n!}{2 \\cdot 5 \\cdot 8 \\cdots (3n + 2)}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{n!}{2 \\cdot 5 \\cdot 8 \\cdots (3n + 2)}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1 \\cdot 3 \\cdot 5 \\cdots (2n - 1)}{2 \\cdot 5 \\cdot 8 \\cdots (3n - 1)}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\frac{1 \\cdot 3 \\cdot 5 \\cdots (2n - 1)}{2 \\cdot 5 \\cdot 8 \\cdots (3n - 1)}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(2n)!}{(n!)^2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} \\frac{(2n)!}{(n!)^2}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{8^n (n!)^3}{(3n)!}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (5)$$\\sum_{n=1}^{\\infty} \\frac{8^n (n!)^3}{(3n)!}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\left( \\frac{3 + 2n}{2 + 3n} \\right)^n$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\left( \\frac{3 + 2n}{2 + 3n} \\right)^n$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\pi n}{(\\ln n)^n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{\\pi n}{(\\ln n)^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\left( 1 - \\frac{2}{n} \\right)^n$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\left( 1 - \\frac{2}{n} \\right)^n$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=3}^{\\infty} \\left( 1 - \\frac{2}{n} \\right)^{n^2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (4)$$\\sum_{n=3}^{\\infty} \\left( 1 - \\frac{2}{n} \\right)^{n^2}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n} \\right)$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n^2} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n^2} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\tan \\left( \\frac{1}{\\sqrt{n}} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\tan \\left( \\frac{1}{\\sqrt{n}} \\right)$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{\\sqrt{n}} \\sin \\left( \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} \\frac{1}{\\sqrt{n}} \\sin \\left( \\frac{1}{n} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\sinh^2 \\left( \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (5)$$\\sum_{n=1}^{\\infty} \\sinh^2 \\left( \\frac{1}{n} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\left( 1 - \\cos \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (6)$$\\sum_{n=1}^{\\infty} \\left( 1 - \\cos \\frac{1}{n} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{1 + \\frac{1}{n}}}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} \\frac{1}{n^{1 + \\frac{1}{n}}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{e^\\frac{1}{n}}{n}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\frac{e^\\frac{1}{n}}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\sqrt[n]{2}}{n^2}$$",
-        answer: "",
+          "다음 급수의 수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{\\sqrt[n]{2}}{n^2}$$",
+        answer: "수렴",
       },
     ],
     123: [
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(n+1)^2}{2^n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\frac{(n+1)^2}{2^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^2}{100^n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{n^2}{100^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{3^n}{n(n+1)(n+2)}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} \\frac{3^n}{n(n+1)(n+2)}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} ne^{-n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} ne^{-n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{k=1}^{\\infty} \\frac{2^{k+1}}{k^5}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (5)$$\\sum_{k=1}^{\\infty} \\frac{2^{k+1}}{k^5}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1.01^n}{n^{2020}}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (6)$$\\sum_{n=1}^{\\infty} \\frac{1.01^n}{n^{2020}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n + 3^{-n}}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} \\frac{1}{n + 3^{-n}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{10^n}{8^n + 9^n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (8)$$\\sum_{n=1}^{\\infty} \\frac{10^n}{8^n + 9^n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^3}{n!}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (9)$$\\sum_{n=1}^{\\infty} \\frac{n^3}{n!}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{k=1}^{\\infty} \\frac{k!}{k^{10} 10^k}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (10)$$\\sum_{k=1}^{\\infty} \\frac{k!}{k^{10} 10^k}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{2^n}{n!}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (11)$$\\sum_{n=1}^{\\infty} \\frac{2^n}{n!}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{5^n}{1 \\cdot 3 \\cdot 5 \\cdots (2n - 1)}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (12)$$\\sum_{n=1}^{\\infty} \\frac{5^n}{1 \\cdot 3 \\cdot 5 \\cdots (2n - 1)}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{n^n}{4^n n!}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (13)$$\\sum_{n=1}^{\\infty} \\frac{n^n}{4^n n!}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{k=1}^{\\infty} \\frac{(2k)!}{3^k k!}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (14)$$\\sum_{k=1}^{\\infty} \\frac{(2k)!}{3^k k!}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n^2} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (15)$$\\sum_{n=1}^{\\infty} \\sin \\left( \\frac{1}{n^2} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin^2 \\left( \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (16)$$\\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin^2 \\left( \\frac{1}{n} \\right)$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\tan^{-1} \\left( \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (17)$$\\sum_{n=1}^{\\infty} \\tan^{-1} \\left( \\frac{1}{n} \\right)$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\tan \\left( \\frac{1}{n} \\right)}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (18)$$\\sum_{n=1}^{\\infty} \\frac{\\tan \\left( \\frac{1}{n} \\right)}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\log \\left( 1 + \\frac{1}{n} \\right)$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (19)$$\\sum_{n=1}^{\\infty} \\log \\left( 1 + \\frac{1}{n} \\right)$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{2 + \\sin n}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (20)$$\\sum_{n=1}^{\\infty} \\frac{2 + \\sin n}{n}$$",
+        answer: "발산",
       },
     ],
     125: [
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\sqrt{n}}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\sqrt{n}}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{1}{\\sqrt{n^2 + 1}}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{1}{\\sqrt{n^2 + 1}}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n^\\frac{5}{2} + n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n^\\frac{5}{2} + n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{k=2}^{\\infty} \\frac{(-1)^k}{\\ln k}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (5)$$\\sum_{k=2}^{\\infty} \\frac{(-1)^k}{\\ln k}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{n!}{n^n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (6)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{n!}{n^n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\tan^{-1} n}{2 + n^2}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\tan^{-1} n}{2 + n^2}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\cos n\\pi}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (8)$$\\sum_{n=1}^{\\infty} \\frac{\\cos n\\pi}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\sin n\\pi}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (9)$$\\sum_{n=1}^{\\infty} \\frac{\\sin n\\pi}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 급수의 수렴과 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} \\frac{\\sin n}{n}$$",
-        answer: "",
+          "다음 급수의 수렴과 발산을 판정하시오. (10)$$\\sum_{n=1}^{\\infty} \\frac{\\sin n}{n}$$",
+        answer: "수렴",
       },
       {
         question:
-          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\tan^{-1} n}{2 + n^2}$$",
-        answer: "",
+          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오. (1)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\tan^{-1} n}{2 + n^2}$$",
+        answer: "절대 수렴",
       },
       {
         question:
-          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{1}{\\sqrt{n^2 + 1}}$$",
-        answer: "",
+          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오. (2)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{1}{\\sqrt{n^2 + 1}}$$",
+        answer: "조건부 수렴",
       },
       {
         question:
-          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\sqrt{n}}{2 + \\sqrt{n}}$$",
-        answer: "",
+          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오. (3)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\sqrt{n}}{2 + \\sqrt{n}}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n e^\\frac{1}{n}$$",
-        answer: "",
+          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오. (4)$$\\sum_{n=1}^{\\infty} (-1)^n e^\\frac{1}{n}$$",
+        answer: "발산",
       },
       {
         question:
-          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\sqrt[n]{e}}{\\ln n}$$",
-        answer: "",
+          "다음 무한급수의 절대수렴, 조건부수렴, 발산을 판정하시오. (5)$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{\\sqrt[n]{e}}{\\ln n}$$",
+        answer: "절대 수렴",
       },
     ],
     127: [
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{n 8^n}$$",
-        answer: "",
+        answer: "수렴반경: $$8$$, 수렴구간: $$-8 \\leq x \\leq 8$$",
       },
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{x^n}{\\sqrt{n} 3^n}$$",
-        answer: "",
+        answer: "수렴반경: $$3$$, 수렴구간: $$-3 \\leq x < 3$$",
       },
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{(-2)^n}{\\sqrt{n}} x^n$$",
-        answer: "",
+        answer: "수렴반경: $$\\frac{1}{2}$$, 수렴구간: $$-\\frac{1}{2} < x \\leq \\frac{1}{2}$$",
       },
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{k=1}^{\\infty} \\frac{(x-2)^k}{k^2 2^k}$$",
-        answer: "",
+        answer: "수렴반경: $$2$$, 수렴구간: $$0 \\leq x \\leq 4$$",
       },
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{k=1}^{\\infty} \\frac{(-1)^k}{k^2 3^k} (x+2)^k$$",
-        answer: "",
+        answer: "수렴반경: $$3$$, 수렴구간: $$-5 < x < 1$$",
       },
       {
         question:
           "다음 급수의 수렴반경과 수렴구간을 구하여라.$$\\sum_{n=0}^{\\infty} \\frac{n(x+3)^n}{5^{n+1}}$$",
-        answer: "",
+        answer: "수렴반경: $$5$$, 수렴구간: $$-8 < x < 2$$",
       },
       {
         question:
           "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{n}{5^{n+1}} x^n$$",
-        answer: "",
+        answer: "수렴구간: $$-5 < x < 5$$",
       },
       {
         question:
           "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{x^{n+1}}{n(n+1)}$$",
-        answer: "",
+        answer: "수렴구간: $$-1 \\leq x \\leq 1$$",
       },
       {
         question:
           "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{(2x - 5)^n}{\\sqrt{n}}$$",
-        answer: "",
+        answer: "수렴구간: $$2 \\leq x < 3$$",
       },
       {
         question:
           "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{k=0}^{\\infty} \\left( \\frac{\\sqrt{x}}{2} - 1 \\right)^k$$",
-        answer: "",
+        answer: "수렴구간: $$0 < x < 16$$",
       },
       {
         question:
           "다음 무한급수의 수렴구간을 구하여라.$$\\sum_{n=1}^{\\infty} \\frac{n x^{3 n}}{8^n}$$",
-        answer: "",
+        answer: "수렴구간: $$-2 < x < 2$$",
       },
     ],
     128: [
@@ -3800,7 +3800,7 @@ export const clcls3 = {
           "$$\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\frac{(-1)^n(n - 1)}{n + 1}$$",
         ],
         choices: ["ㄱ, ㄷ", "ㄱ, ㄹ", "ㄴ, ㄷ", "ㄴ, ㄹ"],
-        answer: "",
+        answer: "①",
       },
       {
         question: "다음 중 수렴하는 것을 모두 고른 것은?",
@@ -3808,7 +3808,7 @@ export const clcls3 = {
           "ㄱ. $$\\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{n!}{n^n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} (\\log(n+1) - \\log n)$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\tan^2 \\left( \\frac{\\pi}{n} \\right)$$",
         ],
         choices: ["ㄱ, ㄴ", "ㄴ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 중 발산하는 무한급수의 개수는?",
@@ -3816,7 +3816,7 @@ export const clcls3 = {
           "ㄱ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n^{1 + \\frac{1}{n}}}$$ ㄴ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n \\ln n}$$ ㄷ. $$\\sum_{n=1}^{\\infty} \\frac{1}{n}$$ ㄹ. $$\\sum_{n=1}^{\\infty} \\ln\\left( 1 + \\frac{1}{n} \\right)$$",
         ],
         choices: ["1개", "2개", "3개", "4개"],
-        answer: "",
+        answer: "④",
       },
     ],
     129: [
@@ -3825,21 +3825,21 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} (-1)^n \\ln\\left(1 + \\sinh \\frac{1}{n}\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{n! e^{2n}}{n^n} \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\arctan\\left(\\frac{1}{n}\\right)}{\\ln n} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\tan^2\\left(\\frac{4\\pi}{n}\\right)\n\\end{aligned}$$",
         choices: ["1개", "2개", "3개", "4개"],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 중 수렴하는 무한급수를 모두 고르면?",
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=0}^{\\infty} \\frac{1}{n^2 + 1} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{n - 1}{2n + 1} \\\\\n&\\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\sin n}{(n+1)(\\ln n)^2} \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} \\left(1 + \\frac{1}{n}\\right)^{n^2}\n\\end{aligned}$$",
         choices: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄷ, ㄹ"],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 중 수렴하는 무한급수의 개수는?",
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\left(e^-n - e^{-(n+1)}\\right) \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\sqrt[3]{n^2 + n + 1}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{n - 999}{n + 1000} \\\\\n&\\text{ㄹ. } \\sum_{n=2}^{\\infty} \\frac{2n - 1}{(n - 1)(n + 1)^2} \\\\\n&\\text{ㅁ. } 1 - 2 + 4 - \\cdots + (-2)^n + \\cdots\n\\end{aligned}$$",
         choices: ["1개", "2개", "3개", "4개", "5개"],
-        answer: "",
+        answer: "②",
       },
     ],
     130: [
@@ -3852,7 +3852,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{n - 4}{n^4 + 4}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\sin n}{n^2}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 중 수렴하는 급수는?",
@@ -3862,7 +3862,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n n}{\\ln n}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{5^{2n}}{n^2 9^n}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 중 수렴하는 급수는?",
@@ -3872,7 +3872,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\left( \\frac{n}{n + 1} \\right)^n$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{\\sin\\left(\\frac{1}{n}\\right)}{n}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 수렴하는 무한급수는?",
@@ -3882,7 +3882,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\sin\\left(\\frac{1}{n}\\right)$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{2^n n!}{n^n}$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     131: [
@@ -3894,7 +3894,7 @@ export const clcls3 = {
           "$$\\sum_{n=2}^{\\infty} \\frac{1}{n (\\ln n)^2}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{(2n)!}{3^n n!}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 발산하는 급수는?",
@@ -3904,7 +3904,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{\\ln(n + 2)}{n^2}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{n \\sqrt{n + 1}}{\\sqrt{n^5 + 5n}}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 발산하는 급수는?",
@@ -3914,7 +3914,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} n \\left( \\sin \\frac{1}{n} - \\frac{1}{n} \\right)$$",
           "$$\\sum_{n=1}^{\\infty} \\left( \\sum_{k=1}^{n} \\frac{1}{k^2} \\right) \\frac{1}{n}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 발산하는 급수는?",
@@ -3924,7 +3924,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{n^2}{2 + n^3}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{2 \\sin\\left(\\frac{n}{3}\\pi\\right)}{n^2}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     132: [
@@ -3937,7 +3937,7 @@ export const clcls3 = {
           "$$p \\leq 1$$",
           "$$0 < p \\leq 1$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -3948,13 +3948,13 @@ export const clcls3 = {
           "$$\\frac{1}{e} < b < 1$$",
           "$$\\frac{1}{e^2} < b < 1$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
           "급수$$\\sum_{n=2}^{\\infty} \\frac{1}{n(\\ln n)^a}$$가 수렴하기 위한$$a$$의 범위는?",
         choices: ["$$a = 1$$", "$$a < 1$$", "$$a > 1$$", "$$a > 0$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -3965,7 +3965,7 @@ export const clcls3 = {
           "$$p > 1$$",
           "$$2 > p \\geq 1$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -3976,7 +3976,7 @@ export const clcls3 = {
           "$$a = \\frac{3}{2}, b = -\\frac{1}{2}$$일 때, 수렴한다.",
           "$$a = 1, b = 1$$일 때, 수렴한다.",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     133: [
@@ -3988,7 +3988,7 @@ export const clcls3 = {
           "$$\\sum_{k=1}^{\\infty} \\frac{1}{k \\log k}$$",
           "$$\\sum_{k=1}^{\\infty} \\frac{(k!)^2}{(2k)!}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 무한급수 중 발산하는 것은?",
@@ -3998,7 +3998,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{n^n}{n!}$$",
           "$$\\sum_{n=1}^{\\infty} (-1)^n \\frac{e^n}{1 + e^{2n}}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4009,7 +4009,7 @@ export const clcls3 = {
           "$$\\lim_{n \\to \\infty} b_n = 0, \\quad \\lim_{n \\to \\infty} S_n = \\frac{7}{3}$$",
           "$$\\lim_{n \\to \\infty} b_n = \\frac{7}{3}, \\quad \\lim_{n \\to \\infty} S_n = \\frac{7}{3}$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     134: [
@@ -4023,19 +4023,19 @@ export const clcls3 = {
           "$$\\text{4개}$$",
           "$$\\text{5개}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "멱급수$$\\sum_{n=0}^{\\infty} \\frac{n}{3^n} x^n$$의 수렴반경은?",
         choices: ["$$0$$", "$$\\frac{1}{3}$$", "$$1$$", "$$3$$", "$$\\infty$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "급수$$\\sum_{n=1}^{\\infty} \\frac{n^n}{n!} x^n$$의 수렴반경을 구하면?",
         choices: ["$$\\frac{1}{e}$$", "$$1$$", "$$e$$", "$$\\infty$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -4047,7 +4047,7 @@ export const clcls3 = {
           "진동",
           "답 없음",
         ],
-        answer: "",
+        answer: "①",
       },
     ],
     135: [
@@ -4060,7 +4060,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} 100 a_n$$",
           "$$\\sum_{n=1}^{\\infty} a_n^2$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4071,7 +4071,7 @@ export const clcls3 = {
           "모든$$n$$에 대하여 $$\\sum_{k=1}^{n} |a_k| \\leq M$$인 양수$$M$$이 존재한다.",
           "$$|a_1| > |a_2| > \\cdots$$이고,$$\\lim_{n \\to \\infty} |a_n| = 0$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question: "무한급수에 대하여 옳지 않은 것은?",
@@ -4081,7 +4081,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} |a_n|$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$도 수렴한다.",
           "$$\\sum_{n=1}^{\\infty} a_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n^2$$도 수렴한다.",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     136: [
@@ -4092,7 +4092,7 @@ export const clcls3 = {
           "가. $$\\sum_{n=1}^{\\infty} (a_n + b_n)$$ 나. $$\\sum_{n=1}^{\\infty} a_n^2$$ 다. $$\\sum_{n=1}^{\\infty} \\sin(|a_n|)$$ 라. $$\\sum_{n=1}^{\\infty} |a_n|b_n$$",
         ],
         choices: ["나, 다", "가, 나, 다", "가, 나, 라", "가, 나, 다, 라"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -4100,7 +4100,7 @@ export const clcls3 = {
         example:
           "ㄱ.$$\\sum_{n=0}^{\\infty} (-1)^n a_n$$ ㄴ.$$\\sum_{n=0}^{\\infty} a_n$$ ㄷ.$$\\sum_{n=0}^{\\infty} \\sin(a_n)$$",
         choices: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -4111,7 +4111,7 @@ export const clcls3 = {
           "근사값이$$\\frac{5}{6}$$이면 최대오차의 절대값은$$\\frac{1}{4}$$이다.",
           "근사값이$$\\frac{7}{12}$$이면 최대오차의 절대값은$$0.2$$이상이다.",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     137: [
@@ -4125,14 +4125,14 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} 4^n c_n$$은 발산한다.",
           "$$\\sum_{n=1}^{\\infty} 3^n c_n$$은 수렴한다.",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 (가)~(라) 명제 중 항상 참인 것은 몇 개인가?",
         example:
           "(가)$$\\lim_{n \\to \\infty} a_n = 0$$이면 급수$$\\sum a_n$$는 수렴한다.<br>(나)급수$$\\sum a_n$$이 발산하면 급수$$\\sum |a_n|$$도 발산한다.<br>(다)급수$$\\sum c_n 6^n$$이 수렴하면 급수$$\\sum c_n (-2)^n$$도 수렴한다.<br>(라)$$\\sum_{n=0}^{\\infty} \\frac{(-1)^n}{n!} = \\frac{1}{e}$$",
         choices: ["1개", "2개", "3개", "4개", "없다"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4140,7 +4140,7 @@ export const clcls3 = {
         example:
           "(가)$$\\sum_{n=0}^{\\infty} (-3)^n a_n$$은 발산한다.<br>(나)$$\\sum_{n=0}^{\\infty} a_n$$은 수렴한다.<br>(다)$$\\sum_{n=0}^{\\infty} 5^n a_n$$은 발산한다.",
         choices: ["가, 나", "나, 다", "가, 다", "가, 나, 다", "없다"],
-        answer: "",
+        answer: "②",
       },
     ],
     138: [
@@ -4154,7 +4154,7 @@ export const clcls3 = {
           "$$\\text{(ㄴ), (ㄷ)}$$",
           "$$\\text{(ㄱ), (ㄴ), (ㄷ)}$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -4166,7 +4166,7 @@ export const clcls3 = {
           "$$p > 0$$",
           "$$p > 1$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -4177,7 +4177,7 @@ export const clcls3 = {
           "$$\\frac{1}{4}$$",
           "$$2$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     139: [
@@ -4191,7 +4191,7 @@ export const clcls3 = {
           "$$p = 1,\\ q = 2$$",
           "$$p = 1,\\ q = 4$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -4203,7 +4203,7 @@ export const clcls3 = {
           "$$(-8, 4)$$",
           "$$[-8, 4]$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question: "다음 중 수렴하는 급수의 개수는?",
@@ -4215,7 +4215,7 @@ export const clcls3 = {
           "$$\\text{ㅁ.}\\quad \\sum_{n=0}^{\\infty} \\frac{n^{1000} 1000^n}{n!}$$",
         ],
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     140: [
@@ -4225,7 +4225,7 @@ export const clcls3 = {
         example:
           "$$\\text{ㄱ. } \\sum_{n=1}^{\\infty} \\frac{n!}{2^n} \\quad \\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n+1} \\, \\cos\\left( \\frac{\\pi}{n} \\right) \\quad \\text{ㄷ. } \\sum_{n=2}^{\\infty} \\frac{\\ln n}{(n+1)(n+2)}$$",
         choices: ["ㄱ", "ㄴ", "ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 급수 중 수렴하는 것을 모두 고르시오.",
@@ -4238,13 +4238,13 @@ export const clcls3 = {
           "(가), (다), (라)",
           "(나), (다), (라)",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "멱급수$$\\sum_{n=1}^{\\infty} \\frac{(x - 5)^n}{n2^n}$$이 절대수렴하는$$x$$의 범위가$$a < x < b$$일 때,$$a + b$$의 값을 구하시오.",
         choices: ["$$8$$", "$$9$$", "$$10$$", "$$11$$", "$$12$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     141: [
@@ -4257,7 +4257,7 @@ export const clcls3 = {
           "$$-y < x < y$$일 때$$\\sum_{n=0}^{\\infty} a_n x^n$$은 수렴한다.",
           "$$-y < x < y$$일 때$$\\sum_{n=1}^{\\infty} n a_n x^n$$은 수렴한다.",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -4269,7 +4269,7 @@ export const clcls3 = {
           "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 수렴하면$$\\sum_{n=1}^{\\infty} a_n$$은 수렴한다.",
           "모든$$n$$에 대해$$|b_n| \\leq a_n$$이고$$\\sum_{n=1}^{\\infty} b_n$$이 발산하면$$\\sum_{n=1}^{\\infty} a_n$$은 발산한다.",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     142: [
@@ -4277,7 +4277,7 @@ export const clcls3 = {
         question:
           "멱급수$$f(x) = \\sum_{n=1}^{\\infty} \\frac{n!}{1 \\times 3 \\times 5 \\times \\cdots \\times (2n + 1)} x^n$$의 수렴반경은?",
         choices: ["$$0$$", "$$\\frac{1}{2}$$", "$$1$$", "$$2$$", "$$\\infty$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 <보기> 중 수렴하는 급수의 개수는?",
@@ -4293,19 +4293,19 @@ export const clcls3 = {
           "$$\\text{3개}$$",
           "$$\\text{4개}$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "멱급수$$\\sum_{n=0}^{\\infty} \\frac{(n!)^3}{(3n)!} (x - 30)^n$$의 수렴반경이$$r$$이고 수렴구간은$$(a, b)$$일 때,$$r + a + b$$의 값을 구하시오.",
         choices: ["$$27$$", "$$30$$", "$$84$$", "$$87$$", "$$90$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "멱급수$$\\sum_{n=1}^{\\infty} \\frac{(2x - 1)^n}{4^n \\ln(n + 1)}$$의 수렴반지름은?",
         choices: ["$$\\frac{1}{4}$$", "$$\\frac{1}{2}$$", "$$2$$", "$$4$$"],
-        answer: "",
+        answer: "③",
       },
     ],
     143: [
@@ -4313,7 +4313,7 @@ export const clcls3 = {
         question:
           "멱급수$$\\sum_{n=2}^{\\infty} \\frac{(x - 1)^n}{n2^n \\ln n}$$의 수렴구간에 속하는 모든 정수$$x$$의 합은?",
         choices: ["$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -4321,7 +4321,7 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=1}^{\\infty} a_n \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} |a_n| \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-4)^n a_n \\\\\n&\\text{ㄹ. } \\sum_{n=1}^{\\infty} n a_n\n\\end{aligned}$$",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4333,7 +4333,7 @@ export const clcls3 = {
           "$$[1, 2]$$",
           "$$(-\\infty, \\infty)$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -4345,7 +4345,7 @@ export const clcls3 = {
           "$$(2, 4]$$",
           "$$[2, 4)$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     144: [
@@ -4361,7 +4361,7 @@ export const clcls3 = {
           "$$(b), (c)$$",
           "$$(a), (b), (c)$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 수열 중에서 수렴하는 것을 모두 고르면?",
@@ -4374,7 +4374,7 @@ export const clcls3 = {
           "$$(a), (b), (c), (d)$$",
           "$$(b), (d)$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question: "다음 중 수렴하는 급수는?",
@@ -4384,7 +4384,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\left( \\frac{1}{n^2} + \\frac{1}{n + 1} \\right)$$",
           "$$\\sum_{n=1}^{\\infty} \\left( \\frac{1}{n^2} - \\frac{1}{n + 1} \\right)$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     145: [
@@ -4397,7 +4397,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\left( \\frac{2n + 5}{3n + 1} \\right)^n$$",
           "$$\\sum_{n=1}^{\\infty} \\tan\\left( \\frac{1}{n} \\right)$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question: "다음 급수들 중 조건부 수렴하는 것은?",
@@ -4408,7 +4408,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n \\tan^{-1} n}{n^2}$$",
           "$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\ln(n + 1)}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question: "다음 중 수렴반경이 제일 큰 멱급수는?",
@@ -4418,7 +4418,7 @@ export const clcls3 = {
           "$$\\sum_{n=1}^{\\infty} \\left(1 + \\frac{1}{n} \\right)^n x^n$$",
           "$$\\sum_{n=1}^{\\infty} \\left(1 + \\frac{1}{n} \\right)^{n^2} x^n$$",
         ],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4430,7 +4430,7 @@ export const clcls3 = {
           "$$\\frac{2}{e}$$",
           "$$\\frac{e}{2}$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
     ],
     146: [
@@ -4439,21 +4439,21 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{a. } \\sum_{n=3}^{\\infty} \\frac{\\tan\\left( \\frac{1}{n} \\right)}{\\ln n} \\\\\n&\\text{b. } \\sum_{n=1}^{\\infty} \\frac{2n + (-1)^n}{n^3} \\\\\n&\\text{c. } \\sum_{n=1}^{\\infty} \\frac{2^n n!}{n^n} \\\\\n&\\text{d. } \\sum_{n=2}^{\\infty} \\left(1 - \\frac{1}{n} \\right)^{n^2}\n\\end{aligned}$$",
         choices: ["b, d", "a, b, c", "b, c, d", "a, b, d", "a, b, c, d"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "〈보기〉에서 수렴하는 급수만을 있는 대로 고른 것은?",
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\frac{1}{n (\\ln n)^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{1 + (\\ln n)^2} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} \\frac{1}{\\ln(n+1)} \\sin \\frac{1}{n^2} \n\\end{aligned}$$",
         choices: ["ㄱ", "ㄴ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
-        answer: "",
+        answer: "③",
       },
       {
         question: "다음 급수들 중 발산하는 것은 모두 몇 개인가?",
         example:
           "$$\\begin{aligned}\n&\\text{a. } \\sum_{n=2}^{\\infty} \\frac{1}{n \\ln n} \\\\\n&\\text{b. } \\sum_{n=1}^{\\infty} \\frac{n!}{3^{n-1}} \\\\\n&\\text{c. } \\sum_{n=0}^{\\infty} \\frac{x}{1 + x^n} \\quad (0 < x < 1) \\\\\n&\\text{d. } \\sum_{n=2}^{\\infty} \\frac{(-1)^n}{\\ln n}\n\\end{aligned}$$",
         choices: ["0개", "1개", "2개", "3개", "4개"],
-        answer: "",
+        answer: "④",
       },
     ],
     147: [
@@ -4467,7 +4467,7 @@ export const clcls3 = {
           "$$1 < x \\leq 5$$",
           "$$1 \\leq x < 5$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
@@ -4479,7 +4479,7 @@ export const clcls3 = {
           "$$[2, 6)$$",
           "$$(-\\infty, \\infty)$$",
         ],
-        answer: "",
+        answer: "①",
       },
       {
         question:
@@ -4491,7 +4491,7 @@ export const clcls3 = {
           "$$-1 < x < 1$$",
           "$$-1 < x \\leq 0$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     148: [
@@ -4499,7 +4499,7 @@ export const clcls3 = {
         question:
           "멱급수$$\\sum_{n=1}^{\\infty} \\frac{(x + 1)^n \\ln n}{n 3^n}$$이 수렴하게 되는 모든 정수$$x$$의 개수는?",
         choices: ["$$4$$개", "$$5$$개", "$$6$$개", "$$7$$개"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4511,13 +4511,13 @@ export const clcls3 = {
           "$$\\frac{\\sqrt{2}}{2}$$",
           "$$1$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "거듭제급급수$$\\sum_{n=1}^{\\infty} \\left( \\frac{n}{n+1} \\right)^{n^2} x^n$$의 수렴반지름을 구하시오.",
         choices: ["$$0$$", "$$1$$", "$$e$$", "$$\\infty$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
@@ -4528,7 +4528,7 @@ export const clcls3 = {
           "$$\\left(0, \\frac{3}{2}\\right]$$",
           "$$\\left[0, \\frac{3}{2}\\right]$$",
         ],
-        answer: "",
+        answer: "③",
       },
     ],
     149: [
@@ -4536,7 +4536,7 @@ export const clcls3 = {
         question:
           "멱급수$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n}{n^2} \\cdot \\frac{(2x - 1)^n}{5^n}$$이 수렴하는 모든 정수$$x$$의 개수는?",
         choices: ["$$3$$", "$$4$$", "$$5$$", "$$6$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 급수 중 수렴하는 것을 모두 고르면?",
@@ -4549,13 +4549,13 @@ export const clcls3 = {
           "$$(a), (c)$$",
           "$$(b), (c)$$",
         ],
-        answer: "",
+        answer: "⑤",
       },
       {
         question:
           "급수$$\\sum_{n=1}^{\\infty} (-1)^n n x^n$$,$$\\sum_{n=1}^{\\infty} \\frac{(-1)^n x^n}{\\sqrt[3]{n}}$$,$$\\sum_{n=0}^{\\infty} \\frac{n(x + 2)^n}{5^{n + 1}}$$,$$\\sum_{n=1}^{\\infty} \\frac{n! x^n}{1 \\cdot 3 \\cdot 5 \\cdots (2n - 1)}$$의 수렴 반지름을 각각$$\\alpha, \\beta, \\gamma, \\delta$$라 할 때,$$\\alpha + \\beta + \\gamma + \\delta$$의 값은?",
         choices: ["$$6$$", "$$7$$", "$$8$$", "$$9$$", "$$10$$"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "모든 실수에 대해 수렴하는 멱급수는?",
@@ -4566,7 +4566,7 @@ export const clcls3 = {
           "$$\\sum_{n=0}^{\\infty} (-1)^{n} \\frac{x^{2n + 1}}{2n + 1}$$",
           "$$\\sum_{n=1}^{\\infty} (-1)^{n - 1} \\frac{x^n}{n}$$",
         ],
-        answer: "",
+        answer: "②",
       },
     ],
     150: [
@@ -4580,7 +4580,7 @@ export const clcls3 = {
           "$$\\left(\\frac{5}{3}, \\frac{7}{3}\\right)$$",
           "$$\\left(\\frac{5}{3}, \\frac{7}{3}\\right]$$",
         ],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -4588,14 +4588,14 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\sum_{n=2}^{\\infty} \\left( \\frac{n}{n - 1} \\right)^{n^2} \\\\\n&\\text{ㄴ. } \\sum_{n=1}^{\\infty} \\frac{1}{n} \\sin \\frac{1}{\\sqrt{n}} \\\\\n&\\text{ㄷ. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{\\ln n}{n}\n\\end{aligned}$$",
         choices: ["ㄱ", "ㄷ", "ㄱ, ㄷ", "ㄴ, ㄷ", "ㄱ, ㄴ, ㄷ"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 발산하는 급수를 모두 고른 것은?",
         example:
           "$$\\begin{aligned}\n&\\text{(가) } \\sum_{n=1}^{\\infty} \\frac{4}{\\pi^n} \\\\\n&\\text{(나) } \\sum_{n=1}^{\\infty} \\frac{2}{4+e^{-n}} \\\\\n&\\text{(다) } \\sum_{n=1}^{\\infty} \\frac{1 + \\cos \\frac{n\\pi}{2}}{e^n} \\\\\n&\\text{(라) } \\sum_{n=1}^{\\infty} \\frac{e^n}{n^2}\n\\end{aligned}$$",
         choices: ["가, 나", "나, 라", "다, 라", "라"],
-        answer: "",
+        answer: "②",
       },
     ],
     151: [
@@ -4609,19 +4609,19 @@ export const clcls3 = {
           "$$\\frac{1}{4}$$",
           "$$\\frac{1}{5}$$",
         ],
-        answer: "",
+        answer: "④",
       },
       {
         question:
           "거듭제급급수$$\\sum_{n=1}^{\\infty} \\frac{n!}{2^n n^n} x^n$$의 수렴반지름을 구하시오.",
         choices: ["$$2$$", "$$\\frac{1}{2e}$$", "$$2e$$", "$$\\infty$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "$$c > 0$$일 때, 멱급수$$1 + \\sum_{n=1}^{\\infty} \\frac{(2)_n (-3)_n}{n! (c)_n} \\left( \\frac{x}{2} \\right)^{2n}$$의 수렴 반경을 구하면? (단, 임의의 실수$$a$$에 대하여$$(a)_n = a(a + 1)(a + 2) \\dots (a + n - 1)$$으로 정의한다.)",
         choices: ["$$2$$", "$$3c$$", "$$6c$$", "$$+\\infty$$"],
-        answer: "",
+        answer: "④",
       },
     ],
     152: [
@@ -4629,13 +4629,13 @@ export const clcls3 = {
         question:
           "급수$$\\sum_{n=1}^{\\infty} \\frac{(n + 1)^n}{p^n n!}$$이 수렴하는 자연수$$p$$의 최소값은?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "③",
       },
       {
         question:
           "급수$$\\sum_{n=1}^{\\infty} \\frac{n^n \\cdot n!}{1 \\cdot 5 \\cdot 9 \\cdots (4n - 3)^2} x^{2n - 1}$$이 수렴하도록 하는 자연수$$x$$의 개수는?",
         choices: ["$$1$$", "$$2$$", "$$3$$", "$$4$$", "$$5$$"],
-        answer: "",
+        answer: "②",
       },
       {
         question:
@@ -4647,7 +4647,7 @@ export const clcls3 = {
           "$$1, 2$$",
           "$$\\frac{1}{2}, 1, 2$$",
         ],
-        answer: "",
+        answer: "④",
       },
     ],
     153: [
@@ -4656,14 +4656,14 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{ㄱ. } \\lim_{n \\to \\infty} a_n = 0 \\text{이면, 급수 } \\sum_{n=1}^{\\infty} a_n \\text{은 수렴한다.} \\\\\n&\\text{ㄴ. 두 급수 } \\sum_{n=1}^{\\infty} a_n \\text{과 } \\sum_{n=1}^{\\infty} b_n \\text{이 모두 발산하면, 급수 } \\sum_{n=1}^{\\infty}(a_n + b_n) \\text{도 발산한다.} \\\\\n&\\text{ㄷ. 두 급수 } \\sum_{n=1}^{\\infty} a_n^2 \\text{과 } \\sum_{n=1}^{\\infty} b_n^2 \\text{이 모두 수렴하면, 급수 } \\sum_{n=1}^{\\infty} a_n b_n \\text{도 수렴한다.} \\\\\n&\\text{ㄹ. 급수 } \\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{n} \\text{은 수렴한다.}\n\\end{aligned}$$",
         choices: ["ㄱ, ㄴ", "ㄱ, ㄷ", "ㄴ, ㄹ", "ㄷ, ㄹ"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "다음 중 옳은 것은 모두 몇 개인가?",
         example:
           "$$\\begin{aligned}\n&\\text{ⓐ } \\lim_{n \\to \\infty} a_n = 0 \\text{이면 급수 } \\sum_{n=1}^{\\infty} a_n \\text{은 수렴한다.} \\\\\n&\\text{ⓑ } \\sum_{n=100}^{\\infty} (a_n + b_n) = \\sum_{n=100}^{\\infty} a_n + \\sum_{n=100}^{\\infty} b_n \\\\\n&\\text{ⓒ 급수 } \\sum_{n=1}^{\\infty} n^{-p} \\text{는 } p \\ge 1 \\text{일 때 수렴하고, } 0 < p < 1 \\text{일 때 발산한다.} \\\\\n&\\text{ⓓ 임의의 자연수 } n \\text{에 대해 } a_n \\le b_n \\text{이다. 이때, } \\sum_{n=1}^{\\infty} a_n \\text{이 발산하면 } \\sum_{n=1}^{\\infty} b_n \\text{도 발산한다.} \\\\\n&\\text{ⓔ 절대 수렴하는 급수의 임의의 재배열 급수는 절대 수렴한다.}\n\\end{aligned}$$",
         choices: ["5개", "4개", "3개", "2개", "1개"],
-        answer: "",
+        answer: "⑤",
       },
     ],
     154: [
@@ -4673,14 +4673,14 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{가. } \\sum_{n=1}^{\\infty} a_n^2 \\text{은 수렴한다.} \\\\\n&\\text{나. } \\sum_{n=1}^{\\infty} (-1)^n a_n \\text{은 수렴한다.} \\\\\n&\\text{다. } \\sum_{n=1}^{\\infty} \\frac{\\sqrt{a_n}}{n} \\text{은 수렴한다.}\n\\end{aligned}$$",
         choices: ["가", "가, 나", "나, 다", "가, 나, 다"],
-        answer: "",
+        answer: "④",
       },
       {
         question: "무한급수에 대한 <보기>의 내용 중 옳은 것은 모두 몇 개인가?",
         example:
           "$$\\begin{aligned}\n&\\text{가. } \\sum_{n=1}^{\\infty} \\frac{a_n}{n} \\text{이 수렴하면 } \\sum_{n=1}^{\\infty} (-1)^n \\frac{a_n}{n} \\text{은 수렴한다.} \\\\\n&\\text{나. } \\sum_{n=1}^{\\infty} (-1)^n \\frac{a_n}{n} \\text{이 수렴하면 } \\sum_{n=1}^{\\infty} \\frac{a_n}{n} \\text{은 수렴한다.} \\\\\n&\\text{다. } \\sum_{n=1}^{\\infty} \\frac{(-1)^n}{\\ln(\\ln(n+2018))} \\text{은 절대수렴한다. (absolutely convergent)} \\\\\n&\\text{라. } \\sum_{n=1}^{\\infty} (-1)^n \\sin^3\\left(\\frac{1}{\\sqrt{n}}\\right) \\text{은 조건수렴한다. (conditionally convergent)}\n\\end{aligned}$$",
         choices: ["0개", "1개", "2개", "3개", "4개"],
-        answer: "",
+        answer: "①",
       },
     ],
     155: [
@@ -4689,14 +4689,14 @@ export const clcls3 = {
         example:
           "$$\\begin{aligned}\n&\\text{㉠ 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 이 수렴하면 } \\lim_{n \\to \\infty} a_n = 0 \\text{ 이다.} \\\\\n&\\text{㉡ 급수 } \\sum_{n=1}^{\\infty} n^{-\\frac{2}{3}} \\text{ 는 수렴한다.} \\\\\n&\\text{㉢ 두 급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 과 } \\sum_{n=1}^{\\infty} b_n \\text{ 에 대하여 } \\lim_{n \\to \\infty} \\frac{a_n}{b_n} = 0 \\text{ 이고 } \\sum_{n=1}^{\\infty} b_n \\text{ 이 발산하면 } \\sum_{n=1}^{\\infty} a_n \\text{ 도 발산한다.}\n\\end{aligned}$$",
         choices: [" ㉠", " ㉡", " ㉢", " ㉡, ㉢", " ㉠, ㉢"],
-        answer: "",
+        answer: "①",
       },
       {
         question: "다음 <보기>의 내용 중 옳은 것은 모두 몇 개인가?",
         example:
           "$$\\begin{aligned}\n&\\text{가. 무한급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 이 조건부 수렴하면 (conditionally convergent) 무한급수 } \\sum_{n=1}^{\\infty} n^2 a_n \\text{ 은 발산한다.} \\\\\n&\\text{나. 무한급수 } \\sum_{n=1}^{\\infty} a_n \\text{ 이 수렴하면 무한급수 } \\sum_{n=1}^{\\infty} (-1)^n a_n \\text{ 은 수렴한다.} \\\\\n&\\text{다. } \\sum_{n=3}^{\\infty} \\frac{1}{n(\\ln n)^2} < \\frac{1}{\\ln 2} \\\\\n&\\text{라. 멱급수 } \\sum_{n=1}^{\\infty} a_n x^n \\text{ 의 수렴반경이 1이면 } \\sum_{n=1}^{\\infty} a_n \\text{ 은 수렴한다.}\n\\end{aligned}$$",
         choices: [" 0개", " 1개", " 2개", " 3개", " 4개"],
-        answer: "",
+        answer: "③",
       },
     ],
   },
