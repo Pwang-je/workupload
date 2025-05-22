@@ -2552,7 +2552,7 @@ export const clcls3 = {
       {
         question: "16. $$\\sum_{n=1}^{\\infty} n x^n =$$",
         choices: [],
-        answer: "$$\\frac{1}{(1-x)^{2}$$",
+        answer: "$$\\frac{1}{(1-x)^{2}}$$",
       },
       {
         question: "17. $$\\sum_{n=1}^{\\infty} n^2 x^n =$$",
