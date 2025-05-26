@@ -3438,7 +3438,7 @@ export const clcls3 = {
       },
       {
         question:
-          "다음 급수의 수렴, 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} \\frac{1}{n^ {sin1}}$$",
+          "다음 급수의 수렴, 발산을 판정하시오. (7)$$\\sum_{n=1}^{\\infty} \\frac{1}{n^ {\\sin 1}}$$",
         answer: "발산",
       },
       {

@@ -247,37 +247,46 @@ function getRandomQuestions() {
 }
 
 function formatExampleArray(example) {
-  const normalizeExample = (example) => {
-    let lines = [];
+const normalizeExample = (example) => {
+  let lines = [];
 
-    if (typeof example === "string") {
-      const alignedMatch = example.match(
-        /\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/
-      );
-      if (alignedMatch) {
-        const inner = alignedMatch[1];
-        lines = inner.split(/\\\\/).map((str) => {
-          const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
-          if (textMatch) {
-            const label = textMatch[1].trim();
-            const content = textMatch[2].trim();
-            return `${label} $${content}$`;
-          } else {
-            return str.trim();
-          }
-        });
-      } else {
-        lines = example
-          .split(/\n|<br ?\/>|\\\\/)
-          .map((l) => l.trim())
-          .filter(Boolean);
-      }
-    } else if (Array.isArray(example)) {
-      lines = example.map((str) => str.trim());
+  if (typeof example === "string") {
+    const alignedMatch = example.match(
+      /\\begin\{aligned\}([\s\S]+?)\\end\{aligned\}/
+    );
+    if (alignedMatch) {
+      const inner = alignedMatch[1];
+      lines = inner.split(/\\\\/).map((str) => {
+        const textMatch = str.match(/\\text\{(.+?)\}(.*)/);
+        if (textMatch) {
+          const label = textMatch[1].trim();
+          const content = textMatch[2].trim();
+          return `${label} $${content}$`;
+        } else {
+          return str.trim();
+        }
+      });
+    } else {
+      lines = example
+        .split(/\n|<br ?\/>|\\\\/)
+        .map((l) => l.trim())
+        .filter(Boolean);
     }
+  } else if (Array.isArray(example)) {
+    lines = example.map((str) => str.trim());
+  }
 
-    return lines.filter(Boolean);
-  };
+  // 🔧 여기에 \displaystyle 자동 삽입
+  lines = lines.map((line) =>
+    line.replace(
+      /\\(sum|int|lim|prod|bigcup|bigcap)/g,
+      (match, p1) => `\\displaystyle\\${p1}`
+    )
+  );
+
+  return lines.filter(Boolean);
+};
+
 
   const averageEffectiveLength = (items) => {
     const getLength = (text) =>
