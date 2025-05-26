@@ -111,9 +111,9 @@ export const clcls1 = {
           $$`,
         ],
         answer: [
-          "$$sin \\theta = 0, \\frac{1}{2}, \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{3}}{2}, 1$$",
-          "$$cos \\theta = 1, \\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{2}}{2}, \\frac{1}{2}, 0$$",
-          "$$tan \\theta = 0, \\frac{1}{\\sqrt{3}}, 1, \\sqrt{3}, \\infty$$",
+          "$$\\sin \\theta = 0, \\frac{1}{2}, \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{3}}{2}, 1$$",
+          "$$\\cos \\theta = 1, \\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{2}}{2}, \\frac{1}{2}, 0$$",
+          "$$\\tan \\theta = 0, \\frac{1}{\\sqrt{3}}, 1, \\sqrt{3}, \\infty$$",
         ],
       },
       {
@@ -318,8 +318,8 @@ export const clcls1 = {
           "$$\\text{2. } ~ \\ln(A + \\sqrt{A^2 - 1}), ~ (A \\ge 1)$$",
           "$$\\text{3. } ~ \\frac{1}{2} \\ln\\left(\\frac{1 + A}{1 - A}\\right), ~ (-1 < A < 1)$$",
           "$$\\text{4. } ~ \\frac{1}{2} \\ln\\left(\\frac{A + 1}{A - 1}\\right), ~ (A > 1 \\text{or} A < -1)$$",
-          "$$\\text{5. } ~ \\ln(A + \\sqrt{A^2 + 1}), ~ (0 < A \\le 1)$$",
-          "$$\\text{6. } ~ \\ln(A + \\sqrt{A^2 - 1}), ~ (A \\neq 0)$$",
+          "$$\\text{5. } ~ \\ln \\left( \\frac{1}{A} + \\sqrt{ \\frac{1}{A^2} + 1} \\right), ~ (0 < A \\le 1)$$",
+          "$$\\text{6. } ~ \\ln \\left( \\frac{1}{A} + \\sqrt{ \\frac{1}{A^2} - 1} \\right), ~ (A \\neq 0)$$",
         ],
       },
       {
