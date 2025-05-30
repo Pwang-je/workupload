@@ -298,9 +298,9 @@ export const clcls1 = {
           "$$\\text{3. } ~ \\tanh^2 \\frac{A}{2} =$$ , $$\\tanh^2 A =$$",
         ],
         answer: [
-          "$$\\text{1. } ~ \\frac{1 - \\cosh A}{2} , ~ \\sinh^2 A = 2\\sinh^2 \\frac{A}{2}$$",
-          "$$\\text{2. } ~ \\frac{1 + \\cosh A}{2} , ~ \\cosh^2 A = 2\\cosh^2 \\frac{A}{2} - 1$$",
-          "$$\\text{3. } ~ \\frac{1 - \\cosh A}{1 + \\cosh A} , ~ \\tanh^2 A = 2\\tanh^2 \\frac{A}{2}$$",
+          "$$\\text{1. } ~ \\frac{\\cosh A - 1}{2} , ~~ \\frac{\\cosh 2 A-1}{2} $$",
+          "$$\\text{2. } ~ \\frac{\\cosh A + 1}{2} , ~~ \\frac{\\cosh 2 A+1}{2} $$",
+          "$$\\text{3. } ~ \\frac{\\cosh A - 1}{\\cosh A + 1} , ~~ \\frac{\\cosh 2 A-1}{\\cosh 2 A+1}$$",
         ],
       },
       {
