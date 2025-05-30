@@ -38,7 +38,7 @@ export const clcls2 = {
           "(5) $$ x - \\frac{x^3}{3} + \\frac{x^5}{5} - \\frac{x^7}{7} \\cdots = \\frac{(-1)^{n} x^{2n+1}}{(2n+1)} $$",
           "(6) $$ x + \\frac{1}{6} x^{3} + \\frac{3}{40} x^{5} + \\cdots $$",
           "(7) $$x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} \\cdots = \\frac{(-1)^{n} x^{n}}{n} $$",
-          "(8) $$-x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} \\cdots $$",
+          "(8) $$x - \\frac{x^2}{2} - \\frac{x^3}{3} - \\frac{x^4}{4} \\cdots $$",
           "(9) $$x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\frac{x^4}{4} \\cdots = \\frac{x^{n}}{n} $$",
           "(10) $$ 1 + px + \\frac{p(p-1)}{2!} x^{2} + \\frac{p(p-1)(p-2)}{3!} x^{3} + \\cdots$$",
         ],
