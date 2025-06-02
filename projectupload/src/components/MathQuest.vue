@@ -31,6 +31,7 @@ const chapters = {
     { name: "이상적분", start: 131, end: 147 },
   ],
   calculus3: [
+    { name: "공식", start: "공식", end: "공식" },
     { name: "극좌표", start: 6, end: 18 },
     { name: "미분의 응용", start: 24, end: 49 },
     { name: "정적분의 응용", start: 55, end: 88 },
