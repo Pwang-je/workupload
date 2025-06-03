@@ -5,65 +5,111 @@ export const clcls3 = {
       {
   "question": "정적분의 응용 공식 - 직교좌표계",
   "example": [
-    "$$\\text{함수 정의: } y = f(x) \\quad (a \\leq x \\leq b)$$",
-    "$$\\text{면적: } A = \\int_a^b |y| dx$$",
-    "$$\\text{곡선의 길이: } L = \\int_a^b \\sqrt{1 + (y')^2} dx$$",
-    "$$\\text{회전체의 체적 (x축): } V_x = \\pi \\int_a^b y^2 dx$$",
-    "$$\\text{회전체의 체적 (y축): } V_y = \\pi \\int_a^b x^2 dy$$",
-    "$$\\text{회전체의 표면적 (x축): } S_x = 2\\pi \\int_a^b y \\sqrt{1 + (y')^2} dx$$",
-    "$$\\text{회전체의 표면적 (y축): } S_y = 2\\pi \\int_a^b x \\sqrt{1 + (y')^2} dx$$"
+    "종류: $$~~$$",
+    "면적: $$~~$$",
+    "곡선의 길이: $$~~$$",
+    "회전체의 체적 ($$x$$축): $$~~$$",
+    "회전체의 체적 ($$y$$축): $$~~$$",
+    "회전체의 표면적 ($$x$$축): $$~~$$",
+    "회전체의 표면적 ($$y$$축): $$~~$$"
   ],
-  "answer": []
+  "answer": [
+    "종류: $$~ y = f(x) \\quad (a \\leq x \\leq b)$$",
+    "면적: $$~ A = \\int_a^b |y| dx$$",
+    "곡선의 길이: $$~  L = \\int_a^b \\sqrt{1 + (y')^2} dx$$",
+    "회전체의 체적 ($$x$$축): $$~ V_x = \\pi \\int_a^b y^2 dx$$",
+    "회전체의 체적 ($$y$$축): $$~ V_y = 2\\pi \\int_a^b xy dx$$",
+    "회전체의 표면적 ($$x$$축): $$~ S_x = 2\\pi \\int_a^b y \\sqrt{1 + (y')^2} dx$$",
+    "회전체의 표면적 ($$y$$축): $$~ S_y = 2\\pi \\int_a^b x \\sqrt{1 + (y')^2} dx$$"
+  ]
 },
 {
   "question": "정적분의 응용 공식 - 매개변수함수",
   "example": [
-    "$$\\text{함수 정의: } \\begin{cases} x = f(t) \\\\ y = g(t) \\end{cases} \\quad (t_1 \\leq t \\leq t_2)$$",
-    "$$\\text{면적: } A = \\int_{t_1}^{t_2} y(t) x'(t) dt$$",
-    "$$\\text{곡선의 길이: } L = \\int_{t_1}^{t_2} \\sqrt{(x'(t))^2 + (y'(t))^2} dt$$",
-    "$$\\text{회전체의 체적 (x축): } V_x = \\pi \\int_{t_1}^{t_2} (y(t))^2 x'(t) dt$$",
-    "$$\\text{회전체의 체적 (y축): } V_y = \\pi \\int_{t_1}^{t_2} (x(t))^2 y'(t) dt$$",
-    "$$\\text{회전체의 표면적 (x축): } S_x = 2\\pi \\int_{t_1}^{t_2} y(t) \\sqrt{(x'(t))^2 + (y'(t))^2} dt$$",
-    "$$\\text{회전체의 표면적 (y축): } S_y = 2\\pi \\int_{t_1}^{t_2} x(t) \\sqrt{(x'(t))^2 + (y'(t))^2} dt$$"
+    "종류: $$~~$$",
+    "면적: $$~~$$",
+    "곡선의 길이: $$~~$$",
+    "회전체의 체적 ($$x$$축): $$~~$$",
+    "회전체의 체적 ($$y$$축): $$~~$$",
+    "회전체의 표면적 ($$x$$축): $$~~$$",
+    "회전체의 표면적 ($$y$$축): $$~~$$"
   ],
-  "answer": []
+  "answer": [
+    "종류:  $$~ \\begin{cases} x = f(t) \\\\ y = g(t) \\end{cases} \\quad (t_1 \\leq t \\leq t_2)$$",
+    "면적:  $$~ A = \\int_{t_1}^{t_2} y(t) x'(t) dt$$",
+    "곡선의 길이:  $$~ L = \\int_{t_1}^{t_2} \\sqrt{(x')^2 + (y')^2} dt$$",
+    "회전체의 체적 ($$x$$축):  $$~ V_x = \\pi \\int_{t_1}^{t_2} (y(t))^2 x'(t) dt$$",
+    "회전체의 체적 ($$y$$축):  $$~ V_y = \\pi \\int_{t_1}^{t_2} (x(t))^2 y'(t) dt$$",
+    "회전체의 표면적 ($$x$$축):  $$~ S_x = 2\\pi \\int_{t_1}^{t_2} y(t) \\sqrt{(x')^2 + (y')^2} dt$$",
+    "회전체의 표면적 ($$y$$축):  $$~ S_y = 2\\pi \\int_{t_1}^{t_2} x(t) \\sqrt{(x')^2 + (y')^2} dt$$"
+  ]
 },
 {
   "question": "정적분의 응용 공식 - 극좌표계",
   "example": [
-    "$$\\text{함수 정의: } r = f(\\theta) \\quad (\\alpha \\leq \\theta \\leq \\beta)$$",
-    "$$\\text{면적: } A = \\frac{1}{2} \\int_\\alpha^\\beta r^2 d\\theta$$",
-    "$$\\text{곡선의 길이: } L = \\int_\\alpha^\\beta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$",
-    "$$\\text{회전체의 표면적 (x축): } S_x = 2\\pi \\int_\\alpha^\\beta r \\sin\\theta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$",
-    "$$\\text{회전체의 표면적 (y축): } S_y = 2\\pi \\int_\\alpha^\\beta r \\cos\\theta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$"
+    "종류: $$~~$$",
+    "면적: $$~~$$",
+    "곡선의 길이: $$~~$$",
+    "회전체의 표면적 ($$x$$축): $$~~$$",
+    "회전체의 표면적 ($$y$$축): $$~~$$"
   ],
-  "answer": []
+  "answer": [
+    "종류: $$~ r = f(\\theta) \\quad (\\alpha \\leq \\theta \\leq \\beta)$$",
+    "면적: $$~ A = \\frac{1}{2} \\int_\\alpha^\\beta r^2 d\\theta$$",
+    "곡선의 길이: $$~ L = \\int_\\alpha^\\beta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$",
+    "회전체의 표면적 ($$x$$축): $$~ S_x = 2\\pi \\int_\\alpha^\\beta r \\sin\\theta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$",
+    "회전체의 표면적 ($$y$$축): $$~ S_y = 2\\pi \\int_\\alpha^\\beta r \\cos\\theta \\sqrt{r^2 + \\left( \\frac{dr}{d\\theta} \\right)^2} d\\theta$$"
+  ]
 },
 {
   "question": "도형별 면적, 곡선 길이, 회전체 공식 정리 (표 형태)",
   "example": [
-    "$$\\begin{array}{|c|c|c|c|c|c|c|} \\hline\n" +
-    "\\textbf{항목} & \\text{사이클로이드} & \\text{성망형} & \\text{심장형} & \\text{연주형} & \\text{4엽장미} & \\text{3엽장미} \\\\ \\hline\n" +
-    "\\text{곡선} & \\begin{cases} x = a(t - \\sin t) \\\\ y = a(1 - \\cos t) \\end{cases} & \\begin{cases} x = a \\cos^3 t \\\\ y = a \\sin^3 t \\end{cases} & r = a(1 + \\cos \\theta) & r^2 = a^2 \\cos 2\\theta & r = a \\cos 2\\theta & r = a \\cos 3\\theta \\\\ \\hline\n" +
-    "\\text{면적} & 3\\pi a^2 & \\frac{3}{8}\\pi a^2 & \\frac{3}{2}\\pi a^2 & a^2 & \\frac{1}{2}\\pi a^2 & \\frac{\\pi}{4}a^2 \\\\ \\hline\n" +
-    "\\text{곡선의 길이} & 8a & 6a & 8a & - & - & - \\\\ \\hline\n" +
-    "\\text{회전체의 체적} & 5\\pi^2 a^3 & \\frac{32}{105}\\pi a^3 & - & - & - & - \\\\ \\hline\n" +
-    "\\text{회전체의 표면적} & \\frac{64}{3}\\pi a^2 & \\frac{12}{5}\\pi a^2 & - & - & - & - \\\\ \\hline\n" +
-    "\\end{array}$$"
+    "$$\\begin{array}{|c|c|c|c|c|c|c|} \\hline \\textbf{항목} & \\text{사이클로이드} & \\text{애스터로이드} & \\text{심장형} & \\text{연주형} & \\text{4엽장미} & \\text{3엽장미} \\\\ \\hline \\text{곡선} & & & & & & \\\\ \\hline \\text{면적} & & & & & & \\\\ \\hline \\text{곡선의 길이} & & & & & & \\\\ \\hline \\text{회전체의 체적} & & & & & & \\\\ \\hline \\text{회전체의 표면적} & & & & & & \\\\ \\hline \\end{array}$$"
   ],
-  "answer": []
+  "answer": [
+    "$$\\small\\begin{array}{|c|c|c|c|c|c|c|} \\hline",
+    "\\textbf{항목} & \\text{사이클로이드} & \\text{애스터로이드} & \\text{심장형} & \\text{연주형} & \\text{4엽장미} & \\text{3엽장미} \\\\ \\hline",
+    "\\text{곡선} & \\begin{cases} x = a(t - \\sin t) \\\\ y = a(1 - \\cos t) \\end{cases} & \\begin{cases} x = a \\cos^3 t \\\\ y = a \\sin^3 t \\end{cases} & r = a(1 + \\cos\\theta) & r^2 = a^2 \\cos 2\\theta & r = a \\cos 2\\theta & r = a \\cos 3\\theta \\\\ \\hline",
+    "\\text{면적} & 3\\pi a^2 & \\frac{3}{8}\\pi a^2 & \\frac{3}{2}\\pi a^2 & a^2 & \\frac{1}{2}\\pi a^2 & \\frac{\\pi}{4}a^2 \\\\ \\hline",
+    "\\text{곡선의 길이} & 8a & 6a & 8a & \\text{--} & \\text{--} & \\text{--} \\\\ \\hline",
+    "\\text{회전체의 체적} & 5\\pi^2 a^3 & \\frac{32}{105}\\pi a^3 & \\text{--} & \\text{--} & \\text{--} & \\text{--} \\\\ \\hline",
+    "\\text{회전체의 표면적} & \\frac{64}{3}\\pi a^2 & \\frac{12}{5}\\pi a^2 & \\text{--} & \\text{--} & \\text{--} & \\text{--} \\\\ \\hline",
+    "\\end{array}$$"
+  ]
 },
 {
   "question": "무한급수의 성질",
   "example": [
-    "$$\\text{(1) } \\sum_{k=1}^n k = 1 + 2 + 3 + \\cdots + n = \\frac{n(n+1)}{2}$$",
-    "$$\\text{(2) } \\sum_{k=1}^{n-1} k = 1 + 2 + 3 + \\cdots + (n - 1) = \\frac{n(n-1)}{2}$$"
+    "$$\\text{(1) } \\sum_{k=1}^n k = ~~$$",
+    "$$\\text{(2) } \\sum_{k=1}^{n-1} k = ~~$$"
   ],
-  "answer": []
+  "answer": [
+    "$$\\text{(1) } 1 + 2 + 3 + \\cdots + n = \\frac{n(n+1)}{2}$$",
+    "$$\\text{(2) } 1 + 2 + 3 + \\cdots + (n - 1) = \\frac{n(n-1)}{2}$$",
+  ]
 },
 {
-  "question": "Maclaurin 급수 공식",
+  "question": "Maclaurin 급수 공식 ($$ \\sum $$까지 작성)",
   "example": [
+    "$$\\text{(1)} \\quad \\frac{1}{1 - x} = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(2)} \\quad \\frac{1}{1 + x} = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(3)} \\quad e^x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(4)} \\quad e^{-x} = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(5)} \\quad \\ln(1 + x) = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(6)} \\quad -\\ln(1 - x) = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(7)} \\quad \\sin x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(8)} \\quad \\sinh x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(9)} \\quad \\cos x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(10)} \\quad \\cosh x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(11)} \\quad \\tan^{-1} x = ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(12)} \\quad \\tanh^{-1} x = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(13)} \\quad \\sin^{-1}x = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(14)} \\quad \\sinh^{-1}x = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(15)} \\quad \\tan x = ~~~~~~~~~~~~~~~~~~~~$$",
+    "$$\\text{(16)} \\quad (1 + x)^p = ~~~~~~~~~~~~~~~~~~~~$$",
+
+  ],
+  "answer": [
     "$$\\text{(1)} \\quad \\frac{1}{1 - x} = 1 + x + x^2 + x^3 + \\cdots = \\sum_{n=0}^{\\infty} x^n \\quad (|x| < 1)$$",
     "$$\\text{(2)} \\quad \\frac{1}{1 + x} = 1 - x + x^2 - x^3 + \\cdots$$",
     "$$\\text{(3)} \\quad e^x = 1 + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\cdots = \\sum_{n=0}^{\\infty} \\frac{x^n}{n!} \\quad (-\\infty, \\infty)$$",
@@ -80,16 +126,16 @@ export const clcls3 = {
     "$$\\text{(14)} \\quad \\sinh^{-1}x = x - \\frac{1}{6}x^3 + \\frac{3}{40}x^5 + \\cdots$$",
     "$$\\text{(15)} \\quad \\tan x = x + \\frac{1}{3}x^3 + \\frac{2}{15}x^5 + \\cdots$$",
     "$$\\text{(16)} \\quad (1 + x)^p = 1 + px + \\frac{p(p-1)}{2!}x^2 + \\frac{p(p-1)(p-2)}{3!}x^3 + \\cdots$$",
-
-  ],
-  "answer": []
+  ]
 },
 {
   "question": "함수 비교 판정",
   "example": [
-    "$$\\sin n \\text{ or } \\cos n \\rightarrow \\ln n \\rightarrow n^p \\rightarrow a^n \\rightarrow n! \\rightarrow n^n$$"
+    "$$~~~~~~~~~~ \\rightarrow ~~~~~~~~~~ \\rightarrow ~~~~~~~~~~ \\rightarrow ~~~~~~~~~~ \\rightarrow ~~~~~~~~~~ \\rightarrow $$"
   ],
-  "answer": []
+  "answer": [
+    "$$\\sin n \\text{ or } \\cos n \\rightarrow \\ln n \\rightarrow n^p \\rightarrow a^n \\rightarrow n! \\rightarrow n^n$$"
+  ]
 },
 
 
