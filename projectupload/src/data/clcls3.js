@@ -3,6 +3,23 @@ export const clcls3 = {
   questions: {
     공식: [
       {
+  "question": "정적분의 응용 공식 (좌표계별 정리)",
+  "example": [
+    "$$\\small\\begin{array}{|c|c|c|c|} \\hline \\text{종류}\\rule{0pt}{2.5em} & ~~~~~~~~~~\\text{직교좌표계}~~~~~~~~~~ & ~~~~~~~~~~\\text{매개변수함수}~~~~~~~~~~ & ~~~~~~~~~~~~~\\text{극좌표계}~~~~~~~~~~~~~~~ \\\\ \\hline \\text{함수 정의}\\rule{0pt}{2.5em} & & & \\\\ \\hline \\text{면적}\\rule{0pt}{2.5em} & & & \\\\ \\hline \\text{곡선의 길이}\\rule{0pt}{2.5em} & & & \\\\ \\hline \\text{회전체의 체적}\\rule{0pt}{2.5em} & & & \\\\ \\hline \\text{회전체의 표면적}\\rule{0pt}{2.5em} & & & \\\\ \\hline \\end{array}$$"
+  ],
+  "answer": [
+    "$$\\small\\begin{array}{|c|c|c|c|} \\hline",
+    "\\textbf{종류} & \\textbf{직교좌표계} & \\textbf{매개변수함수} & \\textbf{극좌표계} \\\\ \\hline",
+    "\\text{함수 정의} & y = f(x) \\quad (a \\leq x \\leq b) & \\begin{cases} x = f(t) \\\\ y = g(t) \\end{cases} \\quad (t_1 \\leq t \\leq t_2) & r = f(\\theta) \\quad (\\alpha \\leq \\theta \\leq \\beta) \\\\ \\hline",
+    "\\text{면적} & A = \\int_a^b |y| dx & A = \\int_{t_1}^{t_2} y(t) x'(t) dt & A = \\frac{1}{2} \\int_{\\alpha}^{\\beta} r^2 d\\theta \\\\ \\hline",
+    "\\text{곡선의 길이} & L = \\int_a^b \\sqrt{1 + (y')^2} dx & L = \\int_{t_1}^{t_2} \\sqrt{(x'(t))^2 + (y'(t))^2} dt & L = \\int_{\\alpha}^{\\beta} \\sqrt{r^2 + \\left(\\frac{dr}{d\\theta}\\right)^2} d\\theta \\\\ \\hline",
+    "\\text{회전체의 체적} & \\begin{aligned} V_x &= \\pi \\int_a^b y^2 dx \\\\ V_y &= 2\\pi \\int_a^b x y dx \\end{aligned} & \\begin{aligned} V_x &= \\pi \\int_{t_1}^{t_2} \\{y(t)\\}^2 x'(t) dt \\\\ V_y &= \\pi \\int_{t_1}^{t_2} \\{x(t)\\}^2 y'(t) dt \\end{aligned} & - \\\\ \\hline",
+    "\\text{회전체의 표면적} & \\begin{aligned} S_x &= 2\\pi \\int_a^b y \\sqrt{1 + (y')^2} dx \\\\ S_y &= 2\\pi \\int_a^b x \\sqrt{1 + (y')^2} dx \\end{aligned} & \\begin{aligned} S_x &= 2\\pi \\int_{t_1}^{t_2} y(t) \\sqrt{(x')^2 + (y')^2} dt \\\\ S_y &= 2\\pi \\int_{t_1}^{t_2} x(t) \\sqrt{(x')^2 + (y')^2} dt \\end{aligned} & \\begin{aligned} S_x &= 2\\pi \\int_{\\alpha}^{\\beta} r \\sin\\theta \\sqrt{r^2 + \\left(\\frac{dr}{d\\theta}\\right)^2} d\\theta \\\\ S_y &= 2\\pi \\int_{\\alpha}^{\\beta} r \\cos\\theta \\sqrt{r^2 + \\left(\\frac{dr}{d\\theta}\\right)^2} d\\theta \\end{aligned} \\\\ \\hline",
+    "\\end{array}$$"
+  ]
+},
+
+      {
   "question": "정적분의 응용 공식 - 직교좌표계",
   "example": [
     "종류: $$~~$$",
@@ -62,9 +79,9 @@ export const clcls3 = {
   ]
 },
 {
-  "question": "도형별 면적, 곡선 길이, 회전체 공식 정리 (표 형태)",
+  "question": "도형별 면적, 곡선 길이, 회전체 공식 정리",
   "example": [
-    "$$\\begin{array}{|c|c|c|c|c|c|c|} \\hline \\textbf{항목} & \\text{사이클로이드} & \\text{애스터로이드} & \\text{심장형} & \\text{연주형} & \\text{4엽장미} & \\text{3엽장미} \\\\ \\hline \\text{곡선} & & & & & & \\\\ \\hline \\text{면적} & & & & & & \\\\ \\hline \\text{곡선의 길이} & & & & & & \\\\ \\hline \\text{회전체의 체적} & & & & & & \\\\ \\hline \\text{회전체의 표면적} & & & & & & \\\\ \\hline \\end{array}$$"
+    "$$\\small\\begin{array}{|c|c|c|c|c|c|c|} \\hline \\textbf{항목}\\rule{0pt}{2.5em} & \\text{사이클로이드} & \\text{애스터로이드} & ~~~~~ \\text{심장형} ~~~~~ & ~~~~~ \\text{연주형} ~~~~~ & ~~~~~~ \\text{4엽장미} ~~~~ & ~~~~ \\text{3엽장미} ~~~~ \\\\ \\hline \\text{곡선}\\rule{0pt}{2.5em} & & & & & & \\\\ \\hline \\text{면적}\\rule{0pt}{2.5em} & & & & & & \\\\ \\hline \\text{곡선의 길이}\\rule{0pt}{2.5em} & & & & & & \\\\ \\hline \\text{회전체의 체적}\\rule{0pt}{2.5em} & & & & & & \\\\ \\hline \\text{회전체의 표면적}\\rule{0pt}{2.5em} & & & & & & \\\\ \\hline \\end{array}$$"
   ],
   "answer": [
     "$$\\small\\begin{array}{|c|c|c|c|c|c|c|} \\hline",
