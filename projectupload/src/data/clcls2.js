@@ -31,7 +31,7 @@ export const clcls2 = {
           "(10) $$(1 + x)^p =$$",
         ],
         answer: [
-          "(1) $$ 1+x+ \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\cdots = \\sum_{n=0}^{\\infty} x^{n} $$",
+          "(1) $$ 1+x+ \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\frac{x^4}{4!} + \\cdots = \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!} $$",
           "(2) $$ x - \\frac{x^3}{3!} +  \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots = \\sum_{n=0}^{\\infty} \\frac{(-1)^{n} x^{2n+1}}{(2n+1)!} $$",
           "(3) $$ 1- \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots = \\frac{(-1)^{n} x^{2n}}{(2n)!} $$",
           "(4) $$ x+ \\frac{1}{3} x^{3} + \\frac{2}{15} x^{5} + \\cdots $$",
