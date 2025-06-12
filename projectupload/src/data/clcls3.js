@@ -286,7 +286,7 @@ export const clcls3 = {
         question:
           "극곡선$$r = 2\\sin\\theta$$위에서 동경과 접선 사이의 각이$$\\frac{\\pi}{6}$$인 점의 극좌표는?",
         choices: [],
-        answer: "$$ \\left( 1, \\frac{pi}{6} \\right) $$",
+        answer: "$$ \\left( 1, \\frac{\\pi}{6} \\right) $$",
       },
     ],
     11: [
