@@ -2115,7 +2115,7 @@ export const clcls1 = {
       {
         question: "$$y = x^{\\ln x}$$의 도함수는?",
         choices: [],
-        answer: "$$\\frac{2 \\ln x}{x} e^{\\ln x}^{2}$$",
+        answer: "$$\\frac{2 \\ln x}{x} e^{(\\ln x)^{2}}$$",
       },
       {
         question:
